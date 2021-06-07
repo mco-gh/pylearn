@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "pylearn.io"
+title = "PyLearn"
 
 enableRobotsTXT = true
 
@@ -53,7 +53,7 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "pylearn"
+title = ""
 description = "Free Practical Python Instruction for Everyone"
 languageName ="English"
 # Weight used for sorting.
