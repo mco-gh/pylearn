@@ -2,7 +2,7 @@
 <nav class="js-navbar-scroll navbar navbar-expand navbar-dark {{ if $cover}} td-navbar-cover {{ end }}flex-column flex-md-row td-navbar">
         <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
 		<span class="navbar-logo">
-                    <img height="40" width="67" src="/logos/logo.png">
+                    <img height="48" width="80" src="/logos/logo.png">
                 </span>
                 <span class="text-uppercase font-weight-bold">{{ .Site.Title }}
                 </span>
@@ -35,3 +35,6 @@
 	</div>
 	<div class="navbar-nav d-none d-lg-block">{{ partial "search-input.html" . }}</div>
 </nav>
+{{ if not $cover }}
+    <br>
+{{ end }}
