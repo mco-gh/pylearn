@@ -1,6 +1,6 @@
 ---
-title: "Exceptions"
-linkTitle: "Exceptions"
+title: "9. Errors and Exceptions"
+linkTitle: "9. Errors and Exceptions"
 weight: 2
 description: >
   What does your user need to know to try your project?

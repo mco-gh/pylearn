@@ -1,6 +1,6 @@
 ---
-title: "Errors"
-linkTitle: "Errors"
+title: "8. Files"
+linkTitle: "8. Files"
 weight: 2
 description: >
   What does your user need to know to try your project?
