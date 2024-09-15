@@ -1,6 +1,6 @@
 ---
-title: "Iterables"
-linkTitle: "Iterables"
+title: "Data Structures"
+linkTitle: "Data Structures"
 weight: 2
 description: >
   What does your user need to know to try your project?
