@@ -1,6 +1,6 @@
 ---
-title: "Welcome"
-linkTitle: "Welcome"
+title: "Variables"
+linkTitle: "Variables"
 weight: 2
 description: >
   What does your user need to know to try your project?
