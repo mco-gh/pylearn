@@ -1,6 +1,6 @@
 ---
-title: "9 exceptions"
-linkTitle: "9 exceptions"
+title: "9 Exceptions"
+linkTitle: "9 Exceptions"
 weight: "9"
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ weight: "9"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>9_exceptions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>9_Exceptions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
