@@ -1,6 +1,6 @@
 ---
-title: "1 welcome"
-linkTitle: "1 welcome"
+title: "1 Welcome"
+linkTitle: "1 Welcome"
 weight: "1"
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ weight: "1"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>1_welcome</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1_Welcome</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
