@@ -1,6 +1,6 @@
 ---
-title: "2. Variables"
-linkTitle: "2. Variables"
+title: "8 Files"
+linkTitle: "8 Files"
 weight: 2
 description: >
   What does your user need to know to try your project?

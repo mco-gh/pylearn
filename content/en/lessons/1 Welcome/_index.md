@@ -1,6 +1,6 @@
 ---
-title: "1-Welcome"
-linkTitle: "1-Welcome"
+title: "1 Welcome"
+linkTitle: "1 Welcome"
 weight: 2
 description: >
   Welcome to PyLearn!

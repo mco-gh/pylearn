@@ -1,6 +1,6 @@
 ---
-title: "7. Data Structures"
-linkTitle: "7. Data Structures"
+title: "2 Variables"
+linkTitle: "2 Variables"
 weight: 2
 description: >
   What does your user need to know to try your project?

@@ -1,6 +1,6 @@
 ---
-title: "5. Loops"
-linkTitle: "5. Loops"
+title: "4 Conditionals"
+linkTitle: "4 Conditionals"
 weight: 2
 description: >
   What does your user need to know to try your project?

@@ -1,6 +1,6 @@
 ---
-title: "3. Expressions"
-linkTitle: "3. Expressions"
+title: "9 Exceptions"
+linkTitle: "9 Exceptions"
 weight: 2
 description: >
   What does your user need to know to try your project?
