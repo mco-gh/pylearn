@@ -1,0 +1,17 @@
+set -x
+
+DIR=../content/en/lessons
+
+for i in *.ipynb
+do
+    lesson="${i%.*}"
+    weight=`echo $lesson| cut -d' ' -f1`
+    cat >"$DIR/$lesson/_index.md" <<!
+---
+title: "$lesson"
+linkTitle: "$lesson"
+weight: "$weight"
+---
+!
+    jupyter nbconvert --to html "$i" --stdout >>"$DIR/$lesson/_index.md"
+done
