@@ -8,7 +8,7 @@ weight: "1"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>1 welcome</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>1_welcome</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7521,7 +7521,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1%20welcome.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_welcome.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7533,7 +7533,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Lesson-1---Welcome-to-my-PyLearn!">Lesson 1 - Welcome to my PyLearn!<a class="anchor-link" href="#Lesson-1---Welcome-to-my-PyLearn!">¶</a></h1><p>PyLearn is a Python course built using Google Colab. Each lesson uses a Colab notebook to explain some concepts and to give students immediate practice programming in Python.</p>
-<p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1%20welcome.ipynb">Link to this notebook on github</a></p>
+<p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_welcome.ipynb">Link to this notebook on github</a></p>
 </div>
 </div>
 </div>

@@ -6,12 +6,13 @@ for i in *.ipynb
 do
     lesson="${i%.*}"
     weight=`echo $lesson| cut -d'_' -f1`
-    cat >"$DIR/$lesson/_index.md" <<!
+    name=`echo $lesson| cut -d'_' -f2`
+    cat >"$DIR/$weight $name/_index.md" <<!
 ---
-title: "$lesson"
-linkTitle: "$lesson"
+title: "$weight $name"
+linkTitle: "$weight $name"
 weight: "$weight"
 ---
 !
-    jupyter nbconvert --to html "$i" --stdout >>"$DIR/$lesson/_index.md"
+    jupyter nbconvert --to html "$i" --stdout >>"$DIR/$weight $name/_index.md"
 done
