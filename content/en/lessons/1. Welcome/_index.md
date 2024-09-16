@@ -34,4 +34,4 @@ Is there any initial setup users need to do after installation to try your proje
 
 Can your users test their installation, for example by running a command or deploying a Hello World example?
 
-<iframe src="https://gist.github.com/mco-gh/7a466d34d3fb1c676b39482545963626">
+<script src="https://gist.github.com/mco-gh/7a466d34d3fb1c676b39482545963626.js"></script>
