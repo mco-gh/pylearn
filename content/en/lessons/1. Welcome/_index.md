@@ -1,5 +1,5 @@
 ---
-title: "lesson1"
+title: "1. Welcome"
 linkTitle: "1. Welcome"
 weight: 2
 description: >
