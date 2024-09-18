@@ -54,7 +54,7 @@ id = "UA-00000000-0"
 [languages]
 [languages.en]
 title = ""
-description = "Free Practical Python Instruction for Everyone"
+description = "PyLearn"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
