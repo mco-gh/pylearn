@@ -7532,8 +7532,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb">Link to this notebook</a></p>
-<p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<ul>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb">Link to this notebook on Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb">Link to this notebook on Github</a></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7621,19 +7624,19 @@ for filename in filenames:
 </code></pre>
 <p>{: .output}</p>
 <p><img alt="Output from the first iteration of the for loop. Three line graphs showing the daily average,
-maximum and minimum inflammation over a 40-day period for all patients in the first dataset." src="../fig/03-loop_49_1.png"/></p>
+maximum and minimum inflammation over a 40-day period for all patients in the first dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_1.png?raw=1"/></p>
 <pre><code>inflammation-02.csv
 </code></pre>
 <p>{: .output}</p>
 <p><img alt="Output from the second iteration of the for loop. Three line graphs showing the daily average,
 maximum and minimum inflammation over a 40-day period for all patients in the second
-dataset." src="../fig/03-loop_49_3.png"/></p>
+dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_3.png?raw=1"/></p>
 <pre><code>inflammation-03.csv
 </code></pre>
 <p>{: .output}</p>
 <p><img alt="Output from the third iteration of the for loop. Three line graphs showing the daily average,
 maximum and minimum inflammation over a 40-day period for all patients in the third
-dataset." src="../fig/03-loop_49_5.png"/></p>
+dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_5.png?raw=1"/></p>
 <p>The plots generated for the second clinical trial file look very similar to the plots for
 the first file: their average plots show similar "noisy" rises and falls; their maxima plots
 show exactly the same linear rise and fall; and their minima plots show similar staircase
@@ -7644,7 +7647,7 @@ consistently zero across every day of the trial. If we produce a heat map for th
 we see the following:</p>
 <p><img alt="Heat map of the third inflammation dataset. Note that there are sporadic zero values throughout
 the entire dataset, and the last patient only has zero values over the 40 day study.
-" src="../fig/inflammation-03-imshow.svg"/></p>
+" src="https://github.com/mco-gh/pylearn/blob/master/fig/inflammation-03-imshow.svg?raw=1"/></p>
 <p>We can see that there are zero values sporadically distributed across all patients and days of the
 clinical trial, suggesting that there were potential issues with data collection throughout the
 trial. In addition, we can see that the last patient in the study didn't have any inflammation

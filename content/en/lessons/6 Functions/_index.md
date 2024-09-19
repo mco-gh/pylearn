@@ -7532,8 +7532,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-6---Functions">Lesson 6 - Functions<a class="anchor-link" href="#Lesson-6---Functions">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/6_Functions.ipynb">Link to this notebook</a></p>
-<p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-6---Functions">Lesson 6 - Functions<a class="anchor-link" href="#Lesson-6---Functions">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<ul>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/6_Functions.ipynb">Link to this notebook on Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/6_Functions.ipynb">Link to this notebook on Github</a></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7599,7 +7602,7 @@ from Fahrenheit to Celsius:</p>
     return ((temp - 32) * (5/9))
 </code></pre>
 <p>{: .language-python}</p>
-<p><img alt="Labeled parts of a Python function definition" src="../fig/python-function.svg"/></p>
+<p><img alt="Labeled parts of a Python function definition" src="https://github.com/mco-gh/pylearn/blob/master/fig/python-function.svg?raw=1"/></p>
 <p>The function definition opens with the keyword <code>def</code> followed by the
 name of the function (<code>fahr_to_celsius</code>) and a parenthesized list of parameter names (<code>temp</code>). The
 [body]({{ page.root }}/reference.html#body) of the function --- the

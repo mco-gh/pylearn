@@ -7532,8 +7532,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-1---Welcome-to-my-PyLearn!">Lesson 1 - Welcome to my PyLearn!<a class="anchor-link" href="#Lesson-1---Welcome-to-my-PyLearn!">¶</a></h1><p>PyLearn is a Python course built using Google Colab. Each lesson uses a Colab notebook to explain some concepts and to give students immediate practice programming in Python.</p>
-<p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb">Link to this notebook on github</a></p>
+<h1 id="Lesson-1---Welcome-to-my-PyLearn!">Lesson 1 - Welcome to my PyLearn!<a class="anchor-link" href="#Lesson-1---Welcome-to-my-PyLearn!">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<ul>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb">Link to this notebook on Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb">Link to this notebook on Github</a></li>
+</ul>
+<p>PyLearn is a Python course built using Google Colab. Each lesson uses a Colab notebook to explain some concepts and to give students immediate practice programming in Python.</p>
 </div>
 </div>
 </div>
@@ -7544,7 +7548,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h2><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and the data analysis project we'll use to apply  your new skills throughout the course.</p>
+<h2 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h2><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
 </div>
 </div>
 </div>

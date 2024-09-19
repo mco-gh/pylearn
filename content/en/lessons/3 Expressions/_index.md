@@ -7532,8 +7532,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-3---Expressions">Lesson 3 - Expressions<a class="anchor-link" href="#Lesson-3---Expressions">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb">Link to this notebook</a></p>
-<p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-3---Expressions">Lesson 3 - Expressions<a class="anchor-link" href="#Lesson-3---Expressions">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<ul>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb">Link to this notebook on Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb">Link to this notebook on Github</a></li>
+</ul>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>More about types in Python</li>
@@ -7553,6 +7556,20 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Constants-vs.-Variables">Constants vs. Variables<a class="anchor-link" href="#Constants-vs.-Variables">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>

@@ -7532,8 +7532,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-4---Conditionals">Lesson 4 - Conditionals<a class="anchor-link" href="#Lesson-4---Conditionals">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/4_Conditionals.ipynb">Link to this notebook</a></p>
-<p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-4---Conditionals">Lesson 4 - Conditionals<a class="anchor-link" href="#Lesson-4---Conditionals">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<ul>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/4_Conditionals.ipynb">Link to this notebook on Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/4_Conditionals.ipynb">Link to this notebook on Github</a></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7545,6 +7548,20 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Author note: need to introduce a few built-in functions each lesson, simple i/o functions are a good choice. Print was already covered but should do input() in this lesson and another one or to in lesson 2.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
 </div>
 </div>
 </div>
