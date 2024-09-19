@@ -7521,7 +7521,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_variables.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-2---Variables">Lesson 2 - Variables<a class="anchor-link" href="#Lesson-2---Variables">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_variables.ipynb">Link to this notebook</a></p>
+<h1 id="Lesson-2---Variables">Lesson 2 - Variables<a class="anchor-link" href="#Lesson-2---Variables">¶</a></h1><p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb">Link to this notebook</a></p>
 <p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
