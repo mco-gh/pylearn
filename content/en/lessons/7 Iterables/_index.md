@@ -7535,8 +7535,8 @@ a.anchor-link {
 <h1 id="Lesson-7---Iterables">Lesson 7 - Iterables<a class="anchor-link" href="#Lesson-7---Iterables">¶</a></h1><p><strong>Tuples, Lists, and Dictionaries</strong></p>
 <p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/7_Iterables.ipynb">Link to this notebook on Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/7_Iterables.ipynb">Link to this notebook on Github</a></li>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/7_Iterables.ipynb" target="_blank">Open this notebook in Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/7_Iterables.ipynb" target="_blank">Open this notebook in Github</a></li>
 </ul>
 </div>
 </div>

@@ -7534,8 +7534,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb">Link to this notebook on Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb">Link to this notebook on Github</a></li>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb" target="_blank">Open this notebook in Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb" target="_blank">Open this notebook in Github</a></li>
 </ul>
 </div>
 </div>

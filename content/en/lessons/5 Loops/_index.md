@@ -7536,8 +7536,9 @@ a.anchor-link {
 <p><code>Before we get into Strings Revisied, we are missing material on basic string type.</code></p>
 <p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb">Link to this notebook on Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb">Link to this notebook on Github</a></li>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb" target="_blank">Open this notebook in Colab
+</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb" target="_blank">Open this notebook in Github</a></li>
 </ul>
 </div>
 </div>

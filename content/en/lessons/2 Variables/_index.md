@@ -7534,8 +7534,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Lesson-2---Variables">Lesson 2 - Variables<a class="anchor-link" href="#Lesson-2---Variables">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb">Link to this notebook on Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb">Link to this notebook on Github</a></li>
+<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Colab</a></li>
+<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Github</a></li>
 </ul>
 <p>Things you'll learn in this lesson:</p>
 <ul>
