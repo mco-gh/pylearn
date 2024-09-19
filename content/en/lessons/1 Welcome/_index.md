@@ -7521,7 +7521,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_welcome.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7533,7 +7533,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Lesson-1---Welcome-to-my-PyLearn!">Lesson 1 - Welcome to my PyLearn!<a class="anchor-link" href="#Lesson-1---Welcome-to-my-PyLearn!">¶</a></h1><p>PyLearn is a Python course built using Google Colab. Each lesson uses a Colab notebook to explain some concepts and to give students immediate practice programming in Python.</p>
-<p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_welcome.ipynb">Link to this notebook on github</a></p>
+<p><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb">Link to this notebook on github</a></p>
 </div>
 </div>
 </div>
