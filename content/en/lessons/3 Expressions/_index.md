@@ -7541,8 +7541,10 @@ a.anchor-link {
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>More about types in Python</li>
+<li>Arithmetic</li>
+<li>Comparison operators</li>
 <li>Boolean operators</li>
-<li>How to combine constants, variables, and operators into arithmetic, boolean, and comparison expressions</li>
+<li>How to combine constants, variables, and operators into expressions</li>
 <li>Operator precedence</li>
 <li>The magical f-string</li>
 </ul>
@@ -7560,20 +7562,6 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7582,9 +7570,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><p>Literal values (like <code>"marc"</code> and <code>2010</code>) are called constants because they don't change.</p>
-</li>
-<li><p>Constants, are called constants because its value is fixed, unlike variables, whose associated value may change (or <em>vary</em>) over time.</p>
+<li><p>Literal values (like <code>"marc"</code> and <code>2024</code>) are called constants because their value is fixed, unlike variables, whose associated value may change (or <em>vary</em>) over time.</p>
 </li>
 <li><p>The data a variable refers to may be simple, e.g. a number or a string, or it may be complex, e.g. a list or an object (we'll learn about those later).</p>
 </li>
@@ -7753,7 +7739,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7773,16 +7759,14 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'int'&gt; &lt;class 'float'&gt; &lt;class 'str'&gt; &lt;class 'bool'&gt; &lt;class 'NoneType'&gt;
-</pre>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Arithmetic-Operators">Arithmetic Operators<a class="anchor-link" href="#Arithmetic-Operators">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7793,7 +7777,67 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Comparison-Opererators">Comparison Opererators<a class="anchor-link" href="#Comparison-Opererators">¶</a></h1>
+<p>As their name suggests, arithmetic operators allow us to perform numerical calculations.</p>
+<p>The following table summarizes the most commonly used arithmetic operators in Python, along with what they do.</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td>
+<td>addition</td>
+</tr>
+<tr>
+<td>-</td>
+<td>subtraction</td>
+</tr>
+<tr>
+<td>*</td>
+<td>multiplication</td>
+</tr>
+<tr>
+<td>/</td>
+<td>division</td>
+</tr>
+<tr>
+<td>//</td>
+<td>modulus</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>Guess the numerical values each of these expressions evaluate to.</p>
+<ul>
+<li><code>125 + 10</code></li>
+<li><code>125 - 10</code></li>
+<li><code>125 * 10</code></li>
+<li><code>125 / 10</code></li>
+<li><code>125 // 10</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Comparison-Operators">Comparison Operators<a class="anchor-link" href="#Comparison-Operators">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7932,11 +7976,11 @@ a.anchor-link {
 <p>Example:</p>
 <ul>
 <li>I ride my bike only when it's both sunny and warm.</li>
-<li>In other words, if <code>is_sunny</code> and <code>is_warm</code> are both <code>True</code> then <code>is_sunny and is_warm</code> is <code>True</code> so I <strong>will</strong> ride my bike.</li>
+<li>In other words, if <code>is_sunny</code> and <code>is_warm</code> are both <code>True</code> then I <strong>will</strong> ride my bike.</li>
 </ul>
 <p>In Python...</p>
 <pre><code>if is_sunny and is_warm:
-    # ride bike
+    print("ride bike")
 </code></pre>
 <p>We haven't learn about <code>if</code> statements so don't worry if the previous construct looks unfamiliar. It's a simple way of checking the value of a boolean expression, but we'll dive deeper into <code>if</code> statements in our next lesson.</p>
 </div>
@@ -8013,11 +8057,11 @@ a.anchor-link {
 <p>Example:</p>
 <ul>
 <li>I ride my bike  when it's sunny, warm, or both.</li>
-<li>In other words, if <code>is_sunny</code> or <code>is_warm</code> (or both) are <code>True</code> then <code>is_sunny or is_warm</code> is <code>True</code> so I <strong>will</strong> ride my bike.</li>
+<li>In other words, if <code>is_sunny</code> or <code>is_warm</code> (or both) are <code>True</code> then I <strong>will</strong> ride my bike.</li>
 </ul>
 <p>In Python...</p>
 <pre><code>if is_sunny or is_warm:
-  # ride bike
+  print("ride bike")
 </code></pre>
 </div>
 </div>
@@ -8060,6 +8104,16 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -8125,19 +8179,19 @@ is <code>False</code> when A is <code>True</code></p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>Python lets us combine variables, constants and operators into larger units called expressions.</li>
-<li>Expressions appear in many places<ul>
+<li>Python lets us combine values, variables, constants and operators into larger units called expressions.</li>
+<li>Expressions appear in many places, for example:<ul>
 <li>assignment statements<ul>
 <li><code>age = age + 1    # we do this every birthday</code></li>
 </ul>
 </li>
 <li>function calls<ul>
-<li><code>print(total_days * 365) # number of days alive</code></li>
+<li><code>print(age * 365) # number of days alive</code></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>As we learn more, we'll see expressions popping up all over the place</li>
+<li>As we learn more, we'll see expressions popping up all over the place.</li>
 </ul>
 </div>
 </div>
@@ -8154,8 +8208,6 @@ is <code>False</code> when A is <code>True</code></p>
 <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 <span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
-<span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8169,7 +8221,7 @@ is <code>False</code> when A is <code>True</code></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">49</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">64</span>
 <span class="n">days_per_year</span> <span class="o">=</span> <span class="mi">365</span>
 <span class="n">days_old</span> <span class="o">=</span> <span class="n">age</span> <span class="o">*</span> <span class="n">days_per_year</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I am </span><span class="si">{</span><span class="n">days_old</span><span class="si">}</span><span class="s2"> days old!"</span><span class="p">)</span>
@@ -8252,7 +8304,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Practical-Advice">Practical Advice<a class="anchor-link" href="#Practical-Advice">¶</a></h2><p>Marc's rule or operator precedence: <strong>When in doubt, use parentheses.</strong></p>
-<p>I make liberal use of parentheses because:</p>
+<p>I make liberal use of parentheses because then:</p>
 <ul>
 <li>I don't need to remember the precedence rules.</li>
 <li>I don't have to worry about surprises.</li>
@@ -8260,7 +8312,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </ul>
 <p>For example, I could write this expression, which evaluates <code>A and B</code> first, then <code>C and D</code>, and finally takes the boolean <code>or</code> of the two preceding results:</p>
 <p><code>A and B or C and D</code></p>
-<p>but I much prefer to make explicit, like this so I don't have to think about precedence rules every time I look at this code:</p>
+<p>but I much prefer to make this explicit so I don't have to think about precedence rules every time I look at this code:</p>
 <p><code>(A and B) or (C and D)</code></p>
 </div>
 </div>
@@ -8283,8 +8335,8 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <p>which produces this output:</p>
 <pre><code>customer id:  123 , account balance: 17.9
 </code></pre>
-<p>This sort of construct gets a bit tedious. Plus the space between the customer id and the following comma unintended and undesirable.</p>
-<p>A relatively new addition to Python, called f-strings, offer a simpler and more readable solution to this problem. If you prefix a string with the character <code>f</code>, it gives the string magic powers. Specifically, the sting has the ability to <strong>interpolate</strong> variables inside curly brackets. Here's how we could express the previous <code>print</code> statement using an f-string:</p>
+<p>This sort of construct gets a bit tedious. Plus the space between the customer id and the following comma is unintended and undesirable.</p>
+<p>A relatively new addition to Python, called f-strings, offer a simpler and more readable solution to this problem. If you prefix a string with the character <code>f</code>, it gives the string magic powers. Specifically, the sting has the ability to <strong>interpolate</strong> variables inside curly braces. Here's how we could express the previous <code>print</code> statement using an f-string:</p>
 <pre><code>print(f"customer id: {customer_id} account balance: {account_balance}")
 </code></pre>
 <p>This is shorter, less tedious, easier to read and write, and solves the formatting issue related to the comma between the two fields.</p>
@@ -8326,7 +8378,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Evaluate the following expressions mentally, then verify your answer in the following code cell...</p>
+<p>Evaluate the following expressions mentally, then verify your answers in the following code cell...</p>
 <ul>
 <li><code>2 + 3 * 4 + 5</code></li>
 <li><code>(2 + 3) * (4 + 5)</code></li>
@@ -8339,11 +8391,10 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <li><code>100 % 99</code></li>
 <li><code>(100 / 100) // (100 % 100)</code></li>
 </ul>
-<p>EXPLAIN WHAT YOU WANT HERE</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8366,41 +8417,6 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>19
-45
-44
-2.0
-False
-True
-False
-True
-1
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ZeroDivisionError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-11-7b5dba0cbc1a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> print<span class="ansi-blue-fg">(</span><span class="ansi-green-fg">True</span> <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">True</span> <span class="ansi-green-fg">or</span> <span class="ansi-green-fg">False</span> <span class="ansi-green-fg">and</span> <span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span> print<span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span> <span class="ansi-blue-fg">%</span> <span class="ansi-cyan-fg">99</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 10</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span> <span class="ansi-blue-fg">/</span> <span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">//</span> <span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">100</span> <span class="ansi-blue-fg">%</span> <span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">ZeroDivisionError</span>: float divmod()</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8410,14 +8426,12 @@ True
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Assuming we have the following variables and functions:</p>
 <ul>
-<li><code>customer_id</code> - customer identifier</li>
+<li><code>customer_id</code> - unique identifier per customer</li>
 <li><code>customer_age</code> - customer age in years</li>
-<li><code>product_id</code> - a particular product in the seller's catalog</li>
-<li><code>active(product_id)</code> - <code>True</code> if there is an active marketing campaign for the passed product id</li>
-<li><code>bought(customer_id, product_id)</code> - <code>True</code> if the customer previous bought the passed product id</li>
-<li><code>interested(customer_id, product_id)</code> - <code>True</code> if the customer previous showed interest in the passed product</li>
+<li><code>active_marketing_campaign</code> - <code>True</code> if we're allowed to start a new marketing campaign and <code>False</code> otherwise</li>
+<li><code>purchased(customer_id)</code> - returns <code>True</code> if this customer already bought the product and <code>False</code> otherwise</li>
 </ul>
-<p>SAY WHAT TO DO!</p>
+<p>Run the following cell to initialize three variables.</p>
 </div>
 </div>
 </div>
@@ -8429,18 +8443,9 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">customer_age</span> <span class="o">=</span> <span class="mi">49</span>
-<span class="n">customer_id</span> <span class="o">=</span> <span class="mi">987</span>
-<span class="n">product_id</span> <span class="o">=</span> <span class="mi">123</span>
-
-<span class="k">def</span> <span class="nf">active</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
-    <span class="k">return</span> <span class="kc">True</span>
-
-<span class="k">def</span> <span class="nf">bought</span><span class="p">(</span><span class="n">cid</span><span class="p">,</span> <span class="n">pid</span><span class="p">):</span>
-    <span class="k">return</span> <span class="kc">False</span>
-
-<span class="k">def</span> <span class="nf">interested</span><span class="p">(</span><span class="n">cid</span><span class="p">,</span> <span class="n">pid</span><span class="p">):</span>
-    <span class="k">return</span> <span class="kc">False</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">customer_id</span> <span class="o">=</span> <span class="mi">987</span>
+<span class="n">customer_age</span> <span class="o">=</span> <span class="mi">49</span>
+<span class="n">active_marketing_campaign</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 </div>
@@ -8453,11 +8458,21 @@ True
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Your marketing department wants this campaign to start immediately. Formulate an expression to determine whether the current <code>product_id</code> has an active marketing campaign, so you can start offering a discount price.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Your marketing department wants to start a new campaign. Formulate an expression to determine whether it's ok to start a new marketing campaign.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8465,20 +8480,8 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">active</span><span class="p">(</span><span class="n">product_id</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>True</pre>
 </div>
 </div>
 </div>
@@ -8490,11 +8493,11 @@ True
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Marketing says you're allowed to offer the discount to adults only. Formulate an expression to determine whether the current <code>product_id</code> has an active marketing campaign and the customer is 18 years of age or older.</p>
+<p>Marketing says you're allowed to offer the discount to adults only. Formulate an expression to determine whether it's ok to start a marketing campaign and the customer is 18 years of age or older.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8502,20 +8505,8 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">active</span><span class="p">(</span><span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">customer_age</span> <span class="o">&gt;=</span> <span class="mi">18</span>
+<div class="highlight hl-python"><pre><span></span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>False</pre>
 </div>
 </div>
 </div>
@@ -8531,7 +8522,7 @@ True
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8539,57 +8530,8 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">active</span><span class="p">(</span><span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">customer_age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">bought</span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span> <span class="n">product_id</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>True</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Marketing says the campaign is still too intrusive (they're never satisfied). Redo the previous expression so that you retain all the constraints up till now, but include only customers who've shown interest in the product.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">active</span><span class="p">(</span><span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">customer_age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">bought</span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span> <span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">interested</span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span> <span class="n">product_id</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>False</pre>
 </div>
 </div>
 </div>
@@ -8602,33 +8544,6 @@ True
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Write a <code>print</code> statement to verify the previous expression results in the expected type using a built-in function.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">active</span><span class="p">(</span><span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">customer_age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">bought</span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span> <span class="n">product_id</span><span class="p">)</span> <span class="ow">and</span> <span class="n">interested</span><span class="p">(</span><span class="n">customer_id</span><span class="p">,</span> <span class="n">product_id</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>False
-</pre>
-</div>
 </div>
 </div>
 </div>
@@ -8648,7 +8563,7 @@ True
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8656,23 +8571,8 @@ True
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">current_year</span> <span class="o">=</span> <span class="s2">"2022"</span>
-<span class="n">birth_year</span> <span class="o">=</span> <span class="s2">"1972"</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"customer's age: </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">current_year</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">int</span><span class="p">(</span><span class="n">birth_year</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>customer's age: 50
-</pre>
 </div>
 </div>
 </div>
@@ -8684,9 +8584,9 @@ True
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://mco.fyi/py1">Previous Lesson</a>
+<p><a href="https://pylearn.io/lessons/2-Variables/">Previous Lesson</a>
           
-<a href="https://mco.fyi/py3">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/4-Conditionals/">Next Lesson</a></p>
 </div>
 </div>
 </div>
