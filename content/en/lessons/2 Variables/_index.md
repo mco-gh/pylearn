@@ -8726,9 +8726,9 @@ my_cat_is_awesome = 1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb">Previous Lesson</a>
+<p><a href="https://pylearn.io/lessons/1-welcome/">Previous Lesson</a>
           
-<a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/3-Expressions/">Next Lesson</a></p>
 </div>
 </div>
 </div>
