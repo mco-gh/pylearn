@@ -8495,9 +8495,9 @@ Correct!
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://mco.fyi/py2">Previous Lesson</a>
+<p><a href="https://pylearn.io/lessons/3-Expressions/">Previous Lesson</a>
           
-<a href="https://mco.fyi/py4">Next Lesson</a></p>
+<a href="hhttps://pylearn.io/lessons/5-Loops/">Next Lesson</a></p>
 </div>
 </div>
 </div>
