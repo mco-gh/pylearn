@@ -7898,7 +7898,7 @@ Finish</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/2_Variables.ipynb">Next Lesson</a></p>
+<p><a href="https://pylearn.io/lessons/2-Variables">Next Lesson</a></p>
 </div>
 </div>
 </div>
