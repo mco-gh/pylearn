@@ -7547,31 +7547,6 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Author note: need to introduce a few built-in functions each lesson, simple i/o functions are a good choice. Print was already covered but should do input() in this lesson and another one or to in lesson 2.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Controlling-Program-Flow">Controlling Program Flow<a class="anchor-link" href="#Controlling-Program-Flow">¶</a></h1><p>Trivia Question:
 Will the year 2100 be a leap year?</p>
 <ul>
@@ -7609,8 +7584,8 @@ Will the year 2100 be a leap year?</p>
 </ul>
 <p>Prototype...</p>
 <pre><code>if some_expression:    
-  do_this()
-  do_that()
+    do_this()
+    do_that()
 </code></pre>
 <p>If the condition is true, the indented statements are executed.
 Otherwise, the indented statements are skipped and program execution continues after the <code>if</code> statement.</p>
@@ -7622,7 +7597,7 @@ Otherwise, the indented statements are skipped and program execution continues a
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="s2">"jan"</span>
@@ -7662,15 +7637,36 @@ program done
 <h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>In Python, we use indentation to associate a block of statements with a condition, for example...</p>
 <pre><code>print("1")
 if some_condition:    
-  print("2")    
-  print("3")
+    print("2")    
+    print("3")
 print("4") # this line is NOT part of the if block
 </code></pre>
 <p>What does the output look like...</p>
 <ul>
-<li>when the <code>some_condition</code> is True?</li>
-<li>when the <code>some_condition</code> is False?</li>
+<li>when <code>some_condition</code> is True?</li>
+<li>when <code>some_condition</code> is False?</li>
 </ul>
+<p>Try testing your guess by running the following cell with <code>some_condition</code> set to True, then False.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">some_condition</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">some_condition</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span> <span class="c1"># this line is NOT part of the if block</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7684,7 +7680,7 @@ print("4") # this line is NOT part of the if block
 <p>Here’s a slightly different example...</p>
 <pre><code>print("1")
 if some_condition:    
-  print("2")    
+    print("2")    
 print("3")  # this line is NOT part of if block
 print("4")  # this line is NOT part of if block
 </code></pre>
@@ -7707,7 +7703,7 @@ What does the output look like...</p>
 <h2 id="if-Block-Structure"><code>if</code> Block Structure<a class="anchor-link" href="#if-Block-Structure">¶</a></h2><ul>
 <li>In Python, <code>if</code> statements blocks are defined by indentation.</li>
 <li>This idea of using indentation to delineate program structure is pervasive in Python and unique across programming languages.</li>
-<li>For now, we're focusing on if statements but later we'll see how indentation is used to define other kinds of statement blocks.</li>
+<li>For now, we're focusing on if statements but later we'll see how indentation is used to define other blocks of statements.</li>
 </ul>
 </div>
 </div>
@@ -7719,7 +7715,7 @@ What does the output look like...</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Block-Stucture-in-Other-Languages">Block Stucture in Other Languages<a class="anchor-link" href="#Block-Stucture-in-Other-Languages">¶</a></h3><p>In other languages, explicit delineators are used. For example, in Java, C and C++ we would write:</p>
+<h3 id="Block-Stucture-in-Other-Languages">Block Stucture in Other Languages<a class="anchor-link" href="#Block-Stucture-in-Other-Languages">¶</a></h3><p>In other languages, explicit delineators are used. For example, in Java, C, and C++ we would write:</p>
 <pre><code>if ((cur_year % 4) == 0) {
     leap_year = true;
 }
@@ -7747,11 +7743,51 @@ In Python, indentation is not just a good idea - it's affects program logic!</p>
 <li>Pitfalls:<ul>
 <li>watch out for mismatched indentation within a block</li>
 <li>avoid mixing tabs and spaces in your code</li>
-<li>I prefer spaces because it's more explicit.</li>
+<li>I prefer spaces over tabes because it's more explicit.</li>
 </ul>
 </li>
 </ul>
-<p>Marc's law of whitespace: <strong>Pick tabs or spaces and be consistent.</strong></p>
+<p>Marc's law of whitespace: <strong>Pick spaces or tabs and be consistent.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In the next section we're going to use a built-in function called <code>input</code>, which prompts the user to enter some text. We call it with a character string, which serves a prompt, and returns the value entered by the user in response to the prompt. Run the following cell to see how this works.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter desired year: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"user entered year </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>enter desired year: 1900
+user entered year 1900
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -7766,15 +7802,25 @@ In Python, indentation is not just a good idea - it's affects program logic!</p>
 <ul>
 <li>if the current year is divisible by 4, we have a leap year</li>
 </ul>
-<p>To express that in Python, we could write:</p>
+<p>Here's a short Python program, which prompts the user to enter a year and uses the strategy above to decide if the year entered was (or will be, if in the future) a leap year:</p>
 <pre><code>leap_year = False  # initialization
-cur_year = input("Enter current year: ")
-cur_year = int(cur_year)
-if (cur_year % 4) == 0:
+year = input("Enter desired year: ")
+year = int(year)
+if (year % 4) == 0:
     leap_year = True
-print(f"leap year status: {str(leap_year)}")
+print(f"leap year status for {year}: {str(leap_year)}")
 </code></pre>
-<p><strong>Why is the first statement needed?</strong></p>
+<p><strong>Question: Why is the first statement needed?</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -7783,15 +7829,15 @@ print(f"leap year status: {str(leap_year)}")
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># initialization</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cur_year</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter desired year: "</span><span class="p">)</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status for </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">leap_year</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7804,8 +7850,8 @@ print(f"leap year status: {str(leap_year)}")
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 1961
-leap year status: False
+<pre>Enter desired year: 2000
+leap year status for 2000: True
 </pre>
 </div>
 </div>
@@ -7888,6 +7934,43 @@ print("4")
 <li>when the <code>some_condition</code> is True?</li>
 <li>when the <code>some_condition</code> is False?</li>
 </ul>
+<p>Try testing your guess by running the following cell with <code>some_condition</code> set to True, then False.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">some_condition</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">some_condition</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1
+2
+4
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -7902,21 +7985,34 @@ print("4")
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Can we use if/else to rewrite our leap year program to avoid needing this initialization step:</p>
+<pre><code>leap_year = False  # initialization
+</code></pre>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">cur_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cur_year</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
   <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="k">else</span><span class="p">:</span>
   <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status for </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7929,8 +8025,8 @@ print("4")
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 1961
-leap year status: False
+<pre>Enter current year: 1860
+leap year status for 1860: True
 </pre>
 </div>
 </div>
@@ -7966,7 +8062,7 @@ else:
 </code></pre>
 <ul>
 <li>If <code>condition1</code> is true, <code>do_thing_1()</code> is executed.</li>
-<li>Otherwise, if <code>condition2</code> is true, <code>do_thing_2()</code> is executed.</li>
+<li>Else, if <code>condition2</code> is true, <code>do_thing_2()</code> is executed.</li>
 <li>Otherwise, <code>do_thing_3()</code> is executed.</li>
 </ul>
 </div>
@@ -7986,18 +8082,18 @@ else:
 </li>
 </ul>
 <p>For example, if you care about values 1 and 2 and everything else is considered an error, this code:</p>
-<pre><code>if month == "jan":      # deal with 1 here
-  apply_jan_discount()
-elif month == "feb":    # deal with 2 here
-  apply_feb_discount()
-else:           # deal with errors here
-  apply_no_discount()
+<pre><code>if month == "jan":      # deal with jan here
+    apply_jan_discount()
+elif month == "feb":    # deal with feb here
+    apply_feb_discount()
+else:                   # deal with errors here
+    apply_no_discount()
 </code></pre>
 <p>is better than this:</p>
 <pre><code>if month == "jan":
-  apply_jan_discount()
+    apply_jan_discount()
 else:    # x must be 2 then, right? not necessarily!
-  apply_feb_discount()
+    apply_feb_discount()
 </code></pre>
 <p>The latter code hides errors by combining a valid case with error cases.</p>
 </div>
@@ -8013,11 +8109,11 @@ else:    # x must be 2 then, right? not necessarily!
 <h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>Consider the following if/elif/else statement...</p>
 <pre><code>print("1")
 if condition1:    
-  print("2")
+    print("2")
 elif condition2:    
-  print("3")
+    print("3")
 else:    
-  print("4")
+    print("4")
 print("5")
 </code></pre>
 <p>What does the output look like...</p>
@@ -8027,6 +8123,7 @@ print("5")
 <li>when <code>condition1</code> is <code>True</code> and <code>condition2</code> is <code>False</code>?</li>
 <li>when <code>condition1</code> is <code>False</code> and <code>condition2</code> is <code>True</code>?</li>
 </ul>
+<p>Try testing your guess by running the following cell with <code>condition1</code> and <code>condition2</code> set to the four possible combinations of True and False.</p>
 </div>
 </div>
 </div>
@@ -8035,17 +8132,19 @@ print("5")
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
-<span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
-<span class="k">elif</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">condition1</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">condition2</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">condition1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">condition2</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"5"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8059,8 +8158,7 @@ print("5")
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>1
-3
-5
+2
 </pre>
 </div>
 </div>
@@ -8078,11 +8176,11 @@ print("5")
 <li>We call these nested if statements.</li>
 <li>We can embed if statements inside any part of an <code>if</code> statement, i.e. in the <code>if</code> block or the <code>elif</code> block or the <code>else</code> block.</li>
 <li>We can embed <code>if</code> statements arbitrarily deeply, i.e. we
-can have</li>
+could have, for example...</li>
 </ul>
-<pre><code>  if condition1:
+<pre><code>if condition1:
     if condition2:
-      if condition3:
+        if condition3:
         ...
 </code></pre>
 </div>
@@ -8097,13 +8195,13 @@ can have</li>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><pre><code>print("1")
 if condition1:    
-  print("2")    
-  if condition2:        
-    print("3")    
-  else:        
-    print("4")
+    print("2")    
+    if condition2:        
+        print("3")    
+    else:        
+        print("4")
 else:    
-  print("5")
+    print("5")
 print("6")
 </code></pre>
 <p>What does the output look like...</p>
@@ -8113,6 +8211,7 @@ print("6")
 <li>when <code>condition1</code> is <code>True</code> and <code>condition2</code> is <code>False</code>?</li>
 <li>when <code>condition1</code> is <code>False</code> and <code>condition2</code> is <code>True</code>?</li>
 </ul>
+<p>Try testing your guess by running the following cell with <code>condition1</code> and <code>condition2</code> set to the four possible combinations of True and False.</p>
 </div>
 </div>
 </div>
@@ -8121,18 +8220,21 @@ print("6")
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
-<span class="k">if</span> <span class="kc">False</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
-  <span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
-  <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">condition1</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">condition2</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">condition1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">condition2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">"5"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"5"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"6"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8147,7 +8249,8 @@ print("6")
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>1
-5
+2
+3
 6
 </pre>
 </div>
@@ -8162,7 +8265,7 @@ print("6")
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Improving-Our-Rule">Improving Our Rule<a class="anchor-link" href="#Improving-Our-Rule">¶</a></h2><p>A more accurate rule for determining leap years:</p>
-<p>If the current year is divisible by 4 but not divisible by 100 then we have a leap year.</p>
+<p>If the current year is divisible by 4 but not divisible by 100 then we have a leap year. How would you encode that refinement in Python? Try it yourself and then have a look at the next cell.</p>
 </div>
 </div>
 </div>
@@ -8171,16 +8274,16 @@ print("6")
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cur_year</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status for </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8193,8 +8296,8 @@ print("6")
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 2000
-leap year status: False
+<pre>Enter current year: 1904
+leap year status for 1904: True
 </pre>
 </div>
 </div>
@@ -8216,15 +8319,15 @@ leap year status: False
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
-<span class="n">cur_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cur_year</span><span class="p">)</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">cur_year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter current year: "</span><span class="p">)</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
     <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status for </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8237,8 +8340,8 @@ leap year status: False
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 2000
-leap year status: False
+<pre>Enter current year: 904
+leap year status for 904: True
 </pre>
 </div>
 </div>
@@ -8251,7 +8354,7 @@ leap year status: False
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>What does the above code print for the year...</p>
+<p>What does the above code print for these years...</p>
 <ul>
 <li>2020?</li>
 <li>2100?</li>
@@ -8268,8 +8371,8 @@ leap year status: False
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="The-Whole-Story-About-Leap-Years">The Whole Story About Leap Years<a class="anchor-link" href="#The-Whole-Story-About-Leap-Years">¶</a></h2><p>A year is a leap year if its divisible by 4,
-but it can't be divisible by 100,
-unless it's also divisible by 400.</p>
+but divisible by 100,
+unless also divisible by 400.</p>
 <p>So...</p>
 <ul>
 <li>2008 was a leap year because it's divisible by 4 and not divisible by 100.</li>
@@ -8298,7 +8401,7 @@ unless it's also divisible by 400.</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><code>import</code> is how you use someone else's code.</p>
-<p>Let's say we want to generate a random number between 1 and 100. We use the Python <code>random</code> module, like this...</p>
+<p>Let's say we want to generate a random number between 1 and 100. We can use the Python <code>random</code> module, like this...</p>
 </div>
 </div>
 </div>
@@ -8317,17 +8420,6 @@ unless it's also divisible by 400.</p>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
   <span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">good_dogs</span><span class="p">)</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">good_dogs</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="s2">"""</span>
-<span class="s2">count = 1000000</span>
-<span class="s2">sum = 0</span>
-<span class="s2">for i in range(count):</span>
-<span class="s2">  number = random.randint(1, 10)</span>
-<span class="s2">  #print("num:", number)</span>
-<span class="s2">  sum += number</span>
-<span class="s2">  #print("sum:", sum)</span>
-
-<span class="s2">print(sum/count)</span>
-<span class="s2">"""</span>
 </pre></div>
 </div>
 </div>
@@ -8375,7 +8467,31 @@ unless it's also divisible by 400.</p>
         26280000 minutes old
         1576800000 seconds old
 </code></pre>
-<p>Extra challenge:  write the program so that it works any year it is run, not just 2020 (hint: google the Python <code>datetime</code> module).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Extra challenge:  write the program so that it works any year it is run, not just this year (hint: google the Python <code>datetime</code> module, which you can use to find out the current year).</p>
 </div>
 </div>
 </div>
@@ -8406,12 +8522,13 @@ unless it's also divisible by 400.</p>
 <li><p>A person is eligible to be a US Representative if they are at least 25 years old and have been a US citizen for at least 7 years.</p>
 </li>
 </ul>
-<p>Write a program to obtain age and length of citizenship from the user and print out one of the following three statements:</p>
+<p>Write a program to prompt a user to enter their age and length of citizenship in years, then print out one of the following three statements:</p>
 <ul>
 <li>You are eligible to run for both the House and Senate.</li>
-<li>You eligible only to run for the House.</li>
-<li>You are ineligible for Congress.</li>
+<li>You eligible to run only for the House.</li>
+<li>You are ineligible to run for either branch of Congress.</li>
 </ul>
+<p>Something to think about: why don't we also have the possibility of printing "You are eligible to run only for the Senate"?</p>
 </div>
 </div>
 </div>
@@ -8436,16 +8553,15 @@ unless it's also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication tester). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication test). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
 <pre><code>Welcome to the multiplication tester!
 What is 3 * 9? 25
-Sorry, that is incorrect, 3 * 9 = 27.
+Sorry, that's incorrect, 3 * 9 = 27.
 
 Welcome to the multiplication tester!
 What is 4 * 7? 28
 Correct!
 </code></pre>
-<p>Extra challenge: After reading in chapter 2 about while loops, which we'll cover in class next week, put the code from this program inside a while loop, so that you keep quizzing the user until he or she enters a <code>q</code> (for 'quit') in response to one of the questions.</p>
 </div>
 </div>
 </div>
