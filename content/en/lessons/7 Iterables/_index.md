@@ -7548,6 +7548,19 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://pylearn.io/lessons/6-Functions/">Previous Lesson</a>
+          
+<a href="https://pylearn.io/lessons/8-Files/">Next Lesson</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Mutability">Mutability<a class="anchor-link" href="#Mutability">¶</a></h2><p>Some data types can be changed (mutable) and some cannot. For example, strings are immutable. For this reason, you cannot assign values to the characters in a string. And when you call a function that seems to modify a string, it actually creates a new string and (normally) disposes of the old one.</p>
 </div>
 </div>
@@ -10575,6 +10588,19 @@ sets of numbers, the program should output a prize based on the number of matche
 <li>Combine the step 1 framework with the <code>get_new_articles()</code> function in our shared project and test the combination.</li>
 <li>Try running this program locally in Mu.</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://pylearn.io/lessons/6-Functions/">Previous Lesson</a>
+          
+<a href="https://pylearn.io/lessons/8-Files/">Next Lesson</a></p>
 </div>
 </div>
 </div>

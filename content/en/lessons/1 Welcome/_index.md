@@ -7550,6 +7550,17 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://pylearn.io/lessons/2-Variables">Next Lesson</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h2><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
 </div>
 </div>
