@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-2---Variables">Lesson 2 - Variables<a class="anchor-link" href="#Lesson-2---Variables">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-2---Types,-Variables,-&amp;-Assignment">Lesson 2 - Types, Variables, &amp; Assignment<a class="anchor-link" href="#Lesson-2---Types,-Variables,-&amp;-Assignment">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Colab</a></li>
 <li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Github</a></li>
@@ -7540,7 +7540,7 @@ a.anchor-link {
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>The basic data types you can work with in Python</li>
-<li>What are variable and why they are useful</li>
+<li>What are variables and why they are useful</li>
 <li>How to create and assign values to variables in Python</li>
 <li>How to call a built-in function</li>
 </ul>
@@ -7567,129 +7567,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">¶</a></h2><p>Any Python interpreter can be used as a calculator. The <code>print</code> function is called here to display the result of a calculation.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>23
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This is great but not very interesting.
-To do anything useful with data, we need to assign its value to a <em>variable</em>.
-In Python, we can assign a value to a variable using the equals sign <code>=</code>.</p>
-<p>If a variable doesn’t already exist, when you assign to it, Python creates it on the fly. If you assign to a variable that already exists, Python replaces its current value with a new value.</p>
-<p>Examples</p>
-<pre><code>instructor = "marc"         # string value
-instructor = "my evil twin" # same name, diff string value
-instructor = 42             # same name, integer value
-todays_high_temp = 71.3     # diff name, floating point value</code></pre>
-<p>We can track the weight of a patient who weighs 60 kilograms by assigning the value <code>60</code> to a variable <code>weight_kg</code> and then printing the variable to display its current value.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">weight_kg</span> <span class="o">=</span> <span class="mi">60</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>60
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>From now on, whenever we use <code>weight_kg</code>, Python will substitute the value we assigned to it. In other words, <strong>a variable is a a reference to a value</strong>.</p>
-<p>In Python, variable names:</p>
-<ul>
-<li>can include letters, digits, and underscores</li>
-<li>cannot start with a digit</li>
-<li>are case sensitive</li>
-</ul>
-<p>This means that, for example:</p>
-<ul>
-<li><code>weight0</code> is a valid variable name, whereas <code>0weight</code> is not</li>
-<li><code>weight</code> and <code>Weight</code> are different variables</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h3><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.</p>
-<blockquote>
-<p><code>and, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
-</blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Types-of-data">Types of data<a class="anchor-link" href="#Types-of-data">¶</a></h2><p>Python knows about several types of data. Three common ones are:</p>
+<h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">¶</a></h2><p>Python knows about several types of data. Three common ones are:</p>
 <ul>
 <li>integer numbers</li>
 <li>floating point numbers</li>
@@ -7776,7 +7654,7 @@ we can assign each person a unique identifier by storing it in variable that sto
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Numeric-Types">Numeric Types<a class="anchor-link" href="#Numeric-Types">¶</a></h2><p>Python supports two main types of numbers</p>
+<h3 id="Numeric-Types">Numeric Types<a class="anchor-link" href="#Numeric-Types">¶</a></h3><p>Python supports two main types of numbers</p>
 <ul>
 <li>int, arbitrary size signed integers, like these:<ul>
 <li><code>2024</code></li>
@@ -7853,8 +7731,40 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h2><p>Once we have data stored with variable names, we can make use of those variables in our calculations. We call these combinations of variables and values  <strong>expressions</strong>. When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</p>
-<p>For example, we may want to calculate our patient's weight in pounds:</p>
+<h3 id="Seeing-Data-Types">Seeing Data Types<a class="anchor-link" href="#Seeing-Data-Types">¶</a></h3><p>What are the data types of the following variables? Try to guess before executing the cell.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>From now on, whenever we use <code>weight_kg</code>, Python will substitute the value we assigned to it. In other words, <strong>a variable is a a reference to a value</strong>.</p>
+<p>In Python, variable names:</p>
+<ul>
+<li>can include letters, digits, and underscores</li>
+<li>cannot start with a digit</li>
+<li>are case sensitive</li>
+</ul>
+<p>This means that, for example:</p>
+<ul>
+<li><code>weight0</code> is a valid variable name, whereas <code>0weight</code> is not</li>
+<li><code>weight</code> and <code>Weight</code> are different variables</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">¶</a></h2><p>Any Python interpreter can be used as a calculator. The <code>print</code> function is called here to display the result of a calculation.</p>
 </div>
 </div>
 </div>
@@ -7866,8 +7776,7 @@ print(2 ** 4)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">weight_lb</span> <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">weight_kg</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7880,7 +7789,7 @@ print(2 ** 4)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>132.66
+<pre>23
 </pre>
 </div>
 </div>
@@ -7893,7 +7802,10 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We might also decide to add a prefix to our character string representation of a patient ID:</p>
+<h3 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h3><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.</p>
+<blockquote>
+<p><code>and, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
+</blockquote>
 </div>
 </div>
 </div>
@@ -7905,8 +7817,12 @@ print(2 ** 4)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"cardio_"</span> <span class="o">+</span> <span class="n">patient_id</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">planet</span> <span class="o">=</span> <span class="s2">"Earth"</span>
+<span class="n">apples</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="mf">10.5</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">planet</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">apples</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">distance</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7919,7 +7835,9 @@ print(2 ** 4)
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>cardio_001
+<pre>&lt;class 'str'&gt;
+&lt;class 'int'&gt;
+&lt;class 'float'&gt;
 </pre>
 </div>
 </div>
@@ -7932,38 +7850,9 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Built-in-Python-functions">Built-in Python functions<a class="anchor-link" href="#Built-in-Python-functions">¶</a></h2><p>To carry out common tasks with data and variables in Python,
-the language provides us with several built-in functions.
-To display information to the screen, we use the <code>print</code> function, which we've already seen:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>132.66
-cardio_001
-</pre>
-</div>
+<p><img alt="Value of 100.0 with label weight_kg stuck on it, and value of 143.0 with label weight_lb stuck on it" src="https://raw.githubusercontent.com/mco-gh/python-novice-inflammation/gh-pages/fig/python-sticky-note-variables-03.svg"/></p>
+<p>Since <code>weight_lb</code> doesn't "remember" where its value comes from,
+it is not updated when we change <code>weight_kg</code>.</p>
 </div>
 </div>
 </div>
@@ -7974,206 +7863,7 @@ cardio_001
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>When we want to make use of a function, referred to as <strong>calling the function</strong>, we follow its name by parentheses. The parentheses are important - if you leave them off, the function won't actually run!</p>
-<p>Sometimes you will include a set of comma separated values and/or variables inside the parentheses for the function to use. In the case of <code>print</code>,
-we include the parentheses any variables and values we want to display. We will learn more about how functions work and how to create our own in later lessons.</p>
-<p>We can display multiple things at once using only one <code>print</code> function call:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">,</span> <span class="s2">"weight in kilograms:"</span><span class="p">,</span> <span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>cardio_001 weight in kilograms: 60.3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can also call a function inside of another function call. For example, Python has a built-in function called <code>type</code> that tells you a value's data type:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mf">60.3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">patient_id</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'float'&gt;
-&lt;class 'str'&gt;
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can also do calculations as part of a function call by passing an expression to <code>print</code>:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"weight in pounds:"</span><span class="p">,</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>weight in pounds: 132.66
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Note that the above function call did not change the value of <code>weight_kg</code>:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>60.3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To change the value of the <code>weight_kg</code> variable, we have to
-<strong>assign</strong> a new value to <code>weight_kg</code> using the equals <code>=</code> sign, as we did above:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"weight in kilograms before assignment statement:"</span><span class="p">,</span> <span class="n">weight_kg</span><span class="p">)</span>
-<span class="n">weight_kg</span> <span class="o">=</span> <span class="mf">65.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"weight in kilograms after assignment statement:"</span><span class="p">,</span> <span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>weight in kilograms before assignment statement: 63.0
-weight in kilograms after assignment statement: 65.0
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Variables-as-Sticky-Notes-(courtesy-of-Software-Carpentry)">Variables as Sticky Notes <em>(courtesy of Software Carpentry)</em><a class="anchor-link" href="#Variables-as-Sticky-Notes-(courtesy-of-Software-Carpentry)">¶</a></h2><p>A variable in Python is analogous to a sticky note with a name written on it:
+<h3 id="Variables-as-Sticky-Notes-(courtesy-of-Software-Carpentry)">Variables as Sticky Notes <em>(courtesy of Software Carpentry)</em><a class="anchor-link" href="#Variables-as-Sticky-Notes-(courtesy-of-Software-Carpentry)">¶</a></h3><p>A variable in Python is analogous to a sticky note with a name written on it:
 assigning a value to a variable is like putting that sticky note on a particular value.</p>
 <p><img alt="Value of 65.0 with weight_kg label stuck on it" src="https://raw.githubusercontent.com/mco-gh/python-novice-inflammation/gh-pages/fig/python-sticky-note-variables-01.svg"/></p>
 <p>Using this analogy, we can investigate how assigning a value to one variable
@@ -8255,32 +7945,6 @@ note <code>weight_lb</code> is placed on <code>143.0</code>). At this point, eac
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Value of 100.0 with label weight_kg stuck on it, and value of 143.0 with label weight_lb stuck on it" src="https://raw.githubusercontent.com/mco-gh/python-novice-inflammation/gh-pages/fig/python-sticky-note-variables-03.svg"/></p>
-<p>Since <code>weight_lb</code> doesn't "remember" where its value comes from,
-it is not updated when we change <code>weight_kg</code>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Undefined-Variables">Undefined Variables<a class="anchor-link" href="#Undefined-Variables">¶</a></h2><p>If you try to access a variable before it has been defined, Python will report an error, basically saying "I don't know what to do with that reference because the variable doesn't exist".
-What values do the variables <code>mass</code> and <code>age</code> have after each of the following statements?</p>
-<p>Guess before executing the lines below...</p>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8289,9 +7953,8 @@ What values do the variables <code>mass</code> and <code>age</code> have after e
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="mf">47.5</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"mass is"</span><span class="p">,</span> <span class="n">mass</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age is"</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">weight_kg</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8304,111 +7967,7 @@ What values do the variables <code>mass</code> and <code>age</code> have after e
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>mass is 47.5
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-21-e5082b1d70e7&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> mass <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">47.5</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"mass is"</span><span class="ansi-blue-fg">,</span> mass<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"age is"</span><span class="ansi-blue-fg">,</span> age<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'age' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">122</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"mass is"</span><span class="p">,</span> <span class="n">mass</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age is"</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>mass is 47.5
-age is 122
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">mass</span> <span class="o">*</span> <span class="mf">2.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"mass is"</span><span class="p">,</span> <span class="n">mass</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age is"</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>mass is 95.0
-age is 122
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">-</span> <span class="mi">20</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"mass is"</span><span class="p">,</span> <span class="n">mass</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age is"</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>mass is 95.0
-age is 102
+<pre>60
 </pre>
 </div>
 </div>
@@ -8421,7 +7980,28 @@ age is 102
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Seeing-Data-Types">Seeing Data Types<a class="anchor-link" href="#Seeing-Data-Types">¶</a></h2><p>What are the data types of the following variables? Try to guess before executing the cell.</p>
+<p>This is great but not very interesting.
+To do anything useful with data, we need to assign its value to a <em>variable</em>.
+In Python, we can assign a value to a variable using the equals sign <code>=</code>.</p>
+<p>If a variable doesn’t already exist, when you assign to it, Python creates it on the fly. If you assign to a variable that already exists, Python replaces its current value with a new value.</p>
+<p>Examples</p>
+<pre><code>instructor = "marc"         # string value
+instructor = "my evil twin" # same name, diff string value
+instructor = 42             # same name, integer value
+todays_high_temp = 71.3     # diff name, floating point value</code></pre>
+<p>We can track the weight of a patient who weighs 60 kilograms by assigning the value <code>60</code> to a variable <code>weight_kg</code> and then printing the variable to display its current value.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h2><p>Once we have data stored with variable names, we can make use of those variables in our calculations. We call these combinations of variables and values  <strong>expressions</strong>. When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</p>
+<p>For example, we may want to calculate our patient's weight in pounds:</p>
 </div>
 </div>
 </div>
@@ -8433,12 +8013,8 @@ age is 102
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">planet</span> <span class="o">=</span> <span class="s2">"Earth"</span>
-<span class="n">apples</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">distance</span> <span class="o">=</span> <span class="mf">10.5</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">planet</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">apples</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">distance</span><span class="p">))</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">weight_lb</span> <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">weight_kg</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8451,9 +8027,46 @@ age is 102
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'str'&gt;
-&lt;class 'int'&gt;
-&lt;class 'float'&gt;
+<pre>132.66
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We might also decide to add a prefix to our character string representation of a patient ID:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"cardio_"</span> <span class="o">+</span> <span class="n">patient_id</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cardio_001
 </pre>
 </div>
 </div>

@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-1---Welcome-to-PyLearn!">Lesson 1 - Welcome to PyLearn!<a class="anchor-link" href="#Lesson-1---Welcome-to-PyLearn!">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-1---Welcome,-Background,-&amp;-Getting-Started">Lesson 1 - Welcome, Background, &amp; Getting Started<a class="anchor-link" href="#Lesson-1---Welcome,-Background,-&amp;-Getting-Started">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb" target="_blank">Open this notebook in Colab</a></li>
 <li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb" target="_blank">
@@ -7561,7 +7561,36 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h2><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
+<h2 id="To-do">To do<a class="anchor-link" href="#To-do">¶</a></h2><ul>
+<li>Compiled vs. Interpreted</li>
+<li>Compiled and Interpreted programming languages</li>
+<li>Downloading and installing Python</li>
+<li>Using the Python documentation</li>
+<li>The structure of a Python script</li>
+<li>Running Python scripts</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Course-Overview">Course Overview<a class="anchor-link" href="#Course-Overview">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h3><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
 <p>Pylearn is...</p>
 <ul>
 <li><strong>inclusive</strong> - no prerequisites, perfect for beginners</li>
@@ -7582,7 +7611,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Course-Goals">Course Goals<a class="anchor-link" href="#Course-Goals">¶</a></h2><ul>
+<h3 id="Course-Goals">Course Goals<a class="anchor-link" href="#Course-Goals">¶</a></h3><ul>
 <li>Demystify programming in general and Python in particular</li>
 <li>Show how to use Python to solve a real world, relatable problem</li>
 <li>Provide a solid foundation for diving deeper</li>
@@ -7597,7 +7626,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Instructor">Instructor<a class="anchor-link" href="#Instructor">¶</a></h2><p>I'm <a href="https://mco.dev/about-marc">Marc</a>. I love teaching, programming, and teaching programming.</p>
+<h3 id="Instructor">Instructor<a class="anchor-link" href="#Instructor">¶</a></h3><p>I'm <a href="https://mco.dev/about-marc">Marc</a>. I love teaching, programming, and teaching programming.</p>
 <ul>
 <li>My blog can be found at <a href="https://mco.dev">mco.dev</a>.</li>
 <li>My email address is marc@mco.dev.</li>
@@ -7612,7 +7641,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Target-Audience">Target Audience<a class="anchor-link" href="#Target-Audience">¶</a></h2><ul>
+<h3 id="Target-Audience">Target Audience<a class="anchor-link" href="#Target-Audience">¶</a></h3><ul>
 <li>Programming and/or Python beginners</li>
 <li>Underrepresented groups in tech</li>
 <li>Aspiring data scientists</li>
@@ -7628,7 +7657,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Syllabus">Syllabus<a class="anchor-link" href="#Syllabus">¶</a></h2><table>
+<h3 id="Syllabus">Syllabus<a class="anchor-link" href="#Syllabus">¶</a></h3><table>
 <thead>
 <tr>
 <th>Lesson</th>
@@ -7636,17 +7665,11 @@ Open this notebook in Github</a>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>1 Welcome</td>
-<td>Course description and background</td>
-</tr>
-<tr>
-<td>2 Variables and Types</td>
-<td>Basic data types, variables, and assignment statements</td>
-</tr>
 </tbody>
 </table>
-<p>3 Expressions
+<p>1 Welcome, Background, &amp; Getting Started
+2 Types, Variables, &amp; Assignment
+3 Expressions &amp; Operators
 4 Conditionals
 5 Loops
 6 Functions
@@ -7686,7 +7709,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Learning-to-Code">Learning to Code<a class="anchor-link" href="#Learning-to-Code">¶</a></h2><ul>
+<h3 id="Learning-to-Code">Learning to Code<a class="anchor-link" href="#Learning-to-Code">¶</a></h3><ul>
 <li>Programming is a creative activity.</li>
 <li>There has never been a better time in history to learn to code.</li>
 <li>Anyone can learn to program, as long as you’re willing to do the work.</li>
@@ -7711,7 +7734,30 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-an-algorithm?">What is an algorithm?<a class="anchor-link" href="#What-is-an-algorithm?">¶</a></h2><p>A step-by-step procedure for solving a problem or accomplishing some end, especially by a computer</p>
+<h2 id="Background">Background<a class="anchor-link" href="#Background">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="The-March-of-Progress">The March of Progress<a class="anchor-link" href="#The-March-of-Progress">¶</a></h3><p>The cell phone in your pocket has more computing power than all of NASA back in 1969. They used it to put two astronauts on the moon. We use it to play Candy Crush. :)</p>
+<p>Learning to program gives you the power to build amazing things with your computer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-an-algorithm?">What is an algorithm?<a class="anchor-link" href="#What-is-an-algorithm?">¶</a></h3><p>A step-by-step procedure for solving a problem or accomplishing some end, especially by a computer</p>
 <p>Example Algorithm: Marc’s Scrambled Eggs Recipe</p>
 <p><strong>Ingredients:</strong></p>
 <ul>
@@ -7737,7 +7783,23 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-a-programming-language?">What is a programming language?<a class="anchor-link" href="#What-is-a-programming-language?">¶</a></h2><ul>
+<h3 id="What-is-a-program?">What is a program?<a class="anchor-link" href="#What-is-a-program?">¶</a></h3><ul>
+<li>Encoding of an algorithm, in some particular programming language.</li>
+<li>In other words, a set of instructions, which tell a computer how to do something.</li>
+<li>Programming statements are called “source code” or just “code”.</li>
+<li>"Coding" is just another word for programming.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-a-programming-language?">What is a programming language?<a class="anchor-link" href="#What-is-a-programming-language?">¶</a></h3><ul>
 <li>A set of rules for expressing algorithms symbolically.</li>
 <li>Provides an abstraction layer for using your computer to solve a problem.</li>
 <li>Provides a way to reuse other peoples’ work.</li>
@@ -7752,7 +7814,7 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-Python-and-why-learn-it?">What is Python and why learn it?<a class="anchor-link" href="#What-is-Python-and-why-learn-it?">¶</a></h2><ul>
+<h3 id="What-is-Python-and-why-learn-it?">What is Python and why learn it?<a class="anchor-link" href="#What-is-Python-and-why-learn-it?">¶</a></h3><ul>
 <li>a programming language that was invented in 1989 by Dutch programmer Guido van Rossum</li>
 <li>powerful and expressive</li>
 <li>easy to learn</li>
@@ -7808,13 +7870,22 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="To-do">To do<a class="anchor-link" href="#To-do">¶</a></h2><ul>
-<li>Compiled vs. Interpreted</li>
-<li>Compiled and Interpreted programming languages</li>
-<li>Downloading and installing Python</li>
-<li>Using the Python documentation</li>
-<li>The structure of a Python script</li>
-<li>Running Python scripts</li>
+<h2 id="Getting-Started">Getting Started<a class="anchor-link" href="#Getting-Started">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-a-Notebook?">What is a Notebook?<a class="anchor-link" href="#What-is-a-Notebook?">¶</a></h3><ul>
+<li>You're looking at one. :)</li>
+<li>Notebooks are interactive documents where you can read instructions and try your own code experiments in one unified experience.</li>
+<li>The notebooks we're using are called <a href="https://jupyter.org">Jupyter</a> and the hosting service (the notebook provider) is called <a href="https://colab.research.google.com/">Google Colaboratory</a> or just "Colab". This service makes it easy to use and share Python notebooks for free, much like Google Docs.</li>
+<li>Homework for next week: watch this <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short video</a> and take a <a href="https://colab.research.google.com/notebooks/intro.ipynb">quick tour of Colab</a>.</li>
 </ul>
 </div>
 </div>
@@ -7826,12 +7897,437 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-a-Notebook?">What is a Notebook?<a class="anchor-link" href="#What-is-a-Notebook?">¶</a></h2><ul>
-<li>You're looking at one. :)</li>
-<li>Notebooks are interactive documents where you can read instructions and try your own code experiments in one unified experience.</li>
-<li>The notebooks we're using are called <a href="https://jupyter.org">Jupyter</a> and the hosting service (the notebook provider) is called <a href="https://colab.research.google.com/">Google Colaboratory</a> or just "Colab". This service makes it easy to use and share Python notebooks for free, much like Google Docs.</li>
-<li>Homework for next week: watch this <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short video</a> and take a <a href="https://colab.research.google.com/notebooks/intro.ipynb">quick tour of Colab</a>.</li>
+<h3 id="Your-first-Python-program">Your first Python program<a class="anchor-link" href="#Your-first-Python-program">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Hello world!'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Just for context, here's how we wrote that program in 1982:</p>
+<pre><code>HELLO    CSECT               The name of this program is 'HELLO'
+ *                            Register 15 points here on entry from OPSYS or caller.
+          STM   14,12,12(13)  Save registers 14,15, and 0 thru 12 in caller's Save area
+          LR    12,15         Set up base register with program's entry point address
+          USING HELLO,12      Tell assembler which register we are using for pgm. base
+          LA    15,SAVE       Now Point at our own save area
+          ST    15,8(13)      Set forward chain
+          ST    13,4(15)      Set back chain               
+          LR    13,15         Set R13 to address of new save area
+ *                            -end of housekeeping (similar for most programs) -
+          WTO   'Hello World' Write To Operator  (Operating System macro)
+ *
+          L     13,4(13)      restore address to caller-provided save area
+          XC    8(4,13),8(13) Clear forward chain
+          LM    14,12,12(13)  Restore registers as on entry
+          DROP  12            The opposite of 'USING'
+          SR    15,15         Set register 15 to 0 so that the return code (R15) is Zero
+          BR    14            Return to caller
+ *           
+ SAVE     DS    18F           Define 18 fullwords to save calling program registers
+          END  HELLO          This is the end of the program
+
+</code></pre>
+<p>Now you see why I love Python. :)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The <code>print</code> function provides a mechanism to generate output from a Python program. Another useful function to know about is the <code>input</code> function. It's sort of the opposite of <code>print</code>, because it gathers input into your program. Here's an example:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">Hello'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">'!'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Printing a prompt before gathering input is such a common pattern that you can combine them into one function call, like this:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span> <span class="s1">'!'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>🎉 Congratulations - you are now a Python programmer! 🎉</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Errors---when-bad-things-happen-to-good-programs">Errors - when bad things happen to good programs<a class="anchor-link" href="#Errors---when-bad-things-happen-to-good-programs">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="s2">"42"</span> <span class="o">+</span> <span class="s2">"1"</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Three-kinds-of-errors">Three kinds of errors<a class="anchor-link" href="#Three-kinds-of-errors">¶</a></h4><ul>
+<li><strong>syntax errors</strong>: invalid Python</li>
 </ul>
+<pre><code>    print'Hello from Python')
+</code></pre>
+<ul>
+<li><strong>runtime errors</strong>: legal code tries to do something illegal</li>
+</ul>
+<pre><code>    primt('Hello from Python')
+</code></pre>
+<ul>
+<li><strong>logic errors</strong>: code is legal and runs fine but it does the wrong thing</li>
+</ul>
+<pre><code>    age = birth_year - current_year
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Comments">Comments<a class="anchor-link" href="#Comments">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><code>#</code> marks the rest of the line as a "comment"</li>
+<li>Ignored by Python</li>
+<li>useful for documenting your code</li>
+<li>blank lines are also fine and sometimes improve readability</li>
+</ul>
+<p>Example:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Python ignores this line.</span>
+<span class="c1"># print('this line does not print anything when commented out')</span>
+<span class="c1"># The following blank lines are ignored as well...</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">)</span> <span class="c1"># this is a comment</span>
+
+
+<span class="c1"># I can have as many comments and blank lines as I like in a program.</span>
+<span class="c1"># They are for the benefit of me and "future me".</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Try removing the # preceding the print function call in the previous cell. We call this "uncommenting" a line of code.</p>
+<p>Now put the # back in place. We call this "commenting out" a line of code. Often we'll do this to temporarily disable some code from running, where we want to keep the code in place for possible future use.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-a-function?">What is a function?<a class="anchor-link" href="#What-is-a-function?">¶</a></h3><p>A reusable piece of code that completes a specific task.
+We just met two functions - <code>print</code> and <code>input</code> are functions you used to do input/output (I/O) operations.
+We say "call" or "invoke" a function to request that it do its job.
+We do this by writing the function name followed by parentheses (aka brackets).
+We may optionally include some values inside the brackets. We call those values function arguments, or just arguments.
+We'll often refer to this process as "passing arguments" to a function.
+I like to think of the function as a work request and the arguments as the job specification.
+For example, you can pass arguments to the print function to produce just about any desired output.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'test'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'this'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">,</span> <span class="s1">'test'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="More-about-print">More about print<a class="anchor-link" href="#More-about-print">¶</a></h4><p>A print function call with no arguments simply prints a blank line:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Now try calling the print function with something else, like your name...</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'your name here'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Functions are the basic building blocks of a Python program. Later we'll see how to define your own functions. We've seen a simple print function call with zero and one argument:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can also print a sequence of arguments, where spaces are added between each element in sequence, like this:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>By default, we get a newline character at the end of a print request but we can override that behavior using the <code>end</code> argument:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We can also change the separator string, using the <code>sep</code> argument, like this:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We could even use a null (empty) separator:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
