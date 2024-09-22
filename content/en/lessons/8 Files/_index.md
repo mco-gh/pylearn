@@ -7532,10 +7532,36 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
-<ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb" target="_blank">Open this notebook in Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb" target="_blank">Open this notebook in Github</a></li>
+<h1 id="Lesson-6">Lesson 6<a class="anchor-link" href="#Lesson-6">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
+<p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
+<p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Reading-and-Writing-Files">Reading and Writing Files<a class="anchor-link" href="#Reading-and-Writing-Files">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Our-programs-have-amnesia">Our programs have amnesia<a class="anchor-link" href="#Our-programs-have-amnesia">¶</a></h2><ul>
+<li>Program variables reside in memory,</li>
+<li>and main memory is not persistent,</li>
+<li>so when you terminate your program or you turn off your computer, your data disappears.</li>
+<li>imagine having to re-enter your list of friends every time you used Facebook</li>
+<li>so we'll need a way to store and retrieve things</li>
 </ul>
 </div>
 </div>
@@ -7547,9 +7573,15 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
-          
-<a href="https://pylearn.io/lessons/9-Exceptions/">Next Lesson</a></p>
+<h2 id="Storage-Tradeoffs">Storage Tradeoffs<a class="anchor-link" href="#Storage-Tradeoffs">¶</a></h2><ul>
+<li>there are two kinds of storage in your computer<ul>
+<li>main memory, aka RAM, is fast, but transient (like human memory)</li>
+<li>disk storage is slow(er), but permanent (like a notebook) and higher capacity</li>
+</ul>
+</li>
+<li>all the things we've worked with so far (variables, functions, expressions) reside in main memory</li>
+<li>we'll save information across program executions using disk storage in units we call files</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7560,214 +7592,28 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<p>title: Analyzing Data from Multiple Files
-teaching: 20
-exercises: 0
-questions:</p>
-<ul>
-<li>"How can I do the same operations on many different files?"
-objectives:</li>
-<li>"Use a library function to get a list of filenames that match a wildcard pattern."</li>
-<li>"Write a <code>for</code> loop to process multiple files."
-keypoints:</li>
-<li>"Use <code>glob.glob(pattern)</code> to create a list of files whose names match a pattern."</li>
-<li>"Use <code>*</code> in a pattern to match zero or more characters, and <code>?</code> to match any single character."</li>
+<h2 id="What-is-a-file-anyway?">What is a file anyway?<a class="anchor-link" href="#What-is-a-file-anyway?">¶</a></h2><ul>
+<li>a named chunk of persistent disk storage is called a <code>file</code></li>
+<li>files are organized into hierarchical structures, called directories or folders</li>
+<li>examples...<ul>
+<li>Windows:  <code>c:\Users\marccohen\my_fave_movies.md</code></li>
+<li>Mac/Linux: <code>/Users/marccohen/my_fave_movies.md</code></li>
 </ul>
-<hr/>
-<p>As a final piece to processing our inflammation data, we need a way to get a list of all the files
-in our <code>data</code> directory whose names start with <code>inflammation-</code> and end with <code>.csv</code>.
-The following library will help us to achieve this:</p>
-<pre><code>import glob
-</code></pre>
-<p>{: .language-python}</p>
-<p>The <code>glob</code> library contains a function, also called <code>glob</code>,
-that finds files and directories whose names match a pattern.
-We provide those patterns as strings:
-the character <code>*</code> matches zero or more characters,
-while <code>?</code> matches any one character.
-We can use this to get the names of all the CSV files in the current directory:</p>
-<pre><code>print(glob.glob('inflammation*.csv'))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>['inflammation-05.csv', 'inflammation-11.csv', 'inflammation-12.csv', 'inflammation-08.csv',
-'inflammation-03.csv', 'inflammation-06.csv', 'inflammation-09.csv', 'inflammation-07.csv',
-'inflammation-10.csv', 'inflammation-02.csv', 'inflammation-04.csv', 'inflammation-01.csv']
-</code></pre>
-<p>{: .output}</p>
-<p>As these examples show,
-<code>glob.glob</code>'s result is a list of file and directory paths in arbitrary order.
-This means we can loop over it
-to do something with each filename in turn.
-In our case,
-the "something" we want to do is generate a set of plots for each file in our inflammation dataset.</p>
-<p>If we want to start by analyzing just the first three files in alphabetical order, we can use the
-<code>sorted</code> built-in function to generate a new sorted list from the <code>glob.glob</code> output:</p>
-<pre><code>import glob
-import numpy
-import matplotlib.pyplot
-
-filenames = sorted(glob.glob('inflammation*.csv'))
-filenames = filenames[0:3]
-for filename in filenames:
-    print(filename)
-
-    data = numpy.loadtxt(fname=filename, delimiter=',')
-
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
-
-    axes1 = fig.add_subplot(1, 3, 1)
-    axes2 = fig.add_subplot(1, 3, 2)
-    axes3 = fig.add_subplot(1, 3, 3)
-
-    axes1.set_ylabel('average')
-    axes1.plot(numpy.mean(data, axis=0))
-
-    axes2.set_ylabel('max')
-    axes2.plot(numpy.max(data, axis=0))
-
-    axes3.set_ylabel('min')
-    axes3.plot(numpy.min(data, axis=0))
-
-    fig.tight_layout()
-    matplotlib.pyplot.show()
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>inflammation-01.csv
-</code></pre>
-<p>{: .output}</p>
-<p><img alt="Output from the first iteration of the for loop. Three line graphs showing the daily average,
-maximum and minimum inflammation over a 40-day period for all patients in the first dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_1.png?raw=1"/></p>
-<pre><code>inflammation-02.csv
-</code></pre>
-<p>{: .output}</p>
-<p><img alt="Output from the second iteration of the for loop. Three line graphs showing the daily average,
-maximum and minimum inflammation over a 40-day period for all patients in the second
-dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_3.png?raw=1"/></p>
-<pre><code>inflammation-03.csv
-</code></pre>
-<p>{: .output}</p>
-<p><img alt="Output from the third iteration of the for loop. Three line graphs showing the daily average,
-maximum and minimum inflammation over a 40-day period for all patients in the third
-dataset." src="https://github.com/mco-gh/pylearn/blob/master/fig/03-loop_49_5.png?raw=1"/></p>
-<p>The plots generated for the second clinical trial file look very similar to the plots for
-the first file: their average plots show similar "noisy" rises and falls; their maxima plots
-show exactly the same linear rise and fall; and their minima plots show similar staircase
-structures.</p>
-<p>The third dataset shows much noisier average and maxima plots that are far less suspicious than
-the first two datasets, however the minima plot shows that the third dataset minima is
-consistently zero across every day of the trial. If we produce a heat map for the third data file
-we see the following:</p>
-<p><img alt="Heat map of the third inflammation dataset. Note that there are sporadic zero values throughout
-the entire dataset, and the last patient only has zero values over the 40 day study.
-" src="https://github.com/mco-gh/pylearn/blob/master/fig/inflammation-03-imshow.svg?raw=1"/></p>
-<p>We can see that there are zero values sporadically distributed across all patients and days of the
-clinical trial, suggesting that there were potential issues with data collection throughout the
-trial. In addition, we can see that the last patient in the study didn't have any inflammation
-flare-ups at all throughout the trial, suggesting that they may not even suffer from arthritis!</p>
-<blockquote>
-<h2 id="Plotting-Differences">Plotting Differences<a class="anchor-link" href="#Plotting-Differences">¶</a></h2><p>Plot the difference between the average inflammations reported in the first and second datasets
-(stored in <code>inflammation-01.csv</code> and <code>inflammation-02.csv</code>, correspondingly),
-i.e., the difference between the leftmost plots of the first two figures.</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>import glob
-import numpy
-import matplotlib.pyplot
-
-filenames = sorted(glob.glob('inflammation*.csv'))
-
-data0 = numpy.loadtxt(fname=filenames[0], delimiter=',')
-data1 = numpy.loadtxt(fname=filenames[1], delimiter=',')
-
-fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
-
-matplotlib.pyplot.ylabel('Difference in average')
-matplotlib.pyplot.plot(numpy.mean(data0, axis=0) - numpy.mean(data1, axis=0))
-
-fig.tight_layout()
-matplotlib.pyplot.show()
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Generate-Composite-Statistics">Generate Composite Statistics<a class="anchor-link" href="#Generate-Composite-Statistics">¶</a></h2><p>Use each of the files once to generate a dataset containing values averaged over all patients:</p>
-<pre><code>filenames = glob.glob('inflammation*.csv')
-composite_data = numpy.zeros((60,40))
-for filename in filenames:
-    # sum each new file's data into composite_data as it's read
-    #
-# and then divide the composite_data by number of samples
-composite_data = composite_data / len(filenames)
-</code></pre>
-<p>{: .language-python}</p>
-<p>Then use pyplot to generate average, max, and min for all patients.</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>import glob
-import numpy
-import matplotlib.pyplot
-
-filenames = glob.glob('inflammation*.csv')
-composite_data = numpy.zeros((60,40))
-
-for filename in filenames:
-    data = numpy.loadtxt(fname = filename, delimiter=',')
-    composite_data = composite_data + data
-
-composite_data = composite_data / len(filenames)
-
-fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
-
-axes1 = fig.add_subplot(1, 3, 1)
-axes2 = fig.add_subplot(1, 3, 2)
-axes3 = fig.add_subplot(1, 3, 3)
-
-axes1.set_ylabel('average')
-axes1.plot(numpy.mean(composite_data, axis=0))
-
-axes2.set_ylabel('max')
-axes2.plot(numpy.max(composite_data, axis=0))
-
-axes3.set_ylabel('min')
-axes3.plot(numpy.min(composite_data, axis=0))
-
-fig.tight_layout()
-
-matplotlib.pyplot.show()
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<p>After spending some time investigating the heat map and statistical plots, as well as
-doing the above exercises to plot differences between datasets and to generate composite
-patient statistics, we gain some insight into the twelve clinical trial datasets.</p>
-<p>The datasets appear to fall into two categories:</p>
-<ul>
-<li>seemingly "ideal" datasets that agree excellently with Dr. Maverick's claims,
-but display suspicious maxima and minima (such as <code>inflammation-01.csv</code> and <code>inflammation-02.csv</code>)</li>
-<li>"noisy" datasets that somewhat agree with Dr. Maverick's claims, but show concerning
-data collection issues such as sporadic missing values and even an unsuitable candidate
-making it into the clinical trial.</li>
+</li>
+<li><code>path</code> is the location, e.g. <code>c:\Users\marccohen\</code><ul>
+<li>it's the "where"</li>
 </ul>
-<p>In fact, it appears that all three of the "noisy" datasets (<code>inflammation-03.csv</code>,
-<code>inflammation-08.csv</code>, and <code>inflammation-11.csv</code>) are identical down to the last value.
-Armed with this information, we confront Dr. Maverick about the suspicious data and
-duplicated files.</p>
-<p>Dr. Maverick confesses that they fabricated the clinical data after they found out
-that the initial trial suffered from a number of issues, including unreliable data-recording and
-poor participant selection. They created fake data to prove their drug worked, and when we asked
-for more data they tried to generate more fake datasets, as well as throwing in the original
-poor-quality dataset a few times to try and make all the trials seem a bit more "realistic".</p>
-<p>Congratulations! We've investigated the inflammation data and proven that the datasets have been
-synthetically generated.</p>
-<p>But it would be a shame to throw away the synthetic datasets that have taught us so much
-already, so we'll forgive the imaginary Dr. Maverick and continue to use the data to learn
-how to program.</p>
-<p>{% include links.md %}</p>
+</li>
+<li><code>filename</code> is the name, e.g. <code>my_fave_movies.md</code><ul>
+<li>it's the "which"</li>
+</ul>
+</li>
+</ul>
+<pre><code>Queen Elizabeth   -----&gt; the which
+Buckingham Palace \
+London, England    |---&gt; the where
+SW1A 1AA.         /
+</code></pre>
 </div>
 </div>
 </div>
@@ -7778,9 +7624,817 @@ how to program.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
-          
-<a href="https://pylearn.io/lessons/9-Exceptions/">Next Lesson</a></p>
+<h2 id="Opening-a-File">Opening a File<a class="anchor-link" href="#Opening-a-File">¶</a></h2><ul>
+<li>Before you can read or write a file, you need to open it</li>
+<li>Use the <code>open()</code> function</li>
+<li>prototype: <code>variable = open(filename, mode)</code></li>
+<li>example: <code>file = open("myfile", "r")</code></li>
+<li>the first argument is a file specificaton, which can include a path or not</li>
+<li>if no path provided, the filename is assumed to reside in the "current directory"</li>
+<li>we'll cover the second argument in the next cell</li>
+<li>open returns a special type, called a file object, which is used for subsequent operations on the file</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="File-Access-Modes">File Access Modes<a class="anchor-link" href="#File-Access-Modes">¶</a></h2><table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+<th>access</th>
+<th>if file exists...</th>
+<th>if file doesn't exist...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"r"</td>
+<td>read from a file</td>
+<td>read</td>
+<td>open file</td>
+<td>generate error</td>
+</tr>
+<tr>
+<td>"w"</td>
+<td>write to a file</td>
+<td>write</td>
+<td>overwrite &amp; open</td>
+<td>create file &amp; open</td>
+</tr>
+<tr>
+<td>"a"</td>
+<td>append to a file</td>
+<td>write</td>
+<td>open for append</td>
+<td>create file &amp; open</td>
+</tr>
+<tr>
+<td>"r+"</td>
+<td>read/write from/to a file</td>
+<td>read/write</td>
+<td>open file</td>
+<td>generate error</td>
+</tr>
+<tr>
+<td>"w+"</td>
+<td>write/read from/to a file</td>
+<td>read/write</td>
+<td>overwrite &amp; open</td>
+<td>create file &amp; open</td>
+</tr>
+<tr>
+<td>"a+"</td>
+<td>append/read a text file</td>
+<td>read/write</td>
+<td>open for append</td>
+<td>create file &amp; open</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Closing-a-File">Closing a File<a class="anchor-link" href="#Closing-a-File">¶</a></h2><ul>
+<li>the opposite of <code>open()</code> is <code>close()</code></li>
+<li>when you're done working with a file, you should close it</li>
+<li>closing a file cleans up the loose ends</li>
+<li><code>close()</code> is a method of the file object</li>
+<li>example: <code>file.close()</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Writing-to-a-File">Writing to a File<a class="anchor-link" href="#Writing-to-a-File">¶</a></h2><ul>
+<li><code>file.write('this is a line of text\n')</code></li>
+<li>file must have been opened with write access</li>
+<li>writes the passed string into the file</li>
+<li>you have to include newline characters where you want them, otherwise subsequent write calls will build one long line</li>
+<li>writes may not be visible until you close the file</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'This is my test file.</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+  <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'line number '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Reading-From-a-File">Reading From a File<a class="anchor-link" href="#Reading-From-a-File">¶</a></h2><ul>
+<li><code>mystr = file.read()</code></li>
+<li>file must have been opened with read access</li>
+<li>reads the entire file into memory</li>
+<li>the result is returned in a string</li>
+<li>you can pass an argument to limit how many characters are read</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Reading-a-file-iteratively">Reading a file iteratively<a class="anchor-link" href="#Reading-a-file-iteratively">¶</a></h2><ul>
+<li><code>for line in file:</code></li>
+<li>this iterates over the lines in a file</li>
+<li>each iteration of the loop reads a line from the file and sets the loop variable (line, in this case) to the string value of each line in the file</li>
+<li>the string includes the trailing newline</li>
+<li>this is a very handy way of processing a text file one line at a time</li>
+<li>also space-efficient because it only needs to store one line at a time in main memory</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>test.txt
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#myfile = open('test.txt', 'r')</span>
+<span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">myfile</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="The-with-Statement">The <code>with</code> Statement<a class="anchor-link" href="#The-with-Statement">¶</a></h2><ul>
+<li>automatically ensures files get closed (and other resoures get cleaned up)</li>
+<li>without the <code>with</code> statement...</li>
+</ul>
+<pre><code>file = open('file_path', 'w')
+file.write('Hello world!')
+file.close()
+</code></pre>
+<ul>
+<li>using the <code>with</code> statement...</li>
+</ul>
+<pre><code>with open('file_path', 'w') as file:
+    file.write('Hello world!')
+</code></pre>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Summary-of-File-Functions-and-Methods">Summary of File Functions and Methods<a class="anchor-link" href="#Summary-of-File-Functions-and-Methods">¶</a></h2><ul>
+<li><code>open()</code> - open a file</li>
+<li><code>close()</code> - close a file</li>
+<li><code>read(n)</code> - read up to n chars from current position to end of file and return in a string. if n not provided, read all chars from current position to end of file.</li>
+<li><code>readlines()</code> - read all remaining lines in a file and return in a list of strings.</li>
+<li><code>write(s)</code> - write string s to a file</li>
+<li><code>writelines(list)</code> - write the strings in the passed list to a file</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="When-you-run-a-cell-in-a-notebook,-where-does-it-actually-run?">When you run a cell in a notebook, where does it actually run?<a class="anchor-link" href="#When-you-run-a-cell-in-a-notebook,-where-does-it-actually-run?">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="No description has been provided for this image" src="https://lh3.googleusercontent.com/LWgdIXTXW6nO0Wi5rGpEJoZ5Hd4EtXq8gm55_wyfIcfZOs07paFyWlrlFUyl9bRCKFKpS_I3nP6O4CN8vXwWG0bV2XtAUH4X2PRWiQ=w1200-l80-sg-rj-c0xffffff"/>
+<p><a href="https://www.google.com/about/datacenters/">Learn more.</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<img alt="No description has been provided for this image" src="https://docs.google.com/drawings/d/e/2PACX-1vQh48LKMQ7Y4bNewgnLj2a429ZjV4yFS2ghfKXiK1Wn1skq5JH1sMGtrGaU7MYPkN_m-bXCRWqSZpB-/pub?w=1440&amp;h=1080"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Let's-do-a-project-together">Let's do a project together<a class="anchor-link" href="#Let's-do-a-project-together">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problem-Statement">Problem Statement<a class="anchor-link" href="#Problem-Statement">¶</a></h2><p>Enable people to automatically find articles of interest from their favorite news sites.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Requirements">Requirements<a class="anchor-link" href="#Requirements">¶</a></h2><h3 id="Must...">Must...<a class="anchor-link" href="#Must...">¶</a></h3><ul>
+<li>maintain a configurable list of target websites</li>
+<li>support a per-user configurable list of topics of interest</li>
+<li>keep track of what we've already seen</li>
+<li>must be automated, no manual steps other than running the app</li>
+<li>must present results via web app</li>
+</ul>
+<h3 id="Should">Should<a class="anchor-link" href="#Should">¶</a></h3><ul>
+<li>should be able to automatically and regularly run app on a scheduled basis</li>
+<li>should provide ability to send daily summaries by email</li>
+<li>should provide a more sophisticated way of gauging interest than topic enumeration (e.g. machine learning)</li>
+<li>should run in the cloud</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problem-Decomposition">Problem Decomposition<a class="anchor-link" href="#Problem-Decomposition">¶</a></h2><ul>
+<li>we can follow a pattern that many data science projects use</li>
+</ul>
+<pre><code>gather =&gt; format =&gt; model =&gt; report
+</code></pre>
+<ol>
+<li><strong>gather</strong> - data acquisition, getting your hands on the data you care about</li>
+<li><strong>format</strong> - data engineering, convert the data into a format you can use</li>
+<li><strong>model</strong> - data modeling, build prediction and/or classification model(s) to categorize and assess discovered data</li>
+<li><strong>report</strong> - present the insights visually and/or analytically</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Step-1---Gather">Step 1 - Gather<a class="anchor-link" href="#Step-1---Gather">¶</a></h2><p>Given a list of websites, gather all available articles.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Can-we-reuse-some-code?">Can we reuse some code?<a class="anchor-link" href="#Can-we-reuse-some-code?">¶</a></h2><p>Yes! We're going to use the <a href="https://github.com/kotartemiy/newscatcher">NewsCatcher API</a>, which is a Python library that claims to: <em>Programmatically collect normalized news from (almost) any website.</em></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let's install it...</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>newscatcher
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let's try it out...</span>
+<span class="kn">from</span> <span class="nn">newscatcher</span> <span class="kn">import</span> <span class="n">Newscatcher</span>
+<span class="n">nc</span> <span class="o">=</span> <span class="n">Newscatcher</span><span class="p">(</span><span class="n">website</span><span class="o">=</span><span class="s1">'theguardian.com'</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">get_news</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">results</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Find out how many websites are supported...</span>
+<span class="kn">from</span> <span class="nn">newscatcher</span> <span class="kn">import</span> <span class="n">urls</span>
+<span class="n">sites</span> <span class="o">=</span> <span class="n">urls</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'number of sites supported:'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sites</span><span class="p">))</span>
+<span class="n">unique_sites</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">sites</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'unique sites:'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">unique_sites</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get some articles...</span>
+<span class="n">nc</span> <span class="o">=</span> <span class="n">Newscatcher</span><span class="p">(</span><span class="n">website</span><span class="o">=</span><span class="s1">'theguardian.com'</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">get_news</span><span class="p">()</span>
+<span class="n">articles</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">'articles'</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">articles</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'number of articles:'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">articles</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'article keys:'</span><span class="p">,</span> <span class="n">articles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+  <span class="nb">id</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span>
+  <span class="n">title</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">cnt</span><span class="si">:</span><span class="s1">2d</span><span class="si">}</span><span class="s1">. </span><span class="si">{</span><span class="n">title</span><span class="si">:</span><span class="s1">70.70s</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+  <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># List topics...</span>
+<span class="kn">from</span> <span class="nn">newscatcher</span> <span class="kn">import</span> <span class="n">describe_url</span>
+<span class="n">describe</span> <span class="o">=</span> <span class="n">describe_url</span><span class="p">(</span><span class="s1">'nytimes.com'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">describe</span><span class="p">[</span><span class="s1">'topics'</span><span class="p">])</span>
+<span class="n">describe</span> <span class="o">=</span> <span class="n">describe_url</span><span class="p">(</span><span class="s1">'fivethirtyeight.com'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">describe</span><span class="p">[</span><span class="s1">'topics'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get articles with a specific topic...</span>
+<span class="n">nc</span> <span class="o">=</span> <span class="n">Newscatcher</span><span class="p">(</span><span class="n">website</span><span class="o">=</span><span class="s1">'fivethirtyeight.com'</span><span class="p">,</span> <span class="n">topic</span><span class="o">=</span><span class="s1">'science'</span><span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">get_news</span><span class="p">()</span>
+<span class="n">articles</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">'articles'</span><span class="p">]</span>
+
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+  <span class="nb">id</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span>
+  <span class="n">title</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">cnt</span><span class="si">:</span><span class="s1">2d</span><span class="si">}</span><span class="s1">. </span><span class="si">{</span><span class="n">title</span><span class="si">:</span><span class="s1">70.70s</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+  <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function to get articles from a given site with a given topic...</span>
+<span class="k">def</span> <span class="nf">get_new_articles</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">topic</span><span class="p">):</span>
+  <span class="n">nc</span> <span class="o">=</span> <span class="n">Newscatcher</span><span class="p">(</span><span class="n">website</span><span class="o">=</span><span class="n">site</span><span class="p">,</span> <span class="n">topic</span><span class="o">=</span><span class="n">topic</span><span class="p">)</span>
+  <span class="n">results</span> <span class="o">=</span> <span class="n">nc</span><span class="o">.</span><span class="n">get_news</span><span class="p">()</span>
+  <span class="c1"># Return the articles</span>
+  <span class="k">if</span> <span class="n">results</span><span class="p">:</span>
+    <span class="k">if</span> <span class="s1">'articles'</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+      <span class="k">return</span> <span class="n">results</span><span class="p">[</span><span class="s1">'articles'</span><span class="p">]</span>
+  <span class="k">return</span> <span class="kc">None</span>
+
+<span class="c1"># Function to display articles from a set of results...</span>
+<span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">articles</span><span class="p">):</span>
+  <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">articles</span><span class="p">:</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">i</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">cnt</span><span class="si">:</span><span class="s1">2d</span><span class="si">}</span><span class="s1">. </span><span class="si">{</span><span class="n">title</span><span class="si">:</span><span class="s1">70.70s</span><span class="si">}</span><span class="s1">  </span><span class="si">{</span><span class="nb">id</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">get_new_articles</span><span class="p">(</span><span class="s1">'nytimes.com'</span><span class="p">,</span> <span class="s1">'food'</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Let define some selection criteria...</span>
+
+<span class="c1"># sites of interest</span>
+<span class="n">sites</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">'nytimes.com'</span><span class="p">,</span>
+  <span class="s1">'washingtonpost.com'</span><span class="p">,</span>
+  <span class="s1">'theguardian.com'</span><span class="p">,</span>
+  <span class="s1">'si.com'</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># topics of interest</span>
+<span class="n">topics</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">'politics'</span><span class="p">,</span>
+  <span class="s1">'tech'</span><span class="p">,</span>
+  <span class="s1">'business'</span><span class="p">,</span>
+  <span class="s1">'sport'</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'sites:'</span><span class="p">,</span> <span class="n">sites</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'topics:'</span><span class="p">,</span> <span class="n">topics</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">all_articles</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sites</span><span class="p">:</span>
+  <span class="n">tmp</span> <span class="o">=</span> <span class="n">describe_url</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="n">topic_list</span> <span class="o">=</span> <span class="n">tmp</span><span class="p">[</span><span class="s1">'topics'</span><span class="p">]</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'site: </span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s1">20.20s</span><span class="si">}</span><span class="s1">  topic: </span><span class="si">{</span><span class="n">j</span><span class="si">:</span><span class="s1">20.20s</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">j</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">topic_list</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s1">'topic not available'</span><span class="p">)</span>
+      <span class="k">continue</span>
+    <span class="n">articles</span> <span class="o">=</span> <span class="n">get_new_articles</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">articles</span><span class="p">))</span>
+    <span class="n">all_articles</span> <span class="o">+=</span> <span class="n">articles</span>
+
+<span class="c1">#display(all_articles)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_news</span><span class="p">(</span><span class="n">sites</span><span class="p">,</span> <span class="n">topics</span><span class="p">):</span>
+  <span class="n">all_articles</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sites</span><span class="p">:</span>
+    <span class="n">topic_list</span> <span class="o">=</span> <span class="n">describe_url</span><span class="p">(</span><span class="n">i</span><span class="p">)[</span><span class="s1">'topics'</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">j</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">topic_list</span><span class="p">:</span>
+        <span class="k">continue</span>
+      <span class="n">articles</span> <span class="o">=</span> <span class="n">get_new_articles</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+      <span class="n">all_articles</span> <span class="o">+=</span> <span class="n">articles</span>
+  <span class="k">return</span> <span class="n">all_articles</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">get_news</span><span class="p">([</span><span class="s1">'nytimes.com'</span><span class="p">,</span> <span class="s1">'washingtonpost.com'</span><span class="p">],</span> <span class="n">topics</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">results</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Lesson-6-Homework">Lesson 6 Homework<a class="anchor-link" href="#Lesson-6-Homework">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
+<li>Review your copy of this notebook.<ul>
+<li>Complete the questions below.</li>
+<li>If something is unclear, experiment and see if you can understand it better.</li>
+</ul>
+</li>
+<li>For those who want to go deeper...<ul>
+<li>Read <a href="https://automatetheboringstuff.com/2e/chapter9/">Chapter 9 - Reading and Writing Files</a> in our textbook to learn more about web scraping.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>In the Mu IDE (or your chosen IDE if you use another one), write a function named <code>enumerate()</code> that takes a list of strings and enumerates them, i.e. it returns a list where each passed string is prefixe by a sequential number, starting at 1. For example...</p>
+<pre><code>li = ['test', 'another test', 'last test']
+results = enumerate(li)
+for i in results:
+  print(i)
+</code></pre>
+<p>should produce this output:</p>
+<pre><code>1. test
+2. another test
+3. last test
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Download this file: <code>input.txt</code>. Using Mu, write a function called <code>read_file()</code> that takes one string argument, opens the named file, and uses a <code>for</code> loop to read each line of the file into a list of strings. Get rid of newlines at the end of each line using the <code>strip()</code> string method. Return the list of strings to the caller.</p>
+<p>For example:</p>
+<pre><code>results = read_file('input.txt')
+for i in results:
+  print(i)
+</code></pre>
+<p>should produce this output:</p>
+<pre><code>Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty,
+and dedicated to the proposition that all men are created equal.
+
+Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated,
+can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field,
+as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting
+and proper that we should do this.
+
+But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men,
+living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world
+will little note, nor long remember what we say here, but it can never forget what they did here. It is for us
+the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly
+advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored
+dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here
+highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth
+of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Using Mu, write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
+<p>For example:</p>
+<pre><code>li = ['test', 'another test', 'last test']
+write_file('output.txt', li)
+</code></pre>
+<p>Using your systems file explorer or command line, verify the file was created and has the expected contents. If you're not sure how to do that, you could also use your new <code>read_file()</code> function!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Now tie everything together by writing a program that reads the contents of <code>input.txt</code> (using <code>read_file()</code>), enumerates the lines found therein (using <code>enumerate()</code>, and writes the enumerated lines to <code>output.txt</code> (using <code>write_file()</code>).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h2><p>Copy/paste the code from our newsfinder program to Mu and see if you can get it working locally, on your own computer. Play around with the sites and topics lists to customize the results to your own needs.</p>
+<p><strong>NOTE</strong>: You will need to install two packages in Mu. Do this by clicking on the gear icon in the lower right corner, as shown here:</p>
+<img alt="No description has been provided for this image" src="https://mco.dev/img/mu1.png"/>
+<p>Enter the two required packages <code>feedparser==6.0.0</code> (two equal signs!) and <code>newscatcher</code>  into this dialog and click OK.</p>
+<img alt="No description has been provided for this image" src="https://mco.dev/img/mu2.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Next-Week---Web-Servers">Next Week - Web Servers<a class="anchor-link" href="#Next-Week---Web-Servers">¶</a></h1><p>We're going to use files to keep track of which articles we've already seen and we're going to build a web user interface on top of our newsfinder program.</p>
 </div>
 </div>
 </div>
