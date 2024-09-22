@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-3---Expressions">Lesson 3 - Expressions<a class="anchor-link" href="#Lesson-3---Expressions">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-3---Expressions-&amp;-Operators">Lesson 3 - Expressions &amp; Operators<a class="anchor-link" href="#Lesson-3---Expressions-&amp;-Operators">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb" target="_blank">Open this notebook in Colab
 </a></li>
@@ -7571,34 +7571,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Constants-vs.-Variables">Constants vs. Variables<a class="anchor-link" href="#Constants-vs.-Variables">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><p>Literal values (like <code>"marc"</code> and <code>2024</code>) are called constants because their value is fixed, unlike variables, whose associated value may change (or <em>vary</em>) over time.</p>
-</li>
-<li><p>The data a variable refers to may be simple, e.g. a number or a string, or it may be complex, e.g. a list or an object (we'll learn about those later).</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">¶</a></h1><p>In Python, values have a <em>type</em>. We already saw three data types in the previous lesson. In this lesson we'll learn about some additional types, how to determine a variable's type, how to convert a value from one type to another, and how to combine variable into complex expressions.</p>
+<h1 id="More-Data-Types">More Data Types<a class="anchor-link" href="#More-Data-Types">¶</a></h1><p>In Python, values have a <em>type</em>. We already saw three data types in the previous lesson. In this lesson we'll learn about some additional types, how to determine a variable's type, how to convert a value from one type to another, and how to combine variable into complex expressions.</p>
 </div>
 </div>
 </div>
@@ -7767,6 +7740,59 @@ a.anchor-link {
 <span class="n">type_none</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">type_int</span><span class="p">,</span> <span class="n">type_float</span><span class="p">,</span> <span class="n">type_str</span><span class="p">,</span> <span class="n">type_bool</span><span class="p">,</span> <span class="n">type_none</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h2><p>Once we have data stored with variable names, we can make use of those variables in our calculations. We call these combinations of variables and values  <strong>expressions</strong>. When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</p>
+<p>For example, we may want to calculate our patient's weight in pounds:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">weight_lb</span> <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">weight_kg</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>We might also decide to add a prefix to our character string representation of a patient ID:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"cardio_"</span> <span class="o">+</span> <span class="n">patient_id</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

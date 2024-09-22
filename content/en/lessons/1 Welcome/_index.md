@@ -7539,7 +7539,12 @@ a.anchor-link {
 Open this notebook in Github</a>
 </li>
 </ul>
-<p>PyLearn is a Python course built using Google Colab. Each lesson uses a Colab notebook to explain some concepts and to give students immediate practice programming in Python.</p>
+<p>Things you'll learn in this lesson:</p>
+<ul>
+<li>An overview of this course</li>
+<li>A brief background on computing, programming, and Python</li>
+<li>Some getting start material</li>
+</ul>
 </div>
 </div>
 </div>
