@@ -7560,773 +7560,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<p>title: Creating Functions
-teaching: 30
-exercises: 0
-questions:</p>
-<ul>
-<li>"How can I define new functions?"</li>
-<li>"What's the difference between defining and calling a function?"</li>
-<li>"What happens when I call a function?"
-objectives:</li>
-<li>"Define a function that takes parameters."</li>
-<li>"Return a value from a function."</li>
-<li>"Test and debug a function."</li>
-<li>"Set default values for function parameters."</li>
-<li>"Explain why we should divide programs into small, single-purpose functions."
-keypoints:</li>
-<li>"Define a function using <code>def function_name(parameter)</code>."</li>
-<li>"The body of a function must be indented."</li>
-<li>"Call a function using <code>function_name(value)</code>."</li>
-<li>"Numbers are stored as integers or floating-point numbers."</li>
-<li>"Variables defined within a function can only be seen and used within the body of the function."</li>
-<li>"Variables created outside of any function are called global variables."</li>
-<li>"Within a function, we can access global variables."</li>
-<li>"Variables created within a function override global variables if their names match."</li>
-<li>"Use <code>help(thing)</code> to view help for something."</li>
-<li>"Put docstrings in functions to provide help for that function."</li>
-<li>"Specify default values for parameters when defining a function using <code>name=value</code>
-in the parameter list."</li>
-<li>"Parameters can be passed by matching based on name, by position,
-or by omitting them (in which case the default value is used)."</li>
-<li>"Put code whose parameters change frequently in a function,
-then call it with different parameter values to customize its behavior."</li>
-</ul>
-<hr/>
-<p>At this point,
-we've written code to draw some interesting features in our inflammation data,
-loop over all our data files to quickly draw these plots for each of them,
-and have Python make decisions based on what it sees in our data.
-But, our code is getting pretty long and complicated;
-what if we had thousands of datasets,
-and didn't want to generate a figure for every single one?
-Commenting out the figure-drawing code is a nuisance.
-Also, what if we want to use that code again,
-on a different dataset or at a different point in our program?
-Cutting and pasting it is going to make our code get very long and very repetitive,
-very quickly.
-We'd like a way to package our code so that it is easier to reuse,
-and Python provides for this by letting us define things called 'functions' ---
-a shorthand way of re-executing longer pieces of code.
-Let's start by defining a function <code>fahr_to_celsius</code> that converts temperatures
-from Fahrenheit to Celsius:</p>
-<pre><code>def fahr_to_celsius(temp):
-    return ((temp - 32) * (5/9))
-</code></pre>
-<p>{: .language-python}</p>
-<p><img alt="Labeled parts of a Python function definition" src="https://github.com/mco-gh/pylearn/blob/master/fig/python-function.svg?raw=1"/></p>
-<p>The function definition opens with the keyword <code>def</code> followed by the
-name of the function (<code>fahr_to_celsius</code>) and a parenthesized list of parameter names (<code>temp</code>). The
-[body]({{ page.root }}/reference.html#body) of the function --- the
-statements that are executed when it runs --- is indented below the
-definition line.  The body concludes with a <code>return</code> keyword followed by the return value.</p>
-<p>When we call the function,
-the values we pass to it are assigned to those variables
-so that we can use them inside the function.
-Inside the function,
-we use a [return statement]({{ page.root }}/reference.html#return-statement) to send a result
-back to whoever asked for it.</p>
-<p>Let's try running our function.</p>
-<pre><code>fahr_to_celsius(32)
-</code></pre>
-<p>{: .language-python}</p>
-<p>This command should call our function, using "32" as the input and return the function value.</p>
-<p>In fact, calling our own function is no different from calling any other function:</p>
-<pre><code>print('freezing point of water:', fahr_to_celsius(32), 'C')
-print('boiling point of water:', fahr_to_celsius(212), 'C')
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>freezing point of water: 0.0 C
-boiling point of water: 100.0 C
-</code></pre>
-<p>{: .output}</p>
-<p>We've successfully called the function that we defined,
-and we have access to the value that we returned.</p>
-<h2 id="Composing-Functions">Composing Functions<a class="anchor-link" href="#Composing-Functions">¶</a></h2><p>Now that we've seen how to turn Fahrenheit into Celsius,
-we can also write the function to turn Celsius into Kelvin:</p>
-<pre><code>def celsius_to_kelvin(temp_c):
-    return temp_c + 273.15
-
-print('freezing point of water in Kelvin:', celsius_to_kelvin(0.))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>freezing point of water in Kelvin: 273.15
-</code></pre>
-<p>{: .output}</p>
-<p>What about converting Fahrenheit to Kelvin?
-We could write out the formula,
-but we don't need to.
-Instead,
-we can [compose]({{ page.root }}/reference.html#compose) the two functions we have already created:</p>
-<pre><code>def fahr_to_kelvin(temp_f):
-    temp_c = fahr_to_celsius(temp_f)
-    temp_k = celsius_to_kelvin(temp_c)
-    return temp_k
-
-print('boiling point of water in Kelvin:', fahr_to_kelvin(212.0))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>boiling point of water in Kelvin: 373.15
-</code></pre>
-<p>{: .output}</p>
-<p>This is our first taste of how larger programs are built:
-we define basic operations,
-then combine them in ever-larger chunks to get the effect we want.
-Real-life functions will usually be larger than the ones shown here --- typically half a dozen
-to a few dozen lines --- but they shouldn't ever be much longer than that,
-or the next person who reads it won't be able to understand what's going on.</p>
-<h2 id="Variable-Scope">Variable Scope<a class="anchor-link" href="#Variable-Scope">¶</a></h2><p>In composing our temperature conversion functions, we created variables inside of those functions,
-<code>temp</code>, <code>temp_c</code>, <code>temp_f</code>, and <code>temp_k</code>.
-We refer to these variables as [local variables]({{ page.root }}/reference.html#local-variable)
-because they no longer exist once the function is done executing.
-If we try to access their values outside of the function, we will encounter an error:</p>
-<pre><code>print('Again, temperature in Kelvin was:', temp_k)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-1-eed2471d229b&gt; in &lt;module&gt;
-----&gt; 1 print('Again, temperature in Kelvin was:', temp_k)
-
-NameError: name 'temp_k' is not defined
-</code></pre>
-<p>{: .error}</p>
-<p>If you want to reuse the temperature in Kelvin after you have calculated it with <code>fahr_to_kelvin</code>,
-you can store the result of the function call in a variable:</p>
-<pre><code>temp_kelvin = fahr_to_kelvin(212.0)
-print('temperature in Kelvin was:', temp_kelvin)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>temperature in Kelvin was: 373.15
-</code></pre>
-<p>{: .output}</p>
-<p>The variable <code>temp_kelvin</code>, being defined outside any function,
-is said to be [global]({{ page.root }}/reference.html#global-variable).</p>
-<p>Inside a function, one can read the value of such global variables:</p>
-<pre><code>def print_temperatures():
-  print('temperature in Fahrenheit was:', temp_fahr)
-  print('temperature in Kelvin was:', temp_kelvin)
-
-temp_fahr = 212.0
-temp_kelvin = fahr_to_kelvin(temp_fahr)
-
-print_temperatures()
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>temperature in Fahrenheit was: 212.0
-temperature in Kelvin was: 373.15
-</code></pre>
-<p>{: .output}</p>
-<h2 id="Tidying-up">Tidying up<a class="anchor-link" href="#Tidying-up">¶</a></h2><p>Now that we know how to wrap bits of code up in functions,
-we can make our inflammation analysis easier to read and easier to reuse.
-First, let's make a <code>visualize</code> function that generates our plots:</p>
-<pre><code>def visualize(filename):
-
-    data = numpy.loadtxt(fname=filename, delimiter=',')
-
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
-
-    axes1 = fig.add_subplot(1, 3, 1)
-    axes2 = fig.add_subplot(1, 3, 2)
-    axes3 = fig.add_subplot(1, 3, 3)
-
-    axes1.set_ylabel('average')
-    axes1.plot(numpy.mean(data, axis=0))
-
-    axes2.set_ylabel('max')
-    axes2.plot(numpy.max(data, axis=0))
-
-    axes3.set_ylabel('min')
-    axes3.plot(numpy.min(data, axis=0))
-
-    fig.tight_layout()
-    matplotlib.pyplot.show()
-</code></pre>
-<p>{: .language-python}</p>
-<p>and another function called <code>detect_problems</code> that checks for those systematics
-we noticed:</p>
-<pre><code>def detect_problems(filename):
-
-    data = numpy.loadtxt(fname=filename, delimiter=',')
-
-    if numpy.max(data, axis=0)[0] == 0 and numpy.max(data, axis=0)[20] == 20:
-        print('Suspicious looking maxima!')
-    elif numpy.sum(numpy.min(data, axis=0)) == 0:
-        print('Minima add up to zero!')
-    else:
-        print('Seems OK!')
-</code></pre>
-<p>{: .language-python}</p>
-<p>Wait! Didn't we forget to specify what both of these functions should return? Well, we didn't.
-In Python, functions are not required to include a <code>return</code> statement and can be used for
-the sole purpose of grouping together pieces of code that conceptually do one thing. In such cases,
-function names usually describe what they do, <em>e.g.</em> <code>visualize</code>, <code>detect_problems</code>.</p>
-<p>Notice that rather than jumbling this code together in one giant <code>for</code> loop,
-we can now read and reuse both ideas separately.
-We can reproduce the previous analysis with a much simpler <code>for</code> loop:</p>
-<pre><code>filenames = sorted(glob.glob('inflammation*.csv'))
-
-for filename in filenames[:3]:
-    print(filename)
-    visualize(filename)
-    detect_problems(filename)
-</code></pre>
-<p>{: .language-python}</p>
-<p>By giving our functions human-readable names,
-we can more easily read and understand what is happening in the <code>for</code> loop.
-Even better, if at some later date we want to use either of those pieces of code again,
-we can do so in a single line.</p>
-<h2 id="Testing-and-Documenting">Testing and Documenting<a class="anchor-link" href="#Testing-and-Documenting">¶</a></h2><p>Once we start putting things in functions so that we can re-use them,
-we need to start testing that those functions are working correctly.
-To see how to do this,
-let's write a function to offset a dataset so that it's mean value
-shifts to a user-defined value:</p>
-<pre><code>def offset_mean(data, target_mean_value):
-    return (data - numpy.mean(data)) + target_mean_value
-</code></pre>
-<p>{: .language-python}</p>
-<p>We could test this on our actual data,
-but since we don't know what the values ought to be,
-it will be hard to tell if the result was correct.
-Instead,
-let's use NumPy to create a matrix of 0's
-and then offset its values to have a mean value of 3:</p>
-<pre><code>z = numpy.zeros((2,2))
-print(offset_mean(z, 3))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>[[ 3.  3.]
- [ 3.  3.]]
-</code></pre>
-<p>{: .output}</p>
-<p>That looks right,
-so let's try <code>offset_mean</code> on our real data:</p>
-<pre><code>data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
-print(offset_mean(data, 0))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>[[-6.14875 -6.14875 -5.14875 ... -3.14875 -6.14875 -6.14875]
- [-6.14875 -5.14875 -4.14875 ... -5.14875 -6.14875 -5.14875]
- [-6.14875 -5.14875 -5.14875 ... -4.14875 -5.14875 -5.14875]
- ...
- [-6.14875 -5.14875 -5.14875 ... -5.14875 -5.14875 -5.14875]
- [-6.14875 -6.14875 -6.14875 ... -6.14875 -4.14875 -6.14875]
- [-6.14875 -6.14875 -5.14875 ... -5.14875 -5.14875 -6.14875]]
-</code></pre>
-<p>{: .output}</p>
-<p>It's hard to tell from the default output whether the result is correct,
-but there are a few tests that we can run to reassure us:</p>
-<pre><code>print('original min, mean, and max are:', numpy.min(data), numpy.mean(data), numpy.max(data))
-offset_data = offset_mean(data, 0)
-print('min, mean, and max of offset data are:',
-      numpy.min(offset_data),
-      numpy.mean(offset_data),
-      numpy.max(offset_data))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>original min, mean, and max are: 0.0 6.14875 20.0
-min, mean, and and max of offset data are: -6.14875 2.84217094304e-16 13.85125
-</code></pre>
-<p>{: .output}</p>
-<p>That seems almost right:
-the original mean was about 6.1,
-so the lower bound from zero is now about -6.1.
-The mean of the offset data isn't quite zero --- we'll explore why not in the challenges --- but
-it's pretty close.
-We can even go further and check that the standard deviation hasn't changed:</p>
-<pre><code>print('std dev before and after:', numpy.std(data), numpy.std(offset_data))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>std dev before and after: 4.61383319712 4.61383319712
-</code></pre>
-<p>{: .output}</p>
-<p>Those values look the same,
-but we probably wouldn't notice if they were different in the sixth decimal place.
-Let's do this instead:</p>
-<pre><code>print('difference in standard deviations before and after:',
-      numpy.std(data) - numpy.std(offset_data))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>difference in standard deviations before and after: -3.5527136788e-15
-</code></pre>
-<p>{: .output}</p>
-<p>Again,
-the difference is very small.
-It's still possible that our function is wrong,
-but it seems unlikely enough that we should probably get back to doing our analysis.
-We have one more task first, though:
-we should write some [documentation]({{ page.root }}/reference.html#documentation) for our function
-to remind ourselves later what it's for and how to use it.</p>
-<p>The usual way to put documentation in software is
-to add [comments]({{ page.root }}/reference.html#comment) like this:</p>
-<pre><code># offset_mean(data, target_mean_value):
-# return a new array containing the original data with its mean offset to match the desired value.
-def offset_mean(data, target_mean_value):
-    return (data - numpy.mean(data)) + target_mean_value
-</code></pre>
-<p>{: .language-python}</p>
-<p>There's a better way, though.
-If the first thing in a function is a string that isn't assigned to a variable,
-that string is attached to the function as its documentation:</p>
-<pre><code>def offset_mean(data, target_mean_value):
-    """Return a new array containing the original data
-       with its mean offset to match the desired value."""
-    return (data - numpy.mean(data)) + target_mean_value
-</code></pre>
-<p>{: .language-python}</p>
-<p>This is better because we can now ask Python's built-in help system to show us
-the documentation for the function:</p>
-<pre><code>help(offset_mean)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>Help on function offset_mean in module __main__:
-
-offset_mean(data, target_mean_value)
-    Return a new array containing the original data with its mean offset to match the desired value.
-</code></pre>
-<p>{: .output}</p>
-<p>A string like this is called a [docstring]({{ page.root }}/reference.html#docstring).
-We don't need to use triple quotes when we write one,
-but if we do,
-we can break the string across multiple lines:</p>
-<pre><code>def offset_mean(data, target_mean_value):
-    """Return a new array containing the original data
-       with its mean offset to match the desired value.
-
-    Examples
-    --------
-    &gt;&gt;&gt; offset_mean([1, 2, 3], 0)
-    array([-1.,  0.,  1.])
-    """
-    return (data - numpy.mean(data)) + target_mean_value
-
-help(offset_mean)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>Help on function offset_mean in module __main__:
-
-offset_mean(data, target_mean_value)
-    Return a new array containing the original data
-       with its mean offset to match the desired value.
-
-    Examples
-    --------
-    &gt;&gt;&gt; offset_mean([1, 2, 3], 0)
-    array([-1.,  0.,  1.])
-</code></pre>
-<p>{: .output}</p>
-<h2 id="Defining-Defaults">Defining Defaults<a class="anchor-link" href="#Defining-Defaults">¶</a></h2><p>We have passed parameters to functions in two ways:
-directly, as in <code>type(data)</code>,
-and by name, as in <code>numpy.loadtxt(fname='something.csv', delimiter=',')</code>.
-In fact,
-we can pass the filename to <code>loadtxt</code> without the <code>fname=</code>:</p>
-<pre><code>numpy.loadtxt('inflammation-01.csv', delimiter=',')
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>array([[ 0.,  0.,  1., ...,  3.,  0.,  0.],
-       [ 0.,  1.,  2., ...,  1.,  0.,  1.],
-       [ 0.,  1.,  1., ...,  2.,  1.,  1.],
-       ...,
-       [ 0.,  1.,  1., ...,  1.,  1.,  1.],
-       [ 0.,  0.,  0., ...,  0.,  2.,  0.],
-       [ 0.,  0.,  1., ...,  1.,  1.,  0.]])
-</code></pre>
-<p>{: .output}</p>
-<p>but we still need to say <code>delimiter=</code>:</p>
-<pre><code>numpy.loadtxt('inflammation-01.csv', ',')
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>Traceback (most recent call last):
-  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
-  File "/Users/username/anaconda3/lib/python3.6/site-packages/numpy/lib/npyio.py", line 1041, in loa
-dtxt
-    dtype = np.dtype(dtype)
-  File "/Users/username/anaconda3/lib/python3.6/site-packages/numpy/core/_internal.py", line 199, in
-_commastring
-    newitem = (dtype, eval(repeats))
-  File "&lt;string&gt;", line 1
-    ,
-    ^
-SyntaxError: unexpected EOF while parsing
-</code></pre>
-<p>{: .error}</p>
-<p>To understand what's going on,
-and make our own functions easier to use,
-let's re-define our <code>offset_mean</code> function like this:</p>
-<pre><code>def offset_mean(data, target_mean_value=0.0):
-    """Return a new array containing the original data
-       with its mean offset to match the desired value, (0 by default).
-
-    Examples
-    --------
-    &gt;&gt;&gt; offset_mean([1, 2, 3])
-    array([-1.,  0.,  1.])
-    """
-    return (data - numpy.mean(data)) + target_mean_value
-</code></pre>
-<p>{: .language-python}</p>
-<p>The key change is that the second parameter is now written <code>target_mean_value=0.0</code>
-instead of just <code>target_mean_value</code>.
-If we call the function with two arguments,
-it works as it did before:</p>
-<pre><code>test_data = numpy.zeros((2, 2))
-print(offset_mean(test_data, 3))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>[[ 3.  3.]
- [ 3.  3.]]
-</code></pre>
-<p>{: .output}</p>
-<p>But we can also now call it with just one parameter,
-in which case <code>target_mean_value</code> is automatically assigned
-the [default value]({{ page.root }}/reference.html#default-value) of 0.0:</p>
-<pre><code>more_data = 5 + numpy.zeros((2, 2))
-print('data before mean offset:')
-print(more_data)
-print('offset data:')
-print(offset_mean(more_data))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>data before mean offset:
-[[ 5.  5.]
- [ 5.  5.]]
-offset data:
-[[ 0.  0.]
- [ 0.  0.]]
-</code></pre>
-<p>{: .output}</p>
-<p>This is handy:
-if we usually want a function to work one way,
-but occasionally need it to do something else,
-we can allow people to pass a parameter when they need to
-but provide a default to make the normal case easier.
-The example below shows how Python matches values to parameters:</p>
-<pre><code>def display(a=1, b=2, c=3):
-    print('a:', a, 'b:', b, 'c:', c)
-
-print('no parameters:')
-display()
-print('one parameter:')
-display(55)
-print('two parameters:')
-display(55, 66)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>no parameters:
-a: 1 b: 2 c: 3
-one parameter:
-a: 55 b: 2 c: 3
-two parameters:
-a: 55 b: 66 c: 3
-</code></pre>
-<p>{: .output}</p>
-<p>As this example shows,
-parameters are matched up from left to right,
-and any that haven't been given a value explicitly get their default value.
-We can override this behavior by naming the value as we pass it in:</p>
-<pre><code>print('only setting the value of c')
-display(c=77)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>only setting the value of c
-a: 1 b: 2 c: 77
-</code></pre>
-<p>{: .output}</p>
-<p>With that in hand,
-let's look at the help for <code>numpy.loadtxt</code>:</p>
-<pre><code>help(numpy.loadtxt)
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>Help on function loadtxt in module numpy.lib.npyio:
-
-loadtxt(fname, dtype=&lt;class 'float'&gt;, comments='#', delimiter=None, converters=None, skiprows=0, use
-cols=None, unpack=False, ndmin=0, encoding='bytes')
-    Load data from a text file.
-
-    Each row in the text file must have the same number of values.
-
-    Parameters
-    ----------
-...
-</code></pre>
-<p>{: .output}</p>
-<p>There's a lot of information here,
-but the most important part is the first couple of lines:</p>
-<pre><code>loadtxt(fname, dtype=&lt;class 'float'&gt;, comments='#', delimiter=None, converters=None, skiprows=0, use
-cols=None, unpack=False, ndmin=0, encoding='bytes')
-</code></pre>
-<p>{: .output}</p>
-<p>This tells us that <code>loadtxt</code> has one parameter called <code>fname</code> that doesn't have a default value,
-and eight others that do.
-If we call the function like this:</p>
-<pre><code>numpy.loadtxt('inflammation-01.csv', ',')
-</code></pre>
-<p>{: .language-python}</p>
-<p>then the filename is assigned to <code>fname</code> (which is what we want),
-but the delimiter string <code>','</code> is assigned to <code>dtype</code> rather than <code>delimiter</code>,
-because <code>dtype</code> is the second parameter in the list. However <code>','</code> isn't a known <code>dtype</code> so
-our code produced an error message when we tried to run it.
-When we call <code>loadtxt</code> we don't have to provide <code>fname=</code> for the filename because it's the
-first item in the list, but if we want the <code>','</code> to be assigned to the variable <code>delimiter</code>,
-we <em>do</em> have to provide <code>delimiter=</code> for the second parameter since <code>delimiter</code> is not
-the second parameter in the list.</p>
-<h2 id="Readable-functions">Readable functions<a class="anchor-link" href="#Readable-functions">¶</a></h2><p>Consider these two functions:</p>
-<pre><code>def s(p):
-    a = 0
-    for v in p:
-        a += v
-    m = a / len(p)
-    d = 0
-    for v in p:
-        d += (v - m) * (v - m)
-    return numpy.sqrt(d / (len(p) - 1))
-
-def std_dev(sample):
-    sample_sum = 0
-    for value in sample:
-        sample_sum += value
-
-    sample_mean = sample_sum / len(sample)
-
-    sum_squared_devs = 0
-    for value in sample:
-        sum_squared_devs += (value - sample_mean) * (value - sample_mean)
-
-    return numpy.sqrt(sum_squared_devs / (len(sample) - 1))
-</code></pre>
-<p>{: .language-python}</p>
-<p>The functions <code>s</code> and <code>std_dev</code> are computationally equivalent (they
-both calculate the sample standard deviation), but to a human reader,
-they look very different. You probably found <code>std_dev</code> much easier to
-read and understand than <code>s</code>.</p>
-<p>As this example illustrates, both documentation and a programmer's
-<em>coding style</em> combine to determine how easy it is for others to read
-and understand the programmer's code. Choosing meaningful variable
-names and using blank spaces to break the code into logical "chunks"
-are helpful techniques for producing <em>readable code</em>. This is useful
-not only for sharing code with others, but also for the original
-programmer. If you need to revisit code that you wrote months ago and
-haven't thought about since then, you will appreciate the value of
-readable code!</p>
-<blockquote>
-<h2 id="Combining-Strings">Combining Strings<a class="anchor-link" href="#Combining-Strings">¶</a></h2><p>"Adding" two strings produces their concatenation:
-<code>'a' + 'b'</code> is <code>'ab'</code>.
-Write a function called <code>fence</code> that takes two parameters called <code>original</code> and <code>wrapper</code>
-and returns a new string that has the wrapper character at the beginning and end of the original.
-A call to your function should look like this:</p>
-<pre><code>print(fence('name', '*'))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>*name*
-</code></pre>
-<p>{: .output}</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>def fence(original, wrapper):
-    return wrapper + original + wrapper
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Return-versus-print">Return versus print<a class="anchor-link" href="#Return-versus-print">¶</a></h2><p>Note that <code>return</code> and <code>print</code> are not interchangeable.
-<code>print</code> is a Python function that <em>prints</em> data to the screen.
-It enables us, <em>users</em>, see the data.
-<code>return</code> statement, on the other hand, makes data visible to the program.
-Let's have a look at the following function:</p>
-<pre><code>def add(a, b):
-    print(a + b)
-</code></pre>
-<p>{: .language-python}</p>
-<p><strong>Question</strong>: What will we see if we execute the following commands?</p>
-<pre><code>A = add(7, 3)
-print(A)
-</code></pre>
-<p>{: .language-python}</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p>Python will first execute the function <code>add</code> with <code>a = 7</code> and <code>b = 3</code>,
-and, therefore, print <code>10</code>. However, because function <code>add</code> does not have a
-line that starts with <code>return</code> (no <code>return</code> "statement"), it will, by default, return
-nothing which, in Python world, is called <code>None</code>. Therefore, <code>A</code> will be assigned to <code>None</code>
-and the last line (<code>print(A)</code>) will print <code>None</code>. As a result, we will see:</p>
-<pre><code>10
-None
-</code></pre>
-<p>{: .output}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Selecting-Characters-From-Strings">Selecting Characters From Strings<a class="anchor-link" href="#Selecting-Characters-From-Strings">¶</a></h2><p>If the variable <code>s</code> refers to a string,
-then <code>s[0]</code> is the string's first character
-and <code>s[-1]</code> is its last.
-Write a function called <code>outer</code>
-that returns a string made up of just the first and last characters of its input.
-A call to your function should look like this:</p>
-<pre><code>print(outer('helium'))
-</code></pre>
-<p>{: .language-python}</p>
-<pre><code>hm
-</code></pre>
-<p>{: .output}</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>def outer(input_string):
-    return input_string[0] + input_string[-1]
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Rescaling-an-Array">Rescaling an Array<a class="anchor-link" href="#Rescaling-an-Array">¶</a></h2><p>Write a function <code>rescale</code> that takes an array as input
-and returns a corresponding array of values scaled to lie in the range 0.0 to 1.0.
-(Hint: If <code>L</code> and <code>H</code> are the lowest and highest values in the original array,
-then the replacement for a value <code>v</code> should be <code>(v-L) / (H-L)</code>.)</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>def rescale(input_array):
-    L = numpy.min(input_array)
-    H = numpy.max(input_array)
-    output_array = (input_array - L) / (H - L)
-    return output_array
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Testing-and-Documenting-Your-Function">Testing and Documenting Your Function<a class="anchor-link" href="#Testing-and-Documenting-Your-Function">¶</a></h2><p>Run the commands <code>help(numpy.arange)</code> and <code>help(numpy.linspace)</code>
-to see how to use these functions to generate regularly-spaced values,
-then use those values to test your <code>rescale</code> function.
-Once you've successfully tested your function,
-add a docstring that explains what it does.</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>"""Takes an array as input, and returns a corresponding array scaled so
-that 0 corresponds to the minimum and 1 to the maximum value of the input array.
-
-Examples:
-&gt;&gt;&gt; rescale(numpy.arange(10.0))
-array([ 0.        ,  0.11111111,  0.22222222,  0.33333333,  0.44444444,
-       0.55555556,  0.66666667,  0.77777778,  0.88888889,  1.        ])
-&gt;&gt;&gt; rescale(numpy.linspace(0, 100, 5))
-array([ 0.  ,  0.25,  0.5 ,  0.75,  1.  ])
-"""
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Defining-Defaults">Defining Defaults<a class="anchor-link" href="#Defining-Defaults">¶</a></h2><p>Rewrite the <code>rescale</code> function so that it scales data to lie between <code>0.0</code> and <code>1.0</code> by default,
-but will allow the caller to specify lower and upper bounds if they want.
-Compare your implementation to your neighbor's:
-do the two functions always behave the same way?</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>def rescale(input_array, low_val=0.0, high_val=1.0):
-    """rescales input array values to lie between low_val and high_val"""
-    L = numpy.min(input_array)
-    H = numpy.max(input_array)
-    intermed_array = (input_array - L) / (H - L)
-    output_array = intermed_array * (high_val - low_val) + low_val
-    return output_array
-</code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Variables-Inside-and-Outside-Functions">Variables Inside and Outside Functions<a class="anchor-link" href="#Variables-Inside-and-Outside-Functions">¶</a></h2><p>What does the following piece of code display when run --- and why?</p>
-<pre><code>f = 0
-k = 0
-
-def f2k(f):
-    k = ((f - 32) * (5.0 / 9.0)) + 273.15
-    return k
-
-print(f2k(8))
-print(f2k(41))
-print(f2k(32))
-
-print(k)
-</code></pre>
-<p>{: .language-python}</p>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><pre><code>259.81666666666666
-278.15
-273.15
-0
-</code></pre>
-<p>{: .output}
-<code>k</code> is 0 because the <code>k</code> inside the function <code>f2k</code> doesn't know
-about the <code>k</code> defined outside the function. When the <code>f2k</code> function is called,
-it creates a [local variable]({{ page.root }}/reference.html#local-variable)
-<code>k</code>. The function does not return any values
-and does not alter <code>k</code> outside of its local copy.
-Therefore the original value of <code>k</code> remains unchanged.
-Beware that a local <code>k</code> is created because <code>f2k</code> internal statements
-<em>affect</em> a new value to it. If <code>k</code> was only <code>read</code>, it would simply retreive the
-global <code>k</code> value.
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Mixing-Default-and-Non-Default-Parameters">Mixing Default and Non-Default Parameters<a class="anchor-link" href="#Mixing-Default-and-Non-Default-Parameters">¶</a></h2><p>Given the following code:</p>
-<pre><code>def numbers(one, two=2, three, four=4):
-    n = str(one) + str(two) + str(three) + str(four)
-    return n
-
-print(numbers(1, three=3))
-</code></pre>
-<p>{: .language-python}</p>
-<p>what do you expect will be printed?  What is actually printed?
-What rule do you think Python is following?</p>
-<ol>
-<li><code>1234</code></li>
-<li><code>one2three4</code></li>
-<li><code>1239</code></li>
-<li><code>SyntaxError</code></li>
-</ol>
-<p>Given that, what does the following piece of code display when run?</p>
-<pre><code>def func(a, b=3, c=6):
-    print('a: ', a, 'b: ', b, 'c:', c)
-
-func(-1, 2)
-</code></pre>
-<p>{: .language-python}</p>
-<ol>
-<li><code>a: b: 3 c: 6</code></li>
-<li><code>a: -1 b: 3 c: 6</code></li>
-<li><code>a: -1 b: 2 c: 6</code></li>
-<li><code>a: b: -1 c: 2</code></li>
-</ol>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p>Attempting to define the <code>numbers</code> function results in <code>4. SyntaxError</code>.
-The defined parameters <code>two</code> and <code>four</code> are given default values. Because
-<code>one</code> and <code>three</code> are not given default values, they are required to be
-included as arguments when the function is called and must be placed
-before any parameters that have default values in the function definition.</p>
-<p>The given call to <code>func</code> displays <code>a: -1 b: 2 c: 6</code>. -1 is assigned to
-the first parameter <code>a</code>, 2 is assigned to the next parameter <code>b</code>, and <code>c</code> is
-not passed a value, so it uses its default value 6.
-{: .solution}
-{: .challenge}</p>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Readable-Code">Readable Code<a class="anchor-link" href="#Readable-Code">¶</a></h2><p>Revise a function you wrote for one of the previous exercises to try to make
-the code more readable. Then, collaborate with one of your neighbors
-to critique each other's functions and discuss how your function implementations
-could be further improved to make them more readable.
-{: .challenge}</p>
-</blockquote>
-<p>{% include links.md %}</p>
+<h1 id="Lesson-4">Lesson 4<a class="anchor-link" href="#Lesson-4">¶</a></h1><p><strong>Functions, Modules, and IDEs</strong></p>
+<p>Link to this notebook: <a href="https://mco.fyi/py4">mco.fyi/py4</a></p>
+<p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 </div>
 </div>
 </div>
@@ -8337,9 +7573,1314 @@ could be further improved to make them more readable.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/5-Loops/">Previous Lesson</a>
-          
-<a href="https://pylearn.io/lessons/7-Iterables/">Next Lesson</a></p>
+<h1 id="Notes">Notes<a class="anchor-link" href="#Notes">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Plan-for-the-Second-Half">Plan for the Second Half<a class="anchor-link" href="#Plan-for-the-Second-Half">¶</a></h2><ul>
+<li>Week 1 - Python Basics</li>
+<li>Week 2 - Booleans, Expressions, Operators, and If Statements</li>
+<li>Week 3 - String Revisited and Loops</li>
+<li>Week 4 - Functions, Modules, and IDEs</li>
+</ul>
+<hr/>
+<ul>
+<li>Week 5 - Tuples, Lists, Dictionaries, and Starting a Project</li>
+<li>Week 6 - Reading &amp; Writing Files, Shared Project</li>
+<li>Week 7 - The Internet &amp; the Web, Enhancing our News Feed App</li>
+<li>Week 8 - Data Science with Python &amp; Deploying mynewsfeed in the Cloud</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Were-you-able-to-install-a-local-copy-of-Python?">Were you able to install a local copy of Python?<a class="anchor-link" href="#Were-you-able-to-install-a-local-copy-of-Python?">¶</a></h2><p>Email me if you had problems and we'll sort it out.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Project/Study-Groups">Project/Study Groups<a class="anchor-link" href="#Project/Study-Groups">¶</a></h2><p>Self-forming via <a href="https://mco.fyi/groups">mco.fyi/groups</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Functions">Functions<a class="anchor-link" href="#Functions">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Functions-are-flexible-software-building-blocks">Functions are flexible software building blocks<a class="anchor-link" href="#Functions-are-flexible-software-building-blocks">¶</a></h2><ul>
+<li>So far, we’ve been writing small programs.</li>
+<li>Things get much more complicated when we write large programs, especially with multiple authors.</li>
+<li>Ideally, we'd like to build software like snapping lego pieces together.</li>
+<li>What would that buy us?<ul>
+<li>abstraction</li>
+<li>reuse</li>
+<li>modularity</li>
+<li>maintainability</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Abstraction---You-don't-need-to-do-everything">Abstraction - You don't need to do everything<a class="anchor-link" href="#Abstraction---You-don't-need-to-do-everything">¶</a></h3><ul>
+<li>When building a house, you don't do everything yourself.<ul>
+<li>You hire an architect, a carpenter, an electrician, a roofer, a plumber, a mason.</li>
+<li>You might hire a contractor to hire and manage all those people.</li>
+</ul>
+</li>
+<li>In our programs we delegate tasks to certain functions, like <code>print()</code>, so that we don't have to worry about all the details.<ul>
+<li>It's a bit like hiring an electrician so that we don't have to worry about the details of electrical wiring in our house.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Reuse---Don't-Reinvent-the-Wheel">Reuse - Don't Reinvent the Wheel<a class="anchor-link" href="#Reuse---Don't-Reinvent-the-Wheel">¶</a></h3><ul>
+<li>it's ok to reuse other people's work<ul>
+<li>it's not stealing</li>
+<li>it makes you more efficient and more productive</li>
+</ul>
+</li>
+<li>Very few people build a house from scratch<ul>
+<li>so don't try to build programs from scratch</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Reuse-Example">Reuse Example<a class="anchor-link" href="#Reuse-Example">¶</a></h4><p>You can count the number of words in a string the hard way...</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mystr</span> <span class="o">=</span> <span class="s1">'This      is a test.'</span>
+<span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mystr</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+    <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'number of words ='</span><span class="p">,</span> <span class="n">cnt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Or the easy way, by calling a string method...</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">mystr</span> <span class="o">=</span> <span class="s1">'This       is a test.'</span>
+<span class="n">cnt</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mystr</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'number of words ='</span><span class="p">,</span> <span class="n">cnt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Which would you rather use? Which is more reliable?</p>
+<ul>
+<li>The first approach is great for learning.</li>
+<li>The second approach is great for getting real work done.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Modularity---Divide-and-Conquer">Modularity - Divide and Conquer<a class="anchor-link" href="#Modularity---Divide-and-Conquer">¶</a></h3><ul>
+<li>So far, our programs have been monoliths - one  continous sequence of Python statements.</li>
+<li>Real programs are often much bigger than the ones we've written.<ul>
+<li>Google's software repository has billions of lines of source code (<a href="https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext">Why Google Stores Billions of Lines of Code in a Single Repository</a>)</li>
+<li>No one person can write a program that big.</li>
+<li>Large programs are built by teams.</li>
+<li>In order to build large, complex programs, we need the ability to divide program logic into manageable pieces.</li>
+</ul>
+</li>
+<li>We call this modularity - dividing software into pieces or modules.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Maintainability---Keeping-your-code-DRY-(Don't-Repeat-Yourself)">Maintainability - Keeping your code DRY (Don't Repeat Yourself)<a class="anchor-link" href="#Maintainability---Keeping-your-code-DRY-(Don't-Repeat-Yourself)">¶</a></h3><ul>
+<li>Imagine that you need to do roughly the same thing in ten different places so you copy the code to those ten locations.<ul>
+<li>What happens when you find a bug or want to improve that piece of code?</li>
+<li>You need to make the change ten times.</li>
+<li>Will you remember to do that?</li>
+<li>If you do remember, will you catch all ten locations?</li>
+<li>Copying code is a bad thing - it leads to bugs.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Functions-solve-all-of-these-Problems">Functions solve all of these Problems<a class="anchor-link" href="#Functions-solve-all-of-these-Problems">¶</a></h3><ul>
+<li>Functions give us the ability to:<ul>
+<li>Hide low level details (abstraction)</li>
+<li>Share and reuse pieces of functionality (reuse)</li>
+<li>Split programs into manageable pieces (modularity)</li>
+<li>Write one copy of an algorithm and use it anywhere (maintainability)</li>
+</ul>
+</li>
+<li>We've already used several functions<ul>
+<li><code>print()</code>, <code>input()</code>, <code>int()</code>, <code>len()</code>, <code>range()</code>, etc.</li>
+</ul>
+</li>
+<li>Now let's see how to define our own functions.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Defining-Functions">Defining Functions<a class="anchor-link" href="#Defining-Functions">¶</a></h2><ul>
+<li>example:</li>
+</ul>
+<pre><code>def function_name(arg1, arg2):
+    '''This is a docstring.'''  # optional but a good idea
+    statement1
+    statement2
+    ...
+</code></pre>
+<ul>
+<li>Not surprisingly, we define the scope of the function body using indentation (just like how we define blocks for if statements, for loops, etc.).</li>
+<li>This is a bit like an assignment statement in that it assigns a block of code (the function body) to the function name.<ul>
+<li>Function names have the same rules as variable names.</li>
+<li>This only defines a function - it doesn't execute it.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">speak</span><span class="p">():</span>
+<span class="w">  </span><span class="sd">'''</span>
+<span class="sd">     this function generates hello in Clyro language</span>
+<span class="sd">     don't try this near a dog</span>
+<span class="sd">  '''</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s1">'meow'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Docstrings">Docstrings<a class="anchor-link" href="#Docstrings">¶</a></h3><ul>
+<li>string defined immediately after the def line</li>
+<li>usually triple quoted since it may be multi-line</li>
+<li>not required but a good way to document your functions</li>
+<li>IDEs use the docstring to make your life easier</li>
+<li>automates output of <code>help(function)</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Example-Function">Example Function<a class="anchor-link" href="#Example-Function">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The factorial of N is defined as 1*2*...*N.</span>
+<span class="c1"># Here's an example function definition...</span>
+<span class="k">def</span> <span class="nf">fact10</span><span class="p">():</span>
+<span class="w">  </span><span class="sd">'''</span>
+<span class="sd">  Print the factorial of 10.</span>
+<span class="sd">  Factorial of 10 is defined as 1*2*...*10.</span>
+<span class="sd">  '''</span>
+  <span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+      <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span> <span class="c1"># result = result * i</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="n">fact10</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>3628800
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get help about this function...</span>
+<span class="n">help</span><span class="p">(</span><span class="n">fact10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># And here's how we would call this function...</span>
+<span class="n">fact10</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Passing-Values-to-a-Function">Passing Values to a Function<a class="anchor-link" href="#Passing-Values-to-a-Function">¶</a></h3><ul>
+<li><code>fact10()</code> is limited.</li>
+<li>It only prints the factorial for one value (10).</li>
+<li>It would be nice if we could define a more flexible version, that could pring the factorial of any number, like this...</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">'''Print the factorial of any number.'''</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="n">fact</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2432902008176640000
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Parameters-and-Arguments">Parameters and Arguments<a class="anchor-link" href="#Parameters-and-Arguments">¶</a></h3><ul>
+<li>The variables we define in a function to take on the values passed by the caller are called parameters.</li>
+<li>In this code, <code>a</code>, <code>b</code> and <code>c</code> are parameters:</li>
+</ul>
+<pre><code>def sum(a, b, c):
+    return a + b + c
+</code></pre>
+<ul>
+<li>The values supplied by the caller when calling a function are called arguments.</li>
+<li>In this code, <code>1</code>, <code>2</code>, and <code>3</code> are arguments:</li>
+</ul>
+<pre><code>sum(1, 2, 3)
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Passing-Arguments">Passing Arguments<a class="anchor-link" href="#Passing-Arguments">¶</a></h3><ul>
+<li>Functions can define any number of parameters, including zero.</li>
+<li>Multiple parameters are separated by commas, like this...</li>
+</ul>
+<pre><code>def product(a, b, c):
+    return a * b * c
+</code></pre>
+<ul>
+<li>If you pass the wrong number of arguments, you'll hear about it:</li>
+</ul>
+<pre><code>product(1, 2)
+...
+TypeError: product() takes exactly 3 positional argument (2 given)
+...
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Return-Values">Return Values<a class="anchor-link" href="#Return-Values">¶</a></h3><p>Instead of printing the result, we can also have the function return a result to the caller so that the caller can print it or use it in a calculation.</p>
+<pre><code>def fact(num):
+    ''' compute factorial of any number '''
+    fact = 1
+    for i in range(1, num+1):
+        fact *= i
+    return(fact)
+</code></pre>
+<p>Here's how we would call this function:</p>
+<pre><code>f = fact(5)
+print('5! = ', f)
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Functions return a value to the caller via the <code>return</code> statement.</li>
+<li>The <code>return</code> statement causes two things to happen...<ul>
+<li>the function ends and control is returned to the caller</li>
+<li>the returned value is passed back to the caller</li>
+</ul>
+</li>
+<li>You can have as many return statements as you like (including zero).</li>
+<li>If the caller wants to do something with a returned value, it needs to save it or use it in an expression...</li>
+</ul>
+<pre><code>resp = input('Yes or No (y/n)? ')
+</code></pre>
+<ul>
+<li>If the caller ignores the return value, it's lost...</li>
+</ul>
+<pre><code>input('Yes or No (y/n)? ') # this loses the answer
+</code></pre>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">''' compute factorial of any number '''</span>
+    <span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">fact</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">fact</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">addupto</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+      <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="nb">sum</span>
+
+<span class="n">total</span> <span class="o">=</span> <span class="n">addupto</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Returning-Multiple-Values">Returning Multiple Values<a class="anchor-link" href="#Returning-Multiple-Values">¶</a></h3><ul>
+<li>Functions can return multiple values.</li>
+<li>Simply specify more than one comma separated value in the <code>return</code> statement.</li>
+<li>This function returns two values...</li>
+</ul>
+<pre><code>def divide(dividend, divisor):
+    quotient = dividend / divisor
+    remainder = dividend % divisor
+    return quotient, remainder
+</code></pre>
+<ul>
+<li>You could receive the results like this:</li>
+</ul>
+<pre><code>(q, r) = divide(100, 9)
+print(f'quotient={q}, remainer={r}')
+</code></pre>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
+  <span class="n">quotient</span> <span class="o">=</span> <span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span>
+  <span class="n">remainder</span> <span class="o">=</span> <span class="n">dividend</span> <span class="o">%</span> <span class="n">divisor</span>
+  <span class="k">return</span> <span class="n">quotient</span><span class="p">,</span> <span class="n">remainder</span>
+
+<span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">divide</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'quotient=</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s1">, remainer=</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>Can you think of a function we've used which...</p>
+<ul>
+<li>takes no arguments?</li>
+<li>takes only one argument?</li>
+<li>takes a variable number of arguments?</li>
+<li>returns no return values?</li>
+<li>returns one return value?</li>
+<li>returns a sequence of values?</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal answers...</span>
+
+<span class="c1"># takes no arguments?</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># takes only one argument?</span>
+<span class="nb">input</span><span class="p">(</span><span class="s1">'Enter your name: '</span><span class="p">)</span>
+<span class="c1"># takes a variable number of arguments?</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">,</span> <span class="s1">'world'</span><span class="p">)</span>
+<span class="c1"># returns no return values?</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># returns one return value?</span>
+<span class="nb">len</span><span class="p">(</span><span class="s1">'test'</span><span class="p">)</span>
+<span class="c1"># returns a sequence of values?</span>
+<span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Namespaces">Namespaces<a class="anchor-link" href="#Namespaces">¶</a></h2><ul>
+<li>A <code>namespace</code> is an abstract collection of variables that exist in a particular context.<ul>
+<li>Kind of like a company's ID numbers.</li>
+<li>My id is only valid within the scope of my company.</li>
+</ul>
+</li>
+<li>We've seen an example of a namespace in this code...</li>
+</ul>
+<pre><code>import random
+x = random.randrange(10)
+</code></pre>
+<ul>
+<li>In this case, the random module has it's own namespace, which is completely separate from the rest of your program and is accessed via "dot" notation.</li>
+<li>If you neglect the "random." prefix, you're referring to a different namespace:  your program's global namespace.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Global-Namespace">Global Namespace<a class="anchor-link" href="#Global-Namespace">¶</a></h3><ul>
+<li>Every Python source file has its own global name space.</li>
+<li>The global namespace includes all names (variables and functions) defined outside of any functions, in the Python source file.</li>
+<li>In the following code, <code>count</code>, <code>mystr</code> and <code>req</code> are all global variables, i.e. they all reside in the global namespace.</li>
+</ul>
+<pre><code>count = 0
+while True:
+    mystr = input('? ')
+    if (mystr == '1'):
+        req = 'add'
+    else:
+        break
+    count += 1
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Local-Namespace">Local Namespace<a class="anchor-link" href="#Local-Namespace">¶</a></h3><ul>
+<li>When you define a function, Python creates a local namespace for that function, including all parameters and variables created inside the function body.</li>
+<li>Variables in a local namespace are separate from and independent of variables in the global name space.</li>
+<li>Inside a function, local variables supersede global variables with the same name.</li>
+<li>Local variables are transient - they exist only during the lifetime of function execution.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Example-illustrating-local-variable-superseding-a-global-variable">Example illustrating local variable superseding a global variable<a class="anchor-link" href="#Example-illustrating-local-variable-superseding-a-global-variable">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">var1</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="n">var2</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">var2</span><span class="p">)</span>
+<span class="n">func</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'global var:'</span><span class="p">,</span> <span class="n">var2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Example-illustrating-the-transient-nature-of-the-local-namespace">Example illustrating the transient nature of the local namespace<a class="anchor-link" href="#Example-illustrating-the-transient-nature-of-the-local-namespace">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
+<span class="n">func</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'global var:'</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>local var: 2
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-6591250f689a&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'local var:'</span><span class="ansi-blue-fg">,</span> x2<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'global var:'</span><span class="ansi-blue-fg">,</span> x2<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">NameError</span>: name 'x2' is not defined</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Modules">Modules<a class="anchor-link" href="#Modules">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>A module is a file of reusable Python code.</li>
+<li>The module's name is the file without the .py extension.</li>
+<li>We've already seen how modules are imported...</li>
+</ul>
+<pre><code>import random
+</code></pre>
+<ul>
+<li>In order for Python to see one your modules, the module file (with .py extension) needs to be in the same directory as the program you are running or in a special,  predefined system location.<ul>
+<li><code>sys.path</code> in Python</li>
+<li><code>PYTHONPATH</code> in shell environment</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Module-Namespace">Module Namespace<a class="anchor-link" href="#Module-Namespace">¶</a></h2><ul>
+<li>Every module has its own namespace, which is independent of the main source file's global namespace</li>
+<li>You can access objects in a module's namespace using this general syntax:</li>
+</ul>
+<pre><code>module-name.variable
+module-name.function(&lt;args&gt;)
+</code></pre>
+<ul>
+<li>For example, as we've already seen...</li>
+</ul>
+<pre><code>rand_val = random.randrange(0, 10)
+</code></pre>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span><span class="p">,</span> <span class="n">randint</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="p">())</span>
+<span class="n">randint</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="The-from-Statement">The <code>from</code> Statement<a class="anchor-link" href="#The-from-Statement">¶</a></h2><ul>
+<li>You can also import code using this syntax...</li>
+</ul>
+<pre><code>from module-name import *
+</code></pre>
+<ul>
+<li>This says loads all the names (*) from the designated module into the global namespace.</li>
+<li>With this kind of import, the module names get loaded into the global namespace, which means you don't need to qualify your accesses with the <code>module-name.</code> prefix.</li>
+<li>For example, you could do this...</li>
+</ul>
+<pre><code>from random import *
+rand_val = randrange(0, 10)
+# I didn't need to use random.randrange(0, 10)
+</code></pre>
+<ul>
+<li>You can also import selected names from a module</li>
+</ul>
+<pre><code>from random import randrange, randint
+</code></pre>
+<ul>
+<li>This says load only those names explicitly listed (<code>randrange</code> and <code>randint</code>, in this case) from the designated module into the global namespace.</li>
+<li>As in the previous example, after this import the names are loaded into the common global namespace so there is no need to qualify them...</li>
+</ul>
+<pre><code>from random import randrange, randint
+rand_val = randrange(0, 10)
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="When-to-use-import-vs.-from">When to use <code>import</code> vs. <code>from</code><a class="anchor-link" href="#When-to-use-import-vs.-from">¶</a></h2><ul>
+<li>Generally, it's better to use <code>import</code> because...<ul>
+<li>less risk of name clashes and other surprises</li>
+<li>makes your code more explicit and clear</li>
+</ul>
+</li>
+<li>Occasionally, you may find that you use a module’s functions so frequently that it pays to import it directly into the global namespace with <code>from</code>.</li>
+<li>That’s fine but do so carefully and watch out for name conflicts.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="IDEs-and-Editors">IDEs and Editors<a class="anchor-link" href="#IDEs-and-Editors">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>Integrated Development Environments</li>
+<li>Programs to help you write programs</li>
+<li>Many popular ones...<ul>
+<li>Visual Studio Code (my favorite)</li>
+<li>Vim</li>
+<li>PyCharm</li>
+<li><strong>Mu - great for beginners, we'll use this one</strong></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Example Program 1 - Study Group Formation</span>
+
+<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span>
+
+<span class="k">def</span> <span class="nf">groups</span><span class="p">(</span><span class="n">student_list</span><span class="p">,</span> <span class="n">group_size</span><span class="p">):</span>
+  <span class="n">students</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">student_list</span><span class="p">)</span>
+  <span class="c1">#print(students)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">)</span> <span class="o">/</span> <span class="n">group_size</span><span class="p">)):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">group_size</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">))</span>
+    <span class="n">group</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">group</span><span class="p">:</span>
+      <span class="n">students</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+
+<span class="n">students</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Marc'</span><span class="p">,</span> <span class="s1">'Alex'</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="s1">'Dina'</span><span class="p">,</span> <span class="s1">'Mitchell'</span><span class="p">,</span> <span class="s1">'Jordan'</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">,</span> <span class="s1">'Carol'</span><span class="p">)</span>
+<span class="c1">#groups(students, 3)</span>
+<span class="n">groups</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Example-Program-2---Web-Server-in-Mu">Example Program 2 - Web Server in Mu<a class="anchor-link" href="#Example-Program-2---Web-Server-in-Mu">¶</a></h2><p>webserve.py...</p>
+<pre><code># A simple web application.
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/hello/&lt;name&gt;')
+def greet(name='Stranger'):
+    return render_template("greeting.html", name=name)
+    
+@app.route("/")
+def index():
+    return render_template('index.html')
+</code></pre>
+<p>greeting.html...</p>
+<pre><code>{% extends "base.html" %}
+{% block content %}
+&lt;p&gt;Hello {{name}}, how are you?&lt;/p&gt;
+{% endblock %}
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li>If you're caught up in the textbook, this is a free week for reading but if you haven't yet read the first three chapters of <a href="http://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a>, now would be a great time to catch up!</li>
+<li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
+<li>Review your copy of this notebook.<ul>
+<li>Complete all the challenges above.</li>
+<li>Complete the questions below.</li>
+<li>If something is unclear, experiment and see if you can understand it better.</li>
+</ul>
+</li>
+<li>For next class...<ul>
+<li>Install the <a href="https://codewith.mu/">Mu IDE</a></li>
+<li>Email me (marc@mco.dev) if you have any problems.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>Write a function called <code>total</code> that returns the sum of a range of integers starting with the first passed value and ending at one less than the second passed value.</p>
+<p>For example, <code>total(4, 7)</code> returns <code>15</code> (<code>4</code>+<code>5</code>+<code>6</code>).</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add your code here</span>
+<span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
+<span class="n">test_data</span> <span class="o">=</span> <span class="p">(</span>
+  <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span>
+  <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span>
+  <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+  <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+  <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+  <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+  <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+  <span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">test_data</span><span class="p">):</span>
+  <span class="n">computed</span> <span class="o">=</span> <span class="n">total</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+  <span class="n">actual</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)])</span>
+  <span class="k">assert</span> <span class="n">computed</span> <span class="o">==</span> <span class="n">actual</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'Test </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1"> failed: </span><span class="si">{</span><span class="n">computed</span><span class="si">}</span><span class="s1"> != </span><span class="si">{</span><span class="n">actual</span><span class="si">}</span><span class="s1">'</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'All tests passed!'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-7-6a32a3e4bf9e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     14</span>   computed <span class="ansi-blue-fg">=</span> total<span class="ansi-blue-fg">(</span>a<span class="ansi-blue-fg">,</span> b<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     15</span>   actual <span class="ansi-blue-fg">=</span> sum<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>i <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>a<span class="ansi-blue-fg">,</span> b<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">   </span><span class="ansi-green-fg">assert</span> computed <span class="ansi-blue-fg">==</span> actual<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">f'Test {i} failed: {computed} != {actual}'</span>
+<span class="ansi-green-intense-fg ansi-bold">     17</span> 
+<span class="ansi-green-intense-fg ansi-bold">     18</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'All tests passed!'</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">AssertionError</span>: Test 0 failed: 0 != 15</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>Write a function called <code>reverse</code> that returns a reversed copy of a passed string. For example, <code>reverse('Obama')</code> returns <code>amabO</code>.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="k">def</span> <span class="nf">reverse_test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+  <span class="n">rev</span> <span class="o">=</span> <span class="n">reverse</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">assert</span> <span class="n">rev</span> <span class="o">==</span> <span class="n">b</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">rev</span><span class="si">}</span><span class="s1"> != </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span>
+
+<span class="c1"># Some basic tests.</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="s1">'Obama'</span><span class="p">,</span> <span class="s1">'amabO'</span><span class="p">)</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="s1">'Marc'</span><span class="p">,</span> <span class="s1">'craM'</span><span class="p">)</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="s1">''</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="s1">'aaa'</span><span class="p">,</span> <span class="s1">'aaa'</span><span class="p">)</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="s1">'A a'</span><span class="p">,</span> <span class="s1">'a A'</span><span class="p">)</span>
+
+<span class="c1"># Test a very long string.</span>
+<span class="n">random_str</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="n">reverse_random_str</span> <span class="o">=</span> <span class="s1">''</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">):</span>
+  <span class="n">ch</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">)</span>
+  <span class="n">random_str</span> <span class="o">+=</span> <span class="n">ch</span>
+  <span class="n">reverse_random_str</span> <span class="o">=</span> <span class="n">ch</span> <span class="o">+</span> <span class="n">reverse_random_str</span>
+<span class="n">reverse_test</span><span class="p">(</span><span class="n">random_str</span><span class="p">,</span> <span class="n">reverse_random_str</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'tests passed'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Copy your <code>reverse()</code> function and my test code into files in the Mu IDE and run them on your own computer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Import <em>only</em> the <code>random()</code> function from the <code>random</code> module. Write a function called <code>rando</code> that returns, on average, <code>True</code> half the time and <code>False</code> half the time.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="n">height</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">li</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
+  <span class="n">position</span> <span class="o">=</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">rando</span><span class="p">():</span>
+      <span class="n">position</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">position</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">position</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">position</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h2><p>Try some exercises on <a href="https://codingbat.com/python">codingbat.com/python</a>.</p>
 </div>
 </div>
 </div>
