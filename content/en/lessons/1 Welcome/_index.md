@@ -7562,6 +7562,16 @@ Open this notebook in Github</a>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h2><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
+<p>Pylearn is...</p>
+<ul>
+<li><strong>inclusive</strong> - no prerequisites, perfect for beginners</li>
+<li><strong>approachable</strong> - nothing to install or configure</li>
+<li><strong>convenient</strong> - learn at your pace, on your schedule</li>
+<li><strong>free</strong> - no fees, no ads, not now, not ever</li>
+<li><strong>practical</strong> - understand not only how, but why</li>
+<li><strong>respectful</strong> - we never request or store any personal information</li>
+<li><strong>interactive</strong> - learn by doing, using Colab notebooks</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7577,17 +7587,6 @@ Open this notebook in Github</a>
 <li>Show how to use Python to solve a real world, relatable problem</li>
 <li>Provide a solid foundation for diving deeper</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Cost">Cost<a class="anchor-link" href="#Cost">¶</a></h2><p><strong>There is no cost to use PyLearn</strong>. There is no login function. You can choose to identify yourself in the discussion forum, or not. This course is, and will always be, free of ads and other distractions. This material is presented for one reason only - to help people experience the joy and value of analyzing data using Python.</p>
 </div>
 </div>
 </div>
@@ -7629,33 +7628,6 @@ Open this notebook in Github</a>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Course-Logistics">Course Logistics<a class="anchor-link" href="#Course-Logistics">¶</a></h2><ul>
-<li>The duration of the course is ten weeks.</li>
-<li>We use a "flipped classroom" model where students watch videos, complete homework assignments, and attend optional weekly office hours.</li>
-<li>Office hours are  twice weekly via videoconference @ <a href="https://mco.fyi/meet">mco.fyi/meet</a><ul>
-<li>Wednesday evenings, 7-8:30pm GMT</li>
-<li>Saturday mornings at 4-5pm GMT</li>
-</ul>
-</li>
-<li>To get the most out of this class, plan to spend at least three hours per week:<ul>
-<li>1 on videos</li>
-<li>1 on homework</li>
-<li>1 on office hours</li>
-</ul>
-</li>
-<li>We'll use Colab (aka Jupyter) notebooks for lecture notes and homework.</li>
-<li>Later on in the course, you'll learn how to setup your own Python environment locally, but don't worry about that for now.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Syllabus">Syllabus<a class="anchor-link" href="#Syllabus">¶</a></h2><table>
 <thead>
 <tr>
@@ -7665,30 +7637,22 @@ Open this notebook in Github</a>
 </thead>
 <tbody>
 <tr>
-<td>00 Welcome</td>
+<td>1 Welcome</td>
 <td>Course description and background</td>
 </tr>
 <tr>
-<td>01 Variables and Types</td>
+<td>2 Variables and Types</td>
 <td>Basic data types, variables, and assignment statements</td>
 </tr>
 </tbody>
 </table>
-<br/>
-To be moved as new lessons are released...
-
-<p>Analyzing Patient Data|How can I process tabular data files in Python?
-Visualizing Tabular Data|How can I visualize tabular data in Python?
-Storing Multiple Values in Lists|How can I store many values together?
-Repeating Actions with Loops|How can I do the same operations on many different values?
-Analyzing Data from Multiple Files|How can I do the same operations on many different files?
-Making Choices|How can my programs do different things based on data values?
-Creating Functions|How can I define and a use a functions?
-Errors and Exceptions|How does Python report errors?
-How can I handle errors in Python programs?
-Defensive Programming|How can I make my programs more reliable?Debugging How can I debug my program?
-Command-Line|Programs	How can I write Python programs that will work like Unix command-line tools?
-Finish</p>
+<p>3 Expressions
+4 Conditionals
+5 Loops
+6 Functions
+7 Iterables
+8 Files
+9 Exceptions</p>
 </div>
 </div>
 </div>
@@ -7722,28 +7686,11 @@ Finish</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Course-Resources">Course Resources<a class="anchor-link" href="#Course-Resources">¶</a></h2><ul>
-<li>Website: <a href="https://pylearn.io">pylearn.io</a></li>
-<li>Office hours: <a href="https://pylearn.io/hours/">pylearn.io/hours/</a></li>
-<li>Blog: <a href="https://pylearn.io/blog/">pylearn.io/blog/</a></li>
-<li>Discussion forum: <a href="pylearn-hq.slack.com">@pylearn</a> (slack)</li>
-<li>Email list: <a href="mailto:pylearners@groups.google.com">pylearners@groups.google.com</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Learning-to-Code">Learning to Code<a class="anchor-link" href="#Learning-to-Code">¶</a></h2><ul>
 <li>Programming is a creative activity.</li>
 <li>There has never been a better time in history to learn to code.</li>
 <li>Anyone can learn to program, as long as you’re willing to do the work.</li>
-<li>Practice between classes is very important.</li>
+<li>Practice between classes is very helpful.</li>
 <li>Give yourself time &amp; kindness.</li>
 <li>Mistakes are feedback.</li>
 <li>When you get stuck:<ul>
