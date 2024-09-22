@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-1---Welcome,-Background,-&amp;-Getting-Started">Lesson 1 - Welcome, Background, &amp; Getting Started<a class="anchor-link" href="#Lesson-1---Welcome,-Background,-&amp;-Getting-Started">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-1---Welcome,-Background,-Getting-Started">Lesson 1 - Welcome, Background, Getting Started<a class="anchor-link" href="#Lesson-1---Welcome,-Background,-Getting-Started">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb" target="_blank">Open this notebook in Colab</a></li>
 <li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/1_Welcome.ipynb" target="_blank">

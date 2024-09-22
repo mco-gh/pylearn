@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-2---Types,-Variables,-&amp;-Assignment">Lesson 2 - Types, Variables, &amp; Assignment<a class="anchor-link" href="#Lesson-2---Types,-Variables,-&amp;-Assignment">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-2---Types,-Variables,-Assignment">Lesson 2 - Types, Variables, Assignment<a class="anchor-link" href="#Lesson-2---Types,-Variables,-Assignment">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Colab</a></li>
 <li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Github</a></li>
@@ -7731,7 +7731,205 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Numerical/Arithmetic-Operators">Numerical/Arithmetic Operators<a class="anchor-link" href="#Numerical/Arithmetic-Operators">¶</a></h3><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>operation on numbers</th>
+<th>operation on strings</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>+|addition|concatenation
+-|subtraction|undefined
+*|multiplication|repetition
+//|integer division|undefined
+/|real division|undefined
+%|modulus (remainder)|undefined
+**|exponentiation|undefined
+()|prioritization|prioritization</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Seeing-Data-Types">Seeing Data Types<a class="anchor-link" href="#Seeing-Data-Types">¶</a></h3><p>What are the data types of the following variables? Try to guess before executing the cell.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Strings">Strings<a class="anchor-link" href="#Strings">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Rules-of-the-Road">Rules of the Road<a class="anchor-link" href="#Rules-of-the-Road">¶</a></h3><ul>
+<li>a character string (or just string) is a sequence of characters surrounded by quotes</li>
+<li>strings give you the ability to operate on a sequence of characters as a basic unit</li>
+<li>strings are an example of a general category of data types called sequences, which we'll see more of later</li>
+<li>you can use single or double quotes to delineate strings but you must be consistent within a string</li>
+<li><code>"this works"</code> and <code>'this works'</code> too</li>
+<li><code>"this is not ok'</code>, <code>'nor is this"</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Embedded-Quotes">Embedded Quotes<a class="anchor-link" href="#Embedded-Quotes">¶</a></h3><p>How to embed a single or double quote inside a string?</p>
+<p>You can embed a single quote in a double quoted string:</p>
+<pre><code>"this string's fine"
+'but this doesn't work'
+</code></pre>
+<p>You can embed a double quote in a single quoted string:</p>
+<pre><code>'but this string is "A-OK"'
+"but this "example" fails"
+</code></pre>
+<p>You can also "escape" a single or double quote with the backslash character:</p>
+<pre><code>'Marc\'s string'
+"I like \"The Office\""
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Escape-Sequences">Escape Sequences<a class="anchor-link" href="#Escape-Sequences">¶</a></h3><p>These are useful for embedding special characters in a string.</p>
+<table>
+<thead>
+<tr>
+<th>character</th>
+<th>escape sequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tab</td>
+<td>\t</td>
+</tr>
+<tr>
+<td>newline</td>
+<td>\n</td>
+</tr>
+<tr>
+<td>single quote</td>
+<td>\'</td>
+</tr>
+<tr>
+<td>double quote</td>
+<td>\"</td>
+</tr>
+<tr>
+<td>backslash</td>
+<td>\\</td>
+</tr>
+</tbody>
+</table>
+<p>Examples are shown in the next cell...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Triple-Quoted-Strings">Triple Quoted Strings<a class="anchor-link" href="#Triple-Quoted-Strings">¶</a></h3><p>Sometimes you want to define a long string, that spans multiple lines, or a string containing embedded single and/or double quotes and don't want to use a lot of escape characters. Triple quoted strings are perfect for this job:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>For each of the following examples tell me if it’s a legal Python string...</p>
+<ol>
+<li><code>'Go ahead, make my day.'</code></li>
+<li><code>"There's no place like home."</code></li>
+<li><code>'Frankly my dear, I don't give a damn'</code></li>
+<li><code>'Say "hello" to my little friend'</code></li>
+<li><code>"You\'re gonna need a bigger boat"</code></li>
+<li><code>'"You talkin' to me?"'</code></li>
+<li><code>'Fasten your seatbelts, it\'s going to be a bumpy night'</code></li>
+<li><code>'''Striker: "Surely you can't be serious!" Rumack: "I am serious... and don't call me Shirley".'''</code></li>
+<li><code>"You had me at "hello"."</code></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="String-Operators">String Operators<a class="anchor-link" href="#String-Operators">¶</a></h3><p><code>+</code> and <code>*</code> can be used to operate on strings.</p>
+<p>Try the code in the cell below. One of these raises an error. What do you think the error message means?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Converting-to-a-string">Converting to a string<a class="anchor-link" href="#Converting-to-a-string">¶</a></h3><p>You can use the <code>str()</code> function to convert a numeric type into a string, like this:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h3><ul>
+<li><p>Method: A repeatable piece of code that completes a task for a specific data-type.</p>
+</li>
+<li><p>We invoke a method using the <code>.</code> syntax, e.g. <code>mystr.upper()</code>.</p>
+</li>
+<li><p>Methods are specific to a data-type
+e.g. <code>.upper()</code> can be used with a string but not an integer or a float</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7764,34 +7962,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">¶</a></h2><p>Any Python interpreter can be used as a calculator. The <code>print</code> function is called here to display the result of a calculation.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>23
-</pre>
-</div>
+<h3 id="F-(format)-Strings">F (format) Strings<a class="anchor-link" href="#F-(format)-Strings">¶</a></h3><p>Python has a special type of string called a format (or 'f') string, which enables you to "interpolate" a variable into a string, like this:</p>
 </div>
 </div>
 </div>
@@ -7802,7 +7973,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Constants-vs.-Variables">Constants vs. Variables<a class="anchor-link" href="#Constants-vs.-Variables">¶</a></h1>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In the following cell, rewrite cat_food.py to use f-string instead of joining strings with + .</p>
 </div>
 </div>
 </div>
@@ -7813,7 +7984,77 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Variables">Variables<a class="anchor-link" href="#Variables">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variable-Naming-Rules">Variable Naming Rules<a class="anchor-link" href="#Variable-Naming-Rules">¶</a></h3><p>There are some special rules governing variable names:</p>
 <ul>
+<li>variable names may start with a letter or an underscore</li>
+<li>the rest of the letters in the name may be letters, numbers or underscore
+case is significant</li>
+<li><code>name</code> is different from <code>NAME</code>, which is different from <code>NaMe</code></li>
+</ul>
+<h2 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h2><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your variables.</p>
+<blockquote>
+<p><code>and, as, assert, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
+</blockquote>
+<p>Try using one of these as a variable and see what happens...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>Which of the following are legal Python variable names?</p>
+<pre><code>average = 1
+Max = 1
+print = 1  
+LadyGaGa = 1  
+_Lady_Ga_Ga = 1
+FiftyYardLine = 1    
+50_yard_line = 1  
+yard_line_50 = 1  
+raise = 1  
+my-cat-is-awesome = 1
+my_cat_is_awesome = 1  
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h3><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.</p>
+<blockquote>
+<p><code>and, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Constants-vs.-Variables">Constants vs. Variables<a class="anchor-link" href="#Constants-vs.-Variables">¶</a></h3><ul>
 <li><p>Literal values (like <code>"marc"</code> and <code>2024</code>) are called constants because their value is fixed, unlike variables, whose associated value may change (or <em>vary</em>) over time.</p>
 </li>
 <li><p>The data a variable refers to may be simple, e.g. a number or a string, or it may be complex, e.g. a list or an object (we'll learn about those later).</p>
@@ -7829,10 +8070,131 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h3><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.</p>
-<blockquote>
-<p><code>and, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
-</blockquote>
+<h2 id="Assignment-Statements">Assignment Statements<a class="anchor-link" href="#Assignment-Statements">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Assignment statements are used to associate a variable name with some simple or complex value
+general form:</p>
+<pre><code>variable_name = 'some_value'</code></pre>
+<p>If a variable doesn’t already exist, when you assign to it, Python creates it on the fly.</p>
+<p>If you assign to a variable that already exists, Python replaces its current value with a new value.</p>
+<h3 id="Examples">Examples<a class="anchor-link" href="#Examples">¶</a></h3><pre><code>instructor = 'marc'         # string value
+instructor = 'my evil twin' # same name, diff string value
+instructor = 42             # same name, integer value
+todays_high_temp = 71.3     # diff name, floating point value</code></pre>
+<p>Try some experiments in the next cell...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Usage-Example">Usage Example<a class="anchor-link" href="#Usage-Example">¶</a></h3><p>Let's print a list of the first 9 multiples of 9...</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>In the next cell, create a program that calculates how many cans of cat food you need to feed 10 cats. You will need:</p>
+<ul>
+<li>A variable for the number of cats</li>
+<li>A variable for the number of cans each cat eats in a day</li>
+<li>A <code>print()</code> function call to output the result</li>
+</ul>
+<p>Extension: change the calculation to work out the amount needed for 7 days.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="1---Print-a-Multiplication-Table">1 - Print a Multiplication Table<a class="anchor-link" href="#1---Print-a-Multiplication-Table">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2---Search-IMDb">2 - Search IMDb<a class="anchor-link" href="#2---Search-IMDb">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="3---Generate-a-Histogram">3 - Generate a Histogram<a class="anchor-link" href="#3---Generate-a-Histogram">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -8034,6 +8396,148 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 <li>Use <code>print(something)</code> to display the value of <code>something</code>.</li>
 <li>Built-in functions, like <code>print</code> are always available to use.</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>Prompt for user's name and print it back with "Nice to meet you, name!".</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="s1">'What is your name? '</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">'Nice to meet you,'</span><span class="p">,</span> <span class="n">name</span> <span class="o">+</span><span class="s1">'!'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>Prompt for dog's age and return in people years.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="n">dog_to_people_years</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">dog_age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'How old is your dog? '</span><span class="p">)</span>
+<span class="n">people_age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">dog_age</span><span class="p">)</span> <span class="o">*</span> <span class="n">dog_to_people_years</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dog_age</span><span class="p">,</span><span class="s1">'dog years ='</span><span class="p">,</span>  <span class="nb">str</span><span class="p">(</span><span class="n">people_age</span><span class="p">),</span> <span class="s1">'people years.'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program to calculate the total number of hours in a fixed set of days, where the number of days is assigned to a variable.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="n">days</span> <span class="o">=</span> <span class="mi">365</span>
+<span class="n">hours</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="n">total_hours</span> <span class="o">=</span> <span class="n">days</span> <span class="o">*</span> <span class="n">hours</span>
+<span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'There are </span><span class="si">{</span><span class="n">total_hours</span><span class="si">}</span><span class="s1"> hours in </span><span class="si">{</span><span class="n">days</span><span class="si">}</span><span class="s1"> days.'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Write some Python code that uses all the maths operators you've learned.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
