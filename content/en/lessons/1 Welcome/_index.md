@@ -8367,7 +8367,7 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h2>
+<h3 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h3>
 </div>
 </div>
 </div>

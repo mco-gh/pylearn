@@ -9366,9 +9366,9 @@ for i in range(1, 10):
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="bbb2920f-2b55-4fb4-82a8-ffc22fb60d41" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="291e7392-6306-4c7a-a37c-c34e7a423609" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('bbb2920f-2b55-4fb4-82a8-ffc22fb60d41');
+var element = document.getElementById('291e7392-6306-4c7a-a37c-c34e7a423609');
 
     async function takePhoto(quality) {
       const div = document.createElement('div');
