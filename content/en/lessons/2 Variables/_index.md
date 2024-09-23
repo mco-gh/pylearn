@@ -7581,17 +7581,30 @@ we can use a floating point value by executing:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">weight_kg</span> <span class="o">=</span> <span class="mf">60.3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>60.3
+</pre>
 </div>
 </div>
 </div>
@@ -7609,17 +7622,30 @@ we can assign each person a unique identifier by storing it in variable that sto
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"001"</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>001
+</pre>
 </div>
 </div>
 </div>
@@ -7660,12 +7686,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span><span class="p">)</span>
@@ -7681,6 +7707,26 @@ print(2 ** 4)
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>-1
+72
+3.0
+2.5
+1
+23
+26
+16
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7688,7 +7734,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Numerical/Arithmetic-Operators">Numerical/Arithmetic Operators<a class="anchor-link" href="#Numerical/Arithmetic-Operators">¶</a></h3><table>
+<h4 id="Numerical/Arithmetic-Operators">Numerical/Arithmetic Operators<a class="anchor-link" href="#Numerical/Arithmetic-Operators">¶</a></h4><table>
 <thead>
 <tr>
 <th>operator</th>
@@ -7717,7 +7763,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Seeing-Data-Types">Seeing Data Types<a class="anchor-link" href="#Seeing-Data-Types">¶</a></h3><p>What are the data types of the following variables? Try to guess before executing the cell.</p>
+<h3 id="Strings">Strings<a class="anchor-link" href="#Strings">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7728,18 +7774,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Strings">Strings<a class="anchor-link" href="#Strings">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Rules-of-the-Road">Rules of the Road<a class="anchor-link" href="#Rules-of-the-Road">¶</a></h3><ul>
+<h4 id="Rules-of-the-Road">Rules of the Road<a class="anchor-link" href="#Rules-of-the-Road">¶</a></h4><ul>
 <li>a character string (or just string) is a sequence of characters surrounded by quotes</li>
 <li>strings give you the ability to operate on a sequence of characters as a basic unit</li>
 <li>strings are an example of a general category of data types called sequences, which we'll see more of later</li>
@@ -7757,7 +7792,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Embedded-Quotes">Embedded Quotes<a class="anchor-link" href="#Embedded-Quotes">¶</a></h3><p>How to embed a single or double quote inside a string?</p>
+<h4 id="Embedded-Quotes">Embedded Quotes<a class="anchor-link" href="#Embedded-Quotes">¶</a></h4><p>How to embed a single or double quote inside a string?</p>
 <p>You can embed a single quote in a double quoted string:</p>
 <pre><code>"this string's fine"
 'but this doesn't work'
@@ -7780,7 +7815,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Escape-Sequences">Escape Sequences<a class="anchor-link" href="#Escape-Sequences">¶</a></h3><p>These are useful for embedding special characters in a string.</p>
+<h4 id="Escape-Sequences">Escape Sequences<a class="anchor-link" href="#Escape-Sequences">¶</a></h4><p>These are useful for embedding special characters in a string.</p>
 <table>
 <thead>
 <tr>
@@ -7815,12 +7850,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># escape sequence examples</span>
@@ -7836,6 +7871,28 @@ print(2 ** 4)
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Quoth the raven: "nevermore".
+My country 'tis of thee
+line1
+line2
+line3
+field1	field2	field3
+c:\directory\file
+several escape sequences:
+1/1	1/2
+2/1	2/2
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7843,16 +7900,16 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Triple-Quoted-Strings">Triple Quoted Strings<a class="anchor-link" href="#Triple-Quoted-Strings">¶</a></h3><p>Sometimes you want to define a long string, that spans multiple lines, or a string containing embedded single and/or double quotes and don't want to use a lot of escape characters. Triple quoted strings are perfect for this job:</p>
+<h4 id="Triple-Quoted-Strings">Triple Quoted Strings<a class="anchor-link" href="#Triple-Quoted-Strings">¶</a></h4><p>Sometimes you want to define a long string, that spans multiple lines, or a string containing embedded single and/or double quotes and don't want to use a lot of escape characters. Triple quoted strings are perfect for this job:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">longstr</span> <span class="o">=</span> <span class="s2">"""</span>
@@ -7868,6 +7925,25 @@ print(2 ** 4)
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+    This is a triple quoted string.
+    It goes on for multiple lines.
+    It contains things like ' and ",
+    which would normally have to be escaped,
+    but anything goes in a triple quoted string.
+
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7875,7 +7951,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>For each of the following examples tell me if it’s a legal Python string...</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>For each of the following examples tell me if it’s a legal Python string...</p>
 <ol>
 <li><code>'Go ahead, make my day.'</code></li>
 <li><code>"There's no place like home."</code></li>
@@ -7897,17 +7973,17 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="String-Operators">String Operators<a class="anchor-link" href="#String-Operators">¶</a></h3><p><code>+</code> and <code>*</code> can be used to operate on strings.</p>
+<h4 id="String-Operators">String Operators<a class="anchor-link" href="#String-Operators">¶</a></h4><p><code>+</code> and <code>*</code> can be used to operate on strings.</p>
 <p>Try the code in the cell below. One of these raises an error. What do you think the error message means?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="p">)</span>
@@ -7915,6 +7991,35 @@ print(2 ** 4)
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Clyro "</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Cat
+Catvideos
+Clyro Clyro Clyro 
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-7-4c6c0087a6d6&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 4&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Cat"</span> <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"videos"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Clyro "</span> <span class="ansi-blue-fg">*</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Cat"</span> <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">TypeError</span>: can only concatenate str (not "int") to str</pre>
 </div>
 </div>
 </div>
@@ -7946,7 +8051,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Converting-to-a-string">Converting to a string<a class="anchor-link" href="#Converting-to-a-string">¶</a></h3><p>You can use the <code>str()</code> function to convert a numeric type into a string, like this:</p>
+<h4 id="Converting-to-a-string">Converting to a string<a class="anchor-link" href="#Converting-to-a-string">¶</a></h4><p>You can use the <code>str()</code> function to convert a numeric type into a string, like this:</p>
 </div>
 </div>
 </div>
@@ -7972,7 +8077,7 @@ print(2 ** 4)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h3><ul>
+<h4 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h4><ul>
 <li><p>Method: A repeatable piece of code that completes a task for a specific data-type.</p>
 </li>
 <li><p>We invoke a method using the <code>.</code> syntax, e.g. <code>mystr.upper()</code>.</p>
@@ -8009,7 +8114,7 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>In the next cell, create a program that calculates how many cans of cat food you need to feed 10 cats. You will need:</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In the next cell, create a program that calculates how many cans of cat food you need to feed 10 cats. You will need:</p>
 <ul>
 <li>A variable for the number of cats</li>
 <li>A variable for the number of cans each cat eats in a day</li>
@@ -8458,6 +8563,24 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="si">:</span><span class="s1">2</span><span class="si">}</span><span class="s1">'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8469,6 +8592,46 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="n">imdbpy</span>
+<span class="kn">from</span> <span class="nn">imdb</span> <span class="kn">import</span> <span class="n">IMDb</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s1">'the godfather'</span>
+<span class="n">imdb</span> <span class="o">=</span> <span class="n">IMDb</span><span class="p">()</span>  <span class="c1"># create imdb API object</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">search_movie</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'kind'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'movie'</span><span class="p">:</span>
+    <span class="n">movie</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">get_movie</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">movieID</span><span class="p">)</span>
+    <span class="n">imdb</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">movie</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="p">[</span><span class="s1">'vote details'</span><span class="p">])</span>
+    <span class="k">if</span> <span class="s1">'rating'</span> <span class="ow">in</span> <span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+      <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'cover url'</span><span class="p">]))</span>
+      <span class="nb">print</span><span class="p">(</span><span class="n">movie</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'rating'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8477,6 +8640,26 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="3---Generate-a-Histogram">3 - Generate a Histogram<a class="anchor-link" href="#3---Generate-a-Histogram">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'Sweden'</span><span class="p">,</span>
+             <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'Nigeria'</span><span class="p">,</span>
+             <span class="s1">'US'</span><span class="p">,</span> <span class="s1">'Afghanistan'</span><span class="p">,</span> <span class="s1">'Afghanistan'</span><span class="p">,</span> <span class="s1">'US'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'US'</span><span class="p">,</span>
+             <span class="s1">'Afghanistan'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">]</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">countries</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -8515,7 +8698,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>Prompt for user's name and print it back with "Nice to meet you, name!".</p>
+<h3 id="Problem-1">Problem 1<a class="anchor-link" href="#Problem-1">¶</a></h3><p>Prompt for user's name and print it back with "Nice to meet you, name!".</p>
 </div>
 </div>
 </div>
@@ -8543,7 +8726,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>Prompt for dog's age and return in people years.</p>
+<h3 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2">¶</a></h3><p>Prompt for dog's age and return in people years.</p>
 </div>
 </div>
 </div>
@@ -8573,7 +8756,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program to calculate the total number of hours in a fixed set of days, where the number of days is assigned to a variable.</p>
+<h3 id="Problem-3">Problem 3<a class="anchor-link" href="#Problem-3">¶</a></h3><p>Write a program to calculate the total number of hours in a fixed set of days, where the number of days is assigned to a variable.</p>
 </div>
 </div>
 </div>
@@ -8604,7 +8787,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Write some Python code that uses all the maths operators you've learned.</p>
+<h3 id="Problem-4">Problem 4<a class="anchor-link" href="#Problem-4">¶</a></h3><p>Write some Python code that uses all the maths operators you've learned.</p>
 </div>
 </div>
 </div>
@@ -8646,43 +8829,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Which of the following are legal Python variable names? First make a guess then copy these assignment statements into the next cell and run them.</p>
-<pre><code>average = 1
-Max = 1
-LadyGaGa = 1  
-_Lady_Ga_Ga = 1
-FiftyYardLine = 1    
-50_yard_line = 1  
-yard_line_50 = 1  
-raise = 1  
-my-cat-is-awesome = 1
-my_cat_is_awesome = 1  
-</code></pre>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
-</pre></div>
-</div>
+<h3 id="Problem-5">Problem 5<a class="anchor-link" href="#Problem-5">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8858,40 +9005,6 @@ my_cat_is_awesome = 1
 <div class="highlight hl-python"><pre><span></span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>From the menu bar, select Tools-&gt;Command Palette to see a list of the commands you can execute inside a Colab notebook. Most of these commands are intuitively named. For example, to save your notebook in Google Drive, run "Save notebook" now from the command palette. You can find it quickly by typing "save" in the search box.</p>
-<p>Don't worry if you're not sure what some of the commands in the command palette do. For now, I just want you to know about this resource.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Congratulations for making it this far! Your last assignment is to watch this <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short video</a> and take a <a href="https://colab.research.google.com/notebooks/intro.ipynb">quick tour of Colab</a>.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><strong>It's a good idea to save your work after a notebook session.</strong> You can use the command palette to do this, as you just did in the previous cell, but since this is a common function, you'll see an easier way to save your notebook via the File-&gt;Save menu item.</p>
 </div>
 </div>
 </div>
