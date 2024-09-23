@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-6">Lesson 6<a class="anchor-link" href="#Lesson-6">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
+<h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
 <p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
 <p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 </div>

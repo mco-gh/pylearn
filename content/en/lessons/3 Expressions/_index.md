@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-3---Expressions-&amp;-Operators">Lesson 3 - Expressions &amp; Operators<a class="anchor-link" href="#Lesson-3---Expressions-&amp;-Operators">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-3---More-Types,-Expressions,-Operators">Lesson 3 - More Types, Expressions, Operators<a class="anchor-link" href="#Lesson-3---More-Types,-Expressions,-Operators">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <ul>
 <li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/3_Expressions.ipynb" target="_blank">Open this notebook in Colab
 </a></li>
@@ -7546,7 +7546,6 @@ a.anchor-link {
 <li>Boolean operators</li>
 <li>How to combine constants, variables, and operators into expressions</li>
 <li>Operator precedence</li>
-<li>The magical f-string</li>
 </ul>
 </div>
 </div>
@@ -7795,59 +7794,6 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Arithmetic-Operators">Arithmetic Operators<a class="anchor-link" href="#Arithmetic-Operators">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>As their name suggests, arithmetic operators allow us to perform numerical calculations.</p>
-<p>The following table summarizes the most commonly used arithmetic operators in Python, along with what they do.</p>
-<table>
-<thead>
-<tr>
-<th>operator</th>
-<th>operation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>+</td>
-<td>addition</td>
-</tr>
-<tr>
-<td>-</td>
-<td>subtraction</td>
-</tr>
-<tr>
-<td>*</td>
-<td>multiplication</td>
-</tr>
-<tr>
-<td>/</td>
-<td>division</td>
-</tr>
-<tr>
-<td>//</td>
-<td>modulus</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
@@ -8353,33 +8299,6 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <p><code>A and B or C and D</code></p>
 <p>but I much prefer to make this explicit so I don't have to think about precedence rules every time I look at this code:</p>
 <p><code>(A and B) or (C and D)</code></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="F-strings">F-strings<a class="anchor-link" href="#F-strings">¶</a></h2><p>We often need to combine variables, values, and strings. For example, if we have the following variables:</p>
-<ul>
-<li><code>customer_id</code></li>
-<li><code>account_balance</code></li>
-</ul>
-<p>we might want to print a report, where each line summarizes the values above. We could do that like this:</p>
-<pre><code>print("customer id: ", customer_id, ", account balance:", account_balance)
-</code></pre>
-<p>which produces this output:</p>
-<pre><code>customer id:  123 , account balance: 17.9
-</code></pre>
-<p>This sort of construct gets a bit tedious. Plus the space between the customer id and the following comma is unintended and undesirable.</p>
-<p>A relatively new addition to Python, called f-strings, offer a simpler and more readable solution to this problem. If you prefix a string with the character <code>f</code>, it gives the string magic powers. Specifically, the sting has the ability to <strong>interpolate</strong> variables inside curly braces. Here's how we could express the previous <code>print</code> statement using an f-string:</p>
-<pre><code>print(f"customer id: {customer_id} account balance: {account_balance}")
-</code></pre>
-<p>This is shorter, less tedious, easier to read and write, and solves the formatting issue related to the comma between the two fields.</p>
-<p>Note that you can put any Python code inside the curly braces, so this technique is very powerful. Once you get going with Python, you'll find all sort of wonderful ways to use f-strings.</p>
 </div>
 </div>
 </div>

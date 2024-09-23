@@ -8181,6 +8181,59 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Variables are names - a reusable label for a data value</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Marc'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s1">'Benji'</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>Which of the following are legal Python variable names?</p>
+<pre><code>average = 1
+Max = 1
+print = 1  
+LadyGaGa = 1  
+_Lady_Ga_Ga = 1
+FiftyYardLine = 1    
+50_yard_line = 1  
+yard_line_50 = 1  
+raise = 1  
+my-cat-is-awesome = 1
+my_cat_is_awesome = 1  
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Variable-Naming-Rules">Variable Naming Rules<a class="anchor-link" href="#Variable-Naming-Rules">¶</a></h3><p>There are some special rules governing variable names:</p>
 <ul>
 <li>variable names may start with a letter or an underscore</li>
@@ -8188,11 +8241,6 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 case is significant</li>
 <li><code>name</code> is different from <code>NAME</code>, which is different from <code>NaMe</code></li>
 </ul>
-<h2 id="Reserved-Words">Reserved Words<a class="anchor-link" href="#Reserved-Words">¶</a></h2><p>The following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your variables.</p>
-<blockquote>
-<p><code>and, as, assert, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield</code></p>
-</blockquote>
-<p>Try using one of these as a variable and see what happens...</p>
 </div>
 </div>
 </div>
@@ -8233,132 +8281,23 @@ case is significant</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="F-(format)-Strings">F (format) Strings<a class="anchor-link" href="#F-(format)-Strings">¶</a></h2><p>Python has a special type of string called a format (or 'f') string, which enables you to "interpolate" a variable into a string, like this:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">3.14</span>
-<span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'My name is </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># The hard way to format strings...</span>
-
-<span class="n">fruit</span> <span class="o">=</span> <span class="s1">'oranges'</span>
-<span class="n">quantity</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">unit_cost</span> <span class="o">=</span> <span class="mf">0.50</span>
-<span class="n">total_cost</span> <span class="o">=</span> <span class="n">unit_cost</span> <span class="o">*</span> <span class="n">quantity</span>
-<span class="n">output</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">quantity</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' '</span> <span class="o">+</span> <span class="n">fruit</span> <span class="o">+</span> <span class="s1">' '</span> <span class="o">+</span> <span class="s1">'cost £'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total_cost</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># The easy way to format strings...</span>
-
-<span class="n">fruit</span> <span class="o">=</span> <span class="s1">'oranges'</span>
-<span class="n">quantity</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">unit_cost</span> <span class="o">=</span> <span class="mf">0.50</span>
-<span class="n">total_cost</span> <span class="o">=</span> <span class="n">unit_cost</span> <span class="o">*</span> <span class="n">quantity</span>
-<span class="n">output</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">quantity</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="n">fruit</span><span class="si">}</span><span class="s1"> cost £</span><span class="si">{</span><span class="n">total_cost</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">'</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Variables are names - a reusable label for a data value</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Marc'</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="mf">3.14</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">'Benji'</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kc">False</span> <span class="o">=</span> <span class="s1">'Marc'</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>Which of the following are legal Python variable names?</p>
-<pre><code>average = 1
-Max = 1
-print = 1  
-LadyGaGa = 1  
-_Lady_Ga_Ga = 1
-FiftyYardLine = 1    
-50_yard_line = 1  
-yard_line_50 = 1  
-raise = 1  
-my-cat-is-awesome = 1
-my_cat_is_awesome = 1  
+<h2 id="F-strings">F-strings<a class="anchor-link" href="#F-strings">¶</a></h2><p>We often need to combine variables, values, and strings. For example, if we have the following variables:</p>
+<ul>
+<li><code>customer_id</code></li>
+<li><code>account_balance</code></li>
+</ul>
+<p>we might want to print a report, where each line summarizes the values above. We could do that like this:</p>
+<pre><code>print("customer id: ", customer_id, ", account balance:", account_balance)
 </code></pre>
+<p>which produces this output:</p>
+<pre><code>customer id:  123 , account balance: 17.9
+</code></pre>
+<p>This sort of construct gets a bit tedious. Plus the space between the customer id and the following comma is unintended and undesirable.</p>
+<p>A relatively new addition to Python, called f-strings, offer a simpler and more readable solution to this problem. If you prefix a string with the character <code>f</code>, it gives the string magic powers. Specifically, the sting has the ability to <strong>interpolate</strong> variables inside curly braces. Here's how we could express the previous <code>print</code> statement using an f-string:</p>
+<pre><code>print(f"customer id: {customer_id} account balance: {account_balance}")
+</code></pre>
+<p>This is shorter, less tedious, easier to read and write, and solves the formatting issue related to the comma between the two fields.</p>
+<p>Note that you can put any Python code inside the curly braces, so this technique is very powerful. Once you get going with Python, you'll find all sort of wonderful ways to use f-strings.</p>
 </div>
 </div>
 </div>
