@@ -7567,6 +7567,11 @@ Open this notebook in Github</a>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="To-do">To do<a class="anchor-link" href="#To-do">¶</a></h2><ul>
+<li>unifying practice project</li>
+<li>python growth over time section</li>
+</ul>
+<p>topics to verify from online city lit catlog:</p>
+<ul>
 <li>Compiled vs. Interpreted</li>
 <li>Compiled and Interpreted programming languages</li>
 <li>Downloading and installing Python</li>
@@ -7670,40 +7675,44 @@ Open this notebook in Github</a>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>1</td>
+<td>Welcome, Background, &amp; Getting Started</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Types, Variables, &amp; Assignment</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Expressions &amp; Operators</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Conditionals</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Loops</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Functions</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Iterables</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Files</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Exceptions</td>
+</tr>
 </tbody>
 </table>
-<p>1 Welcome, Background, &amp; Getting Started
-2 Types, Variables, &amp; Assignment
-3 Expressions &amp; Operators
-4 Conditionals
-5 Loops
-6 Functions
-7 Iterables
-8 Files
-9 Exceptions</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Old Agenda (for reference)</p>
-<ul>
-<li>Week 1 - Course intro, setting up your environment, your first program</li>
-<li>Week 2 - Basic data types, variables, and assignment statements</li>
-<li>Week 3 - Expressions and operators</li>
-<li>Week 4 - Simple I/O</li>
-<li>Week 5 - Conditional Logic</li>
-<li>Week 6 - Iteration</li>
-<li>Week 7 - Functions</li>
-<li>Week 8 - Sequences</li>
-<li>Week 9 - Mappings</li>
-<li>Week 10 - All Together Now</li>
-</ul>
 </div>
 </div>
 </div>
@@ -8333,6 +8342,98 @@ For example, you can pass arguments to the print function to produce just about 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h4><ul>
+<li>Change the output message to anything you want.</li>
+<li>Repeat the code on multiple lines to output several messages.</li>
+<li>See what happens when you remove different parts of the code (e.g. brackets, commas, etc.).</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><a href="https://python.org">The official Python site</a></li>
+<li><a href="https://python.org/downloads/">Install Python</a></li>
+<li><a href="https://codewith.my">Nice Python editor for beginners</a></li>
+<li><a href="https://mco.dev/my-favorite-books-for-beginning-python-students/">My Favorite Books for Beginning Python Students</a></li>
+<li><a href="https://repl.it">repl.it</a></li>
+<li><a href="https://codingbat.com/python">codingbat.com</a></li>
+<li><a href="https://blog.repl.it/beginner-python-errors-career-karma?ref=newsletter">Common Errors Python Beginners Encounter (with Solutions)</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Recommended-Book-for-Further-Study">Recommended Book for Further Study<a class="anchor-link" href="#Recommended-Book-for-Further-Study">¶</a></h3><p><a href="http://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></p>
+<p>Great fit for our course:</p>
+<ul>
+<li>well written</li>
+<li>free to read online</li>
+<li>perfect for beginners</li>
+<li>focusses on practical applications</li>
+<li>if you buy it, make sure you get the 3rd edition</li>
+</ul>
+<br/>
+<img alt="No description has been provided for this image" height="350" src="https://m.media-amazon.com/images/I/61yYe66I4+L._SL1321_.jpg"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><a href="https://python.org/doc/">Official Python Documentation</a></li>
+<li>the <code>help</code> function (see example below)</li>
+<li>Google</li>
+</ul>
 </div>
 </div>
 </div>
