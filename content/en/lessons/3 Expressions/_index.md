@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-3---More-Types,-Expressions,-Operators">Lesson 3 - More Types, Expressions, Operators<a class="anchor-link" href="#Lesson-3---More-Types,-Expressions,-Operators">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-3---Expressions">Lesson 3 - Expressions<a class="anchor-link" href="#Lesson-3---Expressions">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>More about types in Python</li>
@@ -7565,7 +7565,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="More-Data-Types">More Data Types<a class="anchor-link" href="#More-Data-Types">¶</a></h1><p>In Python, values have a <em>type</em>. We already saw three data types in the previous lesson. In this lesson we'll learn about some additional types, how to determine a variable's type, how to convert a value from one type to another, and how to combine variable into complex expressions.</p>
+<h2 id="More-Data-Types">More Data Types<a class="anchor-link" href="#More-Data-Types">¶</a></h2><p>In Python, values have a <em>type</em>. We already saw three data types in the previous lesson. In this lesson we'll learn about some additional types, how to determine a variable's type, how to convert a value from one type to another, and how to combine variable into complex expressions.</p>
 </div>
 </div>
 </div>
@@ -7576,7 +7576,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="The-Boolean-(bool)-Type">The Boolean (<code>bool</code>) Type<a class="anchor-link" href="#The-Boolean-(bool)-Type">¶</a></h1>
+<h3 id="The-Boolean-(bool)-Type">The Boolean (<code>bool</code>) Type<a class="anchor-link" href="#The-Boolean-(bool)-Type">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7624,7 +7624,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="The-None-Type">The None Type<a class="anchor-link" href="#The-None-Type">¶</a></h1>
+<h3 id="The-None-Type">The None Type<a class="anchor-link" href="#The-None-Type">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7649,7 +7649,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Type-Conversion-and-the-type-Function">Type Conversion and the <code>type</code> Function<a class="anchor-link" href="#Type-Conversion-and-the-type-Function">¶</a></h1>
+<h2 id="Type-Conversion-and-the-type-Function">Type Conversion and the <code>type</code> Function<a class="anchor-link" href="#Type-Conversion-and-the-type-Function">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7660,7 +7660,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Type-Conversion-Functions">Type Conversion Functions<a class="anchor-link" href="#Type-Conversion-Functions">¶</a></h2><p>These are built-in Python functions to convert from one type to another. The name of the function mirrors the type you want to convert to, and you pass a variable or value to be converted.</p>
+<h3 id="Type-Conversion-Functions">Type Conversion Functions<a class="anchor-link" href="#Type-Conversion-Functions">¶</a></h3><p>These are built-in Python functions to convert from one type to another. The name of the function mirrors the type you want to convert to, and you pass a variable or value to be converted.</p>
 <ul>
 <li><code>int(x)</code> - converts <em>x</em> to an integer</li>
 <li><code>float(x)</code> - converts <em>x</em> to a floating point number</li>
@@ -7677,7 +7677,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="When-do-you-need-to-convert-a-type?">When do you need to convert a type?<a class="anchor-link" href="#When-do-you-need-to-convert-a-type?">¶</a></h2><p>When you have an expression containing mixed types...</p>
+<h3 id="When-do-you-need-to-convert-a-type?">When do you need to convert a type?<a class="anchor-link" href="#When-do-you-need-to-convert-a-type?">¶</a></h3><p>When you have an expression containing mixed types...</p>
 <ul>
 <li><code>name + number</code></li>
 <li><code>age * 365</code></li>
@@ -7711,7 +7711,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-type()-function">The type() function<a class="anchor-link" href="#The-type()-function">¶</a></h2><p>The built-in <code>type</code> function returns the type of the passed value. It conveys the type name in a string of the form <code>&lt;class type-name&gt;</code>. Don't worry too much for now about that format - just know that the name after <code>class</code> is the type name.</p>
+<h3 id="The-type()-function">The type() function<a class="anchor-link" href="#The-type()-function">¶</a></h3><p>The built-in <code>type</code> function returns the type of the passed value. It conveys the type name in a string of the form <code>&lt;class type-name&gt;</code>. Don't worry too much for now about that format - just know that the name after <code>class</code> is the type name.</p>
 <pre><code>&gt;&gt;&gt; type(123)
 &lt;class 'int'&gt;
 </code></pre>
@@ -7736,77 +7736,6 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="n">type_int</span><span class="p">,</span> <span class="n">type_float</span><span class="p">,</span> <span class="n">type_str</span><span class="p">,</span> <span class="n">type_bool</span><span class="p">,</span> <span class="n">type_none</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h2><p>Once we have data stored with variable names, we can make use of those variables in our calculations. We call these combinations of variables and values  <strong>expressions</strong>. When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</p>
-<p>For example, we may want to calculate our patient's weight in pounds:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">weight_lb</span> <span class="o">=</span> <span class="mf">2.2</span> <span class="o">*</span> <span class="n">weight_kg</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">weight_lb</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We might also decide to add a prefix to our character string representation of a patient ID:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"cardio_"</span> <span class="o">+</span> <span class="n">patient_id</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>Guess the numerical values each of these expressions evaluate to.</p>
-<ul>
-<li><code>125 + 10</code></li>
-<li><code>125 - 10</code></li>
-<li><code>125 * 10</code></li>
-<li><code>125 / 10</code></li>
-<li><code>125 // 10</code></li>
-</ul>
 </div>
 </div>
 </div>
@@ -8147,7 +8076,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Expressions-Revisited">Expressions Revisited<a class="anchor-link" href="#Expressions-Revisited">¶</a></h1>
+<h1 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8160,7 +8089,12 @@ is <code>False</code> when A is <code>True</code></p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>Python lets us combine values, variables, constants and operators into larger units called expressions.</li>
+<li>When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</li>
 <li>Expressions appear in many places, for example:<ul>
+<li>numerical calculations<ul>
+<li><code>2 + 2</code></li>
+</ul>
+</li>
 <li>assignment statements<ul>
 <li><code>age = age + 1    # we do this every birthday</code></li>
 </ul>
@@ -8176,6 +8110,32 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Let's combine <code>input</code>, <code>print</code>, and expressions to build a temperature conversion program. The formulae for converting Celcius to Fahrenheit and vice versa are:</p>
+<ul>
+<li><code>F = (C + 32) * 9/5</code></li>
+<li><code>C = (F - 32) * 5/9</code></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8184,10 +8144,9 @@ is <code>False</code> when A is <code>True</code></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">49</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
-<span class="n">age</span> <span class="o">=</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">degrees_f</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees in fahrenheit: '</span><span class="p">)</span>
+<span class="c1"># Add an assignment statement that computes degrees_c as a function of degrees_f</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F = </span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8201,10 +8160,9 @@ is <code>False</code> when A is <code>True</code></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="mi">64</span>
-<span class="n">days_per_year</span> <span class="o">=</span> <span class="mi">365</span>
-<span class="n">days_old</span> <span class="o">=</span> <span class="n">age</span> <span class="o">*</span> <span class="n">days_per_year</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I am </span><span class="si">{</span><span class="n">days_old</span><span class="si">}</span><span class="s2"> days old!"</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="n">degrees_c</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees celsius: '</span><span class="p">)</span>
+<span class="c1"># Add an assignment statement that computes degrees_f as a function of degrees_c</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C= </span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
