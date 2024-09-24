@@ -8319,7 +8319,7 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Example-Program">Example Program<a class="anchor-link" href="#Example-Program">¶</a></h1>
+<h1 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8330,7 +8330,7 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Draw-a-Randomly-Colored-Star">Draw a Randomly Colored Star<a class="anchor-link" href="#Draw-a-Randomly-Colored-Star">¶</a></h3>
+<h3 id="1---Draw-a-Randomly-Colored-Star">1 - Draw a Randomly Colored Star<a class="anchor-link" href="#1---Draw-a-Randomly-Colored-Star">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8395,6 +8395,77 @@ unless also divisible by 400.</p>
     <span class="n">left</span><span class="p">(</span><span class="mi">170</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="2---Study-Group-Formation">2 - Study Group Formation<a class="anchor-link" href="#2---Study-Group-Formation">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">sample</span>
+
+<span class="k">def</span> <span class="nf">groups</span><span class="p">(</span><span class="n">student_list</span><span class="p">,</span> <span class="n">group_size</span><span class="p">):</span>
+  <span class="n">students</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">student_list</span><span class="p">)</span>
+  <span class="c1">#print(students)</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">)</span> <span class="o">/</span> <span class="n">group_size</span><span class="p">)):</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">group_size</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">students</span><span class="p">))</span>
+    <span class="n">group</span> <span class="o">=</span> <span class="n">sample</span><span class="p">(</span><span class="n">students</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">group</span><span class="p">:</span>
+      <span class="n">students</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+
+<span class="n">students</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Marc'</span><span class="p">,</span> <span class="s1">'Alex'</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="s1">'Dina'</span><span class="p">,</span> <span class="s1">'Mitchell'</span><span class="p">,</span> <span class="s1">'Jordan'</span><span class="p">,</span> <span class="s1">'Bob'</span><span class="p">,</span> <span class="s1">'Carol'</span><span class="p">)</span>
+<span class="c1">#groups(students, 3)</span>
+<span class="n">groups</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="3---Simple-Web-Server">3 - Simple Web Server<a class="anchor-link" href="#3---Simple-Web-Server">¶</a></h3><p>webserve.py...</p>
+<pre><code># A simple web application.
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/hello/&lt;name&gt;')
+def greet(name='Stranger'):
+    return render_template("greeting.html", name=name)
+    
+@app.route("/")
+def index():
+    return render_template('index.html')
+</code></pre>
+<p>greeting.html...</p>
+<pre><code>{% extends "base.html" %}
+{% block content %}
+&lt;p&gt;Hello {{name}}, how are you?&lt;/p&gt;
+{% endblock %}
+</code></pre>
 </div>
 </div>
 </div>
