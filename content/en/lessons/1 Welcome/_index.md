@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-1---Welcome,-Background,-Getting-Started">Lesson 1 - Welcome, Background, Getting Started<a class="anchor-link" href="#Lesson-1---Welcome,-Background,-Getting-Started">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-1---Getting-Started">Lesson 1 - Getting Started<a class="anchor-link" href="#Lesson-1---Getting-Started">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>An overview of this course</li>
@@ -7671,7 +7671,7 @@ a.anchor-link {
 <tbody>
 <tr>
 <td>1</td>
-<td>Welcome, Background, &amp; Getting Started</td>
+<td>Getting Started</td>
 </tr>
 <tr>
 <td>2</td>
