@@ -7532,12 +7532,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-5---Loops">Lesson 5 - Loops<a class="anchor-link" href="#Lesson-5---Loops">¶</a></h1><p><strong>Strings Revisited and Loops</strong></p>
-<p><code>Before we get into loops, let's learn a few more things about the basic string type.</code></p>
-<p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-5---Loops">Lesson 5 - Loops<a class="anchor-link" href="#Lesson-5---Loops">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>todo</li>
+<li>more about strings</li>
+<li>while loops and for loops</li>
+<li>break and continue statements</li>
 </ul>
 </div>
 </div>
@@ -9365,9 +9365,9 @@ for i in range(1, 10):
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="7810c2aa-a6ae-47d3-bfaf-ef4a93c3bb36" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="bbe62b19-657e-4bfe-8183-a88f7f64f782" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('7810c2aa-a6ae-47d3-bfaf-ef4a93c3bb36');
+var element = document.getElementById('bbe62b19-657e-4bfe-8183-a88f7f64f782');
 
     async function takePhoto(quality) {
       const div = document.createElement('div');
