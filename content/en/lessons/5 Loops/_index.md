@@ -7535,10 +7535,9 @@ a.anchor-link {
 <h1 id="Lesson-5---Loops">Lesson 5 - Loops<a class="anchor-link" href="#Lesson-5---Loops">¶</a></h1><p><strong>Strings Revisited and Loops</strong></p>
 <p><code>Before we get into loops, let's learn a few more things about the basic string type.</code></p>
 <p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<p>Things you'll learn in this lesson:</p>
 <ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb" target="_blank">Open this notebook in Colab
-</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/5_Loops.ipynb" target="_blank">Open this notebook in Github</a></li>
+<li>todo</li>
 </ul>
 </div>
 </div>
@@ -9366,9 +9365,9 @@ for i in range(1, 10):
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="aa90188a-212c-471d-a7de-7413f153c060" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="695ec303-0e49-4842-91e7-f54899223561" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('aa90188a-212c-471d-a7de-7413f153c060');
+var element = document.getElementById('695ec303-0e49-4842-91e7-f54899223561');
 
     async function takePhoto(quality) {
       const div = document.createElement('div');

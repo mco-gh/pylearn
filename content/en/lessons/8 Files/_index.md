@@ -7535,6 +7535,10 @@ a.anchor-link {
 <h1 id="Lesson-8---Files">Lesson 8 - Files<a class="anchor-link" href="#Lesson-8---Files">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
 <p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
 <p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<p>Things you'll learn in this lesson:</p>
+<ul>
+<li>todo</li>
+</ul>
 </div>
 </div>
 </div>

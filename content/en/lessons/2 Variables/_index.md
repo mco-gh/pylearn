@@ -7533,10 +7533,6 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Lesson-2---Types,-Variables,-Assignment">Lesson 2 - Types, Variables, Assignment<a class="anchor-link" href="#Lesson-2---Types,-Variables,-Assignment">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
-<ul>
-<li><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Colab</a></li>
-<li><a href="https://github.com/mco-gh/pylearn/blob/master/notebooks/2_Variables.ipynb" target="_blank">Open this notebook in Github</a></li>
-</ul>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>The basic data types you can work with in Python</li>
@@ -8185,12 +8181,12 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Marc'</span>
@@ -8200,6 +8196,21 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <span class="n">name</span> <span class="o">=</span> <span class="s1">'Benji'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Marc
+3.14
+Benji
+</pre>
 </div>
 </div>
 </div>
