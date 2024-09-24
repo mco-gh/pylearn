@@ -7675,11 +7675,11 @@ a.anchor-link {
 </tr>
 <tr>
 <td>2</td>
-<td>Types, Variables, &amp; Assignment</td>
+<td>Types, Variables, and Assignments</td>
 </tr>
 <tr>
 <td>3</td>
-<td>Expressions &amp; Operators</td>
+<td>Expressions</td>
 </tr>
 <tr>
 <td>4</td>
