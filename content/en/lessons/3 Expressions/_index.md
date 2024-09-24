@@ -7536,11 +7536,9 @@ a.anchor-link {
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>More about types in Python</li>
-<li>Arithmetic</li>
 <li>Comparison operators</li>
 <li>Boolean operators</li>
-<li>How to combine constants, variables, and operators into expressions</li>
-<li>Operator precedence</li>
+<li>How to combine values, variables, and operators into expressions</li>
 </ul>
 </div>
 </div>
