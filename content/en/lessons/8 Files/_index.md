@@ -7532,9 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-8---Files-and-Exceptions">Lesson 8 - Files and Exceptions<a class="anchor-link" href="#Lesson-8---Files-and-Exceptions">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
-<p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
-<p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Lesson-8---Files-and-Exceptions">Lesson 8 - Files and Exceptions<a class="anchor-link" href="#Lesson-8---Files-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>reading and writing files</li>
@@ -7552,7 +7550,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
           
-<a href="https://pylearn.io/lessons/9-Exceeptions/">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/9-Project/">Next Lesson</a></p>
 </div>
 </div>
 </div>
@@ -8619,6 +8617,19 @@ write_file('output.txt', li)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Next-Week---Web-Servers">Next Week - Web Servers<a class="anchor-link" href="#Next-Week---Web-Servers">¶</a></h1><p>We're going to use files to keep track of which articles we've already seen and we're going to build a web user interface on top of our newsfinder program.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
+          
+<a href="https://pylearn.io/lessons/9-Project/">Next Lesson</a></p>
 </div>
 </div>
 </div>
