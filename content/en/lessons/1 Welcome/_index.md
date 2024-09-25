@@ -7564,15 +7564,6 @@ a.anchor-link {
 <li>finish first sections</li>
 <li>finish website</li>
 <li>unifying practice project</li>
-<li>python growth over time section</li>
-</ul>
-<p>topics to verify from online city lit catlog:</p>
-<ul>
-<li>Compiled vs. Interpreted programming languages</li>
-<li>Downloading and installing Python</li>
-<li>Using the Python documentation</li>
-<li>The structure of a Python script</li>
-<li>Running Python scripts</li>
 </ul>
 </div>
 </div>
@@ -7718,7 +7709,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Learning-to-Code">Learning to Code<a class="anchor-link" href="#Learning-to-Code">¶</a></h3><ul>
+<h3 id="Some-thoughts-on-learning-to-code">Some thoughts on learning to code<a class="anchor-link" href="#Some-thoughts-on-learning-to-code">¶</a></h3><ul>
 <li>Programming is a creative activity.</li>
 <li>There has never been a better time in history to learn to code.</li>
 <li>Anyone can learn to program, as long as you’re willing to do the work.</li>
@@ -7756,6 +7747,25 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="The-March-of-Progress">The March of Progress<a class="anchor-link" href="#The-March-of-Progress">¶</a></h3><p>The cell phone in your pocket has more computing power than all of NASA back in 1969. They used it to put two astronauts on the moon. We use it to play Candy Crush. :)</p>
 <p>Learning to program gives you the power to build amazing things with your computer.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="What-is-an-operating-system?">What is an operating system?<a class="anchor-link" href="#What-is-an-operating-system?">¶</a></h3><p>A software layer that functions as the computer’s traffic cop.</p>
+<p>Operating systems provide:</p>
+<ul>
+<li>core system services (e.g. processes/threads, memory management)</li>
+<li>abstraction of lower level services (e.g. reading a file, using the network)</li>
+<li>permissions and access control (e.g. login authentication, verifying a user is allowed to access a file)</li>
+<li>resource management (e.g. multiple programs sharing the CPU, multiple access to the same disk device)</li>
+</ul>
+<p>Popular operating systems: Windows, Linux, Android, iOS, MacOS</p>
 </div>
 </div>
 </div>
@@ -7823,6 +7833,24 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Compiled-vs.-interpreted-languages">Compiled vs. interpreted languages<a class="anchor-link" href="#Compiled-vs.-interpreted-languages">¶</a></h3><img alt="No description has been provided for this image" height="300" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*3Iy-ohRRXj3lChmEbQTxIQ.png"/>  
+[Source](https://medium.com/from-the-scratch/stop-it-there-are-no-compiled-and-interpreted-languages-512f84756664)
+
+<ul>
+<li>A compiler converts one language to another (usually a high level language to low level code that can be run directly by the hardware).</li>
+<li>An interpreter executes the source program one statement at a time.</li>
+<li>Portability vs. performance</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="What-is-Python-and-why-learn-it?">What is Python and why learn it?<a class="anchor-link" href="#What-is-Python-and-why-learn-it?">¶</a></h3><ul>
 <li>a programming language that was invented in 1989 by Dutch programmer Guido van Rossum</li>
 <li>powerful and expressive</li>
@@ -7831,12 +7859,12 @@ a.anchor-link {
 <li>freely available open source</li>
 <li>widely used &amp; well supported</li>
 <li>Very strong for:<ul>
+<li>AI</li>
 <li>Data Science</li>
 <li>Statistics</li>
 <li>Machine Learning</li>
 <li>Social Sciences</li>
 <li>Web development</li>
-<li>Scientific and numerical computing</li>
 <li>Education</li>
 </ul>
 </li>
@@ -7853,9 +7881,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Here's a snapshot of the popularity of Python as of January 2021:</p>
-<img alt="No description has been provided for this image" height="300" src="https://redmonk.com/sogrady/files/2021/03/lang.rank_.0121.wm_.png"/>
-<p><a href="https://redmonk.com/sogrady/2021/03/01/language-rankings-1-21/">Source</a></p>
+<p>Here's a visualisation of programming language popularirity worldwide, as of September 2024, based on how often language tutorials are searched on Google:</p>
+<img alt="No description has been provided for this image" height="300" src="https://pypl.github.io/PYPL/All.png"/>
+<p><a href="https://pypl.github.io/PYPL.html">Source</a></p>
 </div>
 </div>
 </div>
@@ -7866,9 +7894,31 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>And here's a visualization of Python's growth over time:</p>
-<img alt="No description has been provided for this image" height="300" src="https://149351115.v2.pressablecdn.com/wp-content/uploads/2017/09/growth_major_languages-1-1400x1200.png"/>
-<p><a href="https://stackoverflow.blog/2017/09/06/incredible-growth-python/">Source</a></p>
+<h3 id="Python-execution-model">Python execution model<a class="anchor-link" href="#Python-execution-model">¶</a></h3><p><img alt="No description has been provided for this image" height="400" src="https://mco.dev/img/py.gif"/></p>
+<p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fblog.gopenai.com%2Fhow-python-works-unveiling-the-magic-behind-python-programming-c95ab99f1ee3&amp;psig=AOvVaw0cKy_Fwe-pc44QwiMoEkAK&amp;ust=1727354649845000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjhxqFwoTCLCK29mP3ogDFQAAAAAdAAAAABAE">Source</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Installing-Python">Installing Python<a class="anchor-link" href="#Installing-Python">¶</a></h3><p><img alt="No description has been provided for this image" height="400" src="https://mco.dev/img/pyinstall.png"/></p>
+<p><a href="https://www.python.org/downloads/">Source</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Running-a-Python-program-from-the-command-line">Running a Python program from the command line<a class="anchor-link" href="#Running-a-Python-program-from-the-command-line">¶</a></h3><p><img alt="No description has been provided for this image" height="300" src="https://mco.dev/img/pyrun.png"/></p>
 </div>
 </div>
 </div>
@@ -8009,8 +8059,8 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<img alt="No description has been provided for this image" src="https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_SY150_CR2,0,101,150_.jpg">
-</img></div>
+<img alt="No description has been provided for this image" src="https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_SY150_CR2,0,101,150_.jpg"/>
+</div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -8022,8 +8072,8 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<img alt="No description has been provided for this image" src="https://m.media-amazon.com/images/M/MV5BNzc1OWY5MjktZDllMi00ZDEzLWEwMGItYjk1YmRhYjBjNTVlXkEyXkFqcGc@._V1_SY150_CR2,0,101,150_.jpg">
-</img></div>
+<img alt="No description has been provided for this image" src="https://m.media-amazon.com/images/M/MV5BNzc1OWY5MjktZDllMi00ZDEzLWEwMGItYjk1YmRhYjBjNTVlXkEyXkFqcGc@._V1_SY150_CR2,0,101,150_.jpg"/>
+</div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -8687,6 +8737,8 @@ For example, you can pass arguments to the print function to produce just about 
 <li><a href="https://python.org/doc/">Official Python Documentation</a></li>
 <li>the <code>help</code> function (see example below)</li>
 <li>Google</li>
+<li>Stack Overflow</li>
+<li>AI - I like Github Co-Pilot and Google Gemini</li>
 </ul>
 </div>
 </div>
