@@ -7537,7 +7537,8 @@ a.anchor-link {
 <p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>todo</li>
+<li>reading and writing files</li>
+<li>exceptions and error handling strategies</li>
 </ul>
 </div>
 </div>
@@ -8466,40 +8467,6 @@ print('My favorite season is ', seasons[-1])
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="When-you-run-a-cell-in-a-notebook,-where-does-it-actually-run?">When you run a cell in a notebook, where does it actually run?<a class="anchor-link" href="#When-you-run-a-cell-in-a-notebook,-where-does-it-actually-run?">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="No description has been provided for this image" src="https://lh3.googleusercontent.com/LWgdIXTXW6nO0Wi5rGpEJoZ5Hd4EtXq8gm55_wyfIcfZOs07paFyWlrlFUyl9bRCKFKpS_I3nP6O4CN8vXwWG0bV2XtAUH4X2PRWiQ=w1200-l80-sg-rj-c0xffffff"/>
-<p><a href="https://www.google.com/about/datacenters/">Learn more.</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<img alt="No description has been provided for this image" src="https://docs.google.com/drawings/d/e/2PACX-1vQh48LKMQ7Y4bNewgnLj2a429ZjV4yFS2ghfKXiK1Wn1skq5JH1sMGtrGaU7MYPkN_m-bXCRWqSZpB-/pub?w=1440&amp;h=1080"/>
 </div>
 </div>
 </div>

@@ -7536,7 +7536,10 @@ a.anchor-link {
 <p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>todo</li>
+<li>what functions are and why they useful</li>
+<li>how to define and use functions</li>
+<li>what are modules and how to use them</li>
+<li>IDEs and editor for Python</li>
 </ul>
 </div>
 </div>
