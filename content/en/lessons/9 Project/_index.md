@@ -1,6 +1,6 @@
 ---
-title: "9 Exceptions"
-linkTitle: "9 Exceptions"
+title: "9 Project"
+linkTitle: "9 Project"
 weight: "9"
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ weight: "9"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>9_Exceptions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>9_Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7521,7 +7521,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/9_Exceptions.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/9_Project.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7535,7 +7535,7 @@ a.anchor-link {
 <h1 id="Lesson-9---Project">Lesson 9 - Project<a class="anchor-link" href="#Lesson-9---Project">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>todo</li>
+<li>how to formulate and carry out a Python project</li>
 </ul>
 </div>
 </div>
@@ -7584,14 +7584,14 @@ a.anchor-link {
 <li>maintain a configurable list of target websites</li>
 <li>support a per-user configurable list of topics of interest</li>
 <li>keep track of what we've already seen</li>
-<li>must be automated, no manual steps other than running the app</li>
-<li>must present results via web app</li>
+<li>be automated, no manual steps other than running the app</li>
+<li>present results via web app</li>
 </ul>
-<h3 id="Should">Should<a class="anchor-link" href="#Should">¶</a></h3><ul>
-<li>should be able to automatically and regularly run app on a scheduled basis</li>
-<li>should provide ability to send daily summaries by email</li>
-<li>should provide a more sophisticated way of gauging interest than topic enumeration (e.g. machine learning)</li>
-<li>should run in the cloud</li>
+<h3 id="Should...">Should...<a class="anchor-link" href="#Should...">¶</a></h3><ul>
+<li>be able to automatically and regularly run app on a scheduled basis</li>
+<li>provide ability to send daily summaries by email</li>
+<li>provide a more sophisticated way of gauging interest than topic enumeration (e.g. embeddings)</li>
+<li>run in the cloud</li>
 </ul>
 </div>
 </div>
