@@ -7560,11 +7560,32 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="To-do">To do<a class="anchor-link" href="#To-do">¶</a></h2><ul>
+<ul>
 <li>finish first sections</li>
 <li>finish website</li>
 <li>unifying practice project</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<details>
+<summary>Hidden by default</summary>
+<h2 id="Heading">Heading<a class="anchor-link" href="#Heading">¶</a></h2><ol>
+<li>A numbered</li>
+<li>list<ul>
+<li>With some</li>
+<li>Sub bullets</li></ul></li></ol></details>
+
+
+
+
 </div>
 </div>
 </div>
