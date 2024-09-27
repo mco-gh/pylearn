@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-2---Types,-Variables,-and-Assignment">Lesson 2 - Types, Variables, and Assignment<a class="anchor-link" href="#Lesson-2---Types,-Variables,-and-Assignment">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-2---Data-Types,-Variables,-and-Assignment-Statements">Notebook 2 - Data Types, Variables, and Assignment Statements<a class="anchor-link" href="#Notebook-2---Data-Types,-Variables,-and-Assignment-Statements">¶</a></h1><p><strong>You should make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>The basic data types you can work with in Python</li>
@@ -8279,7 +8279,7 @@ case is significant</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="F-strings">F-strings<a class="anchor-link" href="#F-strings">¶</a></h2><p>We often need to combine variables, values, and strings. For example, if we have the following variables:</p>
+<h3 id="F-strings">F-strings<a class="anchor-link" href="#F-strings">¶</a></h3><p>We often need to combine variables, values, and strings. For example, if we have the following variables:</p>
 <ul>
 <li><code>customer_id</code></li>
 <li><code>account_balance</code></li>
