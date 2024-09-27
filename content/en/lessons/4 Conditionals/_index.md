@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-4---Conditionals">Lesson 4 - Conditionals<a class="anchor-link" href="#Lesson-4---Conditionals">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-4---Controlling-Program-Flow-and-Using-Modules">Notebook 4 - Controlling Program Flow and Using Modules<a class="anchor-link" href="#Notebook-4---Controlling-Program-Flow-and-Using-Modules">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>how to control program flow based based on conditional values</li>
@@ -7582,7 +7582,7 @@ Will the year 2100 be a leap year?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="if-Statements"><code>if</code> Statements<a class="anchor-link" href="#if-Statements">¶</a></h1>
+<h2 id="if-Statements"><code>if</code> Statements<a class="anchor-link" href="#if-Statements">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7636,7 +7636,7 @@ Otherwise, the indented statements are skipped and program execution continues a
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>In Python, we use indentation to associate a block of statements with a condition, for example...</p>
+<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>In Python, we use indentation to associate a block of statements with a condition, for example...</p>
 <pre><code>print("1")
 if some_condition:    
     print("2")    
