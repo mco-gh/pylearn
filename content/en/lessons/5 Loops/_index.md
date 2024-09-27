@@ -1,5 +1,5 @@
 ---
-title: "5 More Strings and Loops"
+title: "5 Loops"
 linkTitle: "5 Loops"
 weight: "5"
 ---
@@ -9365,9 +9365,9 @@ for i in range(1, 10):
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="f84575c0-cebd-4eb5-9318-098bdb6af735" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="cc3e6e44-b248-4423-b1b4-23d3d0bd6384" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('f84575c0-cebd-4eb5-9318-098bdb6af735');
+var element = document.getElementById('cc3e6e44-b248-4423-b1b4-23d3d0bd6384');
 
     async function takePhoto(quality) {
       const div = document.createElement('div');

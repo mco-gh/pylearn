@@ -1,5 +1,5 @@
 ---
-title: "2 Numbers, Strings, Variables, and Assignment Statements"
+title: "2 Variables"
 linkTitle: "2 Variables"
 weight: "2"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "8 Files and Exceptions"
+title: "8 Files"
 linkTitle: "8 Files"
 weight: "8"
 ---
