@@ -7532,12 +7532,16 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-8---Files-and-Exceptions">Lesson 8 - Files and Exceptions<a class="anchor-link" href="#Lesson-8---Files-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-8---Files-and-Exceptions">Notebook 8 - Files and Exceptions<a class="anchor-link" href="#Notebook-8---Files-and-Exceptions">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
+<p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
+<p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>reading and writing files</li>
 <li>exceptions and error handling strategies</li>
 </ul>
+<p><strong>To do</strong>:</p>
+<p>-consider using Drive for file persistence (<a href="https://drive.google.com/file/d/1-UK__URjCYYQESPX3XimZgcgxfyUvhWN/view">see these slides</a>)</p>
 </div>
 </div>
 </div>
