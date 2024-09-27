@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-5---Loops">Lesson 5 - Loops<a class="anchor-link" href="#Lesson-5---Loops">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-5---More-Strings-and-Loops">Notebook 5 - More Strings and Loops<a class="anchor-link" href="#Notebook-5---More-Strings-and-Loops">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>more about strings</li>
@@ -9365,9 +9365,9 @@ for i in range(1, 10):
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="774f2bee-9d2c-43a6-93b5-a64828154fa4" tabindex="0">
+<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="68be3fed-c3b4-4866-a3a5-cee6effccfad" tabindex="0">
 <script type="text/javascript">
-var element = document.getElementById('774f2bee-9d2c-43a6-93b5-a64828154fa4');
+var element = document.getElementById('68be3fed-c3b4-4866-a3a5-cee6effccfad');
 
     async function takePhoto(quality) {
       const div = document.createElement('div');
