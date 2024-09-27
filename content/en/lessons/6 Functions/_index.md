@@ -1,5 +1,5 @@
 ---
-title: "6 Functions"
+title: "6 Functions and Modules"
 linkTitle: "6 Functions"
 weight: "6"
 ---
