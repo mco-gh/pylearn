@@ -1,5 +1,5 @@
 ---
-title: "9 Project"
+title: "9 Sample Project"
 linkTitle: "9 Project"
 weight: "9"
 ---

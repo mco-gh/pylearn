@@ -1,5 +1,5 @@
 ---
-title: "7 Iterables"
+title: "7 Tuples, Lists, and Dictionaries"
 linkTitle: "7 Iterables"
 weight: "7"
 ---

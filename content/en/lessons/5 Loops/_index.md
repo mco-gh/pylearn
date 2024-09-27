@@ -1,5 +1,5 @@
 ---
-title: "5 Loops"
+title: "5 More Strings and Loops"
 linkTitle: "5 Loops"
 weight: "5"
 ---
