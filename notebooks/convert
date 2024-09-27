@@ -37,5 +37,8 @@ weight: "$weight"
     elif [ "$name" = "Files" ]
     then
         sed -i '' 's/title: "8 Files"/title: "8 Files and Exceptions"/g' "$DIR/$weight $name/_index.md"
+    elif [ "$name" = "Project" ]
+    then
+        sed -i '' 's/title: "9 Project"/title: "9 Sample Project"/g' "$DIR/$weight $name/_index.md"
     fi
 done
