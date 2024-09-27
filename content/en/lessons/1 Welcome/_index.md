@@ -7576,27 +7576,6 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<details>
-<summary>Hidden by default</summary>
-<h2 id="Heading">Heading<a class="anchor-link" href="#Heading">¶</a></h2><ol>
-<li>A numbered</li>
-<li>list<ul>
-<li>With some</li>
-<li>Sub bullets</li></ul></li></ol></details>
-
-
-
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Course-Overview">Course Overview<a class="anchor-link" href="#Course-Overview">¶</a></h2>
 </div>
 </div>
@@ -8739,7 +8718,7 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h2>
+<h3 id="Resources">Resources<a class="anchor-link" href="#Resources">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8769,7 +8748,7 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Recommended-Book-for-Further-Study">Recommended Book for Further Study<a class="anchor-link" href="#Recommended-Book-for-Further-Study">¶</a></h3><p><a href="http://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></p>
+<h4 id="Recommended-Book-for-Further-Study">Recommended Book for Further Study<a class="anchor-link" href="#Recommended-Book-for-Further-Study">¶</a></h4><p><a href="http://automatetheboringstuff.com/">Automate the Boring Stuff with Python</a></p>
 <p>Great fit for our course:</p>
 <ul>
 <li>well written</li>
@@ -8790,7 +8769,7 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">¶</a></h3>
+<h4 id="Documentation">Documentation<a class="anchor-link" href="#Documentation">¶</a></h4>
 </div>
 </div>
 </div>
