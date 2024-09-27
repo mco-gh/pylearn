@@ -7906,7 +7906,7 @@ a.anchor-link {
 <p>Here's a visualisation of programming language popularirity worldwide, as of September 2024, based on how often language tutorials are searched on Google:</p>
 <img alt="No description has been provided for this image" height="300" src="https://pypl.github.io/PYPL/All.png"/>
 <p><a href="https://pypl.github.io/PYPL.html">Source</a></p>
-<p>Here's a graph based on how often questions on Stack Overflow are tagged to a given language:</p>
+<p>And here's a graph showing language popularity as a function of Stack Overflow questions over time:</p>
 <img alt="No description has been provided for this image" height="300" src="https://mco.dev/img/stackoverflow.svg"/>
 <p><a href="https://trends.stackoverflow.co/?tags=java,c,python,c%23,vb.net,javascript,assembly,php,perl,ruby,swift,r,objective-c">Source</a></p>
 </div>
