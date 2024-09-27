@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-3---Expressions">Lesson 3 - Expressions<a class="anchor-link" href="#Lesson-3---Expressions">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-3---Boolean-Comparisons,-Boolean-Operators,-and-Expressions">Notebook 3 - Boolean Comparisons, Boolean Operators, and Expressions<a class="anchor-link" href="#Notebook-3---Boolean-Comparisons,-Boolean-Operators,-and-Expressions">¶</a></h1><p><strong>You can make your own copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>More about types in Python</li>
@@ -7744,7 +7744,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Comparison-Operators">Comparison Operators<a class="anchor-link" href="#Comparison-Operators">¶</a></h1>
+<h2 id="Comparison-Operators">Comparison Operators<a class="anchor-link" href="#Comparison-Operators">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7808,7 +7808,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>Which boolean value (<code>True</code> or <code>False</code>) do each of these expressions evaluate to?</p>
+<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>Which boolean value (<code>True</code> or <code>False</code>) do each of these expressions evaluate to?</p>
 <ul>
 <li><p><code>123 == 10</code></p>
 </li>
@@ -7865,7 +7865,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Boolean-Operators---and,-or,-and-not">Boolean Operators - <code>and</code>, <code>or</code>, and <code>not</code><a class="anchor-link" href="#Boolean-Operators---and,-or,-and-not">¶</a></h1><p>Boolean operators are special operators in Python that let you combine boolean values in logical ways corresponding to how we combine truth values in the real world. An example of a boolean <strong>and</strong> expression would be "I'll buy a new phone if I like the features <strong>and</strong> the price is low". There are three main boolean operators: <code>and</code>, <code>or</code>, and <code>not</code>. We'll look at examples of each in the next cells.</p>
+<h2 id="Boolean-Operators---and,-or,-and-not">Boolean Operators - <code>and</code>, <code>or</code>, and <code>not</code><a class="anchor-link" href="#Boolean-Operators---and,-or,-and-not">¶</a></h2><p>Boolean operators are special operators in Python that let you combine boolean values in logical ways corresponding to how we combine truth values in the real world. An example of a boolean <strong>and</strong> expression would be "I'll buy a new phone if I like the features <strong>and</strong> the price is low". There are three main boolean operators: <code>and</code>, <code>or</code>, and <code>not</code>. We'll look at examples of each in the next cells.</p>
 </div>
 </div>
 </div>
@@ -7876,7 +7876,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Boolean-and">Boolean <code>and</code><a class="anchor-link" href="#Boolean-and">¶</a></h2><ul>
+<h3 id="Boolean-and">Boolean <code>and</code><a class="anchor-link" href="#Boolean-and">¶</a></h3><ul>
 <li><code>A and B</code></li>
 </ul>
 <p>is <code>True</code> only true when both A and B are <code>True</code>, otherwise it's <code>False</code>.</p>
@@ -7916,7 +7916,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Truth-Table-for-boolean-and">Truth Table for boolean <code>and</code><a class="anchor-link" href="#Truth-Table-for-boolean-and">¶</a></h3><table>
+<h5 id="Truth-Table-for-boolean-and">Truth Table for boolean <code>and</code><a class="anchor-link" href="#Truth-Table-for-boolean-and">¶</a></h5><table>
 <thead>
 <tr>
 <th><code>var1</code></th>
@@ -7957,7 +7957,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Boolean-or">Boolean <code>or</code><a class="anchor-link" href="#Boolean-or">¶</a></h2><ul>
+<h3 id="Boolean-or">Boolean <code>or</code><a class="anchor-link" href="#Boolean-or">¶</a></h3><ul>
 <li><code>A or B</code></li>
 </ul>
 <p>is <code>True</code> when either A or B are <code>True</code>, or when both are <code>True</code>, otherwise it's <code>False</code>.</p>
@@ -7980,7 +7980,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Truth-Table-for-boolean-or">Truth Table for boolean <code>or</code><a class="anchor-link" href="#Truth-Table-for-boolean-or">¶</a></h3><table>
+<h4 id="Truth-Table-for-boolean-or">Truth Table for boolean <code>or</code><a class="anchor-link" href="#Truth-Table-for-boolean-or">¶</a></h4><table>
 <thead>
 <tr>
 <th><code>var1</code></th>
@@ -8031,7 +8031,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Logical-Not">Logical Not<a class="anchor-link" href="#Logical-Not">¶</a></h2><ul>
+<h3 id="Boolean-Not">Boolean Not<a class="anchor-link" href="#Boolean-Not">¶</a></h3><ul>
 <li><code>not A</code></li>
 </ul>
 <p>is <code>True</code> when A is <code>False</code>
@@ -8046,7 +8046,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Truth-Table-for-boolean-not">Truth Table for boolean <code>not</code><a class="anchor-link" href="#Truth-Table-for-boolean-not">¶</a></h3><table>
+<h4 id="Truth-Table-for-boolean-not">Truth Table for boolean <code>not</code><a class="anchor-link" href="#Truth-Table-for-boolean-not">¶</a></h4><table>
 <thead>
 <tr>
 <th><code>var1</code></th>
@@ -8074,7 +8074,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h1>
+<h2 id="Expressions">Expressions<a class="anchor-link" href="#Expressions">¶</a></h2>
 </div>
 </div>
 </div>
