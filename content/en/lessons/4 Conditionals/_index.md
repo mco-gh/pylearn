@@ -7622,7 +7622,7 @@ Otherwise, the indented statements are skipped and program execution continues a
 <span class="k">if</span> <span class="n">month</span> <span class="ow">in</span> <span class="n">summer_months</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"yay - it's still summer!"</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"boo - back to school again!!!"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"boo - have to go to school today!"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"program done"</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7760,32 +7760,6 @@ In Python, indentation is not just a good idea - it's affects program logic!</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In the next section we're going to use a built-in function called <code>input</code>, which prompts the user to enter some text. We call it with a character string, which serves a prompt, and returns the value entered by the user in response to the prompt. Run the following cell to see how this works.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter desired year: "</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"user entered year </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Encoding-our-leap-year-rule">Encoding our leap year rule<a class="anchor-link" href="#Encoding-our-leap-year-rule">¶</a></h2><p>Remember our leap year rule?</p>
 <ul>
 <li>if the current year is divisible by 4, we have a leap year</li>
@@ -7799,16 +7773,6 @@ if (year % 4) == 0:
 print(f"leap year status for {year}: {str(leap_year)}")
 </code></pre>
 <p><strong>Question: Why is the first statement needed?</strong></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -8244,7 +8208,7 @@ print("6")
 <p>What does the above code print for these years...</p>
 <ul>
 <li>2020?</li>
-<li>2100?</li>
+<li>2100?  -- that answers our trivia questions from the beginning of this notebook</li>
 <li>2000?  -- surprise, that one's wrong!</li>
 </ul>
 </div>
@@ -8476,7 +8440,7 @@ def index():
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
+<h1 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h1>
 </div>
 </div>
 </div>
