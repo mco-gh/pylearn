@@ -7585,7 +7585,7 @@ print(len(''))
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7598,22 +7598,6 @@ print(len(''))
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="s1">'Tobeornottobe'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="s1">''</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>18
-19
-13
-0
-</pre>
 </div>
 </div>
 </div>
@@ -7719,7 +7703,7 @@ print('Python is cool'[1:3])
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7734,20 +7718,6 @@ print('Python is cool'[1:3])
 <span class="k">else</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">'sorry!'</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>give me the last four digits of your ssn: 789
-sorry!
-</pre>
 </div>
 </div>
 </div>
@@ -7775,7 +7745,7 @@ print(mystr[:])
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7790,23 +7760,6 @@ print(mystr[:])
 <span class="nb">print</span><span class="p">(</span><span class="n">mystr</span><span class="p">[:</span><span class="mi">7</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mystr</span><span class="p">[:])</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Python is cool
-cool
-Python is cool
-Python 
-Python is cool
-</pre>
 </div>
 </div>
 </div>
@@ -7911,7 +7864,7 @@ print('' in 'Marc')
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7929,29 +7882,6 @@ print('' in 'Marc')
 
 <span class="n">name</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>10
-MARC COHEN
-marc cohen
-Marc Cohen
-marc cohen
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>'marc cohen'</pre>
 </div>
 </div>
 </div>
@@ -7975,7 +7905,7 @@ print(mystr.find('okay'))
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7989,22 +7919,6 @@ print(mystr.find('okay'))
 <span class="nb">print</span><span class="p">(</span><span class="n">mystr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">'k'</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">mystr</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">''</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
--1
-3
-0
-</pre>
 </div>
 </div>
 </div>
@@ -8031,7 +7945,7 @@ print(f'{name} still exists, {upper_name} is a new string')
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8043,19 +7957,6 @@ print(f'{name} still exists, {upper_name} is a new string')
 <span class="n">upper_name</span> <span class="o">=</span> <span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1"> still exists, </span><span class="si">{</span><span class="n">upper_name</span><span class="si">}</span><span class="s1"> is a new string'</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Marc still exists, MARC is a new string
-</pre>
 </div>
 </div>
 </div>
@@ -8084,7 +7985,7 @@ print(new_salary)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8096,19 +7997,6 @@ print(new_salary)
 <span class="n">new_salary</span> <span class="o">=</span> <span class="n">salary</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'0'</span><span class="p">,</span> <span class="s1">'00'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">new_salary</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1000000
-</pre>
 </div>
 </div>
 </div>
@@ -8128,7 +8016,7 @@ print(better_feedback)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8140,20 +8028,6 @@ print(better_feedback)
 <span class="n">improved_feedback</span> <span class="o">=</span> <span class="n">feedback</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'worst'</span><span class="p">,</span> <span class="s1">'best'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">improved_feedback</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>How am I doing? you are the worst person
-you are the best person
-</pre>
 </div>
 </div>
 </div>
@@ -8187,7 +8061,7 @@ print(i, i*i)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8202,21 +8076,6 @@ print(i, i*i)
 <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1 1
-2 4
-3 9
-</pre>
 </div>
 </div>
 </div>
@@ -8300,7 +8159,7 @@ print(i)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8314,22 +8173,6 @@ print(i)
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0
-1
-2
-3
-</pre>
 </div>
 </div>
 </div>
@@ -8369,7 +8212,7 @@ while i &lt;= 3:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8382,21 +8225,6 @@ while i &lt;= 3:
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1 1
-2 4
-3 9
-</pre>
 </div>
 </div>
 </div>
@@ -8512,7 +8340,7 @@ while i &lt;= limit:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8526,28 +8354,6 @@ while i &lt;= limit:
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># added cube to print</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1 1 1
-2 4 8
-3 9 27
-4 16 64
-5 25 125
-6 36 216
-7 49 343
-8 64 512
-9 81 729
-10 100 1000
-</pre>
 </div>
 </div>
 </div>
@@ -8572,7 +8378,7 @@ while i &lt;= limit:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8586,24 +8392,6 @@ while i &lt;= limit:
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># added cube to print</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>desired number of integers: 5
-1 1 1
-2 4 8
-3 9 27
-4 16 64
-5 25 125
-</pre>
 </div>
 </div>
 </div>
@@ -8666,7 +8454,7 @@ while i &lt;= 3:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8683,21 +8471,6 @@ while i &lt;= 3:
     <span class="nb">print</span><span class="p">()</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>i=1 / j=1	i=1 / j=2	i=1 / j=3	
-i=2 / j=1	i=2 / j=2	i=2 / j=3	
-i=3 / j=1	i=3 / j=2	i=3 / j=3	
-</pre>
 </div>
 </div>
 </div>
@@ -9151,7 +8924,7 @@ increment dictates the interval between elements</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9162,38 +8935,6 @@ increment dictates the interval between elements</li>
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1 1
-2 4
-3 9
-4 16
-5 25
-6 36
-7 49
-8 64
-9 81
-10 100
-11 121
-12 144
-13 169
-14 196
-15 225
-16 256
-17 289
-18 324
-19 361
-20 400
-</pre>
 </div>
 </div>
 </div>
@@ -9223,7 +8964,7 @@ for i in range(1, 10):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9242,28 +8983,6 @@ for i in range(1, 10):
     <span class="c1"># print newline at end of each row</span>
     <span class="nb">print</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>X	1	2	3	4	5	6	7	8	9	
-1	1	2	3	4	5	6	7	8	9	
-2	2	4	6	8	10	12	14	16	18	
-3	3	6	9	12	15	18	21	24	27	
-4	4	8	12	16	20	24	28	32	36	
-5	5	10	15	20	25	30	35	40	45	
-6	6	12	18	24	30	36	42	48	54	
-7	7	14	21	28	35	42	49	56	63	
-8	8	16	24	32	40	48	56	64	72	
-9	9	18	27	36	45	54	63	72	81	
-</pre>
 </div>
 </div>
 </div>
@@ -9334,7 +9053,7 @@ for i in range(1, 10):
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9359,59 +9078,7 @@ for i in range(1, 10):
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedJavaScript jp-OutputArea-output" data-mime-type="application/javascript" id="d5ecd16a-495d-4d3e-a3d3-26477f172559" tabindex="0">
-<script type="text/javascript">
-var element = document.getElementById('d5ecd16a-495d-4d3e-a3d3-26477f172559');
-
-    async function takePhoto(quality) {
-      const div = document.createElement('div');
-      const capture = document.createElement('button');
-      capture.textContent = 'Capture';
-      div.appendChild(capture);
-
-      const video = document.createElement('video');
-      video.style.display = 'block';
-      const stream = await navigator.mediaDevices.getUserMedia({video: true});
-
-      document.body.appendChild(div);
-      div.appendChild(video);
-      video.srcObject = stream;
-      await video.play();
-
-      // Resize the output to fit the video element.
-      google.colab.output.setIframeHeight(document.documentElement.scrollHeight, true);
-
-      // Wait for Capture to be clicked.
-      await new Promise((resolve) => capture.onclick = resolve);
-
-      const canvas = document.createElement('canvas');
-      canvas.width = video.videoWidth;
-      canvas.height = video.videoHeight;
-      canvas.getContext('2d').drawImage(video, 0, 0);
-      stream.getVideoTracks()[0].stop();
-      div.remove();
-      return canvas.toDataURL('image/jpeg', quality);
-    }
-    
-</script>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>NotAllowedError: Permission denied
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9436,49 +9103,6 @@ var element = document.getElementById('d5ecd16a-495d-4d3e-a3d3-26477f172559');
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-45-a4843d7bfbe6&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-green-fg">import</span> matplotlib<span class="ansi-blue-fg">.</span>pyplot <span class="ansi-green-fg">as</span> plt
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>I <span class="ansi-blue-fg">=</span> plt<span class="ansi-blue-fg">.</span>imread<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'photo.jpg'</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> I <span class="ansi-blue-fg">=</span> I<span class="ansi-blue-fg">.</span>sum<span class="ansi-blue-fg">(</span>axis<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">-</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> plt<span class="ansi-blue-fg">.</span>figure<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> plt<span class="ansi-blue-fg">.</span>imshow<span class="ansi-blue-fg">(</span>I<span class="ansi-blue-fg">,</span> cmap<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">"gray"</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.10/dist-packages/matplotlib/pyplot.py</span> in <span class="ansi-cyan-fg">imread</span><span class="ansi-blue-fg">(fname, format)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2193</span> <span class="ansi-blue-fg">@</span>_copy_docstring_and_deprecators<span class="ansi-blue-fg">(</span>matplotlib<span class="ansi-blue-fg">.</span>image<span class="ansi-blue-fg">.</span>imread<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2194</span> <span class="ansi-green-fg">def</span> imread<span class="ansi-blue-fg">(</span>fname<span class="ansi-blue-fg">,</span> format<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">None</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 2195</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">return</span> matplotlib<span class="ansi-blue-fg">.</span>image<span class="ansi-blue-fg">.</span>imread<span class="ansi-blue-fg">(</span>fname<span class="ansi-blue-fg">,</span> format<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2196</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2197</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.10/dist-packages/matplotlib/image.py</span> in <span class="ansi-cyan-fg">imread</span><span class="ansi-blue-fg">(fname, format)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1561</span>             <span class="ansi-blue-fg">"``np.array(PIL.Image.open(urllib.request.urlopen(url)))``."</span>
-<span class="ansi-green-intense-fg ansi-bold">   1562</span>             )
-<span class="ansi-green-fg">-&gt; 1563</span><span class="ansi-red-fg">     </span><span class="ansi-green-fg">with</span> img_open<span class="ansi-blue-fg">(</span>fname<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">as</span> image<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   1564</span>         return (_pil_png_to_float_array(image)
-<span class="ansi-green-intense-fg ansi-bold">   1565</span>                 <span class="ansi-green-fg">if</span> isinstance<span class="ansi-blue-fg">(</span>image<span class="ansi-blue-fg">,</span> PIL<span class="ansi-blue-fg">.</span>PngImagePlugin<span class="ansi-blue-fg">.</span>PngImageFile<span class="ansi-blue-fg">)</span> <span class="ansi-green-fg">else</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.10/dist-packages/PIL/Image.py</span> in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(fp, mode, formats)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3429</span> 
-<span class="ansi-green-intense-fg ansi-bold">   3430</span>     <span class="ansi-green-fg">if</span> filename<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">-&gt; 3431</span><span class="ansi-red-fg">         </span>fp <span class="ansi-blue-fg">=</span> builtins<span class="ansi-blue-fg">.</span>open<span class="ansi-blue-fg">(</span>filename<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">"rb"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   3432</span>         exclusive_fp <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">True</span>
-<span class="ansi-green-intense-fg ansi-bold">   3433</span>     <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: '/content/photo.jpg'</pre>
 </div>
 </div>
 </div>

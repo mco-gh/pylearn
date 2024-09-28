@@ -7560,22 +7560,6 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>finish first sections</li>
-<li>diagram how notesbooks run your code</li>
-<li>finish website</li>
-<li>projects</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Course-Overview">Course Overview<a class="anchor-link" href="#Course-Overview">¶</a></h2>
 </div>
 </div>
@@ -7587,8 +7571,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h3><p>This course is primarily for beginners. In my experience, the best way to learn a programming language is to do something useful with it. This notebook describes the PyLearn course and a simple project we'll use to apply  your new skills throughout the course.</p>
-<p>Pylearn is...</p>
+<h3 id="Course-Description">Course Description<a class="anchor-link" href="#Course-Description">¶</a></h3><p>Pylearn is...</p>
 <ul>
 <li><strong>inclusive</strong> - no prerequisites, perfect for beginners</li>
 <li><strong>approachable</strong> - nothing to install or configure</li>
@@ -7610,7 +7593,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Course-Goals">Course Goals<a class="anchor-link" href="#Course-Goals">¶</a></h3><ul>
 <li>Demystify programming in general and Python in particular</li>
-<li>Show how to use Python to solve a real world, relatable problem</li>
+<li>Show how to use Python to a practical, real world, relatable way</li>
 <li>Provide a solid foundation for diving deeper</li>
 </ul>
 </div>
@@ -8614,11 +8597,10 @@ For example, you can pass arguments to the print function to produce just about 
 <ul>
 <li><a href="https://python.org">The official Python site</a></li>
 <li><a href="https://python.org/downloads/">Install Python</a></li>
-<li><a href="https://codewith.my">Nice Python editor for beginners</a></li>
 <li><a href="https://mco.dev/my-favorite-books-for-beginning-python-students/">My Favorite Books for Beginning Python Students</a></li>
 <li><a href="https://repl.it">repl.it</a></li>
+<li><a href="https://code.visualstudio.com/">vscode</a></li>
 <li><a href="https://codingbat.com/python">codingbat.com</a></li>
-<li><a href="https://blog.repl.it/beginner-python-errors-career-karma?ref=newsletter">Common Errors Python Beginners Encounter (with Solutions)</a></li>
 </ul>
 </div>
 </div>

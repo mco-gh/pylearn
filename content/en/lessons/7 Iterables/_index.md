@@ -7569,7 +7569,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7585,34 +7585,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>sixth char: X
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-1-97920ecef4f5&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> s <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'Susan X. Anthony'</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'sixth char:'</span><span class="ansi-blue-fg">,</span> s<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>s<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">6</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'B'</span>
-
-<span class="ansi-red-fg">TypeError</span>: 'str' object does not support item assignment</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7624,20 +7597,6 @@ a.anchor-link {
 <span class="n">s</span> <span class="o">=</span> <span class="s1">'Susan B. Anthony'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Susan X. Anthony
-Susan B. Anthony
-</pre>
 </div>
 </div>
 </div>
@@ -7677,7 +7636,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7693,20 +7652,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>empty tuple: ()
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7722,20 +7668,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>non-empty tuple: ('Python', 1024, 3.14, True)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7751,19 +7684,6 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>('a', 'a', 'a')
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7775,7 +7695,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7793,21 +7713,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>4
-5
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7826,23 +7732,7 @@ Susan B. Anthony
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-
-the whole tuple...
-(1, 2, 3)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7858,27 +7748,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-197-243366aa1122&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg"># indexing out of bounds raises a runtime error</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> tup <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'abc'</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">123</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3.14</span><span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span>tup<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">99</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">IndexError</span>: tuple index out of range</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7895,22 +7765,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-2
-3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7927,22 +7782,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-2
-3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7962,20 +7802,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(1, 2, 3, 4, 5) contains  4
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7993,22 +7820,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(3, 4, 5)
-(1, 2, 3)
-(3, 4)
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8025,19 +7837,6 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(1, 2, 3, 4, 5, 6)
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8049,7 +7848,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8065,33 +7864,6 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-209-f113e0bed4a1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> tup <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span>tup<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>tup<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">7</span>
-
-<span class="ansi-red-fg">TypeError</span>: 'tuple' object does not support item assignment</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8103,7 +7875,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8117,20 +7889,6 @@ the whole tuple...
 <span class="c1"># the tuple didn't change, the tup variable now points to different data!</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">tup</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(1, 2, 3)
-(1, 3, 2)
-</pre>
 </div>
 </div>
 </div>
@@ -8152,7 +7910,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8173,19 +7931,6 @@ the whole tuple...
                <span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nested_tuple</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(((1, 2), (3, 4)), ((5, 6), (7, 8)))
-</pre>
 </div>
 </div>
 </div>
@@ -8232,7 +7977,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8248,20 +7993,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>empty list: []
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8277,20 +8009,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>non-empty list: ['Python', 123, 3.14, True]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8306,19 +8025,6 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['a', 'a', 'a']
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8330,7 +8036,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8348,20 +8054,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>5
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8378,27 +8071,7 @@ the whole tuple...
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>abc
-123
-3.14
-True
-99
-101
-another
-last one - I promise
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8415,27 +8088,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>abc
-123
-3.14
-True
-99
-101
-another
-last one - I promise
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8456,20 +8109,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>3.14159 is not in list
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8485,20 +8125,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>3.14
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8514,27 +8141,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">IndexError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-220-4eee054048f3&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg"># indexing out of bounds raises a runtime error</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> li <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'abc'</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">123</span><span class="ansi-blue-fg">,</span> <span class="ansi-cyan-fg">3.14</span><span class="ansi-blue-fg">,</span> <span class="ansi-green-fg">True</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span>li<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">99</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">IndexError</span>: list index out of range</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8550,20 +8157,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[123, 3.14]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8582,19 +8176,6 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['a', 1, 'b', 2, 99.99]
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8606,7 +8187,7 @@ last one - I promise
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8626,22 +8207,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[]
-['elem1']
-['elem1', 400]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8661,21 +8227,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['elem1', 'elem2']
-['elem2']
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8698,24 +8250,7 @@ last one - I promise
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>start: ['elem1', 'elem2', 3, 99.9]
-removed 99.9 remaining list: ['elem1', 'elem2', 3]
-removed 3 remaining list: ['elem1', 'elem2']
-removed elem2 remaining list: ['elem1']
-removed elem1 remaining list: []
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8733,27 +8268,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-226-620c47908aef&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> li <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'elem1'</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'elem2'</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> e <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'elem3'</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>li<span class="ansi-blue-fg">.</span>remove<span class="ansi-blue-fg">(</span>e<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">ValueError</span>: list.remove(x): x not in list</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8771,21 +8286,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['elem1', 'elem2', 'elem3']
-['elem1', 'foo', 'elem3']
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8802,20 +8303,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[1, 2, 3, 4, 99]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8833,21 +8321,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[123, 3.14]
-['abc', 9, 8, 7.6]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8864,20 +8338,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['abc', 123, True]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8894,20 +8355,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['abc', True]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8932,23 +8380,7 @@ removed elem1 remaining list: []
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>original: ['Maya', 'Marc', 'Maria']
-sorted: ['Marc', 'Maria', 'Maya']
-reverse sorted: ['Maya', 'Maria', 'Marc']
-re-sorted: ['Marc', 'Maria', 'Maya']
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8965,20 +8397,7 @@ re-sorted: ['Marc', 'Maria', 'Maya']
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>4
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8995,20 +8414,7 @@ re-sorted: ['Marc', 'Maria', 'Maya']
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>3
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9023,20 +8429,6 @@ re-sorted: ['Marc', 'Maria', 'Maya']
 <span class="n">li</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[123, True, 3.14, 123, 'abc']
-['abc', 123, 3.14, True, 123]
-</pre>
 </div>
 </div>
 </div>
@@ -9083,7 +8475,7 @@ Fortunately, most of the time you only need to use one or two levels, although o
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9094,19 +8486,6 @@ Fortunately, most of the time you only need to use one or two levels, although o
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['Sara', 95, 100, 90]
-</pre>
 </div>
 </div>
 </div>
@@ -9124,7 +8503,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9143,20 +8522,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>[['Sara', 95, 100, 90], ['Mary', 90, 95, 100], ['Marc', 85, 90]]
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9177,36 +8543,6 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>(1, 2, ['marc'])
-['marc']
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-261-7bb74171d8bc&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> print<span class="ansi-blue-fg">(</span>y<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> print<span class="ansi-blue-fg">(</span>y<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 6</span><span class="ansi-red-fg"> </span>y<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span> <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">12</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span> y<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'Maya'</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> print<span class="ansi-blue-fg">(</span>y<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: 'tuple' object does not support item assignment</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9218,7 +8554,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9237,19 +8573,6 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['Sara', 95, 100, 90]
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9261,7 +8584,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9281,19 +8604,6 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>95
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9305,7 +8615,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9328,21 +8638,6 @@ That collection also needs to be mutable, because I may need to add or delete st
   <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="p">(</span><span class="n">count</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">average</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Sara 95.875
-Marc 91.71428571428571
-Maya 236.8
-</pre>
 </div>
 </div>
 </div>
@@ -9414,7 +8709,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9430,20 +8725,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9459,20 +8741,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'Sara': 95, 'Mary': 100}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9488,20 +8757,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'a': 2}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9517,20 +8773,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'a': 1, 'b': 1}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9546,20 +8789,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9576,20 +8806,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>95
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9609,19 +8826,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>95</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9646,29 +8851,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-277-1bd63a24976e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-red-fg"># play it safe by testing for key existence before access</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> student <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">'Marc'</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>grade <span class="ansi-blue-fg">=</span> grades<span class="ansi-blue-fg">[</span>student<span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span class="ansi-green-fg">if</span> student <span class="ansi-green-fg">in</span> grades<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span>   grade <span class="ansi-blue-fg">=</span> grades<span class="ansi-blue-fg">[</span>student<span class="ansi-blue-fg">]</span>
-
-<span class="ansi-red-fg">KeyError</span>: 'Marc'</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9685,22 +8868,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Sara 95
-Mary 100
-Marc 35
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9717,21 +8885,6 @@ Marc 35
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Marc 35
-Mary 100
-Sara 95
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -9743,7 +8896,7 @@ Sara 95
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9761,21 +8914,7 @@ Sara 95
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>before: {'Sara': 95, 'Mary': 100}
-after: {'Sara': 95, 'Mary': 100, 'Marc': None}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9796,23 +8935,7 @@ after: {'Sara': 95, 'Mary': 100, 'Marc': None}
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>before: {'Sara': 95, 'Mary': 100, 'Marc': None}
-after1: {'Sara': 95, 'Mary': 100, 'Marc': 80}
-after2: {'Sara': 95, 'Mary': 100, 'Marc': 85}
-after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9829,20 +8952,7 @@ after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>{'Sara': 95, 'Mary': 100}
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9854,26 +8964,6 @@ after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
 <span class="c1"># Trying to delete a key that doesn't exist will cause a runtime error.</span>
 <span class="k">del</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Fred'</span><span class="p">]</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-285-a7e696e33cbd&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> grades <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">{</span> <span class="ansi-blue-fg">'Sara'</span> <span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">95</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'Mary'</span><span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">'Marc'</span><span class="ansi-blue-fg">:</span> <span class="ansi-cyan-fg">85</span> <span class="ansi-blue-fg">}</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-red-fg"># Trying to delete a key that doesn't exist will cause a runtime error.</span>
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">del</span> grades<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">'Fred'</span><span class="ansi-blue-fg">]</span>
-
-<span class="ansi-red-fg">KeyError</span>: 'Fred'</pre>
 </div>
 </div>
 </div>
@@ -9943,7 +9033,7 @@ after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9961,23 +9051,6 @@ after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="s1">'a'</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="kc">None</span><span class="p">,):</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">empty</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>tuple test...
-() is empty.
-(1, 2, 3) is NOT empty.
-('a', 1) is NOT empty.
-(None,) is NOT empty.
-</pre>
 </div>
 </div>
 </div>
@@ -10033,7 +9106,7 @@ after2: {'Sara': 95, 'Mary': 100, 'Marc': 90}
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-4-Homework">Lesson 4 Homework<a class="anchor-link" href="#Lesson-4-Homework">¶</a></h1><ul>
+<h1 id="Lesson-7-Homework">Lesson 7 Homework<a class="anchor-link" href="#Lesson-7-Homework">¶</a></h1><ul>
 <li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
 <li>Review your copy of this notebook.<ul>
 <li>Complete the questions below.</li>

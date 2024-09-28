@@ -7564,30 +7564,17 @@ we can use a floating point value by executing:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">weight_kg</span> <span class="o">=</span> <span class="mf">60.3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>60.3
-</pre>
 </div>
 </div>
 </div>
@@ -7605,30 +7592,17 @@ we can assign each person a unique identifier by storing it in variable that sto
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"001"</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>001
-</pre>
 </div>
 </div>
 </div>
@@ -7669,12 +7643,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span><span class="p">)</span>
@@ -7686,26 +7660,6 @@ print(2 ** 4)
 <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>-1
-72
-3.0
-2.5
-1
-23
-26
-16
-</pre>
 </div>
 </div>
 </div>
@@ -7833,12 +7787,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># escape sequence examples</span>
@@ -7854,28 +7808,6 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Quoth the raven: "nevermore".
-My country 'tis of thee
-line1
-line2
-line3
-field1	field2	field3
-c:\directory\file
-several escape sequences:
-1/1	1/2
-2/1	2/2
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7887,12 +7819,12 @@ several escape sequences:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">longstr</span> <span class="o">=</span> <span class="s2">"""</span>
@@ -7904,25 +7836,6 @@ several escape sequences:
 <span class="s2">"""</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">longstr</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
-    This is a triple quoted string.
-    It goes on for multiple lines.
-    It contains things like ' and ",
-    which would normally have to be escaped,
-    but anything goes in a triple quoted string.
-
-</pre>
 </div>
 </div>
 </div>
@@ -7961,12 +7874,12 @@ several escape sequences:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="p">)</span>
@@ -7974,35 +7887,6 @@ several escape sequences:
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Clyro "</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Cat
-Catvideos
-Clyro Clyro Clyro 
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-7-4c6c0087a6d6&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 4&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Cat"</span> <span class="ansi-blue-fg">+</span> <span class="ansi-blue-fg">"videos"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Clyro "</span> <span class="ansi-blue-fg">*</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Cat"</span> <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: can only concatenate str (not "int") to str</pre>
 </div>
 </div>
 </div>
@@ -8168,12 +8052,12 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Marc'</span>
@@ -8183,21 +8067,6 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <span class="n">name</span> <span class="o">=</span> <span class="s1">'Benji'</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Marc
-3.14
-Benji
-</pre>
 </div>
 </div>
 </div>
