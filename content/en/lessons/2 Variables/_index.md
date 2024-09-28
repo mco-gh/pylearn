@@ -7538,7 +7538,6 @@ a.anchor-link {
 <li>The basic data types you can work with in Python</li>
 <li>What are variables and why they are useful</li>
 <li>How to create and assign values to variables in Python</li>
-<li>How to call a built-in function</li>
 </ul>
 <p><a href="https://pylearn.io/lessons/1-welcome/">Previous Lesson</a>
           
@@ -7555,55 +7554,13 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Data-Types">Data Types<a class="anchor-link" href="#Data-Types">¶</a></h2><p>Python knows about several types of data. Three common ones are:</p>
 <ul>
-<li>integer numbers</li>
+<li>numeric types<ul>
+<li>integers</li>
 <li>floating point numbers</li>
+</ul>
+</li>
 <li>character strings</li>
 </ul>
-<p>In the example above, the variable <code>weight_kg</code> was assigned an integer value of <code>60</code>. If we want to more precisely track the weight of our patient,
-we can use a floating point value by executing:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">weight_kg</span> <span class="o">=</span> <span class="mf">60.3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">weight_kg</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To create a string, we add single or double quotes around some text.
-To identify and track a patient throughout our study,
-we can assign each person a unique identifier by storing it in variable that stores a string value:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">patient_id</span> <span class="o">=</span> <span class="s2">"001"</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">patient_id</span><span class="p">)</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7628,39 +7585,6 @@ we can assign each person a unique identifier by storing it in variable that sto
 </li>
 </ul>
 <p>For the most part, you don't need to worry about which type of number to use - Python will take care of that for you. The decimal point tells Python which to use.</p>
-<p>Mixing floats and ints results in a float so, for example, <code>2024 * 3.14</code> results in a floating point number.</p>
-<p>Try entering these expressions in the following cell:</p>
-<pre><code>print(5 - 6)  
-print(8 * 9)
-print(6 / 2)
-print(5.0 / 2)
-print(5 % 2)  
-print(2 * 10 + 3)  
-print(2 * (10 + 3))  
-print(2 ** 4)
-</code></pre>
-<p>Were there any outputs you didn't expect?</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">9</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mf">5.0</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7686,10 +7610,55 @@ print(2 ** 4)
 -|subtraction|undefined
 *|multiplication|repetition
 //|integer division|undefined
-/|real division|undefined
+/|floating point division|undefined
 %|modulus (remainder)|undefined
 **|exponentiation|undefined
 ()|prioritization|prioritization</p>
+<p>Mixing floats and ints results in a float so, for example, <code>2024 * 3.14</code> results in a floating point number.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Try entering these expressions in the following cell:</p>
+<pre><code>print(5 - 6)  
+print(8 * 9)
+print(6 // 2)
+print(6 / 2)
+print(5.0 / 2)
+print(5 % 2)  
+print(2 * 10 + 3)  
+print(2 * (10 + 3))  
+print(2 ** 4)
+</code></pre>
+<p>Were there any outputs you didn't expect?</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">8</span> <span class="o">*</span> <span class="mi">9</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mf">5.0</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7712,7 +7681,7 @@ print(2 ** 4)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="Rules-of-the-Road">Rules of the Road<a class="anchor-link" href="#Rules-of-the-Road">¶</a></h4><ul>
-<li>a character string (or just string) is a sequence of characters surrounded by quotes</li>
+<li>a character string (or just "a string") is a sequence of characters surrounded by quotes</li>
 <li>strings give you the ability to operate on a sequence of characters as a basic unit</li>
 <li>strings are an example of a general category of data types called sequences, which we'll see more of later</li>
 <li>you can use single or double quotes to delineate strings but you must be consistent within a string</li>
@@ -7884,7 +7853,6 @@ print(2 ** 4)
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="s2">"videos"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Clyro "</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7903,7 +7871,6 @@ print(2 ** 4)
 
 <span class="nb">print</span><span class="p">(</span><span class="mi">33</span> <span class="o">+</span> <span class="mi">33</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="mi">33</span><span class="o">+</span><span class="mi">33</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"33"</span> <span class="o">+</span> <span class="s2">"33"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">"33"</span> <span class="o">+</span> <span class="s2">"33"</span><span class="p">))</span>
 </pre></div>
@@ -7930,7 +7897,7 @@ print(2 ** 4)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"cat"</span> <span class="o">+</span> <span class="s2">"3"</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="s2">"3"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -7945,7 +7912,7 @@ print(2 ** 4)
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h4 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h4><ul>
-<li><p>Method: A repeatable piece of code that completes a task for a specific data-type.</p>
+<li><p>Method: A reusable piece of code that that is connected to a value or a variable</p>
 </li>
 <li><p>We invoke a method using the <code>.</code> syntax, e.g. <code>mystr.upper()</code>.</p>
 </li>
@@ -7967,8 +7934,6 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"the lord of the rings"</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">'romi'</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7981,7 +7946,7 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In the next cell, create a program that calculates how many cans of cat food you need to feed 10 cats. You will need:</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In the next cell, create a program that calculates how many hours . You will need:</p>
 <ul>
 <li>A variable for the number of cats</li>
 <li>A variable for the number of cans each cat eats in a day</li>
@@ -8000,31 +7965,6 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Add your cat food program here.</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In the following cell, rewrite cat_food.py to use f-string instead of joining strings with + .</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Add your revised cat food program here.</span>
 </pre></div>
 </div>
 </div>
@@ -8064,10 +8004,25 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 <span class="n">name</span> <span class="o">=</span> <span class="mf">3.14</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">'Benji'</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variable-Naming-Rules">Variable Naming Rules<a class="anchor-link" href="#Variable-Naming-Rules">¶</a></h3><p>There are some special rules governing variable names:</p>
+<ul>
+<li>variable names may start with a letter or an underscore</li>
+<li>the rest of the letters in the name may be letters, numbers or underscore
+case is significant</li>
+<li><code>name</code> is different from <code>NAME</code>, which is different from <code>NaMe</code></li>
+</ul>
 </div>
 </div>
 </div>
@@ -8091,23 +8046,6 @@ raise = 1
 my-cat-is-awesome = 1
 my_cat_is_awesome = 1  
 </code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Variable-Naming-Rules">Variable Naming Rules<a class="anchor-link" href="#Variable-Naming-Rules">¶</a></h3><p>There are some special rules governing variable names:</p>
-<ul>
-<li>variable names may start with a letter or an underscore</li>
-<li>the rest of the letters in the name may be letters, numbers or underscore
-case is significant</li>
-<li><code>name</code> is different from <code>NAME</code>, which is different from <code>NaMe</code></li>
-</ul>
 </div>
 </div>
 </div>
@@ -8323,43 +8261,10 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>In the next cell, create a program that calculates how many cans of cat food you need to feed 10 cats. You will need:</p>
-<ul>
-<li>A variable for the number of cats</li>
-<li>A variable for the number of cans each cat eats in a day</li>
-<li>A <code>print()</code> function call to output the result</li>
-</ul>
-<p>Extension: change the calculation to work out the amount needed for 7 days.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Add your cat food program here.</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Key-Points">Key Points<a class="anchor-link" href="#Key-Points">¶</a></h2><ul>
-<li>Basic data types in Python include integers, strings, and floating-point numbers (there are others but we'll start with these).</li>
+<li>Basic data types in Python include integers, floating-point numbers, and strings (there are others but we'll start with these).</li>
 <li>Use <code>variable = value</code> to assign a value to a variable in order to store it in memory.</li>
-<li>Variables are created on demand whenever values are assigned to them.</li>
-<li>Use <code>print(something)</code> to display the value of <code>something</code>.</li>
-<li>Built-in functions, like <code>print</code> are always available to use.</li>
+<li>Variables are created on demand whenever values are assigned to them for the first time.</li>
 </ul>
 </div>
 </div>
@@ -8371,7 +8276,7 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
+<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h2>
 </div>
 </div>
 </div>
