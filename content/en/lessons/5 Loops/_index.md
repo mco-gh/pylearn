@@ -9114,7 +9114,7 @@ for i in range(1, 10):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
+<h1 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h1>
 </div>
 </div>
 </div>
