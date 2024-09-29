@@ -7640,12 +7640,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">6</span><span class="p">)</span>
@@ -7658,6 +7658,27 @@ print(2 ** 4)
 <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">+</span> <span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">4</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>-1
+72
+3
+3.0
+2.5
+1
+23
+26
+16
+</pre>
 </div>
 </div>
 </div>
@@ -7788,12 +7809,12 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">longstr</span> <span class="o">=</span> <span class="s2">"""</span>
@@ -7805,6 +7826,25 @@ print(2 ** 4)
 <span class="s2">"""</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">longstr</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+    This is a triple quoted string.
+    It goes on for multiple lines.
+    It contains things like ' and ",
+    which would normally have to be escaped,
+    but anything goes in a triple quoted string.
+
+</pre>
 </div>
 </div>
 </div>
@@ -7843,28 +7883,45 @@ print(2 ** 4)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="s2">"videos"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="p">,</span> <span class="s2">"videos"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">"&lt;ipython-input-14-7b82754bfdb1&gt;"</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">2</span>
+<span class="ansi-red-fg">    print("Cat" + "videos") -&gt;</span>
+                            ^
+<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># To notice:  33 (the integer) is different from "33" (the string)</span>
@@ -7875,6 +7932,33 @@ print(2 ** 4)
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">"33"</span> <span class="o">+</span> <span class="s2">"33"</span><span class="p">))</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>66
+&lt;class 'int'&gt;
+3333
+&lt;class 'str'&gt;
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>add * operator</p>
 </div>
 </div>
 </div>
@@ -7923,18 +8007,33 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Cat"</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"the lord of the rings"</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>CAT
+cat
+The Lord Of The Rings
+</pre>
 </div>
 </div>
 </div>
@@ -7946,27 +8045,16 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In the next cell, create a program that calculates how many hours . You will need:</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><ul>
+<li>you have 5 cats</li>
+<li>each cats consumes two tins of food per day</li>
+<li>how many tins needed per week</li>
+</ul>
+<p>In the next cell, create a program that calculates how many FIX. You will need:</p>
 <ul>
-<li>A variable for the number of cats</li>
-<li>A variable for the number of cans each cat eats in a day</li>
 <li>A <code>print()</code> function call to output the result</li>
 </ul>
 <p>Extension: change the calculation to work out the amount needed for 7 days.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="c1"># Add your cat food program here.</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -7992,12 +8080,12 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s1">'Marc'</span>
@@ -8005,6 +8093,20 @@ e.g. <code>.upper()</code> can be used with a string but not an integer or a flo
 <span class="n">name</span> <span class="o">=</span> <span class="mf">3.14</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Marc
+3.14
+</pre>
 </div>
 </div>
 </div>
@@ -8079,6 +8181,35 @@ my_cat_is_awesome = 1
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">customer_id</span> <span class="o">=</span> <span class="s2">"1234"</span>
+<span class="n">account_balance</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'customer id: </span><span class="si">{</span><span class="n">customer_id</span><span class="si">}</span><span class="s1"> account balance: </span><span class="si">{</span><span class="n">account_balance</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>customer id: 1234 account balance: 2000
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8137,12 +8268,12 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
@@ -8159,7 +8290,29 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 
 <span class="n">a</span> <span class="o">=</span> <span class="n">b</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'a ='</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">'b ='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="mi">43</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'a ='</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="s1">'b ='</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>a = 0
+a = 42
+a = 3.14159
+a = Marc
+a = Marc b = 42
+a = 42 b = 42
+a = 42 b = 43
+</pre>
 </div>
 </div>
 </div>
@@ -8175,12 +8328,12 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Tedious version...</span>
@@ -8199,12 +8352,33 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>9
+18
+27
+36
+45
+54
+63
+72
+81
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Nicer version...</span>
@@ -8224,6 +8398,27 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>8
+16
+24
+32
+40
+48
+56
+64
+72
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8236,20 +8431,40 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># Coming soon...</span>
 
-<span class="n">factor</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">factor</span> <span class="o">=</span> <span class="mi">8</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="n">factor</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>8
+16
+24
+32
+40
+48
+56
+64
+</pre>
 </div>
 </div>
 </div>
@@ -8315,16 +8530,17 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2">¶</a></h3><p>Prompt for dog's age and return in people years.</p>
+<h3 id="Problem-2">Problem 2<a class="anchor-link" href="#Problem-2">¶</a></h3><p>Prompt for dog's age and return in people years in this format:</p>
+<p>X dog years = Y people years.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
@@ -8334,6 +8550,20 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 <span class="n">people_age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">dog_age</span><span class="p">)</span> <span class="o">*</span> <span class="n">dog_to_people_years</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">dog_age</span><span class="p">,</span><span class="s1">'dog years ='</span><span class="p">,</span>  <span class="nb">str</span><span class="p">(</span><span class="n">people_age</span><span class="p">),</span> <span class="s1">'people years.'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>How old is your dog? 10
+10 dog years = 70 people years.
+</pre>
 </div>
 </div>
 </div>
@@ -8607,6 +8837,40 @@ todays_high_temp = 71.3     # diff name, floating point value</code></pre>
 <p><a href="https://pylearn.io/lessons/1-welcome/">Previous Lesson</a>
           
 <a href="https://pylearn.io/lessons/3-Expressions/">Next Lesson</a></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">dog_to_people_years</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">dog_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your dog's name? "</span><span class="p">)</span>
+<span class="n">dog_years</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"How old is your dog? "</span><span class="p">)</span>
+<span class="n">dog_years</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">dog_years</span><span class="p">)</span>
+<span class="n">people_years</span> <span class="o">=</span> <span class="n">dog_years</span> <span class="o">*</span> <span class="n">dog_to_people_years</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">dog_name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">dog_years</span><span class="si">}</span><span class="s2"> years old in dog years, and </span><span class="si">{</span><span class="n">people_years</span><span class="si">}</span><span class="s2"> years old in people years."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>What is your dog's name? Rosie
+How old is your dog? 4
+Rosie is 4.0 years old in dog years, and 20.0 years old in people years.
+</pre>
+</div>
 </div>
 </div>
 </div>
