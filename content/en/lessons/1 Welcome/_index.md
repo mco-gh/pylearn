@@ -7697,7 +7697,7 @@ a.anchor-link {
 <li>Programming is a creative activity.</li>
 <li>There has never been a better time in history to learn to code.</li>
 <li>Anyone can learn to program, as long as you’re willing to do the work.</li>
-<li>Think of it a little like learning to play the piano.</li>
+<li>Think of it a little like learning to play a musical instrument.</li>
 <li>Practice between classes is very helpful.</li>
 <li>Give yourself time &amp; kindness.</li>
 <li>Mistakes are feedback.</li>
@@ -8045,6 +8045,17 @@ a.anchor-link {
 <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">countries</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Example-4---Google-AI-Studio">Example 4 - Google AI Studio<a class="anchor-link" href="#Example-4---Google-AI-Studio">¶</a></h4><p><a href="https://aistudio.google.com/">https://aistudio.google.com/</a></p>
 </div>
 </div>
 </div>
