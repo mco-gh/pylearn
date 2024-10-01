@@ -7647,7 +7647,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Type-Conversion-and-the-type-Function">Type Conversion and the <code>type</code> Function<a class="anchor-link" href="#Type-Conversion-and-the-type-Function">¶</a></h2>
+<h3 id="Type-Conversion-and-the-type-Function">Type Conversion and the <code>type</code> Function<a class="anchor-link" href="#Type-Conversion-and-the-type-Function">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7665,32 +7665,6 @@ a.anchor-link {
 <li><code>str(x)</code> - converts <em>x</em> to a string</li>
 <li><code>bool(x)</code> - converts <em>x</em> to a boolean value</li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">bool</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>False</pre>
-</div>
 </div>
 </div>
 </div>
@@ -7775,12 +7749,12 @@ print(f"You are {age} years old")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">type_int</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
@@ -7795,44 +7769,17 @@ print(f"You are {age} years old")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;class 'int'&gt; &lt;class 'float'&gt; &lt;class 'str'&gt; &lt;class 'bool'&gt; &lt;class 'NoneType'&gt;
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter your age: "</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>enter your age: 64
-&lt;class 'str'&gt;
-</pre>
 </div>
 </div>
 </div>
@@ -7953,60 +7900,6 @@ print(f"You are {age} years old")
 <li><p><code>"marc" &gt; "Marc"</code></p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"marc"</span> <span class="o">&gt;</span> <span class="s2">"Marc"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>True
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"marc"</span> <span class="o">!=</span> <span class="s2">"Marc"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>True
-</pre>
-</div>
 </div>
 </div>
 </div>
@@ -8209,12 +8102,12 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">is_rainy</span> <span class="o">=</span> <span class="kc">False</span>
@@ -8225,19 +8118,6 @@ is <code>False</code> when A is <code>True</code></p>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"don't ride today"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>ride bike
-</pre>
 </div>
 </div>
 </div>
@@ -8290,11 +8170,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Let's combine <code>input</code>, <code>print</code>, and expressions to build a temperature conversion program. The formulae for converting Celcius to Fahrenheit and vice versa are:</p>
-<ul>
-<li><code>F = (C + 32) * 9/5</code></li>
-<li><code>C = (F - 32) * 5/9</code></li>
-</ul>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8305,36 +8181,26 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4>
+<p>Let's combine <code>input</code>, <code>print</code>, and expressions to build a temperature conversion program. The formulae for converting Celcius to Fahrenheit and vice versa are:</p>
+<ul>
+<li><code>F = (C + 32) * 9/5</code></li>
+<li><code>C = (F - 32) * 5/9</code></li>
+</ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">degrees_f</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees in fahrenheit: '</span><span class="p">))</span>
-<span class="n">degrees_c</span> <span class="o">=</span> <span class="p">(</span><span class="n">degrees_f</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+<span class="c1"># Add an assignment statement that computes degrees_c as a function of degrees_f</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F = </span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C'</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter number of degrees in fahrenheit: 70
-70.0°F = 21.1°C
-</pre>
 </div>
 </div>
 </div>
@@ -8362,7 +8228,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Types-of-Expressions">Types of Expressions<a class="anchor-link" href="#Types-of-Expressions">¶</a></h2><ul>
+<h3 id="Types-of-Expressions">Types of Expressions<a class="anchor-link" href="#Types-of-Expressions">¶</a></h3><ul>
 <li>arithmetic expressions</li>
 </ul>
 <p><code>tax = income * tax_rate</code></p>
@@ -8388,7 +8254,7 @@ is <code>False</code> when A is <code>True</code></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Order-of-Evaluation">Order of Evaluation<a class="anchor-link" href="#Order-of-Evaluation">¶</a></h2><p>How does Python know the correct order to evaluate a complex expression?</p>
+<h3 id="Order-of-Evaluation">Order of Evaluation<a class="anchor-link" href="#Order-of-Evaluation">¶</a></h3><p>How does Python know the correct order to evaluate a complex expression?</p>
 <p>Example: <code>4 + 1 * 5</code></p>
 <p>Is that <code>(4 + 1) * 5</code>, which is <code>25</code>?<br/>
 Or is it <code>4 + (1 * 5)</code>, which is <code>9</code>?</p>
@@ -8406,7 +8272,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Simplified-Python-Precedence-Rules">Simplified Python Precedence Rules<a class="anchor-link" href="#Simplified-Python-Precedence-Rules">¶</a></h2><p>This is a subset of the complete rules (in order of highest to lowest precedence):</p>
+<h3 id="Simplified-Python-Precedence-Rules">Simplified Python Precedence Rules<a class="anchor-link" href="#Simplified-Python-Precedence-Rules">¶</a></h3><p>This is a subset of the complete rules (in order of highest to lowest precedence):</p>
 <ul>
 <li>parentheses (innermost to outermost, left to right)</li>
 <li>exponentiation (left to right)</li>
@@ -8428,7 +8294,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Practical-Advice">Practical Advice<a class="anchor-link" href="#Practical-Advice">¶</a></h2><p>Marc's rule or operator precedence: <strong>When in doubt, use parentheses.</strong></p>
+<h3 id="Practical-Advice">Practical Advice<a class="anchor-link" href="#Practical-Advice">¶</a></h3><p>Marc's rule or operator precedence: <strong>When in doubt, use parentheses.</strong></p>
 <p>I make liberal use of parentheses because then:</p>
 <ul>
 <li>I don't need to remember the precedence rules.</li>
