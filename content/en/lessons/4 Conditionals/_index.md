@@ -7563,7 +7563,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Controlling-Program-Flow">Controlling Program Flow<a class="anchor-link" href="#Controlling-Program-Flow">¶</a></h1><p>Trivia Question:
+<h2 id="Controlling-Program-Flow">Controlling Program Flow<a class="anchor-link" href="#Controlling-Program-Flow">¶</a></h2><p>Trivia Question:
 Will the year 2100 be a leap year?</p>
 <ul>
 <li>Up to now, we've looked at very simple programs, involving a sequence of statements (A, then B, then C…)</li>
@@ -7582,7 +7582,7 @@ Will the year 2100 be a leap year?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="if-Statements"><code>if</code> Statements<a class="anchor-link" href="#if-Statements">¶</a></h2>
+<h3 id="if-Statements"><code>if</code> Statements<a class="anchor-link" href="#if-Statements">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7608,12 +7608,12 @@ Otherwise, the indented statements are skipped and program execution continues a
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">month</span> <span class="o">=</span> <span class="s2">"jan"</span>
@@ -7629,26 +7629,12 @@ Otherwise, the indented statements are skipped and program execution continues a
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>boo - have to go to school today!
-program done
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">3</span>
@@ -7662,19 +7648,6 @@ program done
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7682,7 +7655,7 @@ program done
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>In Python, we use indentation to associate a block of statements with a condition, for example...</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>In Python, we use indentation to associate a block of statements with a condition, for example...</p>
 <pre><code>print("1")
 if some_condition:    
     print("2")    
@@ -7698,12 +7671,12 @@ print("4") # this line is NOT part of the if block
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">some_condition</span> <span class="o">=</span> <span class="kc">True</span>
@@ -7714,22 +7687,6 @@ print("4") # this line is NOT part of the if block
     <span class="nb">print</span><span class="p">(</span><span class="s2">"3"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"4"</span><span class="p">)</span> <span class="c1"># this line is NOT part of the if block</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-2
-3
-4
-</pre>
 </div>
 </div>
 </div>
@@ -7764,7 +7721,7 @@ What does the output look like...</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="if-Block-Structure"><code>if</code> Block Structure<a class="anchor-link" href="#if-Block-Structure">¶</a></h2><ul>
+<h3 id="if-Block-Structure"><code>if</code> Block Structure<a class="anchor-link" href="#if-Block-Structure">¶</a></h3><ul>
 <li>In Python, <code>if</code> statements blocks are defined by indentation.</li>
 <li>This idea of using indentation to delineate program structure is pervasive in Python and unique across programming languages.</li>
 <li>For now, we're focusing on if statements but later we'll see how indentation is used to define other blocks of statements.</li>
@@ -7779,7 +7736,7 @@ What does the output look like...</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Block-Stucture-in-Other-Languages">Block Stucture in Other Languages<a class="anchor-link" href="#Block-Stucture-in-Other-Languages">¶</a></h3><p>In other languages, explicit delineators are used. For example, in Java, C, and C++ we would write:</p>
+<h4 id="Block-Stucture-in-Other-Languages">Block Stucture in Other Languages<a class="anchor-link" href="#Block-Stucture-in-Other-Languages">¶</a></h4><p>In other languages, explicit delineators are used. For example, in Java, C, and C++ we would write:</p>
 <pre><code>if ((cur_year % 4) == 0) {
     leap_year = true;
 }
@@ -7800,7 +7757,7 @@ In Python, indentation is not just a good idea - it's affects program logic!</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Python's-use-of-whitespace">Python's use of whitespace<a class="anchor-link" href="#Python's-use-of-whitespace">¶</a></h2><ul>
+<h3 id="Python's-use-of-whitespace">Python's use of whitespace<a class="anchor-link" href="#Python's-use-of-whitespace">¶</a></h3><ul>
 <li>Many people have strong opinions about this aspect of Python.</li>
 <li>Personally, I find that it leads to compact, readable code.</li>
 <li>My advice: don’t get hung up on this feature. Try it and see what you think after you've written a few Python programs.</li>
@@ -7822,7 +7779,7 @@ In Python, indentation is not just a good idea - it's affects program logic!</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Encoding-our-leap-year-rule">Encoding our leap year rule<a class="anchor-link" href="#Encoding-our-leap-year-rule">¶</a></h2><p>Remember our leap year rule?</p>
+<h3 id="Encoding-our-leap-year-rule">Encoding our leap year rule<a class="anchor-link" href="#Encoding-our-leap-year-rule">¶</a></h3><p>Remember our leap year rule?</p>
 <ul>
 <li>if the current year is divisible by 4, we have a leap year</li>
 </ul>
@@ -7838,12 +7795,12 @@ print(f"leap year status for {year}: {str(leap_year)}")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># initialization</span>
@@ -7857,20 +7814,6 @@ print(f"leap year status for {year}: {str(leap_year)}")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter desired year: 2024
-leap year status for 2024: True
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7878,7 +7821,7 @@ leap year status for 2024: True
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="else-Statements"><code>else</code> Statements<a class="anchor-link" href="#else-Statements">¶</a></h2>
+<h3 id="else-Statements"><code>else</code> Statements<a class="anchor-link" href="#else-Statements">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7935,7 +7878,7 @@ else:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>Consider the following if/else statement...</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>Consider the following if/else statement...</p>
 <pre><code>print("1")
 if some_condition:    
   print("2")
@@ -7952,12 +7895,12 @@ print("4")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">some_condition</span> <span class="o">=</span> <span class="kc">False</span>
@@ -7973,21 +7916,6 @@ print("4")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-3
-4
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7995,7 +7923,7 @@ print("4")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Let's-use-if-and-else-to-express-our-leap-year-rule">Let's use <code>if</code> and <code>else</code> to express our leap year rule<a class="anchor-link" href="#Let's-use-if-and-else-to-express-our-leap-year-rule">¶</a></h2>
+<h3 id="Let's-use-if-and-else-to-express-our-leap-year-rule">Let's use <code>if</code> and <code>else</code> to express our leap year rule<a class="anchor-link" href="#Let's-use-if-and-else-to-express-our-leap-year-rule">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8039,7 +7967,7 @@ print("4")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="elif-Statements"><code>elif</code> Statements<a class="anchor-link" href="#elif-Statements">¶</a></h2>
+<h3 id="elif-Statements"><code>elif</code> Statements<a class="anchor-link" href="#elif-Statements">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8106,7 +8034,7 @@ else:    # x must be 2 then, right? not necessarily!
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>Consider the following if/elif/else statement...</p>
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><p>Consider the following if/elif/else statement...</p>
 <pre><code>print("1")
 if condition1:    
     print("2")
@@ -8127,12 +8055,12 @@ print("5")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">condition1</span> <span class="o">=</span> <span class="kc">False</span>
@@ -8151,21 +8079,6 @@ print("5")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-3
-5
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8173,7 +8086,7 @@ print("5")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Nested-if-Statements">Nested <code>if</code> Statements<a class="anchor-link" href="#Nested-if-Statements">¶</a></h2><ul>
+<h3 id="Nested-if-Statements">Nested <code>if</code> Statements<a class="anchor-link" href="#Nested-if-Statements">¶</a></h3><ul>
 <li>Sometimes we need to embed one if statement inside another.</li>
 <li>We call these nested if statements.</li>
 <li>We can embed if statements inside any part of an <code>if</code> statement, i.e. in the <code>if</code> block or the <code>elif</code> block or the <code>else</code> block.</li>
@@ -8195,7 +8108,7 @@ could have, for example...</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><pre><code>print("1")
+<h4 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h4><pre><code>print("1")
 if condition1:    
     print("2")    
     if condition2:        
@@ -8217,12 +8130,12 @@ print("6")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">condition1</span> <span class="o">=</span> <span class="kc">False</span>
@@ -8243,21 +8156,6 @@ print("6")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>1
-5
-6
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8265,17 +8163,17 @@ print("6")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Improving-Our-Rule">Improving Our Rule<a class="anchor-link" href="#Improving-Our-Rule">¶</a></h2><p>A more accurate rule for determining leap years:</p>
+<h3 id="Improving-Our-Rule">Improving Our Rule<a class="anchor-link" href="#Improving-Our-Rule">¶</a></h3><p>A more accurate rule for determining leap years:</p>
 <p>If the current year is divisible by 4 but not divisible by 100 then we have a leap year. How would you encode that refinement in Python? Try it yourself and then have a look at the next cell.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>
@@ -8290,20 +8188,6 @@ print("6")
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 2100
-leap year status for 2100: False
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8311,16 +8195,16 @@ leap year status for 2100: False
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Variation---using-boolean-logic-instead-of-nested-if">Variation - using boolean logic instead of nested <code>if</code><a class="anchor-link" href="#Variation---using-boolean-logic-instead-of-nested-if">¶</a></h3><p>This example could also be coded using boolean logic in place of the nested if statement.</p>
+<h4 id="Variation---using-boolean-logic-instead-of-nested-if">Variation - using boolean logic instead of nested <code>if</code><a class="anchor-link" href="#Variation---using-boolean-logic-instead-of-nested-if">¶</a></h4><p>This example could also be coded using boolean logic in place of the nested if statement.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">leap_year</span> <span class="o">=</span> <span class="kc">False</span>
@@ -8330,20 +8214,6 @@ leap year status for 2100: False
     <span class="n">leap_year</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"leap year status for </span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">leap_year</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter current year: 2000
-leap year status for 2000: False
-</pre>
 </div>
 </div>
 </div>
@@ -8371,7 +8241,7 @@ leap year status for 2000: False
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-Whole-Story-About-Leap-Years">The Whole Story About Leap Years<a class="anchor-link" href="#The-Whole-Story-About-Leap-Years">¶</a></h2><p>A year is a leap year if its divisible by 4,
+<h3 id="The-Whole-Story-About-Leap-Years">The Whole Story About Leap Years<a class="anchor-link" href="#The-Whole-Story-About-Leap-Years">¶</a></h3><p>A year is a leap year if its divisible by 4,
 but not divisible by 100,
 unless also divisible by 400.</p>
 <p>So...</p>
@@ -8390,7 +8260,7 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Importing-Modules">Importing Modules<a class="anchor-link" href="#Importing-Modules">¶</a></h1>
+<h2 id="Importing-Modules">Importing Modules<a class="anchor-link" href="#Importing-Modules">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8406,12 +8276,12 @@ unless also divisible by 400.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -8426,21 +8296,6 @@ unless also divisible by 400.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['Benji', 'Rosie', 'Kirby', 'Maple']
-['Maple', 'Benji', 'Rosie', 'Kirby']
-['Maple', 'Benji', 'Kirby', 'Rosie']
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8448,7 +8303,7 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h1>
+<h2 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8463,12 +8318,12 @@ unless also divisible by 400.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>ColabTurtle
@@ -8479,34 +8334,12 @@ unless also divisible by 400.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Collecting ColabTurtle
-  Downloading ColabTurtle-2.1.0.tar.gz (6.8 kB)
-  Preparing metadata (setup.py) ... done
-Building wheels for collected packages: ColabTurtle
-  Building wheel for ColabTurtle (setup.py) ... done
-  Created wheel for ColabTurtle: filename=ColabTurtle-2.1.0-py3-none-any.whl size=7642 sha256=cb4b17373bef9209c15da3da415b3d62c2db6ce0e17f3b6270a510cb3db07cb2
-  Stored in directory: /root/.cache/pip/wheels/5b/86/e8/54f5c8c853606e3a3060bb2e60363cbed632374a12e0f33ffc
-Successfully built ColabTurtle
-Installing collected packages: ColabTurtle
-Successfully installed ColabTurtle-2.1.0
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">colors</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'white'</span><span class="p">,</span> <span class="s1">'yellow'</span><span class="p">,</span> <span class="s1">'orange'</span><span class="p">,</span> <span class="s1">'red'</span><span class="p">,</span> <span class="s1">'green'</span><span class="p">,</span> <span class="s1">'blue'</span><span class="p">,</span> <span class="s1">'purple'</span><span class="p">,</span> <span class="s1">'grey'</span><span class="p">)</span>
@@ -8525,24 +8358,6 @@ Successfully installed ColabTurtle-2.1.0
         <span class="k">else</span><span class="p">:</span>
             <span class="n">left</span><span class="p">(</span><span class="mi">245</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<svg height="500" width="800">
-<rect fill="black" height="100%" width="100%"></rect>
-<line stroke-linecap="round" style="stroke:purple;stroke-width:4" x1="400" x2="400.0" y1="250" y2="150.0"></line><line stroke-linecap="round" style="stroke:purple;stroke-width:4" x1="400.0" x2="372.436" y1="150.0" y2="53.874"></line><line stroke-linecap="round" style="stroke:grey;stroke-width:4" x1="372.436" x2="471.205" y1="53.874" y2="69.517"></line><line stroke-linecap="round" style="stroke:grey;stroke-width:4" x1="471.205" x2="570.46" y1="69.517" y2="57.33"></line><line stroke-linecap="round" style="stroke:white;stroke-width:4" x1="570.46" x2="539.558" y1="57.33" y2="152.436"></line><line stroke-linecap="round" style="stroke:white;stroke-width:4" x1="539.558" x2="536.068" y1="152.436" y2="252.375"></line><line stroke-linecap="round" style="stroke:yellow;stroke-width:4" x1="536.068" x2="446.967" y1="252.375" y2="206.976"></line><line stroke-linecap="round" style="stroke:yellow;stroke-width:4" x1="446.967" x2="348.804" y1="206.976" y2="187.895"></line><line stroke-linecap="round" style="stroke:orange;stroke-width:4" x1="348.804" x2="407.583" y1="187.895" y2="106.993"></line><line stroke-linecap="round" style="stroke:orange;stroke-width:4" x1="407.583" x2="441.785" y1="106.993" y2="13.024"></line><line stroke-linecap="round" style="stroke:red;stroke-width:4" x1="441.785" x2="512.496" y1="13.024" y2="83.735"></line><line stroke-linecap="round" style="stroke:red;stroke-width:4" x1="512.496" x2="599.958" y1="83.735" y2="132.216"></line><line stroke-linecap="round" style="stroke:green;stroke-width:4" x1="599.958" x2="519.056" y1="132.216" y2="190.995"></line><line stroke-linecap="round" style="stroke:green;stroke-width:4" x1="519.056" x2="457.49" y1="190.995" y2="269.796"></line><line stroke-linecap="round" style="stroke:blue;stroke-width:4" x1="457.49" x2="412.091" y1="269.796" y2="180.695"></line><line stroke-linecap="round" style="stroke:blue;stroke-width:4" x1="412.091" x2="343.891" y1="180.695" y2="107.56"></line>
-<g transform="rotate(432,343.891,107.56) translate(325.891, 89.56)" visibility="visible">
-<path d="M 18.214844 0.632812 C 16.109375 1.800781 15.011719 4.074219 15.074219 7.132812 L 15.085938 7.652344 L 14.785156 7.496094 C 13.476562 6.824219 11.957031 6.671875 10.40625 7.066406 C 8.46875 7.550781 6.515625 9.15625 4.394531 11.992188 C 3.0625 13.777344 2.679688 14.636719 3.042969 15.027344 L 3.15625 15.152344 L 3.519531 15.152344 C 4.238281 15.152344 4.828125 14.886719 8.1875 13.039062 C 9.386719 12.378906 10.371094 11.839844 10.378906 11.839844 C 10.386719 11.839844 10.355469 11.929688 10.304688 12.035156 C 9.832031 13.09375 9.257812 14.820312 8.96875 16.078125 C 7.914062 20.652344 8.617188 24.53125 11.070312 27.660156 C 11.351562 28.015625 11.363281 27.914062 10.972656 28.382812 C 8.925781 30.84375 7.945312 33.28125 8.238281 35.1875 C 8.289062 35.527344 8.28125 35.523438 8.917969 35.523438 C 10.941406 35.523438 13.074219 34.207031 15.136719 31.6875 C 15.359375 31.417969 15.328125 31.425781 15.5625 31.574219 C 16.292969 32.042969 18.023438 32.964844 18.175781 32.964844 C 18.335938 32.964844 19.941406 32.210938 20.828125 31.71875 C 20.996094 31.625 21.136719 31.554688 21.136719 31.558594 C 21.203125 31.664062 21.898438 32.414062 22.222656 32.730469 C 23.835938 34.300781 25.5625 35.132812 27.582031 35.300781 C 27.90625 35.328125 27.9375 35.308594 28.007812 34.984375 C 28.382812 33.242188 27.625 30.925781 25.863281 28.425781 L 25.542969 27.96875 L 25.699219 27.785156 C 28.945312 23.960938 29.132812 18.699219 26.257812 11.96875 L 26.207031 11.84375 L 27.945312 12.703125 C 31.53125 14.476562 32.316406 14.800781 33.03125 14.800781 C 33.976562 14.800781 33.78125 13.9375 32.472656 12.292969 C 28.519531 7.355469 25.394531 5.925781 21.921875 7.472656 L 21.558594 7.636719 L 21.578125 7.542969 C 21.699219 6.992188 21.761719 5.742188 21.699219 5.164062 C 21.496094 3.296875 20.664062 1.964844 19.003906 0.855469 C 18.480469 0.503906 18.457031 0.5 18.214844 0.632812" style=" stroke:none;fill-rule:evenodd;fill:blue;fill-opacity:1;"></path>
-</g>
-</svg>
 </div>
 </div>
 </div>
@@ -8578,12 +8393,12 @@ Successfully installed ColabTurtle-2.1.0
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
@@ -8604,33 +8419,6 @@ Successfully installed ColabTurtle-2.1.0
 <span class="c1">#groups(students, 3)</span>
 <span class="n">groups</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['u', 'l', 'r', 'v', 't']
-['a', 'm', 'p', 'e', 'b']
-['s', 'j', 'z', 'k', 'o']
-['d', 'g', 'n', 'i', 'h']
-['x', 'c', 'w', 'q', 'f']
-['y']
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>&lt;ipython-input-46-3d71af21bd6e&gt;:10: DeprecationWarning: Sampling from a set deprecated
-since Python 3.9 and will be removed in a subsequent version.
-  group = sample(students, k)
-</pre>
 </div>
 </div>
 </div>
@@ -8672,7 +8460,7 @@ def index():
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h1>
+<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8683,7 +8471,7 @@ def index():
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>Write a program that prompts the user for their birth year and prints their age in years, days, hours, minutes, and seconds. Don’t worry about the user’s birthday (just subtract the birth year from the current year to get the approximate current age in years) and you can ignore leap years. Here's a sample run:</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a program that prompts the user for their birth year and prints their age in years, days, hours, minutes, and seconds. Don’t worry about the user’s birthday (just subtract the birth year from the current year to get the approximate current age in years) and you can ignore leap years. Here's a sample run:</p>
 <pre><code>    Enter your birth year:  1970
     You are...
         50 years old
@@ -8757,7 +8545,7 @@ def index():
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><ul>
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><ul>
 <li><p>A person is eligible to be a US Senator if they are at least 30 years old and have been a US citizen for at least 9 years.</p>
 </li>
 <li><p>A person is eligible to be a US Representative if they are at least 25 years old and have been a US citizen for at least 7 years.</p>
@@ -8810,7 +8598,7 @@ def index():
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication test). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication test). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
 <pre><code>Welcome to the multiplication tester!
 What is 3 * 9? 25
 Sorry, that's incorrect, 3 * 9 = 27.
@@ -8859,7 +8647,7 @@ Correct!
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Write a program that prompts the user for a year and, using the complete set of rules described in class, tells the user whether the provided year is a leap year or not.</p>
+<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><p>Write a program that prompts the user for a year and, using the complete set of rules described in class, tells the user whether the provided year is a leap year or not.</p>
 </div>
 </div>
 </div>
