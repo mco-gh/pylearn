@@ -7562,7 +7562,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Strings-Revisited">Strings Revisited<a class="anchor-link" href="#Strings-Revisited">¶</a></h1>
+<h2 id="Strings-Revisited">Strings Revisited<a class="anchor-link" href="#Strings-Revisited">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7573,7 +7573,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-len-Function">The <code>len</code> Function<a class="anchor-link" href="#The-len-Function">¶</a></h2><ul>
+<h3 id="The-len-Function">The <code>len</code> Function<a class="anchor-link" href="#The-len-Function">¶</a></h3><ul>
 <li><code>len(string)</code> returns the length of a passed string</li>
 </ul>
 <p>Examples:</p>
@@ -7609,7 +7609,7 @@ print(len(''))
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Indexing">Indexing<a class="anchor-link" href="#Indexing">¶</a></h2>
+<h3 id="Indexing">Indexing<a class="anchor-link" href="#Indexing">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7666,7 +7666,7 @@ print('marc'[2])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Slicing">Slicing<a class="anchor-link" href="#Slicing">¶</a></h2><ul>
+<h3 id="Slicing">Slicing<a class="anchor-link" href="#Slicing">¶</a></h3><ul>
 <li><p>You can take a subset of a string, we call this 'a slice') using this syntax:</p>
 <p><code>string[beg:end]</code></p>
 </li>
@@ -7729,7 +7729,7 @@ print('Python is cool'[1:3])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Default-Limits">Default Limits<a class="anchor-link" href="#Default-Limits">¶</a></h3><ul>
+<h4 id="Default-Limits">Default Limits<a class="anchor-link" href="#Default-Limits">¶</a></h4><ul>
 <li>You can leave out the beg or end part (or both)</li>
 <li>default beg is <code>0</code></li>
 <li>default end is <code>len()-1</code></li>
@@ -7771,7 +7771,7 @@ print(mystr[:])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge---predict-the-output-from-the-following-print-statements:">Challenge - predict the output from the following print statements:<a class="anchor-link" href="#Challenge---predict-the-output-from-the-following-print-statements:">¶</a></h3><pre><code>mystr = 'Python is cool'
+<h4 id="Challenge---predict-the-output-from-the-following-print-statements:">Challenge - predict the output from the following print statements:<a class="anchor-link" href="#Challenge---predict-the-output-from-the-following-print-statements:">¶</a></h4><pre><code>mystr = 'Python is cool'
 print(mystr[7])
 print(mystr[len(mystr)])
 print(mystr[1:15])
@@ -7814,7 +7814,7 @@ print(mystr[:-1])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-in-Operator">The <code>in</code> Operator<a class="anchor-link" href="#The-in-Operator">¶</a></h2><ul>
+<h3 id="The-in-Operator">The <code>in</code> Operator<a class="anchor-link" href="#The-in-Operator">¶</a></h3><ul>
 <li><code>in</code> is a boolean operator which, when used with strings, tests whether a substring exists in another string</li>
 <li>the result is a boolean value (True or False)</li>
 </ul>
@@ -7853,7 +7853,7 @@ print('' in 'Marc')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h2><ul>
+<h3 id="String-Methods">String Methods<a class="anchor-link" href="#String-Methods">¶</a></h3><ul>
 <li>everything in Python is an object</li>
 <li>strings (and other objects) have special functions attached to them which we call "methods"</li>
 <li>string methods are invoked like this:
@@ -7930,7 +7930,7 @@ print(mystr.find('okay'))
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="String-Immutability">String Immutability<a class="anchor-link" href="#String-Immutability">¶</a></h2><ul>
+<h3 id="String-Immutability">String Immutability<a class="anchor-link" href="#String-Immutability">¶</a></h3><ul>
 <li>strings cannot change after they are created</li>
 <li>we call this property “immutability”</li>
 <li>strings are said to be “immutable” (i.e. unchanging)</li>
@@ -7968,7 +7968,7 @@ print(f'{name} still exists, {upper_name} is a new string')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="String-Editing">String Editing<a class="anchor-link" href="#String-Editing">¶</a></h2><ul>
+<h3 id="String-Editing">String Editing<a class="anchor-link" href="#String-Editing">¶</a></h3><ul>
 <li><p>the replace() string method takes these arguments:</p>
 <ul>
 <li>a substring to replace</li>
@@ -8039,7 +8039,7 @@ print(better_feedback)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Loops">Loops<a class="anchor-link" href="#Loops">¶</a></h1>
+<h2 id="Loops">Loops<a class="anchor-link" href="#Loops">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8050,7 +8050,7 @@ print(better_feedback)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Stop-repeating-yourself">Stop repeating yourself<a class="anchor-link" href="#Stop-repeating-yourself">¶</a></h2><p>Let's write a program that prints the first three integers along with the square of each (the number multiplied by itself).</p>
+<h3 id="Stop-repeating-yourself">Stop repeating yourself<a class="anchor-link" href="#Stop-repeating-yourself">¶</a></h3><p>Let's write a program that prints the first three integers along with the square of each (the number multiplied by itself).</p>
 <pre><code>i = 1
 print(i, i*i)
 i = 2
@@ -8087,7 +8087,7 @@ print(i, i*i)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Two-problems-with-this-program">Two problems with this program<a class="anchor-link" href="#Two-problems-with-this-program">¶</a></h3><ul>
+<h4 id="Two-problems-with-this-program">Two problems with this program<a class="anchor-link" href="#Two-problems-with-this-program">¶</a></h4><ul>
 <li><p>scalability - what happens to this program if I change the specification from the first three integers to the first 1,000 integers?</p>
 <p><strong>You need to type 2,000 more lines of code.</strong></p>
 </li>
@@ -8106,18 +8106,7 @@ After expanding this program to cover the first 1,000 integers, you'd have to ch
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="while-Loops"><code>while</code> Loops<a class="anchor-link" href="#while-Loops">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
+<h3 id="while-Loops"><code>while</code> Loops<a class="anchor-link" href="#while-Loops">¶</a></h3><ul>
 <li>The <code>while</code> statement is one way we can express repeatable logic in Python.</li>
 <li><code>while</code> statements define a condition and a sequence of statements in this format...</li>
 </ul>
@@ -8142,7 +8131,7 @@ print('done with loop')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="while-Loop-Structure"><code>while</code> Loop Structure<a class="anchor-link" href="#while-Loop-Structure">¶</a></h3><p>In Python, the extent of a while block is defined by indentation (just like if statement blocks)</p>
+<h4 id="while-Loop-Structure"><code>while</code> Loop Structure<a class="anchor-link" href="#while-Loop-Structure">¶</a></h4><p>In Python, the extent of a while block is defined by indentation (just like if statement blocks)</p>
 <pre><code>i = 0
 while i &lt; 3:    
     print(i)    
@@ -8184,7 +8173,7 @@ print(i)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Loop-Counter">Loop Counter<a class="anchor-link" href="#Loop-Counter">¶</a></h3><ul>
+<h4 id="Loop-Counter">Loop Counter<a class="anchor-link" href="#Loop-Counter">¶</a></h4><ul>
 <li>variable that controls entry into the loop body</li>
 <li>often keeps track of the number of times the loop is executed</li>
 <li>must be initializede</li>
@@ -8200,7 +8189,7 @@ print(i)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Generating-Squares-Using-a-while-Loop">Generating Squares Using a <code>while</code> Loop<a class="anchor-link" href="#Generating-Squares-Using-a-while-Loop">¶</a></h3><pre><code>i = 1
+<h4 id="Generating-Squares-Using-a-while-Loop">Generating Squares Using a <code>while</code> Loop<a class="anchor-link" href="#Generating-Squares-Using-a-while-Loop">¶</a></h4><pre><code>i = 1
 while i &lt;= 3:    
     print(i, i*i)    
     i += 1
@@ -8236,7 +8225,7 @@ while i &lt;= 3:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Scalability">Scalability<a class="anchor-link" href="#Scalability">¶</a></h4><ul>
+<h5 id="Scalability">Scalability<a class="anchor-link" href="#Scalability">¶</a></h5><ul>
 <li>Can you make this work for the first 1,000 integers?</li>
 </ul>
 <pre><code>i = 1
@@ -8274,7 +8263,7 @@ while i &lt;= 1000:  # changed 3 to 1000
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Maintainability">Maintainability<a class="anchor-link" href="#Maintainability">¶</a></h4><ul>
+<h5 id="Maintainability">Maintainability<a class="anchor-link" href="#Maintainability">¶</a></h5><ul>
 <li>Can you print both the square and the cube (3rd power) for the first 1,000 integers?</li>
 </ul>
 <pre><code>i = 1
@@ -8313,7 +8302,7 @@ while i &lt;= 1000:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Another-Problem">Another Problem<a class="anchor-link" href="#Another-Problem">¶</a></h4><ul>
+<h5 id="Another-Problem">Another Problem<a class="anchor-link" href="#Another-Problem">¶</a></h5><ul>
 <li>Notice that the loop limit is embedded in the while condition.</li>
 <li>It would be nice if this "configuration data" were separate from the program logic.</li>
 <li>It would also be nice if we could change the limit dynamically without having to change the code, for example, as a function of user input.</li>
@@ -8328,7 +8317,7 @@ while i &lt;= 1000:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="A-Better-Version">A Better Version<a class="anchor-link" href="#A-Better-Version">¶</a></h4><pre><code>limit = 10
+<h5 id="A-Better-Version">A Better Version<a class="anchor-link" href="#A-Better-Version">¶</a></h5><pre><code>limit = 10
 i = 1
 while i &lt;= limit:
     print(i, i*i, i**3) # added cube to print
@@ -8365,7 +8354,7 @@ while i &lt;= limit:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="An-Even-Better-Version">An Even Better Version<a class="anchor-link" href="#An-Even-Better-Version">¶</a></h4><pre><code>limit = int(input('desired number of integers: '))
+<h5 id="An-Even-Better-Version">An Even Better Version<a class="anchor-link" href="#An-Even-Better-Version">¶</a></h5><pre><code>limit = int(input('desired number of integers: '))
 i = 1
 while i &lt;= limit:
     print(i, i*i, i**3) # added cube to print
@@ -8403,7 +8392,7 @@ while i &lt;= limit:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenge---Find-the-Bugs">Challenge - Find the Bugs<a class="anchor-link" href="#Challenge---Find-the-Bugs">¶</a></h3><p>There are (at least) five bugs in this program. Can you find them?</p>
+<h4 id="Challenge---Find-the-Bugs">Challenge - Find the Bugs<a class="anchor-link" href="#Challenge---Find-the-Bugs">¶</a></h4><p>There are (at least) five bugs in this program. Can you find them?</p>
 <pre><code>start = input('desired starting integer: ")
 input('desired ending integer: ')
 while i &lt; end:
@@ -8436,7 +8425,7 @@ while i &lt; end:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Nested-while-Loops">Nested <code>while</code> Loops<a class="anchor-link" href="#Nested-while-Loops">¶</a></h3><p>Just as we had if statements of if statements, we can have while loops of while loops (and so on...)</p>
+<h4 id="Nested-while-Loops">Nested <code>while</code> Loops<a class="anchor-link" href="#Nested-while-Loops">¶</a></h4><p>Just as we had if statements of if statements, we can have while loops of while loops (and so on...)</p>
 <pre><code>i = 1
 while i &lt;= 3:
     j = 1
@@ -8482,7 +8471,7 @@ while i &lt;= 3:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Infinite-Loops">Infinite Loops<a class="anchor-link" href="#Infinite-Loops">¶</a></h2><ul>
+<h3 id="Infinite-Loops">Infinite Loops<a class="anchor-link" href="#Infinite-Loops">¶</a></h3><ul>
 <li>An infinite loop is a loop that never ends.</li>
 <li>This is usually not by design (!).</li>
 </ul>
@@ -8524,7 +8513,7 @@ while i != 0:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Debugging-Infinite-Loops">Debugging Infinite Loops<a class="anchor-link" href="#Debugging-Infinite-Loops">¶</a></h3><ul>
+<h4 id="Debugging-Infinite-Loops">Debugging Infinite Loops<a class="anchor-link" href="#Debugging-Infinite-Loops">¶</a></h4><ul>
 <li>inserting print statements to see what's going on</li>
 <li>we call this "tracing code"</li>
 <li>when problem is fixed, you can comment out or delete your tracing code</li>
@@ -8588,7 +8577,7 @@ print('sum of 1 to', n, '=', sum)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="This-progam-is-fail-safe,-right?">This progam is fail-safe, right?<a class="anchor-link" href="#This-progam-is-fail-safe,-right?">¶</a></h3><pre><code>start = int(input('starting integer: '))
+<h4 id="This-progam-is-fail-safe,-right?">This progam is fail-safe, right?<a class="anchor-link" href="#This-progam-is-fail-safe,-right?">¶</a></h4><pre><code>start = int(input('starting integer: '))
 end   = int(input('ending integer: '))
 incr  = int(input('increment: '))
 i = start
@@ -8627,7 +8616,7 @@ while i &lt;= end:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Trusting-User-Input">Trusting User Input<a class="anchor-link" href="#Trusting-User-Input">¶</a></h3><ul>
+<h4 id="Trusting-User-Input">Trusting User Input<a class="anchor-link" href="#Trusting-User-Input">¶</a></h4><ul>
 <li>Getting input from external sources adds flexibility because program behavior can be changed at runtime (without requiring you to change your code).</li>
 <li>The price of that flexibility is that you have to worry about the consequences of receiving bad input.</li>
 <li>Postel's Law: “Be liberal in what you accept, and conservative in what you send”.</li>
@@ -8642,7 +8631,7 @@ while i &lt;= end:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="A-More-Robust-Version">A More Robust Version<a class="anchor-link" href="#A-More-Robust-Version">¶</a></h3><pre><code>import sys # needed for exit() function
+<h4 id="A-More-Robust-Version">A More Robust Version<a class="anchor-link" href="#A-More-Robust-Version">¶</a></h4><pre><code>import sys # needed for exit() function
 start = int(input('starting integer: '))
 end   = int(input('ending integer: '))
 incr  = int(input('increment (&gt;0): '))
@@ -8667,7 +8656,7 @@ while i &lt;= end:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="break-Statement"><code>break</code> Statement<a class="anchor-link" href="#break-Statement">¶</a></h2><ul>
+<h3 id="break-Statement"><code>break</code> Statement<a class="anchor-link" href="#break-Statement">¶</a></h3><ul>
 <li>The break statement exits a loop immediately.</li>
 <li>It's often used to exit a loop under certain circumstances.</li>
 <li>It's Python's way of saying "get me out of here!"</li>
@@ -8682,7 +8671,7 @@ while i &lt;= end:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="break-Example"><code>break</code> Example<a class="anchor-link" href="#break-Example">¶</a></h3><ul>
+<h4 id="break-Example"><code>break</code> Example<a class="anchor-link" href="#break-Example">¶</a></h4><ul>
 <li>Our last version catches bad input but is very unforgiving - it exits as soon as it gets bad input.</li>
 <li>This version gives the user more chances to get it right...</li>
 </ul>
@@ -8722,7 +8711,7 @@ print('off we go...')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="continue-Statement"><code>continue</code> Statement<a class="anchor-link" href="#continue-Statement">¶</a></h2><ul>
+<h3 id="continue-Statement"><code>continue</code> Statement<a class="anchor-link" href="#continue-Statement">¶</a></h3><ul>
 <li>The continue statement jumps to the top of a loop immediately.</li>
 <li>The loop condition is retested and the next iteration begun (if true) or the loop is exited (if false).</li>
 <li>It's Python's way of saying "let's take it from the top".</li>
@@ -8737,7 +8726,7 @@ print('off we go...')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="continue-Example"><code>continue</code> Example<a class="anchor-link" href="#continue-Example">¶</a></h3><ul>
+<h4 id="continue-Example"><code>continue</code> Example<a class="anchor-link" href="#continue-Example">¶</a></h4><ul>
 <li>Assume we want <code>start</code> and <code>end</code> to be positive.</li>
 <li>If the <code>start</code> value is bad, don't bother prompting for <code>end</code>.</li>
 </ul>
@@ -8789,7 +8778,7 @@ while (start &lt;= 0) and (end &lt;= 0):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="for-Loops"><code>for</code> Loops<a class="anchor-link" href="#for-Loops">¶</a></h2>
+<h3 id="for-Loops"><code>for</code> Loops<a class="anchor-link" href="#for-Loops">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8842,7 +8831,7 @@ s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Numerical-for-Loop">Numerical <code>for</code> Loop<a class="anchor-link" href="#Numerical-for-Loop">¶</a></h3><ul>
+<h4 id="Numerical-for-Loop">Numerical <code>for</code> Loop<a class="anchor-link" href="#Numerical-for-Loop">¶</a></h4><ul>
 <li>For loops can also be used with a sequence of numbers, similar to while loops.</li>
 <li>For example, this program prints the first three integers and their squares...</li>
 </ul>
@@ -8883,7 +8872,7 @@ s
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-range()-Function">The <code>range()</code> Function<a class="anchor-link" href="#The-range()-Function">¶</a></h3><ul>
+<h4 id="The-range()-Function">The <code>range()</code> Function<a class="anchor-link" href="#The-range()-Function">¶</a></h4><ul>
 <li>the Python <code>range()</code> function generates a sequence of numbers</li>
 <li>prototype:  range([start], end, [increment])</li>
 <li>start is optional and defaults to zero</li>
@@ -8946,7 +8935,7 @@ increment dictates the interval between elements</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Nested-for-Loop">Nested <code>for</code> Loop<a class="anchor-link" href="#Nested-for-Loop">¶</a></h3><ul>
+<h4 id="Nested-for-Loop">Nested <code>for</code> Loop<a class="anchor-link" href="#Nested-for-Loop">¶</a></h4><ul>
 <li>Just as we have seen <code>if</code> statements of <code>if</code> statements, and <code>while</code> loops of <code>while</code> loops, we can have <code>for</code> loops of <code>for</code> loops (and so on...)</li>
 </ul>
 <p>Example: print a 9-by-9 multiplication table</p>
@@ -8994,7 +8983,7 @@ for i in range(1, 10):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Example-Program---Image-Manipulation">Example Program - Image Manipulation<a class="anchor-link" href="#Example-Program---Image-Manipulation">¶</a></h1>
+<h2 id="Example-Program---Image-Manipulation">Example Program - Image Manipulation<a class="anchor-link" href="#Example-Program---Image-Manipulation">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9114,7 +9103,7 @@ for i in range(1, 10):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h1>
+<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9150,7 +9139,7 @@ for i in range(1, 10):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><ul>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><ul>
 <li>Using a while loop, repeatedly prompt the user for an input string, and print the input string.</li>
 <li>Exit the loop when the user enters only the character ‘q’ or an empty string.</li>
 </ul>
@@ -9201,7 +9190,7 @@ Exiting...
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>Building on the previous program, for each string entered, print the string as entered, followed by an all upper case version and an all lower case version, like this:</p>
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><p>Building on the previous program, for each string entered, print the string as entered, followed by an all upper case version and an all lower case version, like this:</p>
 <pre><code>Enter a string (‘q’ to quit):  I Am The Walrus
 Original string: I Am The Walrus
 Upper case:      I AM THE WALRUS
@@ -9247,7 +9236,7 @@ Lower case:      i am the walrus
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Building on the previous program, for each string entered, print whether the entered string is all upper, all lower or mixed case, like this:</p>
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Building on the previous program, for each string entered, print whether the entered string is all upper, all lower or mixed case, like this:</p>
 <pre><code>Enter a string (‘q’ to quit): this is a test
 You entered: this is a test, which is all lowercase
 Enter a string (‘q’ to quit): ANOTHER TEST
@@ -9301,7 +9290,7 @@ You entered: mIxEd CaSe, which is mixed case
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><ul>
+<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><ul>
 <li>The factorial of a number (written x!) is the product of 1, 2, ..., x.</li>
 <li>In other words, it's the result of multiplying 1, 2, ..., all the way up to (and including) the number x itself.</li>
 <li>Prompt the user for a number and print a table of factorials from 1 up to the entered number.</li>
@@ -9355,7 +9344,7 @@ You entered: mIxEd CaSe, which is mixed case
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h2><ul>
+<h3 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h3><ul>
 <li>Repeatedly prompt the user for a string (until receiving ‘q’ or an empty string).</li>
 <li>For each string received, use a for loop to create a reversed version of the string.</li>
 <li>As you step through the characters in the string, successively build a reversed version by prepending each char to the reversed version of the string (i.e. <code>revstr = char + revstr</code>)</li>
@@ -9407,18 +9396,7 @@ redivider - is a palindrome!
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Just-For-Fun---Some-Palindromes">Just For Fun - Some Palindromes<a class="anchor-link" href="#Just-For-Fun---Some-Palindromes">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Character-wise</p>
+<h3 id="Just-For-Fun---Some-Palindromes">Just For Fun - Some Palindromes<a class="anchor-link" href="#Just-For-Fun---Some-Palindromes">¶</a></h3><p>Character-wise</p>
 <ul>
 <li>A man, a plan, a canal, Panama!</li>
 <li>I prefer pi</li>
