@@ -9106,7 +9106,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-7-Homework">Lesson 7 Homework<a class="anchor-link" href="#Lesson-7-Homework">¶</a></h1><ul>
+<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1><ul>
 <li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
 <li>Review your copy of this notebook.<ul>
 <li>Complete the questions below.</li>
