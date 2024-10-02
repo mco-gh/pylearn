@@ -7608,7 +7608,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">¶</a></h1>
+<h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7632,7 +7632,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Creating-Tuples">Creating Tuples<a class="anchor-link" href="#Creating-Tuples">¶</a></h2>
+<h3 id="Creating-Tuples">Creating Tuples<a class="anchor-link" href="#Creating-Tuples">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7691,7 +7691,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tuple-Operations">Tuple Operations<a class="anchor-link" href="#Tuple-Operations">¶</a></h2><p>Because tuples are sequences, like strings, functions, operators, and loops that operate on strings also play well with tuples, for example:</p>
+<h3 id="Tuple-Operations">Tuple Operations<a class="anchor-link" href="#Tuple-Operations">¶</a></h3><p>Because tuples are sequences, like strings, functions and for loops that operate on strings also play well with tuples, for example:</p>
 </div>
 </div>
 </div>
@@ -7774,8 +7774,8 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># a better way to loop (a.k.a. iterate) over tuples...</span>
-<span class="n">x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+<span class="n">tup</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">tup</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -7844,7 +7844,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Tuples-are-Immutable">Tuples are Immutable<a class="anchor-link" href="#Tuples-are-Immutable">¶</a></h2><p>Like strings, once created, you can't change a tuple.</p>
+<h3 id="Tuples-are-Immutable">Tuples are Immutable<a class="anchor-link" href="#Tuples-are-Immutable">¶</a></h3><p>Like strings, once created, you can't change a tuple.</p>
 </div>
 </div>
 </div>
@@ -7900,7 +7900,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Nested-Tuples">Nested Tuples<a class="anchor-link" href="#Nested-Tuples">¶</a></h2><p>Just as you can have if statements of if statements (nested if statements), and loops of loops (nested loops). You can have also have tuples of tuples (nested tuples).</p>
+<h3 id="Nested-Tuples">Nested Tuples<a class="anchor-link" href="#Nested-Tuples">¶</a></h3><p>Just as you can have if statements of if statements (nested if statements), and loops of loops (nested loops). You can have also have tuples of tuples (nested tuples).</p>
 <ul>
 <li>tuple of tuples: <code>((1, 2), (3, 4))</code></li>
 <li>tuple of strings and tuples: <code>('Hi', (1,2,3), "there")</code></li>
@@ -7942,7 +7942,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lists">Lists<a class="anchor-link" href="#Lists">¶</a></h1>
+<h2 id="Lists">Lists<a class="anchor-link" href="#Lists">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7957,7 +7957,7 @@ a.anchor-link {
 <li>A list is like a tuple but it's mutable (changeable).</li>
 <li>Almost everything you know about tuples also applies to lists.</li>
 <li>Lists are ordered sequences.</li>
-<li>All the sequence operations you learned about with strings and tuples, like <code>len</code>, indexing, slicing, looping, <code>in</code>, etc. apply to lists as well.</li>
+<li>All the sequence operations you learned about with strings and tuples, like <code>len</code>, indexing, slicing, loops, the <code>in</code> operator, etc. apply to lists as well.</li>
 </ul>
 <p>Lists are defined inside square brackets, with list elements separated by commas, for example...</p>
 <pre><code>['a', 'b', 'c', 1, 2, 3]
@@ -7973,7 +7973,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Creating-Lists">Creating Lists<a class="anchor-link" href="#Creating-Lists">¶</a></h2>
+<h3 id="Creating-Lists">Creating Lists<a class="anchor-link" href="#Creating-Lists">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8032,7 +8032,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="List-Operations">List Operations<a class="anchor-link" href="#List-Operations">¶</a></h2>
+<h3 id="List-Operations">List Operations<a class="anchor-link" href="#List-Operations">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8183,7 +8183,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Lists-are-Mutable">Lists are Mutable<a class="anchor-link" href="#Lists-are-Mutable">¶</a></h2><p>Unlike tuples and strings, we can change the contents of a list after it's created.</p>
+<h3 id="Lists-are-Mutable">Lists are Mutable<a class="anchor-link" href="#Lists-are-Mutable">¶</a></h3><p>Unlike tuples and strings, we can change the contents of a list after it's created.</p>
 </div>
 </div>
 </div>
@@ -8237,9 +8237,6 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'elem1'</span><span class="p">,</span> <span class="s1">'elem2'</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">99.9</span><span class="p">]</span>
 <span class="c1"># remove &amp; retrieve an element based on position</span>
-<span class="c1">#elem = li.pop(0)</span>
-<span class="c1">#print(elem)</span>
-<span class="c1">#print(li)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">'start:'</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">li</span><span class="p">)):</span>
@@ -8280,23 +8277,6 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
 <span class="c1"># replace an element by index</span>
 <span class="n">li</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'foo'</span> <span class="c1"># overwrites value at index 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># assignment to a non-existent element raises a runtime error</span>
-<span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">li</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span> <span class="c1"># causes error</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8363,7 +8343,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Maya"</span><span class="p">,</span> <span class="s2">"Marc"</span><span class="p">,</span> <span class="s2">"Maria"</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Maya"</span><span class="p">,</span> <span class="s2">"Marc"</span><span class="p">,</span> <span class="s2">"Kimba"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'original:'</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span>
 
 <span class="c1"># sorting a list</span>
@@ -8440,7 +8420,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Nested-Lists">Nested Lists<a class="anchor-link" href="#Nested-Lists">¶</a></h2>
+<h3 id="Nested-Lists">Nested Lists<a class="anchor-link" href="#Nested-Lists">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8454,8 +8434,8 @@ a.anchor-link {
 <p>Just as we saw tuples of tuples, we can also have also have lists of lists. In fact, we can even have lists of tuples and tuples of lists!</p>
 <ul>
 <li>list of lists: <code>[[1, 2], [3, 4]]</code></li>
-<li>lists of tuples: <code>[(1, 2), (3,4)]</code></li>
-<li>tuples of lists: <code>([1, 2], [3, 4]])</code></li>
+<li>list of tuples: <code>[(1, 2), (3,4)]</code></li>
+<li>tuple of lists: <code>([1, 2], [3, 4]])</code></li>
 </ul>
 <p>We can even have lists of lists of tuples of lists of strings...
 you get the idea, this can get arbitrarily complex.
@@ -8483,7 +8463,7 @@ Fortunately, most of the time you only need to use one or two levels, although o
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">student</span> <span class="o">=</span> <span class="p">[</span> <span class="s1">'Kimba'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8512,32 +8492,11 @@ That collection also needs to be mutable, because I may need to add or delete st
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
-    <span class="p">[</span> <span class="s1">'Mary'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">],</span>
+    <span class="p">[</span> <span class="s1">'Kimba'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
+    <span class="p">[</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">],</span>
     <span class="p">[</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="mi">85</span><span class="p">,</span> <span class="mi">90</span> <span class="p">]</span>
 <span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">students</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'marc'</span><span class="p">]</span>
-<span class="n">y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
-<span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'Maya'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8563,10 +8522,10 @@ That collection also needs to be mutable, because I may need to add or delete st
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
-    <span class="p">[</span> <span class="s1">'Mary'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">]</span>
+    <span class="p">[</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
+    <span class="p">[</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">]</span>
 <span class="p">]</span>
-<span class="n">student</span> <span class="o">=</span> <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># get data for Mary</span>
+<span class="n">student</span> <span class="o">=</span> <span class="n">students</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># get data for Marc</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8592,10 +8551,10 @@ That collection also needs to be mutable, because I may need to add or delete st
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># get Mary's second test score</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># get Maya's second test score</span>
 <span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
-    <span class="p">[</span> <span class="s1">'Mary'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">]</span>
+    <span class="p">[</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span> <span class="p">],</span>
+    <span class="p">[</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span> <span class="p">]</span>
 <span class="p">]</span>
 <span class="n">score</span> <span class="o">=</span> <span class="n">students</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
@@ -8624,7 +8583,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">students</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span> <span class="s1">'Sara'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">97</span> <span class="p">],</span>
+    <span class="p">[</span> <span class="s1">'Kimba'</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">98</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">97</span> <span class="p">],</span>
     <span class="p">[</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">74</span> <span class="p">],</span>
     <span class="p">[</span> <span class="s1">'Maya'</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">815</span><span class="p">]</span>
 <span class="p">]</span>
@@ -8649,7 +8608,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">¶</a></h1>
+<h2 id="Dictionaries">Dictionaries<a class="anchor-link" href="#Dictionaries">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8662,11 +8621,11 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>A dictionary is an organized collection of key/value pairs.
 The data is organized for quick access via the key, somewhat like a real dictionary, where words are the keys and their definitions are the associated values.</p>
-<p>Dictionaries are defined using curly braces with key:value pairs separated by commas, like this:</p>
+<p>Dictionaries are defined using curly braces with key:value pairs separated by colons, like this:</p>
 <pre><code>websites = {
-  'google': 'https://google.com',
-  'youtube': 'https://youtube.com',
-  'baidu': 'https://baidu.com',
+    'google':  'https://google.com',
+    'youtube': 'https://youtube.com',
+    'baidu':   'https://baidu.com',
 }
 </code></pre>
 <p>This data type is known by various names in other languages:</p>
@@ -8705,7 +8664,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dictionary-Operations">Dictionary Operations<a class="anchor-link" href="#Dictionary-Operations">¶</a></h2>
+<h3 id="Dictionary-Operations">Dictionary Operations<a class="anchor-link" href="#Dictionary-Operations">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8734,7 +8693,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create and initialize a dictionary</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8782,7 +8741,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get the size of a dictionary (returns number of key/value pairs)</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">grades</span><span class="p">))</span>
 </pre></div>
 </div>
@@ -8798,8 +8757,8 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Retrieve the value associated with a given key</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
-<span class="n">grade</span> <span class="o">=</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Sara'</span><span class="p">]</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<span class="n">grade</span> <span class="o">=</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Maya'</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">grade</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8817,9 +8776,9 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The value inside the square brackets may be a literal, a variable or any</span>
 <span class="c1"># arbitrary expression. Similar syntax to list/tuple indexing but key based,</span>
 <span class="c1"># not positional.</span>
-<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
 <span class="c1"># Attempting to retrieve a non-existent key causes an error</span>
-<span class="n">x</span> <span class="o">=</span> <span class="s1">'Sara'</span>
+<span class="n">x</span> <span class="o">=</span> <span class="s1">'Marc'</span>
 <span class="n">grades</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -8834,7 +8793,8 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<span class="n">student</span> <span class="o">=</span> <span class="s1">'foo'</span>
 <span class="c1"># play it safe by testing for key existence before access</span>
 <span class="n">grade</span> <span class="o">=</span> <span class="n">grades</span><span class="p">[</span><span class="n">student</span><span class="p">]</span>
 <span class="k">if</span> <span class="n">student</span> <span class="ow">in</span> <span class="n">grades</span><span class="p">:</span>
@@ -8859,7 +8819,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">:</span> <span class="mi">35</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Kimba'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
 <span class="c1"># loop through a dictionary (this iterates over the dictionary keys)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">grades</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">grades</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -8876,7 +8836,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">:</span> <span class="mi">35</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Kimba'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
 <span class="c1"># By default, the keys will appear in random order. You can iterate keys in order by sorting them first:</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">grades</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">grades</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -8892,7 +8852,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dictionaries-are-Mutable">Dictionaries are Mutable<a class="anchor-link" href="#Dictionaries-are-Mutable">¶</a></h2>
+<h3 id="Dictionaries-are-Mutable">Dictionaries are Mutable<a class="anchor-link" href="#Dictionaries-are-Mutable">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8904,10 +8864,10 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span> <span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'before:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
 <span class="c1">#Add a key/value pair</span>
-<span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># new, no grade yet</span>
+<span class="n">grades</span><span class="p">[</span><span class="s1">'Kimba'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="c1"># new, no grade yet</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'after:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8922,13 +8882,13 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">:</span> <span class="kc">None</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Kimba'</span><span class="p">:</span> <span class="kc">None</span> <span class="p">}</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'before:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
 <span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">80</span> <span class="c1"># grade recorded</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'after1:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
 <span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">5</span> <span class="c1"># increment Marc's grade</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'after2:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
-<span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">5</span> <span class="c1"># increment Marc's grade</span>
+<span class="n">grades</span><span class="p">[</span><span class="s1">'Kimba'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">99</span> <span class="c1"># change Kimba's grade</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'after2:'</span><span class="p">,</span> <span class="n">grades</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8943,9 +8903,9 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Kimba'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
 <span class="c1"># delete a key/value pair</span>
-<span class="k">del</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="c1"># Fred dropped the course</span>
+<span class="k">del</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Marc'</span><span class="p">]</span> <span class="c1"># Marc dropped the course</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">grades</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -8960,7 +8920,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Sara'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Mary'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">grades</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">'Marc'</span> <span class="p">:</span> <span class="mi">95</span><span class="p">,</span> <span class="s1">'Maya'</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s1">'Kimba'</span><span class="p">:</span> <span class="mi">85</span> <span class="p">}</span>
 <span class="c1"># Trying to delete a key that doesn't exist will cause a runtime error.</span>
 <span class="k">del</span> <span class="n">grades</span><span class="p">[</span><span class="s1">'Fred'</span><span class="p">]</span>
 </pre></div>
@@ -8975,7 +8935,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Nested-Dictionaries">Nested Dictionaries<a class="anchor-link" href="#Nested-Dictionaries">¶</a></h2><p>Just like we can have nested if statements, nested loops, nested tuples, and nested lists, we can also have nested dictionaries.</p>
+<h3 id="Nested-Dictionaries">Nested Dictionaries<a class="anchor-link" href="#Nested-Dictionaries">¶</a></h3><p>Just like we can have nested if statements, nested loops, nested tuples, and nested lists, we can also have nested dictionaries.</p>
 <ul>
 <li>dictionary of tuples:  <code>{'key1': (1,2), 'key2': (3,4)}</code></li>
 <li>dictionary of lists:  <code>{'key1': [1,2], 'key2': [3,4]}</code></li>
@@ -8996,11 +8956,11 @@ The data is organized for quick access via the key, somewhat like a real diction
 <p>Once again, imagine I want to maintain a list of students and their quiz scores. If I think about just one particular student, I might like to store the student's name and each quiz score up to the current lesson. I need a mutable sequence (i.e. a list) because I'm going to want to add quiz results every week, like this:</p>
 <pre><code>student = [ 'Jeff', 95, 100, 90 ]
 </code></pre>
-<p>Even more convenient would be to organize the test scores by student name that way I can efficiently find any given student's scores by their name (i.e. by indexing on the dictionary key).</p>
+<p>I'd like to organize the test scores by student name that way I can efficiently find any given student's scores by their name (i.e. by indexing on the dictionary key).</p>
 <p>This leads us to a dictionary of lists:</p>
 <pre><code>grades = {
-           'Sara' : [95, 100, 90],
-           'Mary' : [90, 95, 100]
+           'Marc' : [95, 100, 90],
+           'Maya' : [90, 95, 100]
          }
 </code></pre>
 <p>To add a student:</p>
@@ -9106,7 +9066,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
+<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
 </div>
 </div>
 </div>
@@ -9117,7 +9077,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>I have a list of things I need to buy from my supermarket of choice.</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>I have a list of things I need to buy from my supermarket of choice.</p>
 <p>I want to know what the first thing I need to buy is. However, when I run the program it shows me a different answer than what I was expecting. What is the mistake? Can you fix it in the cell below?</p>
 </div>
 </div>
@@ -9167,7 +9127,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>I'm setting up my own market stall to sell chocolates. I need a basic till to check the prices of different chocolates that I sell. I've started the program and included the chocolates and their prices. Finish the program by asking
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><p>I'm setting up my own market stall to sell chocolates. I need a basic till to check the prices of different chocolates that I sell. I've started the program and included the chocolates and their prices. Finish the program by asking
 the user to input an item and then output its price.</p>
 </div>
 </div>
@@ -9230,7 +9190,7 @@ the user to input an item and then output its price.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Write a program that simulates a lottery. The program should have a list of seven numbers that
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that simulates a lottery. The program should have a list of seven numbers that
 represent a lottery ticket. It should then generate seven random numbers. After comparing the two
 sets of numbers, the program should output a prize based on the number of matches:</p>
 <ul>
@@ -9292,33 +9252,6 @@ sets of numbers, the program should output a prize based on the number of matche
   <span class="nb">print</span><span class="p">(</span><span class="s1">'Sorry, no prize won, better luck next time!'</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h2><ul>
-<li>See if you can run the programs you wrote above in the <strong>Mu</strong> editor on your own computer.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-6">Question 6<a class="anchor-link" href="#Question-6">¶</a></h2><ul>
-<li>Combine the step 1 framework with the <code>get_new_articles()</code> function in our shared project and test the combination.</li>
-<li>Try running this program locally in Mu.</li>
-</ul>
 </div>
 </div>
 </div>
