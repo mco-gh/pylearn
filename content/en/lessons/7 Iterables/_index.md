@@ -9106,18 +9106,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1><ul>
-<li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
-<li>Review your copy of this notebook.<ul>
-<li>Complete the questions below.</li>
-<li>If something is unclear, experiment and see if you can understand it better.</li>
-</ul>
-</li>
-<li>For those who want to go deeper...<ul>
-<li>Read <a href="https://automatetheboringstuff.com/2e/chapter12/">Chapter 12 - Web Scraping</a> in our textbook to learn more about web scraping.</li>
-</ul>
-</li>
-</ul>
+<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
 </div>
 </div>
 </div>
