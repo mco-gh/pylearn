@@ -7577,11 +7577,9 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Our-programs-have-amnesia">Our programs have amnesia<a class="anchor-link" href="#Our-programs-have-amnesia">¶</a></h3><ul>
-<li>Program variables reside in memory,</li>
-<li>and main memory is not persistent,</li>
-<li>so when you terminate your program or you turn off your computer, your data disappears.</li>
-<li>imagine having to re-enter your list of friends every time you used Facebook</li>
-<li>so we'll need a way to store and retrieve things</li>
+<li>Program variables reside in memory, and main memory is not persistent, so when you close a notebook, or terminate a program running locally, your data disappears.</li>
+<li>Imagine having to re-enter your contact list every time you use your phone.</li>
+<li>We'll need a way to store and retrieve data.</li>
 </ul>
 </div>
 </div>
@@ -7594,13 +7592,13 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Storage-Tradeoffs">Storage Tradeoffs<a class="anchor-link" href="#Storage-Tradeoffs">¶</a></h3><ul>
-<li>there are two kinds of storage in your computer<ul>
-<li>main memory, aka RAM, is fast, but transient (like human memory)</li>
+<li>There are two kinds of storage in your computer:<ul>
+<li>main memory is fast, but transient (like human memory)</li>
 <li>disk storage is slow(er), but permanent (like a notebook) and higher capacity</li>
 </ul>
 </li>
-<li>all the things we've worked with so far (variables, functions, expressions) reside in main memory</li>
-<li>we'll save information across program executions using disk storage in units we call files</li>
+<li>All the things we've worked with so far (variables, functions, program statements) reside in main memory.</li>
+<li>We'll save information across program executions using disk storage in units we call files.</li>
 </ul>
 </div>
 </div>
@@ -7613,25 +7611,25 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="What-is-a-file-anyway?">What is a file anyway?<a class="anchor-link" href="#What-is-a-file-anyway?">¶</a></h3><ul>
-<li>a named chunk of persistent disk storage is called a <code>file</code></li>
-<li>files are organized into hierarchical structures, called directories or folders</li>
-<li>examples...<ul>
+<li>A named chunk of stored data is called a <code>file</code>.</li>
+<li>Files are organized into hierarchical structures, called directories or folders.</li>
+<li>Examples:<ul>
 <li>Windows:  <code>c:\Users\marccohen\my_fave_movies.md</code></li>
 <li>Mac/Linux: <code>/Users/marccohen/my_fave_movies.md</code></li>
 </ul>
 </li>
-<li><code>path</code> is the location, e.g. <code>c:\Users\marccohen\</code><ul>
+<li><code>path</code> is the file's location, e.g. <code>c:\Users\marccohen\</code><ul>
 <li>it's the "where"</li>
 </ul>
 </li>
-<li><code>filename</code> is the name, e.g. <code>my_fave_movies.md</code><ul>
+<li><code>filename</code> is the file's name, e.g. <code>my_fave_movies.md</code><ul>
 <li>it's the "which"</li>
 </ul>
 </li>
 </ul>
-<pre><code>Queen Elizabeth   -----&gt; the which
+<pre><code>King Charles      -----&gt; the which
 Buckingham Palace \
-London, England    |---&gt; the where
+London, UK         |---&gt; the where
 SW1A 1AA.         /
 </code></pre>
 </div>
@@ -7645,14 +7643,14 @@ SW1A 1AA.         /
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Opening-a-File">Opening a File<a class="anchor-link" href="#Opening-a-File">¶</a></h3><ul>
-<li>Before you can read or write a file, you need to open it</li>
-<li>Use the <code>open()</code> function</li>
+<li>Before you can read or write a file, you need to open it.</li>
+<li>Use the <code>open()</code> function to open a file.</li>
 <li>prototype: <code>variable = open(filename, mode)</code></li>
 <li>example: <code>file = open("myfile", "r")</code></li>
-<li>the first argument is a file specificaton, which can include a path or not</li>
-<li>if no path provided, the filename is assumed to reside in the "current directory"</li>
-<li>we'll cover the second argument in the next cell</li>
-<li>open returns a special type, called a file object, which is used for subsequent operations on the file</li>
+<li>The first argument is a file specificaton, which can include a path or not.</li>
+<li>If no path is provided, the filename is assumed to reside in the current directory/folder.</li>
+<li>We'll cover the second argument, the mode, in the next cell.</li>
+<li>Open returns a special type, called a file object, which is used for subsequent operations on the file.</li>
 </ul>
 </div>
 </div>
@@ -7748,7 +7746,7 @@ SW1A 1AA.         /
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Writing-to-a-File">Writing to a File<a class="anchor-link" href="#Writing-to-a-File">¶</a></h3><ul>
 <li><code>file.write('this is a line of text\n')</code></li>
-<li>file must have been opened with write access</li>
+<li><code>file</code> must have been opened with write or append access</li>
 <li>writes the passed string into the file</li>
 <li>you have to include newline characters where you want them, otherwise subsequent write calls will build one long line</li>
 <li>writes may not be visible until you close the file</li>
@@ -7818,7 +7816,7 @@ SW1A 1AA.         /
 <h3 id="Reading-a-file-iteratively">Reading a file iteratively<a class="anchor-link" href="#Reading-a-file-iteratively">¶</a></h3><ul>
 <li><code>for line in file:</code></li>
 <li>this iterates over the lines in a file</li>
-<li>each iteration of the loop reads a line from the file and sets the loop variable (line, in this case) to the string value of each line in the file</li>
+<li>each iteration of the loop reads a line from the file and sets the loop variable (<code>line</code> in this case) to the string value of each line in the file</li>
 <li>the string includes the trailing newline</li>
 <li>this is a very handy way of processing a text file one line at a time</li>
 <li>also space-efficient because it only needs to store one line at a time in main memory</li>
@@ -7834,7 +7832,7 @@ SW1A 1AA.         /
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>test.txt
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>test.txt<span class="w">  </span>#<span class="w"> </span>Display<span class="w"> </span>current<span class="w"> </span>contents<span class="w"> </span>of<span class="w"> </span>test.txt<span class="w"> </span>file.
 </pre></div>
 </div>
 </div>
@@ -7848,7 +7846,7 @@ SW1A 1AA.         /
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#myfile = open('test.txt', 'r')</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">myfile</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -7865,7 +7863,7 @@ SW1A 1AA.         /
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="The-with-Statement">The <code>with</code> Statement<a class="anchor-link" href="#The-with-Statement">¶</a></h3><ul>
-<li>automatically ensures files get closed (and other resoures get cleaned up)</li>
+<li>automatically ensures files get closed (and any other resoures get cleaned up)</li>
 <li>without the <code>with</code> statement...</li>
 </ul>
 <pre><code>file = open('file_path', 'w')
@@ -7891,7 +7889,7 @@ file.close()
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
   <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7908,9 +7906,8 @@ file.close()
 <li><code>open()</code> - open a file</li>
 <li><code>close()</code> - close a file</li>
 <li><code>read(n)</code> - read up to n chars from current position to end of file and return in a string. if n not provided, read all chars from current position to end of file.</li>
-<li><code>readlines()</code> - read all remaining lines in a file and return in a list of strings.</li>
 <li><code>write(s)</code> - write string s to a file</li>
-<li><code>writelines(list)</code> - write the strings in the passed list to a file</li>
+<li>There are many more functions and methods available to operate on files in Python. You can learn more <a href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files">here</a>.</li>
 </ul>
 </div>
 </div>
@@ -7937,9 +7934,7 @@ file.close()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<p>title: Errors and Exceptions
-teaching: 30
+<h3 id="Errors-and-Exceptions">Errors and Exceptions<a class="anchor-link" href="#Errors-and-Exceptions">¶</a></h3><p>teaching: 30
 exercises: 0
 questions:</p>
 <ul>
@@ -8457,18 +8452,7 @@ print('My favorite season is ', seasons[-1])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Lesson-8-Homework">Lesson 8 Homework<a class="anchor-link" href="#Lesson-8-Homework">¶</a></h2>
+<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
 </div>
 </div>
 </div>
