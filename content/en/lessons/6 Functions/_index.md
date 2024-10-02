@@ -7532,8 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-6---Functions-and-Modules">Notebook 6 - Functions and Modules<a class="anchor-link" href="#Notebook-6---Functions-and-Modules">¶</a></h1><p><strong>Functions &amp; Modules</strong></p>
-<p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h2 id="Notebook-6---Functions,-Namespaces,-and-Modules">Notebook 6 - Functions, Namespaces, and Modules<a class="anchor-link" href="#Notebook-6---Functions,-Namespaces,-and-Modules">¶</a></h2><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>what functions are and why they useful</li>
@@ -7564,7 +7563,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Functions">Functions<a class="anchor-link" href="#Functions">¶</a></h1>
+<h2 id="Functions">Functions<a class="anchor-link" href="#Functions">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7575,7 +7574,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Functions-are-flexible-software-building-blocks">Functions are flexible software building blocks<a class="anchor-link" href="#Functions-are-flexible-software-building-blocks">¶</a></h2><ul>
+<h3 id="Functions-are-flexible-software-building-blocks">Functions are flexible software building blocks<a class="anchor-link" href="#Functions-are-flexible-software-building-blocks">¶</a></h3><ul>
 <li>So far, we’ve been writing small programs.</li>
 <li>Things get much more complicated when we write large programs, especially with multiple authors.</li>
 <li>Ideally, we'd like to build software like snapping lego pieces together.</li>
@@ -7777,7 +7776,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Defining-Functions">Defining Functions<a class="anchor-link" href="#Defining-Functions">¶</a></h2><ul>
+<h3 id="Defining-Functions">Defining Functions<a class="anchor-link" href="#Defining-Functions">¶</a></h3><ul>
 <li>example:</li>
 </ul>
 <pre><code>def function_name(arg1, arg2):
@@ -7827,7 +7826,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7841,19 +7840,6 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>meow
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7861,7 +7847,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Docstrings">Docstrings<a class="anchor-link" href="#Docstrings">¶</a></h3><ul>
+<h4 id="Docstrings">Docstrings<a class="anchor-link" href="#Docstrings">¶</a></h4><ul>
 <li>a string defined immediately after the <code>def</code> line</li>
 <li>usually triple quoted since it may be multi-line</li>
 <li>not required but a good way to document your functions</li>
@@ -7907,7 +7893,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7922,25 +7908,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Help on function fact10 in module __main__:
-
-fact10()
-    Print the factorial of 10.
-    Factorial of 10 is defined as 1*2*...*10.
-
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7951,19 +7919,6 @@ fact10()
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># And here's how we would call this function...</span>
 <span class="n">fact10</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>3628800
-</pre>
 </div>
 </div>
 </div>
@@ -7983,7 +7938,7 @@ fact10()
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8004,19 +7959,6 @@ fact10()
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>2432902008176640000
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8024,7 +7966,7 @@ fact10()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Parameters-and-Arguments">Parameters and Arguments<a class="anchor-link" href="#Parameters-and-Arguments">¶</a></h3><ul>
+<h4 id="Parameters-and-Arguments">Parameters and Arguments<a class="anchor-link" href="#Parameters-and-Arguments">¶</a></h4><ul>
 <li>The variables we define in a function to take on the values passed by the caller are called parameters.</li>
 <li>In this code, <code>a</code>, <code>b</code> and <code>c</code> are parameters:</li>
 </ul>
@@ -8047,7 +7989,7 @@ fact10()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Passing-Arguments">Passing Arguments<a class="anchor-link" href="#Passing-Arguments">¶</a></h3><ul>
+<h4 id="Passing-Arguments">Passing Arguments<a class="anchor-link" href="#Passing-Arguments">¶</a></h4><ul>
 <li>Functions can define any number of parameters, including zero.</li>
 <li>Multiple parameters are separated by commas, like this...</li>
 </ul>
@@ -8121,7 +8063,7 @@ print('5! = ', f)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Returning-Multiple-Values">Returning Multiple Values<a class="anchor-link" href="#Returning-Multiple-Values">¶</a></h3><ul>
+<h4 id="Returning-Multiple-Values">Returning Multiple Values<a class="anchor-link" href="#Returning-Multiple-Values">¶</a></h4><ul>
 <li>Functions can return multiple values.</li>
 <li>Simply specify more than one comma separated value in the <code>return</code> statement.</li>
 <li>This function returns two values...</li>
@@ -8140,7 +8082,7 @@ print(f'quotient={q}, remainder={r}')
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8160,19 +8102,6 @@ print(f'quotient={q}, remainder={r}')
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>quotient=11, remainder=1
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8180,7 +8109,7 @@ print(f'quotient={q}, remainder={r}')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h2><p>Can you think of a function we've used which...</p>
+<h3 id="Challenge">Challenge<a class="anchor-link" href="#Challenge">¶</a></h3><p>Can you think of a function we've used which...</p>
 <ul>
 <li>takes no arguments?</li>
 <li>takes only one argument?</li>
@@ -8296,7 +8225,7 @@ while True:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8315,20 +8244,6 @@ while True:
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>local var: 2
-global var: 1
-</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8340,7 +8255,7 @@ global var: 1
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8358,33 +8273,6 @@ global var: 1
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>local var: 2
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-19-9bc3f14098b4&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span>     print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'local var:'</span><span class="ansi-blue-fg">,</span> var2<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg"> </span>print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'global var:'</span><span class="ansi-blue-fg">,</span> var2<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name 'var2' is not defined</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8392,7 +8280,7 @@ global var: 1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Modules">Modules<a class="anchor-link" href="#Modules">¶</a></h1>
+<h2 id="Modules">Modules<a class="anchor-link" href="#Modules">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8427,7 +8315,7 @@ global var: 1
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Module-Namespace">Module Namespace<a class="anchor-link" href="#Module-Namespace">¶</a></h2><ul>
+<h3 id="Module-Namespace">Module Namespace<a class="anchor-link" href="#Module-Namespace">¶</a></h3><ul>
 <li>Every module has its own namespace, which is independent of the main source file's global namespace</li>
 <li>You can access objects in a module's namespace using this general syntax:</li>
 </ul>
@@ -8442,7 +8330,7 @@ module-name.function(&lt;args&gt;)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8458,25 +8346,6 @@ module-name.function(&lt;args&gt;)
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0.6846275001864298
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>6</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8484,7 +8353,7 @@ module-name.function(&lt;args&gt;)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-from-Statement">The <code>from</code> Statement<a class="anchor-link" href="#The-from-Statement">¶</a></h2><ul>
+<h3 id="The-from-Statement">The <code>from</code> Statement<a class="anchor-link" href="#The-from-Statement">¶</a></h3><ul>
 <li>You can also import code using this syntax...</li>
 </ul>
 <pre><code>from module-name import *
@@ -8513,7 +8382,7 @@ rand_val = randrange(0, 10)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8529,25 +8398,6 @@ rand_val = randrange(0, 10)
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>0.48469678088373136
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>7</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8555,7 +8405,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="When-to-use-import-vs.-from">When to use <code>import</code> vs. <code>from</code><a class="anchor-link" href="#When-to-use-import-vs.-from">¶</a></h2><ul>
+<h3 id="When-to-use-import-vs.-from">When to use <code>import</code> vs. <code>from</code><a class="anchor-link" href="#When-to-use-import-vs.-from">¶</a></h3><ul>
 <li>Generally, it's better to use <code>import</code> because...<ul>
 <li>less risk of name clashes and other surprises</li>
 <li>makes your code more explicit and clear</li>
@@ -8574,7 +8424,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="IDEs-and-Editors">IDEs and Editors<a class="anchor-link" href="#IDEs-and-Editors">¶</a></h1>
+<h2 id="IDEs-and-Editors">IDEs and Editors<a class="anchor-link" href="#IDEs-and-Editors">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8608,7 +8458,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Example-Programs">Example Programs<a class="anchor-link" href="#Example-Programs">¶</a></h1>
+<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8619,18 +8469,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>Write a function called <code>total</code> that returns the sum of a range of integers starting with the first passed value and ending at one less than the second passed value.</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a function called <code>total</code> that returns the sum of a range of integers starting with the first passed value and ending at one less than the second passed value.</p>
 <p>For example, <code>total(4, 7)</code> returns <code>15</code> (<code>4</code>+<code>5</code>+<code>6</code>).</p>
 </div>
 </div>
@@ -8650,7 +8489,7 @@ rand_val = randrange(0, 10)
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8681,28 +8520,6 @@ rand_val = randrange(0, 10)
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AssertionError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-7-6a32a3e4bf9e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>   computed <span class="ansi-blue-fg">=</span> total<span class="ansi-blue-fg">(</span>a<span class="ansi-blue-fg">,</span> b<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span>   actual <span class="ansi-blue-fg">=</span> sum<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span>i <span class="ansi-green-fg">for</span> i <span class="ansi-green-fg">in</span> range<span class="ansi-blue-fg">(</span>a<span class="ansi-blue-fg">,</span> b<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">---&gt; 16</span><span class="ansi-red-fg">   </span><span class="ansi-green-fg">assert</span> computed <span class="ansi-blue-fg">==</span> actual<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">f'Test {i} failed: {computed} != {actual}'</span>
-<span class="ansi-green-intense-fg ansi-bold">     17</span> 
-<span class="ansi-green-intense-fg ansi-bold">     18</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">'All tests passed!'</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">AssertionError</span>: Test 0 failed: 0 != 15</pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8710,7 +8527,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2><p>Write a function called <code>reverse</code> that returns a reversed copy of a passed string. For example, <code>reverse('Obama')</code> returns <code>amabO</code>.</p>
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><p>Write a function called <code>reverse</code> that returns a reversed copy of a passed string. For example, <code>reverse('Obama')</code> returns <code>amabO</code>.</p>
 </div>
 </div>
 </div>
@@ -8773,7 +8590,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Import <em>only</em> the <code>random()</code> function from the <code>random</code> module. Write a function called <code>rando</code> that returns, on average, <code>True</code> half the time and <code>False</code> half the time.</p>
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Import <em>only</em> the <code>random()</code> function from the <code>random</code> module. Write a function called <code>rando</code> that returns, on average, <code>True</code> half the time and <code>False</code> half the time.</p>
 </div>
 </div>
 </div>
@@ -8827,7 +8644,7 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Try some exercises on <a href="https://codingbat.com/python">codingbat.com/python</a>.</p>
+<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><p>Try some exercises on <a href="https://codingbat.com/python">codingbat.com/python</a>.</p>
 </div>
 </div>
 </div>
