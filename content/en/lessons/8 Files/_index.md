@@ -7532,16 +7532,16 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-8---Files-and-Exceptions">Notebook 8 - Files and Exceptions<a class="anchor-link" href="#Notebook-8---Files-and-Exceptions">¶</a></h1><p><strong>Reading &amp; Writing Files, Shared Project</strong></p>
-<p>Link to this notebook: <a href="https://mco.fyi/py6">mco.fyi/py6</a></p>
-<p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-8---Files-and-Exceptions">Notebook 8 - Files and Exceptions<a class="anchor-link" href="#Notebook-8---Files-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>reading and writing files</li>
 <li>exceptions and error handling strategies</li>
 </ul>
 <p><strong>To do</strong>:</p>
-<p>-consider using Drive for file persistence (<a href="https://drive.google.com/file/d/1-UK__URjCYYQESPX3XimZgcgxfyUvhWN/view">see these slides</a>)</p>
+<ul>
+<li>consider using Drive for file persistence (<a href="https://drive.google.com/file/d/1-UK__URjCYYQESPX3XimZgcgxfyUvhWN/view">see these slides</a>)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7565,7 +7565,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Reading-and-Writing-Files">Reading and Writing Files<a class="anchor-link" href="#Reading-and-Writing-Files">¶</a></h1>
+<h2 id="Reading-and-Writing-Files">Reading and Writing Files<a class="anchor-link" href="#Reading-and-Writing-Files">¶</a></h2>
 </div>
 </div>
 </div>
@@ -7576,7 +7576,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Our-programs-have-amnesia">Our programs have amnesia<a class="anchor-link" href="#Our-programs-have-amnesia">¶</a></h2><ul>
+<h3 id="Our-programs-have-amnesia">Our programs have amnesia<a class="anchor-link" href="#Our-programs-have-amnesia">¶</a></h3><ul>
 <li>Program variables reside in memory,</li>
 <li>and main memory is not persistent,</li>
 <li>so when you terminate your program or you turn off your computer, your data disappears.</li>
@@ -7593,7 +7593,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Storage-Tradeoffs">Storage Tradeoffs<a class="anchor-link" href="#Storage-Tradeoffs">¶</a></h2><ul>
+<h3 id="Storage-Tradeoffs">Storage Tradeoffs<a class="anchor-link" href="#Storage-Tradeoffs">¶</a></h3><ul>
 <li>there are two kinds of storage in your computer<ul>
 <li>main memory, aka RAM, is fast, but transient (like human memory)</li>
 <li>disk storage is slow(er), but permanent (like a notebook) and higher capacity</li>
@@ -7612,7 +7612,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="What-is-a-file-anyway?">What is a file anyway?<a class="anchor-link" href="#What-is-a-file-anyway?">¶</a></h2><ul>
+<h3 id="What-is-a-file-anyway?">What is a file anyway?<a class="anchor-link" href="#What-is-a-file-anyway?">¶</a></h3><ul>
 <li>a named chunk of persistent disk storage is called a <code>file</code></li>
 <li>files are organized into hierarchical structures, called directories or folders</li>
 <li>examples...<ul>
@@ -7644,7 +7644,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Opening-a-File">Opening a File<a class="anchor-link" href="#Opening-a-File">¶</a></h2><ul>
+<h3 id="Opening-a-File">Opening a File<a class="anchor-link" href="#Opening-a-File">¶</a></h3><ul>
 <li>Before you can read or write a file, you need to open it</li>
 <li>Use the <code>open()</code> function</li>
 <li>prototype: <code>variable = open(filename, mode)</code></li>
@@ -7664,7 +7664,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="File-Access-Modes">File Access Modes<a class="anchor-link" href="#File-Access-Modes">¶</a></h2><table>
+<h3 id="File-Access-Modes">File Access Modes<a class="anchor-link" href="#File-Access-Modes">¶</a></h3><table>
 <thead>
 <tr>
 <th>Mode</th>
@@ -7729,7 +7729,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Closing-a-File">Closing a File<a class="anchor-link" href="#Closing-a-File">¶</a></h2><ul>
+<h3 id="Closing-a-File">Closing a File<a class="anchor-link" href="#Closing-a-File">¶</a></h3><ul>
 <li>the opposite of <code>open()</code> is <code>close()</code></li>
 <li>when you're done working with a file, you should close it</li>
 <li>closing a file cleans up the loose ends</li>
@@ -7746,7 +7746,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Writing-to-a-File">Writing to a File<a class="anchor-link" href="#Writing-to-a-File">¶</a></h2><ul>
+<h3 id="Writing-to-a-File">Writing to a File<a class="anchor-link" href="#Writing-to-a-File">¶</a></h3><ul>
 <li><code>file.write('this is a line of text\n')</code></li>
 <li>file must have been opened with write access</li>
 <li>writes the passed string into the file</li>
@@ -7781,7 +7781,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Reading-From-a-File">Reading From a File<a class="anchor-link" href="#Reading-From-a-File">¶</a></h2><ul>
+<h3 id="Reading-From-a-File">Reading From a File<a class="anchor-link" href="#Reading-From-a-File">¶</a></h3><ul>
 <li><code>mystr = file.read()</code></li>
 <li>file must have been opened with read access</li>
 <li>reads the entire file into memory</li>
@@ -7815,7 +7815,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Reading-a-file-iteratively">Reading a file iteratively<a class="anchor-link" href="#Reading-a-file-iteratively">¶</a></h2><ul>
+<h3 id="Reading-a-file-iteratively">Reading a file iteratively<a class="anchor-link" href="#Reading-a-file-iteratively">¶</a></h3><ul>
 <li><code>for line in file:</code></li>
 <li>this iterates over the lines in a file</li>
 <li>each iteration of the loop reads a line from the file and sets the loop variable (line, in this case) to the string value of each line in the file</li>
@@ -7864,7 +7864,7 @@ SW1A 1AA.         /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-with-Statement">The <code>with</code> Statement<a class="anchor-link" href="#The-with-Statement">¶</a></h2><ul>
+<h3 id="The-with-Statement">The <code>with</code> Statement<a class="anchor-link" href="#The-with-Statement">¶</a></h3><ul>
 <li>automatically ensures files get closed (and other resoures get cleaned up)</li>
 <li>without the <code>with</code> statement...</li>
 </ul>
@@ -7904,7 +7904,7 @@ file.close()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Summary-of-File-Functions-and-Methods">Summary of File Functions and Methods<a class="anchor-link" href="#Summary-of-File-Functions-and-Methods">¶</a></h2><ul>
+<h3 id="Summary-of-File-Functions-and-Methods">Summary of File Functions and Methods<a class="anchor-link" href="#Summary-of-File-Functions-and-Methods">¶</a></h3><ul>
 <li><code>open()</code> - open a file</li>
 <li><code>close()</code> - close a file</li>
 <li><code>read(n)</code> - read up to n chars from current position to end of file and return in a string. if n not provided, read all chars from current position to end of file.</li>
@@ -7922,22 +7922,11 @@ file.close()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h2 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">¶</a></h2><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>todo</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
 </div>
 </div>
 </div>
@@ -8479,7 +8468,7 @@ print('My favorite season is ', seasons[-1])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Lesson-8-Homework">Lesson 8 Homework<a class="anchor-link" href="#Lesson-8-Homework">¶</a></h1>
+<h2 id="Lesson-8-Homework">Lesson 8 Homework<a class="anchor-link" href="#Lesson-8-Homework">¶</a></h2>
 </div>
 </div>
 </div>
@@ -8512,7 +8501,7 @@ print('My favorite season is ', seasons[-1])
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h2><p>In the Mu IDE (or your chosen IDE if you use another one), write a function named <code>enumerate()</code> that takes a list of strings and enumerates them, i.e. it returns a list where each passed string is prefixe by a sequential number, starting at 1. For example...</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>In the Mu IDE (or your chosen IDE if you use another one), write a function named <code>enumerate()</code> that takes a list of strings and enumerates them, i.e. it returns a list where each passed string is prefixe by a sequential number, starting at 1. For example...</p>
 <pre><code>li = ['test', 'another test', 'last test']
 results = enumerate(li)
 for i in results:
@@ -8533,7 +8522,71 @@ for i in results:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h2>
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Using Mu, write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
+<p>For example:</p>
+<pre><code>li = ['test', 'another test', 'last test']
+write_file('output.txt', li)
+</code></pre>
+<p>Using your systems file explorer or command line, verify the file was created and has the expected contents. If you're not sure how to do that, you could also use your new <code>read_file()</code> function!</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><p>Now tie everything together by writing a program that reads the contents of <code>input.txt</code> (using <code>read_file()</code>), enumerates the lines found therein (using <code>enumerate()</code>, and writes the enumerated lines to <code>output.txt</code> (using <code>write_file()</code>).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h3><p>Copy/paste the code from our newsfinder program to Mu and see if you can get it working locally, on your own computer. Play around with the sites and topics lists to customize the results to your own needs.</p>
+<p><strong>NOTE</strong>: You will need to install two packages in Mu. Do this by clicking on the gear icon in the lower right corner, as shown here:</p>
+<img alt="No description has been provided for this image" src="https://mco.dev/img/mu1.png"/>
+<p>Enter the two required packages <code>feedparser==6.0.0</code> (two equal signs!) and <code>newscatcher</code>  into this dialog and click OK.</p>
+<img alt="No description has been provided for this image" src="https://mco.dev/img/mu2.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Next-Week---Web-Servers">Next Week - Web Servers<a class="anchor-link" href="#Next-Week---Web-Servers">¶</a></h2><p>We're going to use files to keep track of which articles we've already seen and we're going to build a web user interface on top of our newsfinder program.</p>
 </div>
 </div>
 </div>
@@ -8568,59 +8621,6 @@ dead we take increased devotion to that cause for which they gave the last full 
 highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth
 of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.
 </code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h2><p>Using Mu, write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
-<p>For example:</p>
-<pre><code>li = ['test', 'another test', 'last test']
-write_file('output.txt', li)
-</code></pre>
-<p>Using your systems file explorer or command line, verify the file was created and has the expected contents. If you're not sure how to do that, you could also use your new <code>read_file()</code> function!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h2><p>Now tie everything together by writing a program that reads the contents of <code>input.txt</code> (using <code>read_file()</code>), enumerates the lines found therein (using <code>enumerate()</code>, and writes the enumerated lines to <code>output.txt</code> (using <code>write_file()</code>).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h2><p>Copy/paste the code from our newsfinder program to Mu and see if you can get it working locally, on your own computer. Play around with the sites and topics lists to customize the results to your own needs.</p>
-<p><strong>NOTE</strong>: You will need to install two packages in Mu. Do this by clicking on the gear icon in the lower right corner, as shown here:</p>
-<img alt="No description has been provided for this image" src="https://mco.dev/img/mu1.png"/>
-<p>Enter the two required packages <code>feedparser==6.0.0</code> (two equal signs!) and <code>newscatcher</code>  into this dialog and click OK.</p>
-<img alt="No description has been provided for this image" src="https://mco.dev/img/mu2.png"/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Next-Week---Web-Servers">Next Week - Web Servers<a class="anchor-link" href="#Next-Week---Web-Servers">¶</a></h1><p>We're going to use files to keep track of which articles we've already seen and we're going to build a web user interface on top of our newsfinder program.</p>
 </div>
 </div>
 </div>
