@@ -7532,14 +7532,14 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Notebook-6---Functions,-Namespaces,-and-Modules">Notebook 6 - Functions, Namespaces, and Modules<a class="anchor-link" href="#Notebook-6---Functions,-Namespaces,-and-Modules">¶</a></h2><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-6---Functions,-Namespaces,-and-Modules">Notebook 6 - Functions, Namespaces, and Modules<a class="anchor-link" href="#Notebook-6---Functions,-Namespaces,-and-Modules">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>what functions are and why they useful</li>
 <li>how to define and use functions</li>
 <li>the global and local namespaces</li>
-<li>what are modules and how to use them</li>
-<li>IDEs and editors for Python</li>
+<li>what modules are and how to use them</li>
+<li>Integrated Developer Environments (IDEs) for Python</li>
 </ul>
 </div>
 </div>
@@ -7806,11 +7806,11 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">speak</span><span class="p">():</span>
-<span class="w">  </span><span class="sd">'''</span>
-<span class="sd">     This function generates hello in cat language.</span>
-<span class="sd">     Don't try this near a dog.</span>
-<span class="sd">  '''</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s1">'meow'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">'''</span>
+<span class="sd">        This function generates hello in cat language.</span>
+<span class="sd">        Don't try this near a dog.</span>
+<span class="sd">    '''</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'meow'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8021,7 +8021,7 @@ TypeError: product() takes exactly 3 positional argument (2 given)
     fact = 1
     for i in range(1, num+1):
         fact *= i
-    return(fact)
+    return fact
 </code></pre>
 <p>Here's how we would call this function:</p>
 <pre><code>f = fact(5)
@@ -8040,7 +8040,7 @@ print('5! = ', f)
 <ul>
 <li>Functions return a value to the caller via the <code>return</code> statement.</li>
 <li>The <code>return</code> statement causes two things to happen...<ul>
-<li>the function ends and program execution resumes just after the function was called</li>
+<li>the function ends and program execution resumes just after the place where the function was called</li>
 <li>the returned value is passed back to the caller</li>
 </ul>
 </li>
@@ -8097,7 +8097,7 @@ print(f'quotient={q}, remainder={r}')
   <span class="k">return</span> <span class="n">quotient</span><span class="p">,</span> <span class="n">remainder</span>
 
 <span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="n">divide</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'quotient=</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s1">, remainder=</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"quotient=</span><span class="si">{</span><span class="n">q</span><span class="si">}</span><span class="s2">, remainder=</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8207,7 +8207,7 @@ while True:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Local-Namespace">Local Namespace<a class="anchor-link" href="#Local-Namespace">¶</a></h3><ul>
-<li>When you define a function, Python creates a local namespace for that function, including all parameters and variables created inside the function body.</li>
+<li>When you define a function, Python creates a local namespace for that function, encompassing all parameters and variables created inside the function body.</li>
 <li>Variables in a local namespace are separate from, and independent of, variables in the global name space.</li>
 <li>Inside a function, local variables supersede global variables with the same name.</li>
 <li>Local variables are transient - they exist only during the lifetime of function execution.</li>
@@ -8300,7 +8300,7 @@ while True:
 <pre><code>import random
 </code></pre>
 <ul>
-<li>In order for Python to see one your modules, the module file (with .py extension) needs to be in the same directory as the program you are running or in a special,  predefined system location.<ul>
+<li>In order for Python to see one your modules, the module file (with .py extension) needs to be in the same folder as the program you are running or in a special,  predefined system location.<ul>
 <li><code>sys.path</code> in Python</li>
 <li><code>PYTHONPATH</code> in shell environment</li>
 </ul>
@@ -8341,7 +8341,7 @@ module-name.function(&lt;args&gt;)
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
-<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8393,7 +8393,7 @@ rand_val = randrange(0, 10)
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span><span class="p">,</span> <span class="n">randint</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="p">())</span>
-<span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8425,27 +8425,13 @@ rand_val = randrange(0, 10)
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="IDEs-and-Editors">IDEs and Editors<a class="anchor-link" href="#IDEs-and-Editors">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
+<h2 id="Integrated-Developer-Environments-(IDEs)">Integrated Developer Environments (IDEs)<a class="anchor-link" href="#Integrated-Developer-Environments-(IDEs)">¶</a></h2><ul>
 <li>Integrated Development Environments</li>
 <li>Programs to help you write programs</li>
-<li>Many popular ones...<ul>
-<li>VSCode</li>
-<li>idx.dev - cloud based VS Code from Google</li>
-<li>repl.it - cloud based multi-lingual IDE, great for learning</li>
-<li>Vim</li>
-<li>PyCharm</li>
-<li>Mu - simple Python IDE for beginners</li>
+<li>Some recommended ones to check out...<ul>
+<li><a href="https://code.visualstudio.com/">Microsoft Visual Studio Code</a> - the dominant IDE nowadays</li>
+<li><a href="https://idx.dev/">IDX</a>- cloud hosted VS Code from Google</li>
+<li><a href="https://repl.it">repl.it</a> - cloud based multi-lingual IDE, great for learning</li>
 </ul>
 </li>
 </ul>
@@ -8603,8 +8589,10 @@ rand_val = randrange(0, 10)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">rando</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
+<span class="k">def</span> <span class="nf">rando</span><span class="p">():</span>
     <span class="c1"># Add your code here</span>
+    <span class="k">return</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">0.5</span>
 </pre></div>
 </div>
 </div>
@@ -8620,19 +8608,24 @@ rand_val = randrange(0, 10)
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="n">height</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="n">num_trials</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">width</span> <span class="o">=</span> <span class="mi">97</span>
+<span class="n">num_steps</span> <span class="o">=</span> <span class="mi">50</span>
 
 <span class="n">li</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10000</span><span class="p">):</span>
-  <span class="n">position</span> <span class="o">=</span> <span class="n">height</span> <span class="o">//</span> <span class="mi">2</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_trials</span><span class="p">):</span>
+  <span class="n">position</span> <span class="o">=</span> <span class="n">width</span> <span class="o">//</span> <span class="mi">2</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_steps</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">rando</span><span class="p">():</span>
-      <span class="n">position</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">position</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+      <span class="n">position</span> <span class="o">+=</span> <span class="mf">.5</span>
     <span class="k">else</span><span class="p">:</span>
-      <span class="n">position</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">position</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+      <span class="n">position</span> <span class="o">-=</span> <span class="mf">.5</span>
   <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
 
-<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="c1">#print(li)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">displot</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
