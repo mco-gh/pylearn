@@ -7537,8 +7537,9 @@ a.anchor-link {
 <ul>
 <li>what functions are and why they useful</li>
 <li>how to define and use functions</li>
+<li>the global and local namespaces</li>
 <li>what are modules and how to use them</li>
-<li>IDEs and editor for Python</li>
+<li>IDEs and editors for Python</li>
 </ul>
 </div>
 </div>
