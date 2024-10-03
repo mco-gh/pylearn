@@ -7994,9 +7994,8 @@ hopefully the custom error message is informative enough to help you figure out 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Syntax-Errors">Syntax Errors<a class="anchor-link" href="#Syntax-Errors">¶</a></h3><p>When you forget a colon at the end of a line,
-accidentally add one space too many when indenting under an <code>if</code> statement,
-or forget a parenthesis,
-you will encounter a [syntax error]({{ page.root }}/reference.html#syntax-error).
+accidentally add one space too many when indenting under an <code>if</code> statement, or forget a parenthesis,
+you will encounter a syntax error.
 This means that Python couldn't figure out how to read your program.
 This is similar to forgetting punctuation in English:
 for example,
@@ -8014,7 +8013,6 @@ For example:</p>
     print(msg)
      return msg
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>  File "&lt;ipython-input-3-6bb841ea1423&gt;", line 1
     def some_function()
                        ^
@@ -8040,21 +8038,29 @@ IndentationError: unexpected indent
 <p>Both <code>SyntaxError</code> and <code>IndentationError</code> indicate a problem with the syntax of your program,
 but an <code>IndentationError</code> is more specific:
 it <em>always</em> means that there is a problem with how your code is indented.</p>
-<blockquote>
-<h2 id="Tabs-and-Spaces">Tabs and Spaces<a class="anchor-link" href="#Tabs-and-Spaces">¶</a></h2><p>Some indentation errors are harder to spot than others.
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Tabs-and-Spaces">Tabs and Spaces<a class="anchor-link" href="#Tabs-and-Spaces">¶</a></h4><p>Some indentation errors are harder to spot than others.
 In particular, mixing spaces and tabs can be difficult to spot
-because they are both [whitespace]({{ page.root }}/reference.html#whitespace).
+because they are both whitespace.
 In the example below, the first two lines in the body of the function
 <code>some_function</code> are indented with tabs, while the third line — with spaces.
 If you're working in a Jupyter notebook, be sure to copy and paste this example
 rather than trying to type it in manually because Jupyter automatically replaces
 tabs with spaces.</p>
 <pre><code>def some_function():
-  msg = 'hello, world!'
-  print(msg)
-        return msg
+    msg = 'hello, world!'
+    print(msg)
+    return msg
 </code></pre>
-<p>{: .language-python}</p>
 <p>Visually it is impossible to spot the error.
 Fortunately, Python does not allow you to mix tabs and spaces.</p>
 <pre><code>  File "&lt;ipython-input-5-653b36fbcd41&gt;", line 4
@@ -8062,9 +8068,6 @@ Fortunately, Python does not allow you to mix tabs and spaces.</p>
               ^
 TabError: inconsistent use of tabs and spaces in indentation
 </code></pre>
-<p>{: .error}
-{: .callout}</p>
-</blockquote>
 </div>
 </div>
 </div>
