@@ -7919,60 +7919,8 @@ file.close()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">¶</a></h2><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
-<p>Things you'll learn in this lesson:</p>
-<ul>
-<li>todo</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Errors-and-Exceptions">Errors and Exceptions<a class="anchor-link" href="#Errors-and-Exceptions">¶</a></h3><p>teaching: 30
-exercises: 0
-questions:</p>
-<ul>
-<li>"How does Python report errors?"</li>
-<li>"How can I handle errors in Python programs?"
-objectives:</li>
-<li>"To be able to read a traceback, and determine where the error took place and what type it is."</li>
-<li>"To be able to describe the types of situations in which syntax errors,
-indentation errors, name errors, index errors, and missing file errors occur."
-keypoints:</li>
-<li>"Tracebacks can look intimidating, but they give us a lot of useful information about
-what went wrong in our program, including where the error occurred and
-what type of error it was."</li>
-<li>"An error having to do with the 'grammar' or syntax of the program is called a <code>SyntaxError</code>.
-If the issue has to do with how the code is indented,
-then it will be called an <code>IndentationError</code>."</li>
-<li>"A <code>NameError</code> will occur when trying to use a variable that does not exist. Possible causes are
-that a variable definition is missing, a variable reference differs from its definition
-in spelling or capitalization, or the code contains a string that is missing quotes around it."</li>
-<li>"Containers like lists and strings will generate errors if you try to access items
-in them that do not exist. This type of error is called an <code>IndexError</code>."</li>
-<li>"Trying to read a file that does not exist will give you an <code>FileNotFoundError</code>.
-Trying to read a file that is open for writing, or writing to a file that is open for reading,
-will give you an <code>IOError</code>."</li>
-</ul>
-<hr/>
-<p>Every programmer encounters errors,
-both those who are just beginning,
-and those who have been programming for years.
-Encountering errors and exceptions can be very frustrating at times,
-and can make coding feel like a hopeless endeavour.
-However,
-understanding what the different types of errors are
-and when you are likely to encounter them can help a lot.
-Once you know <em>why</em> you get certain types of errors,
-they become much easier to fix.</p>
-<p>Errors in Python have a very specific form,
-called a [traceback]({{ page.root }}/reference.html#traceback).
+<h2 id="Errors-and-Exceptions">Errors and Exceptions<a class="anchor-link" href="#Errors-and-Exceptions">¶</a></h2><p><em>This section is derived from work that is <a href="https://carpentries.org/">Copyright (c) The Carpentries</a>.</em></p>
+<p>Errors in Python have a very specific form, called a traceback.
 Let's examine one:</p>
 <pre><code># This code has an intentional error. You can type it directly or
 # use it for reference to understand the error message below.
@@ -7986,7 +7934,7 @@ def favorite_ice_cream():
 
 favorite_ice_cream()
 </code></pre>
-<p>{: .language-python}</p>
+<p>When run, this code produces the following result:</p>
 <pre><code>---------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
 &lt;ipython-input-1-70bd89baa4df&gt; in &lt;module&gt;()
@@ -8003,34 +7951,17 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 </code></pre>
-<p>{: .error}</p>
-<p>This particular traceback has two levels.
-You can determine the number of levels by looking for the number of arrows on the left hand side.
-In this case:</p>
-<ol>
+<p>This particular traceback has two levels.</p>
+<ul>
 <li><p>The first shows code from the cell above,
 with an arrow pointing to Line 11 (which is <code>favorite_ice_cream()</code>).</p>
 </li>
 <li><p>The second shows some code in the function <code>favorite_ice_cream</code>,
 with an arrow pointing to Line 9 (which is <code>print(ice_creams[3])</code>).</p>
 </li>
-</ol>
-<p>The last level is the actual place where the error occurred.
-The other level(s) show what function the program executed to get to the next level down.
-So, in this case, the program first performed a
-[function call]({{ page.root }}/reference.html#function-call) to the function <code>favorite_ice_cream</code>.
-Inside this function,
-the program encountered an error on Line 6, when it tried to run the code <code>print(ice_creams[3])</code>.</p>
-<blockquote>
-<h2 id="Long-Tracebacks">Long Tracebacks<a class="anchor-link" href="#Long-Tracebacks">¶</a></h2><p>Sometimes, you might see a traceback that is very long
--- sometimes they might even be 20 levels deep!
-This can make it seem like something horrible happened,
-but the length of the error message does not reflect severity, rather,
-it indicates that your program called many functions before it encountered the error.
-Most of the time, the actual place where the error occurred is at the bottom-most level,
-so you can skip down the traceback to the bottom.
-{: .callout}</p>
-</blockquote>
+</ul>
+<p>The last level is where the error occurred. The other level(s) show what function the program executed to get to the next level down.
+So, in this case, the program first called the function <code>favorite_ice_cream</code>. Inside this function, the program encountered an error on Line 6, when it tried to run the code <code>print(ice_creams[3])</code>.</p>
 <p>So what error did the program actually encounter?
 In the last line of the traceback,
 Python helpfully tells us the category or type of error (in this case, it is an <code>IndexError</code>)
@@ -8052,7 +7983,17 @@ note that you may not always be able to find the error there,
 as it is possible to create custom errors.
 In that case,
 hopefully the custom error message is informative enough to help you figure out what went wrong.</p>
-<h2 id="Syntax-Errors">Syntax Errors<a class="anchor-link" href="#Syntax-Errors">¶</a></h2><p>When you forget a colon at the end of a line,
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Syntax-Errors">Syntax Errors<a class="anchor-link" href="#Syntax-Errors">¶</a></h3><p>When you forget a colon at the end of a line,
 accidentally add one space too many when indenting under an <code>if</code> statement,
 or forget a parenthesis,
 you will encounter a [syntax error]({{ page.root }}/reference.html#syntax-error).
@@ -8079,7 +8020,6 @@ For example:</p>
                        ^
 SyntaxError: invalid syntax
 </code></pre>
-<p>{: .error}</p>
 <p>Here, Python tells us that there is a <code>SyntaxError</code> on line 1,
 and even puts a little arrow in the place where there is an issue.
 In this case the problem is that the function definition is missing a colon at the end.</p>
@@ -8092,13 +8032,11 @@ which means that the lines in the function definition do not all have the same i
     print(msg)
      return msg
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>  File "&lt;ipython-input-4-ae290e7659cb&gt;", line 4
     return msg
     ^
 IndentationError: unexpected indent
 </code></pre>
-<p>{: .error}</p>
 <p>Both <code>SyntaxError</code> and <code>IndentationError</code> indicate a problem with the syntax of your program,
 but an <code>IndentationError</code> is more specific:
 it <em>always</em> means that there is a problem with how your code is indented.</p>
@@ -8127,12 +8065,21 @@ TabError: inconsistent use of tabs and spaces in indentation
 <p>{: .error}
 {: .callout}</p>
 </blockquote>
-<h2 id="Variable-Name-Errors">Variable Name Errors<a class="anchor-link" href="#Variable-Name-Errors">¶</a></h2><p>Another very common type of error is called a <code>NameError</code>,
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Variable-Name-Errors">Variable Name Errors<a class="anchor-link" href="#Variable-Name-Errors">¶</a></h3><p>Another very common type of error is called a <code>NameError</code>,
 and occurs when you try to use a variable that does not exist.
 For example:</p>
 <pre><code>print(a)
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-7-9d7b17ad5387&gt; in &lt;module&gt;()
@@ -8140,7 +8087,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'a' is not defined
 </code></pre>
-<p>{: .error}</p>
 <p>Variable name errors come with some of the most informative error messages,
 which are usually of the form "name 'the_variable_name' is not defined".</p>
 <p>Why does this error message occur?
@@ -8152,7 +8098,6 @@ The first is that you meant to use a
 [string]({{ page.root }}/reference.html#string), but forgot to put quotes around it:</p>
 <pre><code>print(hello)
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-8-9553ee03b645&gt; in &lt;module&gt;()
@@ -8160,7 +8105,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'hello' is not defined
 </code></pre>
-<p>{: .error}</p>
 <p>The second reason is that you might be trying to use a variable that does not yet exist.
 In the following example,
 <code>count</code> should have been defined (e.g., with <code>count = 0</code>) before the for loop:</p>
@@ -8168,7 +8112,6 @@ In the following example,
     count = count + number
 print('The count is:', count)
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-9-dd6a12d7ca5c&gt; in &lt;module&gt;()
@@ -8178,7 +8121,6 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'count' is not defined
 </code></pre>
-<p>{: .error}</p>
 <p>Finally, the third possibility is that you made a typo when you were writing your code.
 Let's say we fixed the error above by adding the line <code>Count = 0</code> before the for loop.
 Frustratingly, this actually does not fix the error.
@@ -8190,7 +8132,6 @@ for number in range(10):
     count = count + number
 print('The count is:', count)
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 NameError                                 Traceback (most recent call last)
 &lt;ipython-input-10-d77d40059aea&gt; in &lt;module&gt;()
@@ -8201,8 +8142,17 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'count' is not defined
 </code></pre>
-<p>{: .error}</p>
-<h2 id="Index-Errors">Index Errors<a class="anchor-link" href="#Index-Errors">¶</a></h2><p>Next up are errors having to do with containers (like lists and strings) and the items within them.
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Index-Errors">Index Errors<a class="anchor-link" href="#Index-Errors">¶</a></h3><p>Next up are errors having to do with containers (like lists and strings) and the items within them.
 If you try to access an item in a list or a string that does not exist,
 then you will get an error.
 This makes sense:
@@ -8216,12 +8166,10 @@ print('Letter #2 is', letters[1])
 print('Letter #3 is', letters[2])
 print('Letter #4 is', letters[3])
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>Letter #1 is a
 Letter #2 is b
 Letter #3 is c
 </code></pre>
-<p>{: .output}</p>
 <pre><code>---------------------------------------------------------------------------
 IndexError                                Traceback (most recent call last)
 &lt;ipython-input-11-d817f55b7d6c&gt; in &lt;module&gt;()
@@ -8231,11 +8179,20 @@ IndexError                                Traceback (most recent call last)
 
 IndexError: list index out of range
 </code></pre>
-<p>{: .error}</p>
 <p>Here,
 Python is telling us that there is an <code>IndexError</code> in our code,
 meaning we tried to access a list index that did not exist.</p>
-<h2 id="File-Errors">File Errors<a class="anchor-link" href="#File-Errors">¶</a></h2><p>The last type of error we'll cover today
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="File-Errors">File Errors<a class="anchor-link" href="#File-Errors">¶</a></h3><p>The last type of error we'll cover today
 are those associated with reading and writing files: <code>FileNotFoundError</code>.
 If you try to read a file that does not exist,
 you will receive a <code>FileNotFoundError</code> telling you so.
@@ -8245,7 +8202,6 @@ More generally, problems with input and output manifest as
 <code>IOError</code>s or <code>OSError</code>s, depending on the version of Python you use.</p>
 <pre><code>file_handle = open('myfile.txt', 'r')
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 FileNotFoundError                         Traceback (most recent call last)
 &lt;ipython-input-14-f6e1ac4aee96&gt; in &lt;module&gt;()
@@ -8253,7 +8209,6 @@ FileNotFoundError                         Traceback (most recent call last)
 
 FileNotFoundError: [Errno 2] No such file or directory: 'myfile.txt'
 </code></pre>
-<p>{: .error}</p>
 <p>One reason for receiving this error is that you specified an incorrect path to the file.
 For example,
 if I am currently in a folder called <code>myproject</code>,
@@ -8274,7 +8229,6 @@ telling you that the file was not opened for reading:</p>
 <pre><code>file_handle = open('myfile.txt', 'w')
 file_handle.read()
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 UnsupportedOperation                      Traceback (most recent call last)
 &lt;ipython-input-15-b846479bc61f&gt; in &lt;module&gt;()
@@ -8283,7 +8237,6 @@ UnsupportedOperation                      Traceback (most recent call last)
 
 UnsupportedOperation: not readable
 </code></pre>
-<p>{: .error}</p>
 <p>These are the most common errors with files,
 though many others exist.
 If you get an error that you've never seen before,
@@ -8341,7 +8294,6 @@ KeyError                                  Traceback (most recent call last)
 
 KeyError: 'Friday'
 </code></pre>
-<p>{: .error}</p>
 <blockquote>
 <h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><ol>
 <li>3 levels</li>
@@ -8349,9 +8301,7 @@ KeyError: 'Friday'
 <li>11</li>
 <li><code>KeyError</code></li>
 <li>There isn't really a message; you're supposed
-to infer that <code>Friday</code> is not a key in <code>messages</code>.
-{: .solution}
-{: .challenge}</li>
+to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
 </ol>
 </blockquote>
 </blockquote>
@@ -8367,7 +8317,6 @@ to infer that <code>Friday</code> is not a key in <code>messages</code>.
    print('But at least Python tells us about them!')
   print('So they are usually not too hard to fix.')
 </code></pre>
-<p>{: .language-python}</p>
 <blockquote>
 <h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p><code>SyntaxError</code> for missing <code>():</code> at end of first line,
 <code>IndentationError</code> for mismatch between second and third lines.
@@ -8377,9 +8326,6 @@ A fixed version is:</p>
     print('But at least Python tells us about them!')
     print('So they are usually not too hard to fix.')
 </code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -8401,7 +8347,6 @@ or a variable that should have been defined but was not?</li>
         message = message + 'b'
 print(message)
 </code></pre>
-<p>{: .language-python}</p>
 <blockquote>
 <h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined,
 and for <code>a</code> not being in quotes.</p>
@@ -8415,9 +8360,6 @@ for number in range(10):
         message = message + 'b'
 print(message)
 </code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -8429,19 +8371,14 @@ print(message)
 <pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[4])
 </code></pre>
-<p>{: .language-python}</p>
 <blockquote>
 <h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p><code>IndexError</code>; the last entry is <code>seasons[3]</code>, so <code>seasons[4]</code> doesn't make sense.
 A fixed version is:</p>
 <pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[-1])
 </code></pre>
-<p>{: .language-python}
-{: .solution}
-{: .challenge}</p>
 </blockquote>
 </blockquote>
-<p>{% include links.md %}</p>
 </div>
 </div>
 </div>
