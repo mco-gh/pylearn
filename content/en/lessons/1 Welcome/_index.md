@@ -7675,7 +7675,7 @@ a.anchor-link {
 </tr>
 <tr>
 <td>Notebook 8</td>
-<td>Files and Exceptions</td>
+<td>Files, Errors, and Exceptions</td>
 </tr>
 <tr>
 <td>Notebook 9</td>
