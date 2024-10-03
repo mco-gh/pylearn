@@ -7538,10 +7538,6 @@ a.anchor-link {
 <li>reading and writing files</li>
 <li>exceptions and error handling strategies</li>
 </ul>
-<p><strong>To do</strong>:</p>
-<ul>
-<li>consider using Drive for file persistence (<a href="https://drive.google.com/file/d/1-UK__URjCYYQESPX3XimZgcgxfyUvhWN/view">see these slides</a>)</li>
-</ul>
 </div>
 </div>
 </div>
@@ -7919,7 +7915,18 @@ file.close()
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Errors-and-Exceptions">Errors and Exceptions<a class="anchor-link" href="#Errors-and-Exceptions">¶</a></h2><p><em>This section is derived from work that is <a href="https://carpentries.org/">Copyright (c) The Carpentries</a>.</em></p>
+<h2 id="Errors-and-Exceptions">Errors and Exceptions<a class="anchor-link" href="#Errors-and-Exceptions">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><em>This section is derived from work that is <a href="https://carpentries.org/">Copyright (c) The Carpentries</a>.</em></p>
 <p>Errors in Python have a very specific form, called a traceback.
 Let's examine one:</p>
 <pre><code># This code has an intentional error. You can type it directly or
@@ -8052,10 +8059,7 @@ it <em>always</em> means that there is a problem with how your code is indented.
 In particular, mixing spaces and tabs can be difficult to spot
 because they are both whitespace.
 In the example below, the first two lines in the body of the function
-<code>some_function</code> are indented with tabs, while the third line — with spaces.
-If you're working in a Jupyter notebook, be sure to copy and paste this example
-rather than trying to type it in manually because Jupyter automatically replaces
-tabs with spaces.</p>
+<code>some_function</code> are indented with tabs, while the third line — with spaces.</p>
 <pre><code>def some_function():
     msg = 'hello, world!'
     print(msg)
@@ -8097,8 +8101,7 @@ That's a harder question to answer,
 because it depends on what your code is supposed to do.
 However,
 there are a few very common reasons why you might have an undefined variable.
-The first is that you meant to use a
-[string]({{ page.root }}/reference.html#string), but forgot to put quotes around it:</p>
+The first is that you meant to use a string, but forgot to put quotes around it:</p>
 <pre><code>print(hello)
 </code></pre>
 <pre><code>---------------------------------------------------------------------------
@@ -8110,7 +8113,7 @@ NameError: name 'hello' is not defined
 </code></pre>
 <p>The second reason is that you might be trying to use a variable that does not yet exist.
 In the following example,
-<code>count</code> should have been defined (e.g., with <code>count = 0</code>) before the for loop:</p>
+<code>count</code> should have been defined (e.g., with <code>count = 0</code>) before the <code>for</code> loop:</p>
 <pre><code>for number in range(10):
     count = count + number
 print('The count is:', count)
@@ -8127,8 +8130,8 @@ NameError: name 'count' is not defined
 <p>Finally, the third possibility is that you made a typo when you were writing your code.
 Let's say we fixed the error above by adding the line <code>Count = 0</code> before the for loop.
 Frustratingly, this actually does not fix the error.
-Remember that variables are [case-sensitive]({{ page.root }}/reference.html#case-sensitive),
-so the variable <code>count</code> is different from <code>Count</code>. We still get the same error,
+Remember that variable names are case-sensitive,
+so the variable named <code>count</code> is different from <code>Count</code>. We still get the same error,
 because we still have not defined <code>count</code>:</p>
 <pre><code>Count = 0
 for number in range(10):
@@ -8245,8 +8248,39 @@ though many others exist.
 If you get an error that you've never seen before,
 searching the Internet for that error type
 often reveals common reasons why you might get that error.</p>
-<blockquote>
-<h2 id="Reading-Error-Messages">Reading Error Messages<a class="anchor-link" href="#Reading-Error-Messages">¶</a></h2><p>Read the Python code and the resulting traceback below, and answer the following questions:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Reading-Error-Messages">Reading Error Messages<a class="anchor-link" href="#Reading-Error-Messages">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Read the Python code and the resulting traceback below, and answer the following questions:</p>
 <ol>
 <li>How many levels does the traceback have?</li>
 <li>What is the function name where the error occurred?</li>
@@ -8273,7 +8307,6 @@ def print_friday_message():
 
 print_friday_message()
 </code></pre>
-<p>{: .language-python}</p>
 <pre><code>---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
 &lt;ipython-input-1-4be1945adbe2&gt; in &lt;module&gt;()
@@ -8297,19 +8330,45 @@ KeyError                                  Traceback (most recent call last)
 
 KeyError: 'Friday'
 </code></pre>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><ol>
 <li>3 levels</li>
 <li><code>print_message</code></li>
 <li>11</li>
 <li><code>KeyError</code></li>
-<li>There isn't really a message; you're supposed
-to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
+<li>There isn't really a message; you're supposed to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
 </ol>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Identifying-Syntax-Errors">Identifying Syntax Errors<a class="anchor-link" href="#Identifying-Syntax-Errors">¶</a></h2><ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Identifying-Syntax-Errors">Identifying Syntax Errors<a class="anchor-link" href="#Identifying-Syntax-Errors">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol>
 <li>Read the code below, and (without running it) try to identify what the errors are.</li>
 <li>Run the code, and read the error message. Is it a <code>SyntaxError</code> or an <code>IndentationError</code>?</li>
 <li>Fix the error.</li>
@@ -8320,19 +8379,46 @@ to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
    print('But at least Python tells us about them!')
   print('So they are usually not too hard to fix.')
 </code></pre>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p><code>SyntaxError</code> for missing <code>():</code> at end of first line,
-<code>IndentationError</code> for mismatch between second and third lines.
-A fixed version is:</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p><code>SyntaxError</code> for missing <code>():</code> at end of first line,
+<code>IndentationError</code> for mismatch between second and third lines.</p>
+<p>A fixed version is:</p>
 <pre><code>def another_function():
     print('Syntax errors are annoying.')
     print('But at least Python tells us about them!')
     print('So they are usually not too hard to fix.')
 </code></pre>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Identifying-Variable-Name-Errors">Identifying Variable Name Errors<a class="anchor-link" href="#Identifying-Variable-Name-Errors">¶</a></h2><ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Identifying-Variable-Name-Errors">Identifying Variable Name Errors<a class="anchor-link" href="#Identifying-Variable-Name-Errors">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol>
 <li>Read the code below, and (without running it) try to identify what the errors are.</li>
 <li>Run the code, and read the error message.
 What type of <code>NameError</code> do you think this is?
@@ -8350,8 +8436,17 @@ or a variable that should have been defined but was not?</li>
         message = message + 'b'
 print(message)
 </code></pre>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined,
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined,
 and for <code>a</code> not being in quotes.</p>
 <p>Fixed version:</p>
 <pre><code>message = ''
@@ -8363,10 +8458,28 @@ for number in range(10):
         message = message + 'b'
 print(message)
 </code></pre>
-</blockquote>
-</blockquote>
-<blockquote>
-<h2 id="Identifying-Index-Errors">Identifying Index Errors<a class="anchor-link" href="#Identifying-Index-Errors">¶</a></h2><ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Identifying-Index-Errors">Identifying Index Errors<a class="anchor-link" href="#Identifying-Index-Errors">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ol>
 <li>Read the code below, and (without running it) try to identify what the errors are.</li>
 <li>Run the code, and read the error message. What type of error is it?</li>
 <li>Fix the error.</li>
@@ -8374,14 +8487,21 @@ print(message)
 <pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[4])
 </code></pre>
-<blockquote>
-<h2 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h2><p><code>IndexError</code>; the last entry is <code>seasons[3]</code>, so <code>seasons[4]</code> doesn't make sense.
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p><code>IndexError</code>; the last entry is <code>seasons[3]</code>, so <code>seasons[4]</code> doesn't make sense.
 A fixed version is:</p>
 <pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[-1])
 </code></pre>
-</blockquote>
-</blockquote>
 </div>
 </div>
 </div>
@@ -8457,94 +8577,12 @@ for i in results:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Using Mu, write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
 <p>For example:</p>
 <pre><code>li = ['test', 'another test', 'last test']
 write_file('output.txt', li)
 </code></pre>
 <p>Using your systems file explorer or command line, verify the file was created and has the expected contents. If you're not sure how to do that, you could also use your new <code>read_file()</code> function!</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><p>Now tie everything together by writing a program that reads the contents of <code>input.txt</code> (using <code>read_file()</code>), enumerates the lines found therein (using <code>enumerate()</code>, and writes the enumerated lines to <code>output.txt</code> (using <code>write_file()</code>).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-5">Question 5<a class="anchor-link" href="#Question-5">¶</a></h3><p>Copy/paste the code from our newsfinder program to Mu and see if you can get it working locally, on your own computer. Play around with the sites and topics lists to customize the results to your own needs.</p>
-<p><strong>NOTE</strong>: You will need to install two packages in Mu. Do this by clicking on the gear icon in the lower right corner, as shown here:</p>
-<img alt="No description has been provided for this image" src="https://mco.dev/img/mu1.png"/>
-<p>Enter the two required packages <code>feedparser==6.0.0</code> (two equal signs!) and <code>newscatcher</code>  into this dialog and click OK.</p>
-<img alt="No description has been provided for this image" src="https://mco.dev/img/mu2.png"/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Next-Week---Web-Servers">Next Week - Web Servers<a class="anchor-link" href="#Next-Week---Web-Servers">¶</a></h2><p>We're going to use files to keep track of which articles we've already seen and we're going to build a web user interface on top of our newsfinder program.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Download this file: <code>input.txt</code>. Using Mu, write a function called <code>read_file()</code> that takes one string argument, opens the named file, and uses a <code>for</code> loop to read each line of the file into a list of strings. Get rid of newlines at the end of each line using the <code>strip()</code> string method. Return the list of strings to the caller.</p>
-<p>For example:</p>
-<pre><code>results = read_file('input.txt')
-for i in results:
-  print(i)
-</code></pre>
-<p>should produce this output:</p>
-<pre><code>Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty,
-and dedicated to the proposition that all men are created equal.
-
-Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated,
-can long endure. We are met on a great battle-field of that war. We have come to dedicate a portion of that field,
-as a final resting place for those who here gave their lives that that nation might live. It is altogether fitting
-and proper that we should do this.
-
-But, in a larger sense, we can not dedicate—we can not consecrate—we can not hallow—this ground. The brave men,
-living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world
-will little note, nor long remember what we say here, but it can never forget what they did here. It is for us
-the living, rather, to be dedicated here to the unfinished work which they who fought here have thus far so nobly
-advanced. It is rather for us to be here dedicated to the great task remaining before us—that from these honored
-dead we take increased devotion to that cause for which they gave the last full measure of devotion—that we here
-highly resolve that these dead shall not have died in vain—that this nation, under God, shall have a new birth
-of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.
-</code></pre>
 </div>
 </div>
 </div>
