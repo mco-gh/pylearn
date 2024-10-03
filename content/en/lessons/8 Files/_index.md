@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-8---Files-and-Exceptions">Notebook 8 - Files and Exceptions<a class="anchor-link" href="#Notebook-8---Files-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-8---Files,-Errors,-and-Exceptions">Notebook 8 - Files, Errors, and Exceptions<a class="anchor-link" href="#Notebook-8---Files,-Errors,-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>reading and writing files</li>
