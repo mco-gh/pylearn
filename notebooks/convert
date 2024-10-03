@@ -30,13 +30,13 @@ weight: "$weight"
         sed -i '' 's/title: "5 Loops"/title: "5 More Strings and Loops"/g' "$DIR/$weight $name/_index.md"
     elif [ "$name" = "Functions" ]
     then
-        sed -i '' 's/title: "6 Functions"/title: "6 Functions and Modules"/g' "$DIR/$weight $name/_index.md"
+        sed -i '' 's/title: "6 Functions"/title: "6 Functions, Namespaces, and Modules"/g' "$DIR/$weight $name/_index.md"
     elif [ "$name" = "Iterables" ]
     then
         sed -i '' 's/title: "7 Iterables"/title: "7 Tuples, Lists, and Dictionaries"/g' "$DIR/$weight $name/_index.md"
     elif [ "$name" = "Files" ]
     then
-        sed -i '' 's/title: "8 Files"/title: "8 Files and Exceptions"/g' "$DIR/$weight $name/_index.md"
+        sed -i '' 's/title: "8 Files"/title: "8 Files, Errors, and Exceptions"/g' "$DIR/$weight $name/_index.md"
     elif [ "$name" = "Project" ]
     then
         sed -i '' 's/title: "9 Project"/title: "9 Sample Project"/g' "$DIR/$weight $name/_index.md"
