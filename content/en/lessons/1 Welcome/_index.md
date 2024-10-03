@@ -7667,7 +7667,7 @@ a.anchor-link {
 </tr>
 <tr>
 <td>Notebook 6</td>
-<td>Functions and Modules</td>
+<td>Functions, Namespaces, and Modules</td>
 </tr>
 <tr>
 <td>Notebook 7</td>
