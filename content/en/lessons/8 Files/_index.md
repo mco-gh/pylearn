@@ -8573,7 +8573,7 @@ try:
 except:
     print('problem converting', resp, 'to int')
 </code></pre>
-<p>This code handles every possible exception type
+<p>This code handles every possible exception type.
 You can specify a specific exception type you want to handle by including it after the except keyword, like this:</p>
 <pre><code>except ValueError: # handle ValueError exceptions only
 </code></pre>
@@ -8587,26 +8587,25 @@ You can specify a specific exception type you want to handle by including it aft
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Common-Exception-Types">Common Exception Types<a class="anchor-link" href="#Common-Exception-Types">¶</a></h3><p>Exception Type
-Description
-Exception
-base type of all exceptions
-IOError
-I/O operation failed
-IndexError
-invalid index applied to a sequence
-KeyError
-invalid key applied to a dictionary
-NameError
-invalid or unknown variable or function name
-SyntaxError
-invalid Python language syntax encountered
-TypeError
-operator or function applied to inappropriate type
-ValueError
-operator or function applied to invalid value
-ZeroDivisionError
-division or modulus by zero</p>
+<h3 id="Common-Exception-Types">Common Exception Types<a class="anchor-link" href="#Common-Exception-Types">¶</a></h3><table>
+<thead>
+<tr>
+<th>Exception Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p>Exception|base type of all exceptions
+IOError|I/O operation failed
+IndexError|invalid index applied to a sequence
+KeyError|invalid key applied to a dictionary
+NameError|invalid or unknown variable or function name
+SyntaxError|invalid Python language syntax encountered
+TypeError|operator or function applied to inappropriate type
+ValueError|operator or function applied to invalid value
+ZeroDivisionError|division or modulus by zero</p>
 </div>
 </div>
 </div>
@@ -8617,17 +8616,19 @@ division or modulus by zero</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Handling-Multiple-Exceptions">Handling Multiple Exceptions<a class="anchor-link" href="#Handling-Multiple-Exceptions">¶</a></h3><p>You can handle multiple exception types with one except clause by specifying a comma separated list of exception types in parens, like this:
-except (TypeError, ValueError):
-You can also use multiple except clauses in a single statement, like this:
-def convert(param):
-try:
-value = int(param)<br/>
-return value
-except TypeError:
-print('can't convert', type(param), 'to int')
-except ValueError:
-print('can't convert', param, 'to int')</p>
+<h3 id="Handling-Multiple-Exceptions">Handling Multiple Exceptions<a class="anchor-link" href="#Handling-Multiple-Exceptions">¶</a></h3><p>You can handle multiple exception types with one except clause by specifying a comma separated list of exception types in parentheses (aka, brackets), like this:</p>
+<pre><code>except (TypeError, ValueError):
+</code></pre>
+<p>You can also use multiple except clauses in a single statement, like this:</p>
+<pre><code>def convert(param):
+    try:
+        value = int(param)        
+        return value
+    except TypeError:
+        print('can\'t convert', type(param), 'to int')
+    except ValueError:
+        print('can\'t convert', param, 'to int')
+</code></pre>
 </div>
 </div>
 </div>
@@ -8638,16 +8639,19 @@ print('can't convert', param, 'to int')</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Getting-Exception-Arguments">Getting Exception Arguments<a class="anchor-link" href="#Getting-Exception-Arguments">¶</a></h3><p>Exceptions often come with data passed as an exception argument, which can be obtained like this:
+<h3 id="Getting-Exception-Arguments">Getting Exception Arguments<a class="anchor-link" href="#Getting-Exception-Arguments">¶</a></h3><p>Exceptions often come with data passed as an exception argument, which can be obtained like this:</p>
+<pre><code>except ValueError as msg:
+    print(msg)
+</code></pre>
+<p>For example, this code:</p>
+<pre><code>try:
+    int('x')
 except ValueError as msg:
-print(msg)
-For example, this code…
-try:
-int('x')
-except ValueError as msg:
-print(msg)
-displays this message:
-invalid literal for int() with base 10: 'x'</p>
+    print(msg)
+</code></pre>
+<p>displays this message:</p>
+<pre><code>invalid literal for int() with base 10: 'x'
+</code></pre>
 </div>
 </div>
 </div>
@@ -8658,15 +8662,16 @@ invalid literal for int() with base 10: 'x'</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Exceptions-Can-Have-Else-Clauses">Exceptions Can Have Else Clauses<a class="anchor-link" href="#Exceptions-Can-Have-Else-Clauses">¶</a></h3><p>An optional else clause, if included, is executed if no exception occurs, for example:
-try:
-int(resp)
+<h3 id="Exceptions-Can-Have-Else-Clauses">Exceptions Can Have Else Clauses<a class="anchor-link" href="#Exceptions-Can-Have-Else-Clauses">¶</a></h3><p>An optional else clause, if included, is executed if no exception occurs, for example:</p>
+<pre><code>try:
+    int(resp)
 except ValueError as msg:
-print(msg)
+    print(msg)
 else:
-print('conversion succeeded')
-This statement is certain to display one (and only one!) of the two prints statements above.
-What it won't do, is terminate your program due to a conversion error</p>
+    print('conversion succeeded')
+</code></pre>
+<p>This statement is certain to display one (and only one!) of the two prints statements above.
+What it won't do, is terminate your program due to a conversion error.</p>
 </div>
 </div>
 </div>
@@ -8677,12 +8682,15 @@ What it won't do, is terminate your program due to a conversion error</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="How-to-Raise-an-Exception">How to Raise an Exception<a class="anchor-link" href="#How-to-Raise-an-Exception">¶</a></h3><p>You can raise your own exceptions, anywhere in your Python program, using the raise statement, like this:
-raise <exception type="">
-raise <exception type="">(<argument>)
-this causes an exception to be raised
-control resumes at the first enclosing code (in inner-to-outer order) that handles the raised exception type
-if no enclosing code handles the exception, Python terminates the program and displays information about the exception (which we've often seen in the IDLE shell window)</argument></exception></exception></p>
+<h3 id="How-to-Raise-an-Exception">How to Raise an Exception<a class="anchor-link" href="#How-to-Raise-an-Exception">¶</a></h3><p>You can raise your own exceptions, anywhere in a Python program, using the <code>raise</code> statement, like this:</p>
+<pre><code>raise &lt;exception type&gt;
+</code></pre>
+<p>or like this, to pass an argument along with the exception:</p>
+<pre><code>raise &lt;exception type&gt;(&lt;argument&gt;)
+</code></pre>
+<p>this causes an exception to be raised.
+Control resumes at the first enclosing code (in inner-to-outer order) that handles the raised exception type.
+If no enclosing code handles the exception, Python terminates the program and displays information about the exception.</p>
 </div>
 </div>
 </div>
@@ -8693,76 +8701,50 @@ if no enclosing code handles the exception, Python terminates the program and di
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Structuring-Code-Around-Exceptions">Structuring Code Around Exceptions<a class="anchor-link" href="#Structuring-Code-Around-Exceptions">¶</a></h3><p>What happens if we pass an empty list to this function:
-def avg(numbers):<br/>
-sum = 0<br/>
-cnt = 0
-for i in numbers:
-sum += i
-cnt += 1
-return sum // cnt</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id=""><a class="anchor-link" href="#">¶</a></h3><p>We can use exceptions to catch errors, like this:
-try:<br/>
-result = avg([])
-except:<br/>
-print('something went wrong')</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Instead of writing code like this:
-if choice == "a":
-word = input('word to add: ')
-err = add_word(word)
-if (err):
-print(err)
-else:
-print(word, 'successfully added')
+<h3 id="Structuring-Code-Around-Exceptions">Structuring Code Around Exceptions<a class="anchor-link" href="#Structuring-Code-Around-Exceptions">¶</a></h3><p>What happens if we pass an empty list to this function:</p>
+<pre><code>def avg(numbers):
+    sum = 0    
+    cnt = 0
+    for i in numbers:
+        sum += i
+        cnt += 1
+    return sum // cnt
+</code></pre>
+<p>We can use exceptions to catch errors like this:</p>
+<pre><code>try:    
+    result = avg([])
+except:    
+    print('something went wrong')
+</code></pre>
+<p>Instead of writing code like this:</p>
+<pre><code>if choice == "a":
+    word = input('word to add: ')
+    err = add_word(word)
+    if (err):
+        print(err)
+    else:
+        print(word, 'successfully added')
 elif choice == "d":
-word = input('word to delete: ')<br/>
-err = del_word(word)
-if (err):
-print(err)
-else:
-print(word, 'successfully deleted')</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can write code like this (one exception handler vs. multiple ifs):
-try:
-if choice == 'a':
-word = input('word to add: ')
-add_word(word)
-print(word, 'successfully added')
-elif choice == 'd':
-word = input('word to delete: ')
-del_word(word)
-print(word, 'successfully deleted')
+    word = input('word to delete: ')    
+    err = del_word(word)
+    if (err):
+        print(err)
+    else:
+        print(word, 'successfully deleted')
+</code></pre>
+<p>We can write code like this (one exception handler vs. multiple ifs):</p>
+<pre><code>try:
+    if choice == 'a':
+        word = input('word to add: ')
+        add_word(word)
+        print(word, 'successfully added')
+    elif choice == 'd':
+        word = input('word to delete: ')
+        del_word(word)
+        print(word, 'successfully deleted')
 except Exception as msg:
-print('ERROR:', msg)</p>
+    print('ERROR:', msg)
+</code></pre>
 </div>
 </div>
 </div>
@@ -8773,39 +8755,31 @@ print('ERROR:', msg)</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Error-Handling-Styles">Error Handling Styles<a class="anchor-link" href="#Error-Handling-Styles">¶</a></h3><p>style 1 (nested):
-def add_friend(user, friend):
-if user in users:
-if friend in users:
-if friend not in users[user]:
-users[user].append(friend)
-else:
-raise Err('friend already on list')
-else:
-raise Err('unregistered friend name')
-else:
-raise Err('unregistered user name')</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>style 2 (linear):
-def add_friend(user, friend):
-if user not in users:
-raise Err('unregistered user name')
-elif friend not in users
-raise Err('unregistered friend name')
-elif friend in users[user]
-raise Err('friend already on list')
-users[user].append(friend)
-return None
-I like this style because it find it more readable.
+<h3 id="Error-Handling-Styles">Error Handling Styles<a class="anchor-link" href="#Error-Handling-Styles">¶</a></h3><p>Style 1 (nested):</p>
+<pre><code>def add_friend(user, friend):
+    if user in users:
+        if friend in users:
+            if friend not in users[user]:
+                users[user].append(friend)
+            else:
+                raise Err('friend already on list')
+        else:
+            raise Err('unregistered friend name')
+    else:
+        raise Err('unregistered user name')
+</code></pre>
+<p>Style 2 (linear):</p>
+<pre><code>def add_friend(user, friend):
+    if user not in users:
+        raise Err('unregistered user name')
+    elif friend not in users
+        raise Err('unregistered friend name')
+    elif friend in users[user]
+        raise Err('friend already on list')
+    users[user].append(friend)
+    return None
+</code></pre>
+<p>I like this style because I find it more readable.
 Why is readability so important?
 Readable code is maintainable code.</p>
 </div>
@@ -8831,23 +8805,14 @@ def avg(numbers):
         cnt += 1
     return sum // cnt
 </code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>in calling code:
-try:<br/>
-result = avg([])
-except avgError as msg:<br/>
-print('ERROR:', msg)
-This is just like our previous version except that we're handling an application specific exception.
-Other exceptions will not be caught, which is good! (why?)</p>
+<p>In calling code:</p>
+<pre><code>try:    
+    result = avg([])
+except avgError as msg:    
+    print('ERROR:', msg)
+</code></pre>
+<p>This is just like our previous version except that we're handling an application specific exception.
+Other exceptions will not be caught, which is good (why?).</p>
 </div>
 </div>
 </div>
@@ -8869,61 +8834,7 @@ Other exceptions will not be caught, which is good! (why?)</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>Make a copy of this notebook (if you haven't already done so) and complete the challenges above. You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</li>
-<li>Review your copy of this notebook.<ul>
-<li>Complete the questions below.</li>
-<li>If something is unclear, experiment and see if you can understand it better.</li>
-</ul>
-</li>
-<li>For those who want to go deeper...<ul>
-<li>Read <a href="https://automatetheboringstuff.com/2e/chapter9/">Chapter 9 - Reading and Writing Files</a> in our textbook to learn more about web scraping.</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>In the Mu IDE (or your chosen IDE if you use another one), write a function named <code>enumerate()</code> that takes a list of strings and enumerates them, i.e. it returns a list where each passed string is prefixe by a sequential number, starting at 1. For example...</p>
-<pre><code>li = ['test', 'another test', 'last test']
-results = enumerate(li)
-for i in results:
-  print(i)
-</code></pre>
-<p>should produce this output:</p>
-<pre><code>1. test
-2. another test
-3. last test
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Using Mu, write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
 <p>For example:</p>
 <pre><code>li = ['test', 'another test', 'last test']
 write_file('output.txt', li)
