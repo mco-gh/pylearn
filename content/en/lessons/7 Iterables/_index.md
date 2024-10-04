@@ -9190,7 +9190,28 @@ the user to input an item and then output its price.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that simulates a lottery. The program should have a list of seven numbers that
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a function named <code>enumerate()</code> that takes a list of strings and enumerates them, i.e. it returns a list where each passed string is prefixe by a sequential number, starting at 1. For example...</p>
+<pre><code>li = ['test', 'another test', 'last test']
+results = enumerate(li)
+for i in results:
+  print(i)
+</code></pre>
+<p>should produce this output:</p>
+<pre><code>1. test
+2. another test
+3. last test
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Question-4">Question 4<a class="anchor-link" href="#Question-4">¶</a></h3><p>Write a program that simulates a lottery. The program should have a list of seven numbers that
 represent a lottery ticket. It should then generate seven random numbers. After comparing the two
 sets of numbers, the program should output a prize based on the number of matches:</p>
 <ul>
