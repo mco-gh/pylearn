@@ -7535,7 +7535,7 @@ a.anchor-link {
 <h1 id="Notebook-9---Sample-Project">Notebook 9 - Sample Project<a class="anchor-link" href="#Notebook-9---Sample-Project">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>how to formulate and carry out a Python project</li>
+<li>example code and philosophy from a real Python project</li>
 </ul>
 </div>
 </div>
@@ -7558,7 +7558,131 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Quizaic">Quizaic<a class="anchor-link" href="#Quizaic">¶</a></h2>
+<h2 id="Introducing-Quizaic">Introducing Quizaic<a class="anchor-link" href="#Introducing-Quizaic">¶</a></h2><img alt="No description has been provided for this image" height="200" src="https://mco.dev/img/quizaic.webp"/>
+<ul>
+<li><a href="https://quizaic.com" target="_blank">Home page</a></li>
+<li><a href="https://medium.com/google-cloud/quizaic-a-generative-ai-case-study-ddbd64617395" target="_blank">The technical details</a></li>
+<li><a href="https://mco.fyi/genai" target="_blank">Slide deck</a></li>
+<li><a href="https://github.com/mco-gh/quizaic" target="_blank">Source code</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Application-Architecture">Application Architecture<a class="anchor-link" href="#Application-Architecture">¶</a></h2><img alt="No description has been provided for this image" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mtbUHY9o_E_Nu04MZN6k5Q.png"/>
+<img alt="No description has been provided for this image" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*l-lx-mVy8Kk-NxnpNlMQAQ.png"/>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Get-a-Resource">Get a Resource<a class="anchor-link" href="#Get-a-Resource">¶</a></h2><pre><code>def get(resource_kind, id):
+    log(f"Request to get {resource_kind}", severity="INFO")
+    if resource_kind not in resource_fields:
+        return "Not found", 404, {}
+
+    if resource_kind == "sessions" and id == "me":
+        id = get_hashed_email()
+
+    result = db.fetch(resource_kind, id, resource_fields[resource_kind])
+    if result is None:
+        return "Not found", 404, {}
+
+    return (
+        json.dumps(result),
+        200,
+        {"Content-Type": "application/json", "ETag": base.etag(result)},
+    )
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Access-Checking">Access Checking<a class="anchor-link" href="#Access-Checking">¶</a></h2><pre><code>def user_logged_in(email):
+    return email != None
+
+
+def user_created_quiz(hashed_email, quiz_id):
+    if hashed_email is None:
+        return False
+    quiz = db.fetch("quizzes", quiz_id, ["creator"])
+    if quiz and quiz["creator"] == hashed_email:
+        return True
+    return False
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Generate-a-Quiz">Generate a Quiz<a class="anchor-link" href="#Generate-a-Quiz">¶</a></h2><pre><code>   def gen_quiz(
+        self,
+        topic=BaseQuizgen.TOPIC,
+        num_questions=BaseQuizgen.NUM_QUESTIONS,
+        num_answers=BaseQuizgen.NUM_ANSWERS,
+        difficulty=BaseQuizgen.DIFFICULTY,
+        language=BaseQuizgen.LANGUAGE,
+        temperature=BaseQuizgen.TEMPERATURE,
+    ):
+        # print(f"{topic=}, {num_questions=}, {num_answers=}, {difficulty=}, {language=}")
+        file_path = os.path.join(os.path.dirname(__file__), f"../prompt.txt")
+        with open(file_path, encoding="utf-8") as fp:
+            self.prompt_template = fp.read()
+
+        prompt = self.prompt_template.format(
+            topic=topic,
+            num_questions=num_questions,
+            num_answers=num_answers,
+            language=language,
+            difficulty=difficulty,
+        )
+        prediction = self.predict_llm(
+            MODEL, prompt, temperature, MAX_OUTPUT_TOKENS, TOP_P, TOP_K
+        )
+        prediction = prediction.strip()
+        prediction = re.sub('.*``` *(json)?', '', prediction)
+        prediction = prediction[prediction.find('['):]
+        parsed = ""
+        level = 0
+        for i in prediction:
+            if i == "[":
+                level += 1
+            elif i == "]":
+                level -= 1
+            parsed += i
+            if level &lt;= 0:
+                break
+        prediction = parsed
+        print("prediction=", prediction)
+        quiz = json.loads(prediction)
+        #print(f"{quiz=}")
+        # Make sure the correct answer appears randomly in responses
+        for i in quiz:
+            random.shuffle(i["responses"])
+        return quiz
+</code></pre>
 </div>
 </div>
 </div>
