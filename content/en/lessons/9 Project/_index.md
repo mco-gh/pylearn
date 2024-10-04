@@ -7587,7 +7587,37 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Get-a-Resource">Get a Resource<a class="anchor-link" href="#Get-a-Resource">¶</a></h2><pre><code>def get(resource_kind, id):
+<h2 id="Web-Server">Web Server<a class="anchor-link" href="#Web-Server">¶</a></h2><p><a href="https://github.com/mco-gh/quizaic/blob/main/api/main.py">https://github.com/mco-gh/quizaic/blob/main/api/main.py</a></p>
+<pre><code>from flask import Response, Flask, g, request
+
+resource = [
+    "admins",
+    "quizzes",
+    "results",
+    "sessions",
+    "generators",
+]
+
+app = Flask(__name__)
+
+@app.route("/&lt;resource_name&gt;", methods=["GET"])
+def handle_list(resource_name):
+    if resource_name not in resource:
+        return "Not found", 404
+    return methods.list(resource_name)
+</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Get-a-Resource">Get a Resource<a class="anchor-link" href="#Get-a-Resource">¶</a></h2><p><a href="https://github.com/mco-gh/quizaic/blob/main/api/resources/methods.py">https://github.com/mco-gh/quizaic/blob/main/api/resources/methods.py</a></p>
+<pre><code>def get(resource_kind, id):
     log(f"Request to get {resource_kind}", severity="INFO")
     if resource_kind not in resource_fields:
         return "Not found", 404, {}
@@ -7615,7 +7645,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Access-Checking">Access Checking<a class="anchor-link" href="#Access-Checking">¶</a></h2><pre><code>def user_logged_in(email):
+<h2 id="Access-Checking">Access Checking<a class="anchor-link" href="#Access-Checking">¶</a></h2><p><a href="https://github.com/mco-gh/quizaic/blob/main/api/resources/auth.py">https://github.com/mco-gh/quizaic/blob/main/api/resources/auth.py</a></p>
+<pre><code>def user_logged_in(email):
     return email != None
 
 
@@ -7637,7 +7668,8 @@ def user_created_quiz(hashed_email, quiz_id):
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Generate-a-Quiz">Generate a Quiz<a class="anchor-link" href="#Generate-a-Quiz">¶</a></h2><pre><code>   def gen_quiz(
+<h2 id="Generate-a-Quiz">Generate a Quiz<a class="anchor-link" href="#Generate-a-Quiz">¶</a></h2><p><a href="https://github.com/mco-gh/quizaic/blob/main/api/pyquizaic/generators/quiz/gemini-pro/quizgen.py">https://github.com/mco-gh/quizaic/blob/main/api/pyquizaic/generators/quiz/gemini-pro/quizgen.py</a></p>
+<pre><code>   def gen_quiz(
         self,
         topic=BaseQuizgen.TOPIC,
         num_questions=BaseQuizgen.NUM_QUESTIONS,
