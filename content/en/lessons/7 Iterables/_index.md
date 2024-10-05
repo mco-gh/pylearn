@@ -8985,7 +8985,18 @@ The data is organized for quick access via the key, somewhat like a real diction
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Rule-of-thumb-for-truth-value-of-tuples,-lists,-and-dictionaries">Rule of thumb for truth value of tuples, lists, and dictionaries<a class="anchor-link" href="#Rule-of-thumb-for-truth-value-of-tuples,-lists,-and-dictionaries">¶</a></h2><p>All of these objects may be used as boolean values. The rules for converting a tuple, list, or map into a boolean value are as follows:</p>
+<h2 id="Rule-of-thumb-for-truth-value-of-tuples,-lists,-and-dictionaries">Rule of thumb for truth value of tuples, lists, and dictionaries<a class="anchor-link" href="#Rule-of-thumb-for-truth-value-of-tuples,-lists,-and-dictionaries">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>All of these objects may be used as boolean values. The rules for converting a tuple, list, or map into a boolean value are as follows:</p>
 <ul>
 <li>if the object is empty, it evaluates to False</li>
 <li>if the object is non-empty, it evaluates to True</li>
