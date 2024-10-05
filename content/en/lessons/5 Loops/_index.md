@@ -8190,7 +8190,7 @@ print(i)
 <li><code>i = i + i</code> can be written like this:  <code>i += 1</code></li>
 <li>More generally, <code>i = i + x</code> can be written as <code>i += x</code>, which adds the value of x to i and assigns the result to <code>i</code>.</li>
 <li>You'll often see this syntax inside loops when we want, for example, to increment a loop counter every time through the loop body.</li>
-<li>We have similar assignment operators available corresponding to the arithmetic operators:</li>
+<li>We have similar assignment operators available corresponding to the other arithmetic operators:</li>
 </ul>
 <table>
 <thead>
@@ -8568,12 +8568,12 @@ while i != 0:
 <p>Example:</p>
 <pre><code># calculate sum of first n integers
 i = 1
-n = 20
+n = 10
 sum = 0
-while i &lt;= n:    
-    sum += i    
+while i &lt;= n:
     i += 1
-    #print('i:', i, 'sum:', sum)
+    #print(f"adding i={i} to sum={sum}")
+    sum += i
 print('sum of 1 to', n, '=', sum)
 </code></pre>
 </div>
@@ -8609,7 +8609,7 @@ print('sum of 1 to', n, '=', sum)
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
     <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"adding i=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> to sum=</span><span class="si">{</span><span class="nb">sum</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="c1">#print(f"adding i={i} to sum={sum}")</span>
     <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">'sum of 1 to'</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
 </pre></div>
@@ -8666,7 +8666,6 @@ while i &lt;= end:
 <h4 id="Trusting-User-Input">Trusting User Input<a class="anchor-link" href="#Trusting-User-Input">¶</a></h4><ul>
 <li>Getting input from external sources adds flexibility because program behavior can be changed at runtime (without requiring you to change your code).</li>
 <li>The price of that flexibility is that you have to worry about the consequences of receiving bad input.</li>
-<li>Postel's Law: “Be liberal in what you accept, and conservative in what you send”.</li>
 </ul>
 </div>
 </div>
@@ -9199,7 +9198,11 @@ Exiting...
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string ('q' to quit): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">'q'</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You entered: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9245,7 +9248,13 @@ Lower case:      i am the walrus
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string ('q' to quit): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">'q'</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Original string: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Upper case:      </span><span class="si">{</span><span class="n">value</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Lower case:      </span><span class="si">{</span><span class="n">value</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9260,9 +9269,9 @@ Lower case:      i am the walrus
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Building on the previous program, for each string entered, print whether the entered string is all upper, all lower or mixed case, like this:</p>
 <pre><code>Enter a string (‘q’ to quit): this is a test
-You entered: this is a test, which is all lowercase
+You entered: this is a test, which is lower case
 Enter a string (‘q’ to quit): ANOTHER TEST
-You entered: ANOTHER TEST, which is all upper case
+You entered: ANOTHER TEST, which is upper case
 Enter a string (‘q’ to quit): mIxEd CaSe
 You entered: mIxEd CaSe, which is mixed case
 </code></pre>
@@ -9299,7 +9308,29 @@ You entered: mIxEd CaSe, which is mixed case
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a string ('q' to quit): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">'q'</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">upper_cnt</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">lower_cnt</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">case</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">value</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isspace</span><span class="p">():</span>
+            <span class="k">continue</span>
+        <span class="n">length</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+            <span class="n">upper_cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">elif</span> <span class="n">c</span><span class="o">.</span><span class="n">islower</span><span class="p">():</span>
+            <span class="n">lower_cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">upper_cnt</span> <span class="o">==</span> <span class="n">length</span><span class="p">:</span>
+        <span class="n">case</span> <span class="o">=</span> <span class="s2">"upper"</span>
+    <span class="k">elif</span> <span class="n">lower_cnt</span> <span class="o">==</span> <span class="n">length</span><span class="p">:</span>
+        <span class="n">case</span> <span class="o">=</span> <span class="s2">"lower"</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">case</span> <span class="o">=</span> <span class="s2">"mixed"</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You entered: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">, which is </span><span class="si">{</span><span class="n">case</span><span class="si">}</span><span class="s2"> case"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9353,7 +9384,17 @@ You entered: mIxEd CaSe, which is mixed case
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number ('q' to quit): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">'q'</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">value</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">fact</span> <span class="o">*=</span> <span class="n">i</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="se">\t</span><span class="si">{</span><span class="n">fact</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -9405,7 +9446,18 @@ redivider/redivider - is a palindrome!
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a number ('q' to quit): "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">value</span> <span class="ow">or</span> <span class="n">value</span> <span class="o">==</span> <span class="s1">'q'</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="n">revstr</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">value</span><span class="p">:</span>
+        <span class="n">revstr</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="n">revstr</span>
+    <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="n">revstr</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">revstr</span><span class="si">}</span><span class="s2"> - is a palindrome!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">revstr</span><span class="si">}</span><span class="s2"> - is NOT a palindrome"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
