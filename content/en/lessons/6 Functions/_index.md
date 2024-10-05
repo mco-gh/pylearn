@@ -8157,7 +8157,18 @@ print(f'quotient={q}, remainder={r}')
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Namespaces">Namespaces<a class="anchor-link" href="#Namespaces">¶</a></h2><ul>
+<h2 id="Namespaces">Namespaces<a class="anchor-link" href="#Namespaces">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
 <li>A <code>namespace</code> is an abstract collection of variables that exist in a particular context.<ul>
 <li>Kind of like a company's ID numbers.</li>
 <li>My id is only valid within the scope of my company.</li>
