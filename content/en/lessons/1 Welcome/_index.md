@@ -8656,15 +8656,31 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Useful-Python-Resources">Useful Python Resources<a class="anchor-link" href="#Useful-Python-Resources">¶</a></h3><ul>
+<h3 id="Useful-Python-Resources">Useful Python Resources<a class="anchor-link" href="#Useful-Python-Resources">¶</a></h3><p>Official Resources</p>
+<ul>
 <li><a href="https://python.org">The official Python site</a></li>
 <li><a href="https://python.org/downloads/">Install Python</a></li>
-<li><a href="https://jakevdp.github.io/WhirlwindTourOfPython/">A Whirlwind Tour of Python</a></li>
+</ul>
+<p>Books and Articles</p>
+<ul>
+<li><a href="https://jakevdp.github.io/WhirlwindTourOfPython">A Whirlwind Tour of Python</a></li>
 <li><a href="https://mco.dev/my-favorite-books-for-beginning-python-students/">My Favorite Books for Beginning Python Students</a></li>
+<li><a href="https://stackoverflow.blog/2024/05/14/spreading-the-gospel-of-python">Spreading the Gospel of Python</a></li>
+<li><a href="https://stackoverflow.blog/2024/04/25/what-language-should-beginning-programmers-choose">Why learn Python?</a></li>
+<li><a href="https://codingbat.com/python">codingbat.com</a></li>
+<li><a href="http://codekata.com">CodeKata</a></li>
+</ul>
+<p>Learning Resources</p>
+<ul>
+<li><a href="https://calmcode.io/">calmcode.io</a></li>
+<li><a href="https://brilliant.org/courses/programming-python/">Brilliant.org</a></li>
+<li><a href="http://freecodecamp.com">freecodecamp.com</a></li>
+</ul>
+<p>IDEs</p>
+<ul>
 <li><a href="https://repl.it">repl.it</a></li>
 <li><a href="https://code.visualstudio.com/">vscode</a></li>
-<li><a href="https://calmcode.io/">calmcode.io</a></li>
-<li><a href="https://codingbat.com/python">codingbat.com</a></li>
+<li><a href="https://idx.dev">idx.dev</a></li>
 </ul>
 </div>
 </div>
