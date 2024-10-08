@@ -8422,6 +8422,17 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Todo">Todo<a class="anchor-link" href="#Todo">¶</a></h3><p>In last class, show how to test this program using functions (turn this snippet into a function), loops, boolean logic, lists, and pytest.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication test). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
 <pre><code>Welcome to the multiplication tester!
 What is 3 * 9? 25
