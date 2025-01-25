@@ -7707,7 +7707,7 @@ a.anchor-link {
 <li>Don’t be afraid to ask me or a peer for help.</li>
 </ul>
 </li>
-<li>The dirty secret about professional programmers: <em>No one knows everything - we all use Google, Stack Overflow, and other websites all the time.</em></li>
+<li>The dirty secret about professional programmers: <em>No one knows everything - we all use Google, Stack Overflow, AI, and other resources all the time.</em></li>
 </ul>
 </div>
 </div>
@@ -7735,7 +7735,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>From the menu bar, select Tools-&gt;Command Palette to see a list of the commands you can execute inside a Colab notebook. Most of these commands are intuitively named. For example, to save your notebook in Google Drive, run "Save notebook" now from the command palette. You can find it quickly by typing "save" in the search box.</p>
-<p>Don't worry if you're not sure what some of the commands in the command palette do. For now, I just want you to know about this resource.</p>
+<p>Don't worry if you're not sure what some of the commands in the command palette do. For now, I just want you to be aware of this resource.</p>
 </div>
 </div>
 </div>
@@ -7746,7 +7746,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Congratulations for making it this far! Your last assignment is to watch this <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short video</a> and take a <a href="https://colab.research.google.com/notebooks/intro.ipynb">quick tour of Colab</a>.</p>
+<p>Congratulations for making it this far! For homework, please watch this <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short video</a> and take a <a href="https://colab.research.google.com/notebooks/intro.ipynb">quick tour of Colab</a>.</p>
 </div>
 </div>
 </div>
@@ -7780,7 +7780,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <img alt="No description has been provided for this image" src="https://lh3.googleusercontent.com/LWgdIXTXW6nO0Wi5rGpEJoZ5Hd4EtXq8gm55_wyfIcfZOs07paFyWlrlFUyl9bRCKFKpS_I3nP6O4CN8vXwWG0bV2XtAUH4X2PRWiQ=w1200-l80-sg-rj-c0xffffff"/>
-<p><a href="https://www.google.com/about/datacenters/">Learn more.</a></p>
+<p><a href="https://www.google.com/about/datacenters/">Learn more about Google Data Centers.</a></p>
 </div>
 </div>
 </div>
@@ -7817,10 +7817,10 @@ a.anchor-link {
 <h3 id="What-is-an-operating-system?">What is an operating system?<a class="anchor-link" href="#What-is-an-operating-system?">¶</a></h3><p>A software layer that functions as the computer’s traffic cop.</p>
 <p>Operating systems provide:</p>
 <ul>
-<li>core system services (e.g. processes/threads, memory management)</li>
-<li>abstraction of lower level services (e.g. reading a file, using the network)</li>
+<li>core system services (e.g. processes, memory management, input/output)</li>
+<li>abstraction of lower level services (e.g. reading keyboard input, writing a file, sending data across a network)</li>
 <li>permissions and access control (e.g. login authentication, verifying a user is allowed to access a file)</li>
-<li>resource management (e.g. multiple programs sharing the CPU, multiple access to the same disk device)</li>
+<li>resource management (e.g. multiple programs sharing a processor, multiple access to the same storage device)</li>
 </ul>
 <p>Popular operating systems: Windows, Linux, Android, iOS, MacOS</p>
 </div>
@@ -7833,8 +7833,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="What-is-an-algorithm?">What is an algorithm?<a class="anchor-link" href="#What-is-an-algorithm?">¶</a></h3><p>A step-by-step procedure for solving a problem or accomplishing some end, especially by a computer</p>
-<p>Example Algorithm: Marc’s Scrambled Eggs Recipe</p>
+<h3 id="What-is-an-algorithm?">What is an algorithm?<a class="anchor-link" href="#What-is-an-algorithm?">¶</a></h3><p>A step-by-step procedure for solving a problem or accomplishing some outcome, especially by a computer</p>
+<p>Example Algorithm:</p>
+<p><strong>Marc’s Scrambled Eggs Recipe</strong></p>
 <p><strong>Ingredients:</strong></p>
 <ul>
 <li>2 eggs</li>
@@ -7877,8 +7878,9 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="What-is-a-programming-language?">What is a programming language?<a class="anchor-link" href="#What-is-a-programming-language?">¶</a></h3><ul>
 <li>A set of rules for expressing algorithms symbolically.</li>
+<li>Similar to how human languages provide a set of rules for expressing our thoughts.</li>
 <li>Provides an abstraction layer for using your computer to solve a problem.</li>
-<li>Provides a way to reuse other peoples’ work.</li>
+<li>Provides a mechnanism to reuse other peoples’ work.</li>
 </ul>
 </div>
 </div>
@@ -7896,7 +7898,10 @@ a.anchor-link {
 <ul>
 <li>A compiler converts one language to another (usually a high level language to low level code that can be run directly by the hardware).</li>
 <li>An interpreter executes the source program one statement at a time.</li>
-<li>Portability vs. performance</li>
+<li>Portability vs. performance tradeoff<ul>
+<li>Compiled languages tend to be faster but less portable.</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -7909,13 +7914,13 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="What-is-Python-and-why-learn-it?">What is Python and why learn it?<a class="anchor-link" href="#What-is-Python-and-why-learn-it?">¶</a></h3><ul>
-<li>an interpreted programming language that was invented in 1989 by Dutch programmer Guido van Rossum</li>
+<li>an interpreted programming language invented in 1989 by Dutch programmer Guido van Rossum</li>
 <li>powerful and expressive</li>
 <li>easy to learn</li>
 <li>highly readable</li>
 <li>freely available open source</li>
 <li>widely used &amp; well supported</li>
-<li>Very strong for:<ul>
+<li>Good choice for:<ul>
 <li>AI</li>
 <li>Data Science</li>
 <li>Finance</li>
@@ -7928,7 +7933,7 @@ a.anchor-link {
 </li>
 <li>not a bad thing to have on your resume/CV</li>
 </ul>
-<p><a href="https://www.techrepublic.com/article/python-is-eating-the-world-how-one-developers-side-project-became-the-hottest-programming-language-on-the-planet/">Python is eating the world: How one developer's side project became the hottest programming language on the planet</a></p>
+<p><a href="https://www.techrepublic.com/article/python-is-eating-the-world-how-one-developers-side-project-became-the-hottest-programming-language-on-the-planet/">Read more about the history of Python</a>.</p>
 </div>
 </div>
 </div>
