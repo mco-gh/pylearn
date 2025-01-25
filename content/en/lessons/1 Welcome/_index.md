@@ -7606,7 +7606,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Instructor">Instructor<a class="anchor-link" href="#Instructor">¶</a></h3><p>I'm <a href="https://mco.dev/about-marc">Marc</a>. I love teaching, programming, and teaching programming.</p>
+<h3 id="Instructor">Instructor<a class="anchor-link" href="#Instructor">¶</a></h3><p>I'm <a href="https://mco.dev/about">Marc</a>. I love teaching, programming, and teaching programming.</p>
 <ul>
 <li>My blog can be found at <a href="https://mco.dev">mco.dev</a>.</li>
 <li>My email address is marc@mco.dev.</li>
