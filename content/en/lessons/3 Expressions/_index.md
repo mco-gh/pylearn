@@ -7658,7 +7658,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Type-Conversion-Functions">Type Conversion Functions<a class="anchor-link" href="#Type-Conversion-Functions">¶</a></h3><p>These are built-in Python functions to convert from one type to another. The name of the function mirrors the type you want to convert to, and you pass a variable or value to be converted.</p>
+<h3 id="Type-Conversion-Functions">Type Conversion Functions<a class="anchor-link" href="#Type-Conversion-Functions">¶</a></h3><p>These are built-in Python functions to convert a value to a given type. The name of the function mirrors the type you want to convert to, and you pass a variable or value to be converted.</p>
 <ul>
 <li><code>int(x)</code> - converts <em>x</em> to an integer</li>
 <li><code>float(x)</code> - converts <em>x</em> to a floating point number</li>
@@ -7680,10 +7680,10 @@ a.anchor-link {
 <li><code>name + number</code></li>
 <li><code>age * 365</code></li>
 </ul>
-<p>When you call a function that requires a different type than you are passing. For example, the <code>len</code> function returns the length of a string so it expects the value passed to it will be a string.</p>
-<p><code>print(len(42))</code></p>
+<p>Another case is when you call a function that requires a different type than you are passing. For example, the <code>len</code> function returns the length of a string so it expects the value passed to it will be a string.</p>
+<p><code>len(42)</code></p>
 <p>won’t work, but...</p>
-<p><code>print(len(str(42)))</code></p>
+<p><code>len(str(42))</code></p>
 <p>is fine. Try both of those experiments in the code cell below.</p>
 </div>
 </div>
@@ -7714,22 +7714,49 @@ a.anchor-link {
 age = 2024 - birth_year
 print(f"You are {age} years old")
 </code></pre>
-<p>Try running this code in the following cell and, when it fails, see if you can fix it.</p>
+<p>Try running this code in the following cell and, when it fails, see if you can fix it by using a type conversion function.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">birth_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the year you were born:"</span><span class="p">)</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">2024</span> <span class="o">-</span> <span class="n">birth_year</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">birth_year</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Enter the year you were born:1960
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-2-db0987bb3243&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> birth_year <span class="ansi-blue-fg">=</span> input<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Enter the year you were born:"</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>age <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">2025</span> <span class="ansi-blue-fg">-</span> birth_year
+<span class="ansi-green-intense-fg ansi-bold">      3</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f"You are {age} years old"</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for -: 'int' and 'str'</pre>
 </div>
 </div>
 </div>
@@ -7741,7 +7768,7 @@ print(f"You are {age} years old")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-type()-function">The type() function<a class="anchor-link" href="#The-type()-function">¶</a></h3><p>The built-in <code>type</code> function returns the type of the passed value. It conveys the type name in a string of the form <code>&lt;class type-name&gt;</code>. Don't worry too much for now about that format - just know that the name after <code>class</code> is the type name.</p>
+<h3 id="The-type()-function">The type() function<a class="anchor-link" href="#The-type()-function">¶</a></h3><p>The built-in <code>type</code> function returns the type of the passed value. It conveys the type name in a string of the form <code>&lt;class type-name&gt;</code>. Don't worry too much about that format for now - just know that the name after <code>class</code> is the type name.</p>
 <pre><code>&gt;&gt;&gt; type(123)
 &lt;class 'int'&gt;
 </code></pre>
@@ -7769,17 +7796,31 @@ print(f"You are {age} years old")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter your age: "</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>enter your age: 26
+&lt;class 'str'&gt;
+</pre>
 </div>
 </div>
 </div>
@@ -7803,7 +7844,7 @@ print(f"You are {age} years old")
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>As their name suggests, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is <code>True</code> or <code>False</code>.</p>
-<p>The following table summarizes the most commonly used operators in Python, along with their definition when applied to numbers and strings.</p>
+<p>The following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers and strings.</p>
 <table>
 <thead>
 <tr>
@@ -8145,7 +8186,7 @@ is <code>False</code> when A is <code>True</code></p>
 <li>When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</li>
 <li>Expressions appear in many places, for example:<ul>
 <li>numerical calculations<ul>
-<li><code>2 + 2</code></li>
+<li><code>year + 1</code> # we do this every Jan 1</li>
 </ul>
 </li>
 <li>assignment statements<ul>
