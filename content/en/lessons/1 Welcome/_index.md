@@ -7960,7 +7960,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Python-execution-model">Python execution model<a class="anchor-link" href="#Python-execution-model">¶</a></h3><p><img alt="No description has been provided for this image" height="400" src="https://mco.dev/img/py.gif"/></p>
+<p><img alt="No description has been provided for this image" height="400" src="https://mco.dev/img/py.gif"/></p>
 <p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fblog.gopenai.com%2Fhow-python-works-unveiling-the-magic-behind-python-programming-c95ab99f1ee3&amp;psig=AOvVaw0cKy_Fwe-pc44QwiMoEkAK&amp;ust=1727354649845000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjhxqFwoTCLCK29mP3ogDFQAAAAAdAAAAABAE">Source</a></p>
 </div>
 </div>
@@ -8399,7 +8399,7 @@ a.anchor-link {
 <li><code>#</code> marks the rest of the line as a "comment"</li>
 <li>Ignored by Python</li>
 <li>useful for documenting your code</li>
-<li>blank lines are also fine and sometimes improve readability</li>
+<li>blank lines are also fine and can improve readability</li>
 </ul>
 <p>Example:</p>
 </div>
@@ -8417,7 +8417,7 @@ a.anchor-link {
 <span class="c1"># print('this line does not print anything when commented out')</span>
 <span class="c1"># The following blank lines are ignored as well...</span>
 
-<span class="c1">#print('hi') # this is a comment</span>
+<span class="c1"># print('hi')</span>
 
 <span class="c1"># I can have as many comments and blank lines as I like in a program.</span>
 <span class="c1"># They are for the benefit of me and "future me".</span>
@@ -8434,7 +8434,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Try removing the # preceding the print function call in the previous cell. We call this "uncommenting" a line of code.</p>
-<p>Now put the # back in place. We call this "commenting out" a line of code. Often we'll do this to temporarily disable some code from running, where we want to keep the code in place for possible future use.</p>
+<p>Now put the # back in place. We call this "commenting out" a line of code. Often we'll do this to temporarily enable or disable some code from running.</p>
 </div>
 </div>
 </div>
@@ -8445,9 +8445,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="What-is-a-function?">What is a function?<a class="anchor-link" href="#What-is-a-function?">¶</a></h3><p>A reusable piece of code that completes a specific task.
-We just met two functions - <code>print</code> and <code>input</code> are functions you used to do input/output (I/O) operations.
-We say "call" or "invoke" a function to request that it do its job.
+<h3 id="What-is-a-function?">What is a function?<a class="anchor-link" href="#What-is-a-function?">¶</a></h3><p>A function is a reusable piece of code that completes a specific task. We just met two functions - <code>input</code> and <code>print</code> are functions we can use to gather and display information, respectively.</p>
+<p>We "call" or "invoke" a function to request that it do a task for us.
 We do this by writing the function name followed by parentheses (aka brackets).
 We may optionally include some values inside the brackets. We call those values function arguments, or just arguments.
 We'll often refer to this process as "passing arguments" to a function.
@@ -8542,7 +8541,8 @@ For example, you can pass arguments to the print function to produce just about 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8555,7 +8555,7 @@ For example, you can pass arguments to the print function to produce just about 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We can also print a sequence of arguments, where spaces are added between each element in sequence, like this:</p>
+<p>We can also print a sequence of arguments, separated by commas. When we do this, the print function automatically adds a single space character between each element in the sequence, like this:</p>
 </div>
 </div>
 </div>
@@ -8567,8 +8567,7 @@ For example, you can pass arguments to the print function to produce just about 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc.'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8593,11 +8592,13 @@ For example, you can pass arguments to the print function to produce just about 
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="c1"># Printing with the end argument.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc.'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Next line.'</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc'</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'next line'</span><span class="p">)</span>
+<span class="c1"># Printing without the end argument.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'My name is Marc.'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Next line.'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8648,7 +8649,6 @@ For example, you can pass arguments to the print function to produce just about 
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'My'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'Marc'</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'hi'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8672,11 +8672,11 @@ For example, you can pass arguments to the print function to produce just about 
 <li><a href="https://mco.dev/my-favorite-books-for-beginning-python-students/">My Favorite Books for Beginning Python Students</a></li>
 <li><a href="https://stackoverflow.blog/2024/05/14/spreading-the-gospel-of-python">Spreading the Gospel of Python</a></li>
 <li><a href="https://stackoverflow.blog/2024/04/25/what-language-should-beginning-programmers-choose">Why learn Python?</a></li>
-<li><a href="https://codingbat.com/python">codingbat.com</a></li>
-<li><a href="http://codekata.com">CodeKata</a></li>
 </ul>
 <p>Learning Resources</p>
 <ul>
+<li><a href="https://codingbat.com/python">codingbat.com</a></li>
+<li><a href="http://codekata.com">CodeKata</a></li>
 <li><a href="https://calmcode.io/">calmcode.io</a></li>
 <li><a href="https://brilliant.org/courses/programming-python/">Brilliant.org</a></li>
 <li><a href="http://freecodecamp.com">freecodecamp.com</a></li>
@@ -8702,7 +8702,7 @@ For example, you can pass arguments to the print function to produce just about 
 <ul>
 <li>well written</li>
 <li>free to read online</li>
-<li>perfect for beginners</li>
+<li>suitable for beginners</li>
 <li>focusses on practical applications</li>
 <li>if you buy it, make sure you get the 3rd edition</li>
 </ul>
