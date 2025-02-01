@@ -7941,6 +7941,20 @@ print("4")
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7960,7 +7974,7 @@ print("4")
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Sometimes we need one or more intermediate conditions between the if and else parts, for example...</p>
-<p><code>if A then do X, else if B then do Y, otherwise do Z</code></p>
+<p><code>if A then do X, else if B then do Y, else do Z</code></p>
 <p>We use the <code>elif</code> statement to express this in Python...</p>
 <pre><code>if condition1:
     do_thing_1()
@@ -7985,7 +7999,7 @@ else:
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li><p><code>elif</code> blocks are defined the same way as <code>if</code> and <code>else</code> blocks - using indentation.</p>
+<li><p>The scope of <code>elif</code> blocks are defined the same way as <code>if</code> and <code>else</code> blocks - using indentation.</p>
 </li>
 <li><p>It's good to have an if/elif for every condition of interest and not lump errors together with cases of interest.</p>
 </li>
@@ -8228,7 +8242,7 @@ unless also divisible by 400.</p>
 <p>So...</p>
 <ul>
 <li>2008 was a leap year because it's divisible by 4 and not divisible by 100.</li>
-<li>2100 will NOT be a leap year because although it's divisible by 4, it is also divisible by 100.</li>
+<li>2100 will NOT be a leap year because although it's divisible by 4, it is also divisible by 100, and not divisble by 400.</li>
 <li>2000 was a leap year because although it's divisible by 4 and 100, it's also divisible by 400!</li>
 </ul>
 </div>
