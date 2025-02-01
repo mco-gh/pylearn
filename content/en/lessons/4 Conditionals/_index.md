@@ -8370,7 +8370,27 @@ unless also divisible by 400.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="n">days_per_year</span> <span class="o">=</span> <span class="mi">365</span>
+<span class="n">hours_per_day</span> <span class="o">=</span> <span class="mi">24</span>
+<span class="n">minutes_per_hour</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">seconds_per_minute</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="n">current_year</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">year</span>
+<span class="n">birth_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Please enter your birth year: "</span><span class="p">))</span>
+<span class="n">age_years</span> <span class="o">=</span> <span class="n">current_year</span> <span class="o">-</span> <span class="n">birth_year</span>
+<span class="n">age_days</span> <span class="o">=</span> <span class="n">age_years</span> <span class="o">*</span> <span class="n">days_per_year</span>
+<span class="n">age_hours</span> <span class="o">=</span> <span class="n">age_days</span> <span class="o">*</span> <span class="n">hours_per_day</span>
+<span class="n">age_minutes</span> <span class="o">=</span> <span class="n">age_hours</span> <span class="o">*</span> <span class="n">minutes_per_hour</span>
+<span class="n">age_seconds</span> <span class="o">=</span> <span class="n">age_minutes</span> <span class="o">*</span> <span class="n">seconds_per_minute</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"""You are...</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">age_years</span><span class="si">}</span><span class="s2"> years old</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">age_days</span><span class="si">}</span><span class="s2"> days old</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">age_hours</span><span class="si">}</span><span class="s2"> hours old</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">age_minutes</span><span class="si">}</span><span class="s2"> minutes old</span>
+<span class="s2">        </span><span class="si">{</span><span class="n">age_seconds</span><span class="si">}</span><span class="s2"> seconds old"""</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8423,7 +8443,15 @@ unless also divisible by 400.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your age: "</span><span class="p">))</span>
+<span class="n">citizen_years</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter length of citizenship in years: "</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">30</span> <span class="ow">and</span> <span class="n">citizen_years</span> <span class="o">&gt;=</span> <span class="mi">9</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"You are eligible to run for both the House and Senate."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">25</span> <span class="ow">and</span> <span class="n">citizen_years</span> <span class="o">&gt;=</span> <span class="mi">7</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"You are eligible to run only for the House."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"You are ineligible to run for either branch of Congress."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8436,7 +8464,35 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Todo">Todo<a class="anchor-link" href="#Todo">¶</a></h3><p>In last class, show how to test this program using functions (turn this snippet into a function), loops, boolean logic, lists, and pytest.</p>
+<h3 id="Test-Code">Test Code<a class="anchor-link" href="#Test-Code">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">test_data</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span> <span class="s1">'B'</span><span class="p">,</span>
+  <span class="p">(</span><span class="mi">27</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>  <span class="s1">'H'</span><span class="p">,</span>
+  <span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>  <span class="s1">'N'</span>
+<span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">citizen_years</span><span class="p">):</span>
+  <span class="k">return</span> <span class="kc">None</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">:</span>
+  <span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">citizenship</span><span class="p">)</span> <span class="o">=</span> <span class="n">i</span>
+  <span class="k">if</span> <span class="n">check</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">citizenship</span><span class="p">)</span> <span class="o">==</span> <span class="n">test_data</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Test </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> passed"</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Test </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> failed"</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -8447,7 +8503,7 @@ unless also divisible by 400.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication test). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
+<h3 id="Question-3">Question 3<a class="anchor-link" href="#Question-3">¶</a></h3><p>Write a program that generates two random 1 digit integers and prompts the user to provide the product of those two digits (basically, this is an interactive multiplication quiz). Check the user's answer and print a response indicating whether it is correct or not. Here are two sample runs:</p>
 <pre><code>Welcome to the multiplication tester!
 What is 3 * 9? 25
 Sorry, that's incorrect, 3 * 9 = 27.
@@ -8483,7 +8539,17 @@ Correct!
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to the multiplication tester!"</span><span class="p">)</span>
+
+<span class="n">int1</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">int2</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"What is </span><span class="si">{</span><span class="n">int1</span><span class="si">}</span><span class="s2"> * </span><span class="si">{</span><span class="n">int2</span><span class="si">}</span><span class="s2">? "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">response</span> <span class="o">==</span> <span class="n">int1</span> <span class="o">*</span> <span class="n">int2</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"Correct!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Sorry, that's incorrect, </span><span class="si">{</span><span class="n">int1</span><span class="si">}</span><span class="s2"> * </span><span class="si">{</span><span class="n">int2</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">int1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">int2</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8524,21 +8590,17 @@ Correct!
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="n">Coming</span> <span class="n">soon</span><span class="o">.</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<span class="n">year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter any year: "</span><span class="p">)</span>
+<span class="n">year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">100</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is NOT a leap year"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is a leap year"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2"> is NOT a leap year"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

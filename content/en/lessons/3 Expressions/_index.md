@@ -8374,10 +8374,10 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <ul>
 <li><code>customer_id</code> - unique identifier per customer</li>
 <li><code>customer_age</code> - customer age in years</li>
-<li><code>active_marketing_campaign</code> - <code>True</code> if we're allowed to start a new marketing campaign and <code>False</code> otherwise</li>
+<li><code>marketing_budget</code> - remaining dollars available for a marketing campaign</li>
 <li><code>purchased(customer_id)</code> - returns <code>True</code> if this customer already bought the product and <code>False</code> otherwise</li>
 </ul>
-<p>Run the following cell to initialize three variables.</p>
+<p>Run the following cell to initialize these four variables.</p>
 </div>
 </div>
 </div>
@@ -8391,7 +8391,10 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">customer_id</span> <span class="o">=</span> <span class="mi">987</span>
 <span class="n">customer_age</span> <span class="o">=</span> <span class="mi">49</span>
-<span class="n">active_marketing_campaign</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">marketing_budget</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="k">def</span> <span class="nf">purchased</span><span class="p">(</span><span class="n">customer_id</span><span class="p">):</span>
+  <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 </div>
 </div>
@@ -8404,7 +8407,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Your marketing department wants to start a new campaign. Formulate an expression to determine whether it's ok to start a new marketing campaign.</p>
+<p>Your marketing department wants to start a new campaign. Formulate an expression to determine whether it's ok to start a new marketing campaign based on your available budget.</p>
 </div>
 </div>
 </div>
@@ -8480,6 +8483,20 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Write a <code>print</code> statement to verify the previous expression results in the expected type using a built-in function.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
