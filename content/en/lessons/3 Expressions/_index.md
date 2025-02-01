@@ -7600,13 +7600,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>When evaluating a <strong>number</strong> as a boolean, the following rules apply:</p>
+<p>When evaluating the truth value of a <strong>number</strong>, the following rules apply:</p>
 <ul>
 <li>0 is <code>False</code></li>
 <li>0.0 is <code>False</code></li>
 <li>all other numerical values are <code>True</code></li>
 </ul>
-<p>When evaluating a <strong>string</strong> as a boolean, the following rules apply:</p>
+<p>When evaluating the truth value of a <strong>string</strong>, the following rules apply:</p>
 <ul>
 <li>the empty string (<code>""</code> and <code>''</code>) is <code>False</code></li>
 <li>all other strings are <code>True</code></li>
@@ -7635,7 +7635,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Python has a special type called <code>None</code> and it means <em>no value</em>.</p>
 <p>It's a good choice when you want to initialize a variable without an obvious choice for the initial value, like this:</p>
-<p><code>name = None</code></p>
+<p><code>salary = None</code></p>
 <p>None always evaluates to False in boolean expressions.</p>
 </div>
 </div>
@@ -7675,7 +7675,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="When-do-you-need-to-convert-a-type?">When do you need to convert a type?<a class="anchor-link" href="#When-do-you-need-to-convert-a-type?">¶</a></h3><p>When you have an expression containing mixed types...</p>
+<h3 id="When-would-you-need-to-convert-a-type?">When would you need to convert a type?<a class="anchor-link" href="#When-would-you-need-to-convert-a-type?">¶</a></h3><p>When you have an expression containing mixed types...</p>
 <ul>
 <li><code>name + number</code></li>
 <li><code>age * 365</code></li>
@@ -7718,45 +7718,18 @@ print(f"You are {age} years old")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">birth_year</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter the year you were born:"</span><span class="p">)</span>
 <span class="n">age</span> <span class="o">=</span> <span class="mi">2025</span> <span class="o">-</span> <span class="n">birth_year</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Enter the year you were born:1960
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-2-db0987bb3243&gt;</span> in <span class="ansi-cyan-fg">&lt;cell line: 0&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> birth_year <span class="ansi-blue-fg">=</span> input<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">"Enter the year you were born:"</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>age <span class="ansi-blue-fg">=</span> <span class="ansi-cyan-fg">2025</span> <span class="ansi-blue-fg">-</span> birth_year
-<span class="ansi-green-intense-fg ansi-bold">      3</span> print<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f"You are {age} years old"</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for -: 'int' and 'str'</pre>
 </div>
 </div>
 </div>
@@ -7796,31 +7769,17 @@ print(f"You are {age} years old")
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"enter your age: "</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>enter your age: 26
-&lt;class 'str'&gt;
-</pre>
 </div>
 </div>
 </div>
@@ -7969,7 +7928,6 @@ print(f"You are {age} years old")
 <p>Example:</p>
 <ul>
 <li>I ride my bike only when it's both sunny and warm.</li>
-<li>In other words, if <code>is_sunny</code> and <code>is_warm</code> are both <code>True</code> then I <strong>will</strong> ride my bike.</li>
 </ul>
 <p>In Python...</p>
 <pre><code>if is_sunny and is_warm:
@@ -8050,7 +8008,6 @@ print(f"You are {age} years old")
 <p>Example:</p>
 <ul>
 <li>I ride my bike  when it's sunny, warm, or both.</li>
-<li>In other words, if <code>is_sunny</code> or <code>is_warm</code> (or both) are <code>True</code> then I <strong>will</strong> ride my bike.</li>
 </ul>
 <p>In Python...</p>
 <pre><code>if is_sunny or is_warm:
@@ -8107,11 +8064,11 @@ print(f"You are {age} years old")
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Boolean-Not">Boolean Not<a class="anchor-link" href="#Boolean-Not">¶</a></h3><ul>
-<li><code>not A</code></li>
+<h3 id="Boolean-Not">Boolean Not<a class="anchor-link" href="#Boolean-Not">¶</a></h3><p><code>not A</code></p>
+<ul>
+<li>is <code>True</code> when A is <code>False</code></li>
+<li>is <code>False</code> when A is <code>True</code></li>
 </ul>
-<p>is <code>True</code> when A is <code>False</code>
-is <code>False</code> when A is <code>True</code></p>
 </div>
 </div>
 </div>
@@ -8184,7 +8141,7 @@ is <code>False</code> when A is <code>True</code></p>
 <ul>
 <li>Python lets us combine values, variables, and operators into larger units called expressions.</li>
 <li>When evaluating an expression, Python internally replaces the variable names with the values to which they refer.</li>
-<li>Expressions appear in many places, for example:<ul>
+<li>Expressions show up all over the place, for example:<ul>
 <li>numerical calculations<ul>
 <li><code>year + 1</code> # we do this every Jan 1</li>
 </ul>
