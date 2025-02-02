@@ -8181,25 +8181,9 @@ print(f"You are {age} years old")
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Let's combine <code>input</code>, <code>print</code>, and expressions to build a temperature conversion program. The formulae for converting Celcius to Fahrenheit and vice versa are:</p>
 <ul>
-<li><code>F = (C + 32) * 9/5</code></li>
+<li><code>F = (C * 9/5) + 32</code></li>
 <li><code>C = (F - 32) * 5/9</code></li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="n">degrees_f</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees in fahrenheit: '</span><span class="p">))</span>
-<span class="c1"># Add an assignment statement that computes degrees_c as a function of degrees_f</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F = </span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C'</span><span class="p">)</span>
-</pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -8214,6 +8198,22 @@ print(f"You are {age} years old")
 <div class="highlight hl-python"><pre><span></span><span class="n">degrees_c</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees celsius: '</span><span class="p">)</span>
 <span class="c1"># Add an assignment statement that computes degrees_f as a function of degrees_c</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C= </span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="n">degrees_f</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter number of degrees in fahrenheit: '</span><span class="p">))</span>
+<span class="c1"># Add an assignment statement that computes degrees_c as a function of degrees_f</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">degrees_f</span><span class="si">}</span><span class="s1">°F = </span><span class="si">{</span><span class="n">degrees_c</span><span class="si">}</span><span class="s1">°C'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
