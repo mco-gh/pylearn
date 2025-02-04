@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-5---More-Strings-and-Loops">Notebook 5 - More Strings and Loops<a class="anchor-link" href="#Notebook-5---More-Strings-and-Loops">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-5---Strings-Revisited-and-Loops">Notebook 5 - Strings Revisited and Loops<a class="anchor-link" href="#Notebook-5---Strings-Revisited-and-Loops">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>more about strings</li>
@@ -7828,12 +7828,12 @@ print('' in 'Marc')
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'a'</span> <span class="ow">in</span> <span class="s1">'Marc'</span><span class="p">)</span>
@@ -7842,6 +7842,23 @@ print('' in 'Marc')
 <span class="nb">print</span><span class="p">(</span><span class="s1">'Marc'</span> <span class="ow">in</span> <span class="s1">'Marc'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">''</span> <span class="ow">in</span> <span class="s1">'Marc'</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>True
+True
+False
+True
+True
+</pre>
 </div>
 </div>
 </div>
@@ -7857,9 +7874,9 @@ print('' in 'Marc')
 <li>everything in Python is an object</li>
 <li>strings (and other objects) have special functions attached to them which we call "methods"</li>
 <li>string methods are invoked like this:
-<code>string.method()</code></li>
-<li>you can use a variable, like this:
-<code>name.capitalize()</code> or a string literal, like this: <code>'marc'.capitalize()</code></li>
+<code>"marc".capitalize()</code></li>
+<li>usually, you'll use a variable rather than a string literal, like this:
+<code>name.capitalize()</code></li>
 </ul>
 </div>
 </div>
