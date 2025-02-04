@@ -7565,7 +7565,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Mutability">Mutability<a class="anchor-link" href="#Mutability">¶</a></h2><p>Some data types can be changed (mutable) and some cannot. For example, strings are immutable. For this reason, you cannot assign values to the characters in a string. And when you call a function that seems to modify a string, it actually creates a new string and (normally) disposes of the old one.</p>
+<h2 id="Mutability">Mutability<a class="anchor-link" href="#Mutability">¶</a></h2><p>Some data types can be changed (i.e. are mutable) and some cannot. For example, strings are immutable. For this reason, you cannot assign values to the characters in a string. And when you call a function that seems to modify a string, it actually creates a new string and (normally) disposes of the old one.</p>
 </div>
 </div>
 </div>
@@ -9001,6 +9001,7 @@ The data is organized for quick access via the key, somewhat like a real diction
 <li>if the object is empty, it evaluates to False</li>
 <li>if the object is non-empty, it evaluates to True</li>
 </ul>
+<p>Again, nothing-ness is False, and something-ness is True.</p>
 </div>
 </div>
 </div>
