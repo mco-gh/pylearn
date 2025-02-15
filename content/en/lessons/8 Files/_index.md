@@ -7572,10 +7572,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Our-programs-have-amnesia">Our programs have amnesia<a class="anchor-link" href="#Our-programs-have-amnesia">¶</a></h3><ul>
-<li>Program variables reside in memory, and main memory is not persistent, so when you close a notebook, or terminate a program running locally, your data disappears.</li>
-<li>Imagine having to re-enter your contact list every time you use your phone.</li>
-<li>We'll need a way to store and retrieve data.</li>
+<h3 id="Problem:-Our-programs-have-amnesia">Problem: Our programs have amnesia<a class="anchor-link" href="#Problem:-Our-programs-have-amnesia">¶</a></h3><ul>
+<li>Program variables reside in memory, and main memory is not persistent, so when you close a notebook, or terminate a program, those variables disappear.</li>
+<li>Imagine having to re-enter your contact list every time you restart your phone.</li>
+<li>We need a way to permanently store and retrieve data.</li>
 </ul>
 </div>
 </div>
@@ -7594,7 +7594,7 @@ a.anchor-link {
 </ul>
 </li>
 <li>All the things we've worked with so far (variables, functions, program statements) reside in main memory.</li>
-<li>We'll save information across program executions using disk storage in units we call files.</li>
+<li>We can save information across program executions using disk storage in units we call files.</li>
 </ul>
 </div>
 </div>
@@ -7626,7 +7626,7 @@ a.anchor-link {
 <pre><code>King Charles      -----&gt; the which
 Buckingham Palace \
 London, UK         |---&gt; the where
-SW1A 1AA.         /
+SW1A 1AA          /
 </code></pre>
 </div>
 </div>
@@ -8834,12 +8834,69 @@ Other exceptions will not be caught, which is good (why?).</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a function called write_file() that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
+<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a function called <code>write_file()</code> that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
 <p>For example:</p>
 <pre><code>li = ['test', 'another test', 'last test']
 write_file('output.txt', li)
 </code></pre>
-<p>Using your systems file explorer or command line, verify the file was created and has the expected contents. If you're not sure how to do that, you could also use your new <code>read_file()</code> function!</p>
+<p><strong>Make sure to include a newline character at the end of each item written.</strong></p>
+<p>Using your systems file explorer or command line, verify the file was created and has the expected contents.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="k">def</span> <span class="nf">write_file</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">li</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">li</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'test'</span><span class="p">,</span> <span class="s1">'another test'</span><span class="p">,</span> <span class="s1">'last test'</span><span class="p">]</span>
+<span class="n">write_file</span><span class="p">(</span><span class="s2">"output.txt"</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><p>Write a companion function, called <code>read_file()</code>, which reads the contents of a file, one line at a time using a <code>for</code> loop, and prints each line it encouters.</p>
+<p><strong>Use print(..., end="") to avoid printing two newline characters after each item.</strong></p>
+<p>Use <code>read_file()</code> to verify the results of your work on question 1.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
+
+<span class="k">def</span> <span class="nf">read_file</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
+
+<span class="n">read_file</span><span class="p">(</span><span class="s2">"output.txt"</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
