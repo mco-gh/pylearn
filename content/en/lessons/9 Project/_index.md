@@ -7533,9 +7533,10 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Notebook-9---Sample-Project">Notebook 9 - Sample Project<a class="anchor-link" href="#Notebook-9---Sample-Project">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<p>In this lesson, we're going to examine a simple Python web app. The job of this app is to provide a service like <code>bit.ly</code>, <code>tinyurl.com</code> and other short link providers.</p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>Building a simple Python program that solves a useful problem</li>
+<li>development steps and sample code from a real Python project</li>
 </ul>
 </div>
 </div>
@@ -7558,7 +7559,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="The-problem">The problem<a class="anchor-link" href="#The-problem">¶</a></h2><p>Build your own short link service.</p>
+<h2 id="Requirements">Requirements<a class="anchor-link" href="#Requirements">¶</a></h2><ul>
+<li>we need a database for storing our short links</li>
+<li>must implement a web server to redirecting short links to the associated destination</li>
+<li>we should have a home page for viewing current short links with some simple usage reporting</li>
+<li>let's have an admin page for creating, modifying, or deleting short links</li>
+<li>we need a login function to protect users' short links</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7569,7 +7576,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Design">Design<a class="anchor-link" href="#Design">¶</a></h2>
+<h2 id="Technology-Choices">Technology Choices<a class="anchor-link" href="#Technology-Choices">¶</a></h2><ul>
+<li>language: Python, of course :)</li>
+<li>IDE: <a href="https://replit.com">replit.com</a></li>
+<li>database: SQLite</li>
+<li>web server: Flask</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7580,7 +7592,55 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Database">Database<a class="anchor-link" href="#Database">¶</a></h2>
+<h2 id="App-Structure">App Structure<a class="anchor-link" href="#App-Structure">¶</a></h2><p>main.py:</p>
+<pre><code>from app import app
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+</code></pre>
+<p>app.py:</p>
+<pre><code>import os
+from flask import Flask, render_template, request, redirect, url_for, flash
+...
+
+@app.route('/')
+def index():
+    ...
+
+@app.route('/shorten', methods=['POST'])
+def shorten():
+    ...
+
+@app.route('/&lt;short_url&gt;')
+def redirect_to_url(short_url):
+    ...
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    ...
+
+@app.route('/logout')
+@login_required
+def logout():
+    ..
+
+@app.route('/admin')
+@login_required
+def admin():
+    ...
+
+@app.route('/admin/delete/&lt;int:url_id&gt;', methods=['POST'])
+@login_required
+def delete_url(url_id):
+    ...
+</code></pre>
+<p>templates:</p>
+<ul>
+<li>index.html</li>
+<li>login.html</li>
+<li>admin.html</li>
+</ul>
+<p>Which Python features are we exercising here?</p>
 </div>
 </div>
 </div>
@@ -7591,7 +7651,44 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Web-Server">Web Server<a class="anchor-link" href="#Web-Server">¶</a></h2>
+<h2 id="Visit-the-main-page-(the-%22/%22-route)">Visit the main page (the "/" route)<a class="anchor-link" href="#Visit-the-main-page-(the-%22/%22-route)">¶</a></h2><p>app.py:</p>
+<pre><code>@app.route('/')
+def index():
+    return render_template('index.html')
+</code></pre>
+<p>index.html:</p>
+<pre><code>{% extends "base.html" %}
+
+{% block content %}
+&lt;div class="row justify-content-center"&gt;
+    &lt;div class="col-md-8"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-body"&gt;
+                &lt;h1 class="card-title text-center mb-4"&gt;URL Shortener&lt;/h1&gt;
+                &lt;form method="POST" action="{{ url_for('shorten') }}" class="mb-4"&gt;
+                    &lt;div class="mb-3"&gt;
+                        &lt;label for="url" class="form-label"&gt;URL to Shorten&lt;/label&gt;
+                        &lt;input type="url" id="url" name="url" class="form-control" placeholder="Enter your URL here" required&gt;
+                    &lt;/div&gt;
+                    &lt;div class="mb-3"&gt;
+                        &lt;label for="custom_url" class="form-label"&gt;Custom Short URL (optional)&lt;/label&gt;
+                        &lt;div class="input-group"&gt;
+                            &lt;span class="input-group-text"&gt;{{ request.host_url }}&lt;/span&gt;
+                            &lt;input type="text" id="custom_url" name="custom_url" class="form-control" placeholder="custom-name" pattern="[a-zA-Z0-9-_]+" title="Only letters, numbers, hyphens and underscores allowed"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form-text"&gt;Leave empty for random URL. Only letters, numbers, hyphens and underscores allowed.&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-grid"&gt;
+                        &lt;button type="submit" class="btn btn-primary"&gt;Shorten URL&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{% endblock %}
+</code></pre>
+<p>Which Python features are we exercising here?</p>
 </div>
 </div>
 </div>
@@ -7602,7 +7699,45 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Home-Page">Home Page<a class="anchor-link" href="#Home-Page">¶</a></h2>
+<h2 id="Create-a-short-URL-(the-%22/shorten%22-route)">Create a short URL (the "/shorten" route)<a class="anchor-link" href="#Create-a-short-URL-(the-%22/shorten%22-route)">¶</a></h2><p>app.py:</p>
+<pre><code>@app.route('/shorten', methods=['POST'])
+def shorten():
+    long_url = request.form.get('url')
+    custom_url = request.form.get('custom_url', '').strip()
+
+    if not long_url:
+        flash('Please enter a URL', 'error')
+        return redirect(url_for('index'))
+
+    # Validate custom URL if provided
+    if custom_url:
+        if not custom_url.isalnum() and not all(c in '-_' for c in custom_url if not c.isalnum()):
+            flash('Custom URL can only contain letters, numbers, hyphens and underscores', 'error')
+            return redirect(url_for('index'))
+
+        # Check if custom URL is already taken
+        if URL.query.filter_by(short_url=custom_url).first():
+            flash('This custom URL is already taken. Please choose another one.', 'error')
+            return redirect(url_for('index'))
+
+        short_url = custom_url
+    else:
+        # Generate random short URL if no custom URL provided
+        short_url = generate_short_url()
+
+    # Create new short URL
+    url_entry = URL(
+        original_url=long_url,
+        short_url=short_url,
+        created_at=datetime.utcnow()
+    )
+    db.session.add(url_entry)
+    db.session.commit()
+
+    flash(f'Short URL created: {request.host_url}{short_url}', 'success')
+    return redirect(url_for('index'))
+</code></pre>
+<p>Which Python features are we exercising here?</p>
 </div>
 </div>
 </div>
@@ -7613,7 +7748,109 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Admin-Page">Admin Page<a class="anchor-link" href="#Admin-Page">¶</a></h2>
+<h2 id="Visit-a-short-URL-(the-%22/%3Cshort_url%3E%22-route)">Visit a short URL (the "/&lt;short_url&gt;" route)<a class="anchor-link" href="#Visit-a-short-URL-(the-%22/%3Cshort_url%3E%22-route)">¶</a></h2><p>app.py:</p>
+<pre><code>@app.route('/&lt;short_url&gt;')
+def redirect_to_url(short_url):
+    url_entry = URL.query.filter_by(short_url=short_url).first()
+    if url_entry:
+        url_entry.visits += 1
+        db.session.commit()
+        return redirect(url_entry.original_url)
+    return render_template('index.html', error="URL not found"), 404
+</code></pre>
+<p>Which Python features are we exercising here?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Login-to-the-service-(the-%22/login%22-route)">Login to the service (the "/login" route)<a class="anchor-link" href="#Login-to-the-service-(the-%22/login%22-route)">¶</a></h2><p>app.py:</p>
+<pre><code>@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+        user = User.query.filter_by(username=username).first()
+        
+        if user and check_password_hash(user.password_hash, password):
+            login_user(user)
+            return redirect(url_for('admin'))
+        flash('Invalid username or password', 'error')
+    
+    return render_template('login.html')
+</code></pre>
+<p>Which Python features are we exercising here?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Visit-the-admin-page-(the-%22/admin%22-route)">Visit the admin page (the "/admin" route)<a class="anchor-link" href="#Visit-the-admin-page-(the-%22/admin%22-route)">¶</a></h2><p>app.py:</p>
+<pre><code>@app.route('/admin')
+@login_required
+def admin():
+    urls = URL.query.order_by(URL.created_at.desc()).all()
+    return render_template('admin.html', urls=urls)
+</code></pre>
+<p>admin.html:</p>
+<pre><code>{% extends "base.html" %}
+
+{% block content %}
+&lt;div class="card"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h2 class="card-title mb-4"&gt;URL Management&lt;/h2&gt;
+        &lt;div class="table-responsive"&gt;
+            &lt;table class="table table-hover"&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Original URL&lt;/th&gt;
+                        &lt;th&gt;Short URL&lt;/th&gt;
+                        &lt;th&gt;Created&lt;/th&gt;
+                        &lt;th&gt;Visits&lt;/th&gt;
+                        &lt;th&gt;Actions&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    {% for url in urls %}
+                    &lt;tr&gt;
+                        &lt;td class="text-truncate" style="max-width: 300px;"&gt;
+                            &lt;a href="{{ url.original_url }}" target="_blank"&gt;{{ url.original_url }}&lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;a href="{{ url_for('redirect_to_url', short_url=url.short_url) }}" target="_blank"&gt;
+                                {{ request.host_url }}{{ url.short_url }}
+                            &lt;/a&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;{{ url.created_at.strftime('%Y-%m-%d %H:%M') }}&lt;/td&gt;
+                        &lt;td&gt;{{ url.visits }}&lt;/td&gt;
+                        &lt;td&gt;
+                            &lt;form method="POST" action="{{ url_for('delete_url', url_id=url.id) }}" class="d-inline"&gt;
+                                &lt;button type="submit" class="btn btn-danger btn-sm"
+                                        onclick="return confirm('Are you sure you want to delete this URL?')"&gt;
+                                    &lt;i class="bi bi-trash"&gt;&lt;/i&gt;
+                                &lt;/button&gt;
+                            &lt;/form&gt;
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    {% endfor %}
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{% endblock %}
+</code></pre>
+<p>Which Python features are we exercising here?</p>
 </div>
 </div>
 </div>
