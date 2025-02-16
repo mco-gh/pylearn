@@ -7532,7 +7532,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-7---Tuples,-Lists,-and-Dictionaries">Notebook 7 - Tuples, Lists, and Dictionaries<a class="anchor-link" href="#Notebook-7---Tuples,-Lists,-and-Dictionaries">¶</a></h1><p><strong>Tuples, Lists, and Dictionaries</strong></p>
+<h1 id="Notebook-7---Lists,-Tuples,-and-Dictionaries">Notebook 7 - Lists, Tuples, and Dictionaries<a class="anchor-link" href="#Notebook-7---Lists,-Tuples,-and-Dictionaries">¶</a></h1><p><strong>Lists, Tuples, and Dictionaries</strong></p>
 <p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
@@ -7636,9 +7636,9 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Lists">Lists<a class="anchor-link" href="#Lists">¶</a></h2><ul>
 <li>Lists are ordered sequences.</li>
-<li>All the sequence operations you learned about with strings and tuples, like <code>len</code>, indexing, slicing, loops, the <code>in</code> operator, etc. apply to lists as well.</li>
+<li>All the sequence operations you learned about with strings, like <code>len</code>, indexing, slicing, loops, the <code>in</code> operator, etc. apply to lists as well.</li>
 </ul>
-<p>Lists are ordered collections, i.e. sequences, like strings, but they can contain any type of value (not just characters). They can even contain different types within the same tuple. Lists are defined inside square brackets, with list elements separated by commas, for example...</p>
+<p>Lists are ordered collections, i.e. sequences, like strings, but they can contain any type of value (not just characters). They can even contain different types within the same list. Lists are defined inside square brackets, with list elements separated by commas, for example...</p>
 <pre><code>['a', 'b', 'c', 1, 2, 3]
 </code></pre>
 <p><a href="https://docs.python.org/3/library/stdtypes.html#list">List documentation</a></p>
@@ -7862,7 +7862,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Lists-are-Mutable">Lists are Mutable<a class="anchor-link" href="#Lists-are-Mutable">¶</a></h3><p>Unlike tuples and strings, we can change the contents of a list after it's created.</p>
+<h3 id="Lists-are-Mutable">Lists are Mutable<a class="anchor-link" href="#Lists-are-Mutable">¶</a></h3><p>Unlike strings, we can change the contents of a list after it's created.</p>
 </div>
 </div>
 </div>
@@ -8283,7 +8283,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Tuples">Tuples<a class="anchor-link" href="#Tuples">¶</a></h2><ul>
-<li>A list is like a tuple but it's immutable (unchangeable).</li>
+<li>A tuple is like a list but it's immutable (unchangeable).</li>
 <li>Almost everything you know about lists also applies to tuples.</li>
 </ul>
 <p>Tuples are defined by parentheses (i.e. brackets) and the elements of a tuple are separated by commas, like this:</p>
@@ -8358,7 +8358,7 @@ That collection also needs to be mutable, because I may need to add or delete st
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Tuple-Operations">Tuple Operations<a class="anchor-link" href="#Tuple-Operations">¶</a></h3><p>Because tuples are sequences, like strings, functions and for loops that operate on strings also play well with tuples, for example:</p>
+<h3 id="Tuple-Operations">Tuple Operations<a class="anchor-link" href="#Tuple-Operations">¶</a></h3><p>Because tuples are sequences, like strings and lists, functions and <code>for</code> loops that operate on strings also play well with tuples, for example:</p>
 </div>
 </div>
 </div>
