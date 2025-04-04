@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -8279,7 +8280,7 @@ unless also divisible by 400.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="n">good_dogs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Benji"</span><span class="p">,</span> <span class="s2">"Maple"</span><span class="p">,</span> <span class="s2">"Kirby"</span><span class="p">,</span> <span class="s2">"Rosie"</span><span class="p">]</span>
 
@@ -8370,7 +8371,7 @@ unless also divisible by 400.</p>
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
 
 <span class="n">days_per_year</span> <span class="o">=</span> <span class="mi">365</span>
 <span class="n">hours_per_day</span> <span class="o">=</span> <span class="mi">24</span>
@@ -8482,7 +8483,7 @@ unless also divisible by 400.</p>
   <span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>  <span class="s1">'N'</span>
 <span class="p">}</span>
 
-<span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">citizen_years</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">check</span><span class="p">(</span><span class="n">age</span><span class="p">,</span> <span class="n">citizen_years</span><span class="p">):</span>
   <span class="k">return</span> <span class="kc">None</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">test_data</span><span class="p">:</span>
@@ -8539,7 +8540,7 @@ Correct!
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Welcome to the multiplication tester!"</span><span class="p">)</span>
 

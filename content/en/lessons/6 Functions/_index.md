@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7805,7 +7806,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">speak</span><span class="p">():</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">speak</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">'''</span>
 <span class="sd">        This function generates hello in cat language.</span>
 <span class="sd">        Don't try this near a dog.</span>
@@ -7879,7 +7880,7 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># The factorial of N is defined as 1*2*...*N.</span>
 <span class="c1"># Here's an example function definition which prints the factorial of 10.</span>
-<span class="k">def</span> <span class="nf">fact10</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fact10</span><span class="p">():</span>
 <span class="w">    </span><span class="sd">'''</span>
 <span class="sd">    Print the factorial of 10.</span>
 <span class="sd">    Factorial of 10 is defined as 1*2*...*10.</span>
@@ -7947,7 +7948,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fact</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">'''Print the factorial of any number.'''</span>
     <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
@@ -8091,7 +8092,7 @@ print(f'quotient={q}, remainder={r}')
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span><span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
   <span class="n">quotient</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
   <span class="n">remainder</span> <span class="o">=</span> <span class="n">dividend</span> <span class="o">%</span> <span class="n">divisor</span>
   <span class="k">return</span> <span class="n">quotient</span><span class="p">,</span> <span class="n">remainder</span>
@@ -8246,7 +8247,7 @@ while True:
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">def</span> <span class="nf">myfunc</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">myfunc</span><span class="p">():</span>
     <span class="n">var</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
 <span class="n">myfunc</span><span class="p">()</span>
@@ -8275,7 +8276,7 @@ while True:
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">():</span>
     <span class="n">var2</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">var2</span><span class="p">)</span>
 <span class="n">func</span><span class="p">()</span>
@@ -8350,7 +8351,7 @@ module-name.function(&lt;args&gt;)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
@@ -8402,7 +8403,7 @@ rand_val = randrange(0, 10)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span><span class="p">,</span> <span class="n">randint</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span><span class="p">,</span> <span class="n">randint</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
 </pre></div>
@@ -8480,7 +8481,7 @@ rand_val = randrange(0, 10)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">total</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="c1"># Add your code here</span>
 </pre></div>
 </div>
@@ -8552,10 +8553,10 @@ rand_val = randrange(0, 10)
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
 
-<span class="k">def</span> <span class="nf">reverse_test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">reverse_test</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
   <span class="n">rev</span> <span class="o">=</span> <span class="n">reverse</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
   <span class="k">assert</span> <span class="n">rev</span> <span class="o">==</span> <span class="n">b</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">rev</span><span class="si">}</span><span class="s1"> != </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">'</span>
 
@@ -8600,8 +8601,8 @@ rand_val = randrange(0, 10)
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">random</span>
-<span class="k">def</span> <span class="nf">rando</span><span class="p">():</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">random</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rando</span><span class="p">():</span>
     <span class="c1"># Add your code here</span>
     <span class="k">return</span> <span class="n">random</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mf">0.5</span>
 </pre></div>
@@ -8618,8 +8619,8 @@ rand_val = randrange(0, 10)
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Run this cell to test your code...</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">randint</span>
 
 <span class="n">num_trials</span> <span class="o">=</span> <span class="mi">10000</span>
 <span class="n">width</span> <span class="o">=</span> <span class="mi">97</span>

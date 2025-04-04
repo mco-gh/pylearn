@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -9058,11 +9059,11 @@ for i in range(1, 10):
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Javascript</span>
-<span class="kn">from</span> <span class="nn">google.colab.output</span> <span class="kn">import</span> <span class="n">eval_js</span>
-<span class="kn">from</span> <span class="nn">base64</span> <span class="kn">import</span> <span class="n">b64decode</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Javascript</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.colab.output</span><span class="w"> </span><span class="kn">import</span> <span class="n">eval_js</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">base64</span><span class="w"> </span><span class="kn">import</span> <span class="n">b64decode</span>
 
-<span class="k">def</span> <span class="nf">take_photo</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">'photo.jpg'</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mf">0.8</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">take_photo</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">'photo.jpg'</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mf">0.8</span><span class="p">):</span>
   <span class="n">js</span> <span class="o">=</span> <span class="n">Javascript</span><span class="p">(</span><span class="s1">'''</span>
 <span class="s1">    async function takePhoto(quality) {</span>
 <span class="s1">      const div = document.createElement('div');</span>
@@ -9113,7 +9114,7 @@ for i in range(1, 10):
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 <span class="k">try</span><span class="p">:</span>
   <span class="n">file</span> <span class="o">=</span> <span class="n">take_photo</span><span class="p">()</span>
   <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Image saved to </span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -9138,7 +9139,7 @@ for i in range(1, 10):
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="n">I</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s1">'photo.jpg'</span><span class="p">)</span>
 <span class="n">I</span> <span class="o">=</span> <span class="n">I</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>

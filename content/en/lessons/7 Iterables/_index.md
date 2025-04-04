@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -9351,7 +9352,7 @@ enum(li)
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
 
-<span class="k">def</span> <span class="nf">enum</span><span class="p">(</span><span class="n">li</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">enum</span><span class="p">(</span><span class="n">li</span><span class="p">):</span>
   <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">li</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -9410,7 +9411,7 @@ sets of numbers, the program should output a prize based on the number of matche
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution.</span>
 
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 <span class="n">my_numbers</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">99</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"your numbers are: </span><span class="si">{</span><span class="n">my_numbers</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="n">winning_numbers</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choices</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">99</span><span class="p">),</span> <span class="n">k</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>

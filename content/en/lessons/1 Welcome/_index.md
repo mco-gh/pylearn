@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7984,7 +7985,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">this</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">this</span>
 </pre></div>
 </div>
 </div>
@@ -8084,8 +8085,8 @@ a.anchor-link {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">q</span> <span class="n">imdbpy</span>
-<span class="kn">from</span> <span class="nn">imdb</span> <span class="kn">import</span> <span class="n">IMDb</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">imdb</span><span class="w"> </span><span class="kn">import</span> <span class="n">IMDb</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
 </pre></div>
 </div>
 </div>
@@ -8139,7 +8140,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 
 <span class="n">countries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'Sweden'</span><span class="p">,</span>
              <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'UK'</span><span class="p">,</span> <span class="s1">'India'</span><span class="p">,</span> <span class="s1">'Nigeria'</span><span class="p">,</span>
@@ -8173,9 +8174,9 @@ a.anchor-link {
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="c1"># prompt: generate a colorful time series graph, make the values sparse, i.e. fewer than 20</span>
 
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
 <span class="c1"># Generate sparse time series data</span>
 <span class="n">num_points</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">19</span><span class="p">)</span>  <span class="c1"># Ensure fewer than 20 data points</span>

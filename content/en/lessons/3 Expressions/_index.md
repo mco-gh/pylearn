@@ -7317,6 +7317,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7696,7 +7697,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8393,7 +8394,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <span class="n">customer_age</span> <span class="o">=</span> <span class="mi">49</span>
 <span class="n">marketing_budget</span> <span class="o">=</span> <span class="mi">10000</span>
 
-<span class="k">def</span> <span class="nf">purchased</span><span class="p">(</span><span class="n">customer_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">purchased</span><span class="p">(</span><span class="n">customer_id</span><span class="p">):</span>
   <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 </div>
@@ -8419,7 +8420,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8444,7 +8445,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8469,7 +8470,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8494,7 +8495,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
@@ -8524,7 +8525,7 @@ Or is it <code>True or (False and False)</code>, which is <code>True</code>?</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-python"><pre><span></span>
+<div class="highlight hl-python"><pre><span></span> 
 </pre></div>
 </div>
 </div>
