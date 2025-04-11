@@ -1,6 +1,6 @@
 ---
-title: "9 Sample Project"
-linkTitle: "9 Project"
+title: "9 Sample"
+linkTitle: "9 Sample"
 weight: "9"
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ weight: "9"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>9_Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>9_Sample</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7522,7 +7522,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/9_Project.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/9_Sample.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7533,11 +7533,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-9---Sample-Project">Notebook 9 - Sample Project<a class="anchor-link" href="#Notebook-9---Sample-Project">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
-<p>In this lesson, we're going to examine a simple Python web app. The job of this app is to provide a service like <code>bit.ly</code>, <code>tinyurl.com</code> and other short link providers.</p>
+<h1 id="Notebook-9---Sample-Program">Notebook 9 - Sample Program<a class="anchor-link" href="#Notebook-9---Sample-Program">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<p>In this lesson, we're going to examine a simple Python program. The job of this app is to load some data from the Internet Movie Database (IMDB) and find the highest rated film.</p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>development steps and sample code from a real Python project</li>
+<li>become famliar with a simple but real Python program</li>
 </ul>
 </div>
 </div>
@@ -7553,305 +7553,119 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Requirements">Requirements<a class="anchor-link" href="#Requirements">¶</a></h2><ul>
-<li>we need a database for storing our short links</li>
-<li>must implement a web server to redirecting short links to the associated destination</li>
-<li>we should have a home page for viewing current short links with some simple usage reporting</li>
-<li>let's have an admin page for creating, modifying, or deleting short links</li>
-<li>we need a login function to protect users' short links</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">kagglehub</span>
+
+<span class="c1"># Download latest version</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">kagglehub</span><span class="o">.</span><span class="n">dataset_download</span><span class="p">(</span><span class="s2">"payamamanat/imbd-dataset"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Path to dataset files:"</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Path to dataset files: /kaggle/input/imbd-dataset
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Technology-Choices">Technology Choices<a class="anchor-link" href="#Technology-Choices">¶</a></h2><ul>
-<li>language: Python, of course :)</li>
-<li>IDE: <a href="https://replit.com">replit.com</a></li>
-<li>database: SQLite</li>
-<li>web server: Flask</li>
-</ul>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="err">!</span> <span class="n">ls</span> <span class="o">/</span><span class="n">kaggle</span><span class="o">/</span><span class="nb">input</span><span class="o">/</span><span class="n">imbd</span><span class="o">-</span><span class="n">dataset</span><span class="o">/</span><span class="n">IMBD</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/kaggle/input/imbd-dataset/IMBD.csv
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="App-Structure">App Structure<a class="anchor-link" href="#App-Structure">¶</a></h2><p>main.py:</p>
-<pre><code>from app import app
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
-</code></pre>
-<p>app.py:</p>
-<pre><code>import os
-from flask import Flask, render_template, request, redirect, url_for, flash
-...
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">"/kaggle/input/imbd-dataset/IMBD.csv"</span>
+<span class="n">top_rated</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">top_rating</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 
-@app.route('/')
-def index():
-    ...
+<span class="k">def</span><span class="w"> </span><span class="nf">check_if_new_leader</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">rating</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    store a new highest rated film and it's corresponding rating</span>
+<span class="sd">    """</span>
+    <span class="k">global</span> <span class="n">top_rated</span>
+    <span class="k">global</span> <span class="n">top_rating</span>
+    <span class="k">if</span> <span class="n">rating</span> <span class="o">&gt;</span> <span class="n">top_rating</span><span class="p">:</span>
+        <span class="n">top_rated</span>  <span class="o">=</span> <span class="n">title</span>
+        <span class="n">top_rating</span> <span class="o">=</span> <span class="n">rating</span>
 
-@app.route('/shorten', methods=['POST'])
-def shorten():
-    ...
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">display_limit</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+        <span class="n">current_title</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">current_title</span> <span class="o">==</span> <span class="s2">"title"</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">current_rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">check_if_new_leader</span><span class="p">(</span><span class="n">current_title</span><span class="p">,</span> <span class="n">current_rating</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>                       <span class="c1"># increment</span>
 
-@app.route('/&lt;short_url&gt;')
-def redirect_to_url(short_url):
-    ...
-
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    ...
-
-@app.route('/logout')
-@login_required
-def logout():
-    ..
-
-@app.route('/admin')
-@login_required
-def admin():
-    ...
-
-@app.route('/admin/delete/&lt;int:url_id&gt;', methods=['POST'])
-@login_required
-def delete_url(url_id):
-    ...
-</code></pre>
-<p>templates:</p>
-<ul>
-<li>index.html</li>
-<li>login.html</li>
-<li>admin.html</li>
-</ul>
-<p>Which Python features are we exercising here?</p>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Top rated of </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2"> films is </span><span class="si">{</span><span class="n">top_rated</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">top_rating</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Visit-the-main-page-(the-%22/%22-route)">Visit the main page (the "/" route)<a class="anchor-link" href="#Visit-the-main-page-(the-%22/%22-route)">¶</a></h2><p>app.py:</p>
-<pre><code>@app.route('/')
-def index():
-    return render_template('index.html')
-</code></pre>
-<p>index.html:</p>
-<pre><code>{% extends "base.html" %}
-
-{% block content %}
-&lt;div class="row justify-content-center"&gt;
-    &lt;div class="col-md-8"&gt;
-        &lt;div class="card"&gt;
-            &lt;div class="card-body"&gt;
-                &lt;h1 class="card-title text-center mb-4"&gt;URL Shortener&lt;/h1&gt;
-                &lt;form method="POST" action="{{ url_for('shorten') }}" class="mb-4"&gt;
-                    &lt;div class="mb-3"&gt;
-                        &lt;label for="url" class="form-label"&gt;URL to Shorten&lt;/label&gt;
-                        &lt;input type="url" id="url" name="url" class="form-control" placeholder="Enter your URL here" required&gt;
-                    &lt;/div&gt;
-                    &lt;div class="mb-3"&gt;
-                        &lt;label for="custom_url" class="form-label"&gt;Custom Short URL (optional)&lt;/label&gt;
-                        &lt;div class="input-group"&gt;
-                            &lt;span class="input-group-text"&gt;{{ request.host_url }}&lt;/span&gt;
-                            &lt;input type="text" id="custom_url" name="custom_url" class="form-control" placeholder="custom-name" pattern="[a-zA-Z0-9-_]+" title="Only letters, numbers, hyphens and underscores allowed"&gt;
-                        &lt;/div&gt;
-                        &lt;div class="form-text"&gt;Leave empty for random URL. Only letters, numbers, hyphens and underscores allowed.&lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class="d-grid"&gt;
-                        &lt;button type="submit" class="btn btn-primary"&gt;Shorten URL&lt;/button&gt;
-                    &lt;/div&gt;
-                &lt;/form&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-{% endblock %}
-</code></pre>
-<p>Which Python features are we exercising here?</p>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Top rated of 8784 films is BoJack Horseman/9.9
+</pre>
 </div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Create-a-short-URL-(the-%22/shorten%22-route)">Create a short URL (the "/shorten" route)<a class="anchor-link" href="#Create-a-short-URL-(the-%22/shorten%22-route)">¶</a></h2><p>app.py:</p>
-<pre><code>@app.route('/shorten', methods=['POST'])
-def shorten():
-    long_url = request.form.get('url')
-    custom_url = request.form.get('custom_url', '').strip()
-
-    if not long_url:
-        flash('Please enter a URL', 'error')
-        return redirect(url_for('index'))
-
-    # Validate custom URL if provided
-    if custom_url:
-        if not custom_url.isalnum() and not all(c in '-_' for c in custom_url if not c.isalnum()):
-            flash('Custom URL can only contain letters, numbers, hyphens and underscores', 'error')
-            return redirect(url_for('index'))
-
-        # Check if custom URL is already taken
-        if URL.query.filter_by(short_url=custom_url).first():
-            flash('This custom URL is already taken. Please choose another one.', 'error')
-            return redirect(url_for('index'))
-
-        short_url = custom_url
-    else:
-        # Generate random short URL if no custom URL provided
-        short_url = generate_short_url()
-
-    # Create new short URL
-    url_entry = URL(
-        original_url=long_url,
-        short_url=short_url,
-        created_at=datetime.utcnow()
-    )
-    db.session.add(url_entry)
-    db.session.commit()
-
-    flash(f'Short URL created: {request.host_url}{short_url}', 'success')
-    return redirect(url_for('index'))
-</code></pre>
-<p>Which Python features are we exercising here?</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Visit-a-short-URL-(the-%22/%3Cshort_url%3E%22-route)">Visit a short URL (the "/&lt;short_url&gt;" route)<a class="anchor-link" href="#Visit-a-short-URL-(the-%22/%3Cshort_url%3E%22-route)">¶</a></h2><p>app.py:</p>
-<pre><code>@app.route('/&lt;short_url&gt;')
-def redirect_to_url(short_url):
-    url_entry = URL.query.filter_by(short_url=short_url).first()
-    if url_entry:
-        url_entry.visits += 1
-        db.session.commit()
-        return redirect(url_entry.original_url)
-    return render_template('index.html', error="URL not found"), 404
-</code></pre>
-<p>Which Python features are we exercising here?</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Login-to-the-service-(the-%22/login%22-route)">Login to the service (the "/login" route)<a class="anchor-link" href="#Login-to-the-service-(the-%22/login%22-route)">¶</a></h2><p>app.py:</p>
-<pre><code>@app.route('/login', methods=['GET', 'POST'])
-def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
-        user = User.query.filter_by(username=username).first()
-        
-        if user and check_password_hash(user.password_hash, password):
-            login_user(user)
-            return redirect(url_for('admin'))
-        flash('Invalid username or password', 'error')
-    
-    return render_template('login.html')
-</code></pre>
-<p>Which Python features are we exercising here?</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Visit-the-admin-page-(the-%22/admin%22-route)">Visit the admin page (the "/admin" route)<a class="anchor-link" href="#Visit-the-admin-page-(the-%22/admin%22-route)">¶</a></h2><p>app.py:</p>
-<pre><code>@app.route('/admin')
-@login_required
-def admin():
-    urls = URL.query.order_by(URL.created_at.desc()).all()
-    return render_template('admin.html', urls=urls)
-</code></pre>
-<p>admin.html:</p>
-<pre><code>{% extends "base.html" %}
-
-{% block content %}
-&lt;div class="card"&gt;
-    &lt;div class="card-body"&gt;
-        &lt;h2 class="card-title mb-4"&gt;URL Management&lt;/h2&gt;
-        &lt;div class="table-responsive"&gt;
-            &lt;table class="table table-hover"&gt;
-                &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;th&gt;Original URL&lt;/th&gt;
-                        &lt;th&gt;Short URL&lt;/th&gt;
-                        &lt;th&gt;Created&lt;/th&gt;
-                        &lt;th&gt;Visits&lt;/th&gt;
-                        &lt;th&gt;Actions&lt;/th&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                    {% for url in urls %}
-                    &lt;tr&gt;
-                        &lt;td class="text-truncate" style="max-width: 300px;"&gt;
-                            &lt;a href="{{ url.original_url }}" target="_blank"&gt;{{ url.original_url }}&lt;/a&gt;
-                        &lt;/td&gt;
-                        &lt;td&gt;
-                            &lt;a href="{{ url_for('redirect_to_url', short_url=url.short_url) }}" target="_blank"&gt;
-                                {{ request.host_url }}{{ url.short_url }}
-                            &lt;/a&gt;
-                        &lt;/td&gt;
-                        &lt;td&gt;{{ url.created_at.strftime('%Y-%m-%d %H:%M') }}&lt;/td&gt;
-                        &lt;td&gt;{{ url.visits }}&lt;/td&gt;
-                        &lt;td&gt;
-                            &lt;form method="POST" action="{{ url_for('delete_url', url_id=url.id) }}" class="d-inline"&gt;
-                                &lt;button type="submit" class="btn btn-danger btn-sm"
-                                        onclick="return confirm('Are you sure you want to delete this URL?')"&gt;
-                                    &lt;i class="bi bi-trash"&gt;&lt;/i&gt;
-                                &lt;/button&gt;
-                            &lt;/form&gt;
-                        &lt;/td&gt;
-                    &lt;/tr&gt;
-                    {% endfor %}
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-{% endblock %}
-</code></pre>
-<p>Which Python features are we exercising here?</p>
 </div>
 </div>
 </div>
