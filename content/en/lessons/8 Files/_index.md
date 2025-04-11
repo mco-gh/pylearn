@@ -7551,7 +7551,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
           
-<a href="https://pylearn.io/lessons/9-Project/">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/9-Sample/">Next Lesson</a></p>
 </div>
 </div>
 </div>
@@ -8910,7 +8910,7 @@ write_file('output.txt', li)
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
           
-<a href="https://pylearn.io/lessons/9-Project/">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/9-Sample/">Next Lesson</a></p>
 </div>
 </div>
 </div>
