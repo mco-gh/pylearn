@@ -7550,7 +7550,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
+<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a></p>
 </div>
 </div>
 </div>
@@ -7677,7 +7677,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
+<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a></p>
 </div>
 </div>
 </div>

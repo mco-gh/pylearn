@@ -7555,7 +7555,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/6-Functions/">Previous Lesson</a>
           
-<a href="https://pylearn.io/lessons/8-Files/">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/8-Sample/">Next Lesson</a></p>
 </div>
 </div>
 </div>
@@ -9924,7 +9924,7 @@ sets of numbers, the program should output a prize based on the number of matche
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><a href="https://pylearn.io/lessons/6-Functions/">Previous Lesson</a>
           
-<a href="https://pylearn.io/lessons/8-Files/">Next Lesson</a></p>
+<a href="https://pylearn.io/lessons/8-Sample/">Next Lesson</a></p>
 </div>
 </div>
 </div>

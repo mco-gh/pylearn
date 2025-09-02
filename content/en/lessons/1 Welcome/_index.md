@@ -7676,10 +7676,6 @@ a.anchor-link {
 </tr>
 <tr>
 <td>Notebook 8</td>
-<td>Files, Errors, and Exceptions</td>
-</tr>
-<tr>
-<td>Notebook 9</td>
 <td>Sample Project</td>
 </tr>
 </tbody>
