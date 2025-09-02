@@ -34,11 +34,8 @@ weight: "$weight"
     elif [ "$name" = "Iterables" ]
     then
         sed -i '' 's/title: "7 Iterables"/title: "7 Tuples, Lists, and Dictionaries"/g' "$DIR/$weight $name/_index.md"
-    elif [ "$name" = "Files" ]
+    elif [ "$name" = "Sample" ]
     then
-        sed -i '' 's/title: "8 Files"/title: "8 Files, Errors, and Exceptions"/g' "$DIR/$weight $name/_index.md"
-    elif [ "$name" = "Project" ]
-    then
-        sed -i '' 's/title: "9 Project"/title: "9 Sample Project"/g' "$DIR/$weight $name/_index.md"
+        sed -i '' 's/title: "8 Project"/title: "8 Sample Project"/g' "$DIR/$weight $name/_index.md"
     fi
 done
