@@ -1,6 +1,6 @@
 ---
-title: "8 Files, Errors, and Exceptions"
-linkTitle: "8 Files"
+title: "8 Sample"
+linkTitle: "8 Sample"
 weight: "8"
 ---
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ weight: "8"
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>8_Files</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>8_Sample</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7522,7 +7522,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Files.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
+<p><a href="https://colab.research.google.com/github/mco-gh/pylearn/blob/master/notebooks/8_Sample.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
 </div>
 </div>
 </div>
@@ -7533,11 +7533,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-8---Files,-Errors,-and-Exceptions">Notebook 8 - Files, Errors, and Exceptions<a class="anchor-link" href="#Notebook-8---Files,-Errors,-and-Exceptions">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-8---Sample-Program">Notebook 8 - Sample Program<a class="anchor-link" href="#Notebook-8---Sample-Program">¶</a></h1><p><strong>Make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<p>In this lesson, we're going to examine a simple Python program. The job of this app is to load some data from the Internet Movie Database (IMDB) and find the highest rated film.</p>
+<p>The data used in this sample program comes from <a href="https://www.kaggle.com/code/payamamanat/imdb-movies/notebook">this Kaggle datsaset</a>.</p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
-<li>reading and writing files</li>
-<li>exceptions and error handling strategies</li>
+<li>become famliar with a simple but real Python program</li>
 </ul>
 </div>
 </div>
@@ -7549,209 +7550,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
-          
-<a href="https://pylearn.io/lessons/9-Sample/">Next Lesson</a></p>
+<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Reading-and-Writing-Files">Reading and Writing Files<a class="anchor-link" href="#Reading-and-Writing-Files">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Problem:-Our-programs-have-amnesia">Problem: Our programs have amnesia<a class="anchor-link" href="#Problem:-Our-programs-have-amnesia">¶</a></h3><ul>
-<li>Program variables reside in memory, and main memory is not persistent, so when you close a notebook, or terminate a program, those variables disappear.</li>
-<li>Imagine having to re-enter your contact list every time you restart your phone.</li>
-<li>We need a way to permanently store and retrieve data.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Storage-Tradeoffs">Storage Tradeoffs<a class="anchor-link" href="#Storage-Tradeoffs">¶</a></h3><ul>
-<li>There are two kinds of storage in your computer:<ul>
-<li>main memory is fast, but transient (like human memory)</li>
-<li>disk storage is slow(er), but permanent (like a notebook) and higher capacity</li>
-</ul>
-</li>
-<li>All the things we've worked with so far (variables, functions, program statements) reside in main memory.</li>
-<li>We can save information across program executions using disk storage in units we call files.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="What-is-a-file-anyway?">What is a file anyway?<a class="anchor-link" href="#What-is-a-file-anyway?">¶</a></h3><ul>
-<li>A named chunk of stored data is called a <code>file</code>.</li>
-<li>Files are organized into hierarchical structures, called directories or folders.</li>
-<li>Examples:<ul>
-<li>Windows:  <code>c:\Users\marccohen\my_fave_movies.md</code></li>
-<li>Mac/Linux: <code>/Users/marccohen/my_fave_movies.md</code></li>
-</ul>
-</li>
-<li><code>path</code> is the file's location, e.g. <code>c:\Users\marccohen\</code><ul>
-<li>it's the "where"</li>
-</ul>
-</li>
-<li><code>filename</code> is the file's name, e.g. <code>my_fave_movies.md</code><ul>
-<li>it's the "which"</li>
-</ul>
-</li>
-</ul>
-<pre><code>King Charles      -----&gt; the which
-Buckingham Palace \
-London, UK         |---&gt; the where
-SW1A 1AA          /
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Opening-a-File">Opening a File<a class="anchor-link" href="#Opening-a-File">¶</a></h3><ul>
-<li>Before you can read or write a file, you need to open it.</li>
-<li>Use the <code>open()</code> function to open a file.</li>
-<li>prototype: <code>variable = open(filename, mode)</code></li>
-<li>example: <code>file = open("myfile", "r")</code></li>
-<li>The first argument is a file specificaton, which can include a path or not.</li>
-<li>If no path is provided, the filename is assumed to reside in the current directory/folder.</li>
-<li>We'll cover the second argument, the mode, in the next cell.</li>
-<li>Open returns a special type, called a file object, which is used for subsequent operations on the file.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="File-Access-Modes">File Access Modes<a class="anchor-link" href="#File-Access-Modes">¶</a></h3><table>
-<thead>
-<tr>
-<th>Mode</th>
-<th>Description</th>
-<th>access</th>
-<th>if file exists...</th>
-<th>if file doesn't exist...</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>"r"</td>
-<td>read from a file</td>
-<td>read</td>
-<td>open file</td>
-<td>generate error</td>
-</tr>
-<tr>
-<td>"w"</td>
-<td>write to a file</td>
-<td>write</td>
-<td>overwrite &amp; open</td>
-<td>create file &amp; open</td>
-</tr>
-<tr>
-<td>"a"</td>
-<td>append to a file</td>
-<td>write</td>
-<td>open for append</td>
-<td>create file &amp; open</td>
-</tr>
-<tr>
-<td>"r+"</td>
-<td>read/write from/to a file</td>
-<td>read/write</td>
-<td>open file</td>
-<td>generate error</td>
-</tr>
-<tr>
-<td>"w+"</td>
-<td>write/read from/to a file</td>
-<td>read/write</td>
-<td>overwrite &amp; open</td>
-<td>create file &amp; open</td>
-</tr>
-<tr>
-<td>"a+"</td>
-<td>append/read a text file</td>
-<td>read/write</td>
-<td>open for append</td>
-<td>create file &amp; open</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Closing-a-File">Closing a File<a class="anchor-link" href="#Closing-a-File">¶</a></h3><ul>
-<li>the opposite of <code>open()</code> is <code>close()</code></li>
-<li>when you're done working with a file, you should close it</li>
-<li>closing a file cleans up the loose ends</li>
-<li><code>close()</code> is a method of the file object</li>
-<li>example: <code>file.close()</code></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Writing-to-a-File">Writing to a File<a class="anchor-link" href="#Writing-to-a-File">¶</a></h3><ul>
-<li><code>file.write('this is a line of text\n')</code></li>
-<li><code>file</code> must have been opened with write or append access</li>
-<li>writes the passed string into the file</li>
-<li>you have to include newline characters where you want them, otherwise subsequent write calls will build one long line</li>
-<li>writes may not be visible until you close the file</li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7759,34 +7562,31 @@ SW1A 1AA          /
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'This is my test file.</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-  <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'line number '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
-<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">kagglehub</span>
+
+<span class="c1"># Download latest version</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">kagglehub</span><span class="o">.</span><span class="n">dataset_download</span><span class="p">(</span><span class="s2">"payamamanat/imbd-dataset"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Path to dataset files:"</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reading-From-a-File">Reading From a File<a class="anchor-link" href="#Reading-From-a-File">¶</a></h3><ul>
-<li><code>mystr = file.read()</code></li>
-<li>file must have been opened with read access</li>
-<li>reads the entire file into memory</li>
-<li>the result is returned in a string</li>
-<li>you can pass an argument to limit how many characters are read</li>
-</ul>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Path to dataset files: /kaggle/input/imbd-dataset
+</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7794,34 +7594,26 @@ SW1A 1AA          /
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
-<span class="n">s</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<div class="highlight hl-python"><pre><span></span><span class="err">!</span> <span class="n">ls</span> <span class="o">/</span><span class="n">kaggle</span><span class="o">/</span><span class="nb">input</span><span class="o">/</span><span class="n">imbd</span><span class="o">-</span><span class="n">dataset</span><span class="o">/</span><span class="n">IMBD</span><span class="o">.</span><span class="n">csv</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reading-a-file-iteratively">Reading a file iteratively<a class="anchor-link" href="#Reading-a-file-iteratively">¶</a></h3><ul>
-<li><code>for line in file:</code></li>
-<li>this iterates over the lines in a file</li>
-<li>each iteration of the loop reads a line from the file and sets the loop variable (<code>line</code> in this case) to the string value of each line in the file</li>
-<li>the string includes the trailing newline</li>
-<li>this is a very handy way of processing a text file one line at a time</li>
-<li>also space-efficient because it only needs to store one line at a time in main memory</li>
-</ul>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>/kaggle/input/imbd-dataset/IMBD.csv
+</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7829,25 +7621,51 @@ SW1A 1AA          /
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="w"> </span>cat<span class="w"> </span>test.txt<span class="w">  </span>#<span class="w"> </span>Display<span class="w"> </span>current<span class="w"> </span>contents<span class="w"> </span>of<span class="w"> </span>test.txt<span class="w"> </span>file.
+<div class="highlight hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">"/kaggle/input/imbd-dataset/IMBD.csv"</span>
+<span class="n">top_rated</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">top_rating</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">check_if_new_leader</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">rating</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    store a new highest rated film and it's corresponding rating</span>
+<span class="sd">    """</span>
+    <span class="k">global</span> <span class="n">top_rated</span>
+    <span class="k">global</span> <span class="n">top_rating</span>
+    <span class="k">if</span> <span class="n">rating</span> <span class="o">&gt;</span> <span class="n">top_rating</span><span class="p">:</span>
+        <span class="n">top_rated</span>  <span class="o">=</span> <span class="n">title</span>
+        <span class="n">top_rating</span> <span class="o">=</span> <span class="n">rating</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">display_limit</span> <span class="o">=</span> <span class="mi">10</span>
+    <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">file</span><span class="p">):</span>
+        <span class="n">current_title</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">current_title</span> <span class="o">==</span> <span class="s2">"title"</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">current_rating</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="k">continue</span>
+        <span class="n">check_if_new_leader</span><span class="p">(</span><span class="n">current_title</span><span class="p">,</span> <span class="n">current_rating</span><span class="p">)</span>
+        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>                       <span class="c1"># increment</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Top rated of </span><span class="si">{</span><span class="n">count</span><span class="si">}</span><span class="s2"> films is </span><span class="si">{</span><span class="n">top_rated</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">top_rating</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">myfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">myfile</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-<span class="n">myfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Top rated of 8784 films is BoJack Horseman/9.9
+</pre>
 </div>
 </div>
 </div>
@@ -7859,1058 +7677,7 @@ SW1A 1AA          /
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-with-Statement">The <code>with</code> Statement<a class="anchor-link" href="#The-with-Statement">¶</a></h3><ul>
-<li>automatically ensures files get closed (and any other resoures get cleaned up)</li>
-<li>without the <code>with</code> statement...</li>
-</ul>
-<pre><code>file = open('file_path', 'w')
-file.write('Hello world!')
-file.close()
-</code></pre>
-<ul>
-<li>using the <code>with</code> statement...</li>
-</ul>
-<pre><code>with open('file_path', 'w') as file:
-    file.write('Hello world!')
-</code></pre>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'test.txt'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-  <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Summary-of-File-Functions-and-Methods">Summary of File Functions and Methods<a class="anchor-link" href="#Summary-of-File-Functions-and-Methods">¶</a></h3><ul>
-<li><code>open()</code> - open a file</li>
-<li><code>close()</code> - close a file</li>
-<li><code>read(n)</code> - read up to n chars from current position to end of file and return in a string. if n not provided, read all chars from current position to end of file.</li>
-<li><code>write(s)</code> - write string s to a file</li>
-<li>There are many more functions and methods available to operate on files in Python. You can learn more <a href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files">here</a>.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Errors">Errors<a class="anchor-link" href="#Errors">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>This section is derived from work that is <a href="https://carpentries.org/">Copyright (c) The Carpentries</a>.</em></p>
-<p>Errors in Python have a very specific form, called a traceback.
-Let's examine one:</p>
-<pre><code># This code has an intentional error. You can type it directly or
-# use it for reference to understand the error message below.
-def favorite_ice_cream():
-    ice_creams = [
-        'chocolate',
-        'vanilla',
-        'strawberry'
-    ]
-    print(ice_creams[3])
-
-favorite_ice_cream()
-</code></pre>
-<p>When run, this code produces the following result:</p>
-<pre><code>---------------------------------------------------------------------------
-IndexError                                Traceback (most recent call last)
-&lt;ipython-input-1-70bd89baa4df&gt; in &lt;module&gt;()
-      9     print(ice_creams[3])
-      10
-----&gt; 11 favorite_ice_cream()
-
-&lt;ipython-input-1-70bd89baa4df&gt; in favorite_ice_cream()
-      7         'strawberry'
-      8     ]
-----&gt; 9     print(ice_creams[3])
-      10
-      11 favorite_ice_cream()
-
-IndexError: list index out of range
-</code></pre>
-<p>This particular traceback has two levels.</p>
-<ul>
-<li><p>The first shows code from the cell above,
-with an arrow pointing to Line 11 (which is <code>favorite_ice_cream()</code>).</p>
-</li>
-<li><p>The second shows some code in the function <code>favorite_ice_cream</code>,
-with an arrow pointing to Line 9 (which is <code>print(ice_creams[3])</code>).</p>
-</li>
-</ul>
-<p>The last level is where the error occurred. The other level(s) show what function the program executed to get to the next level down.
-So, in this case, the program first called the function <code>favorite_ice_cream</code>. Inside this function, the program encountered an error on Line 6, when it tried to run the code <code>print(ice_creams[3])</code>.</p>
-<p>So what error did the program actually encounter?
-In the last line of the traceback,
-Python helpfully tells us the category or type of error (in this case, it is an <code>IndexError</code>)
-and a more detailed error message (in this case, it says "list index out of range").</p>
-<p>If you encounter an error and don't know what it means,
-it is still important to read the traceback closely.
-That way,
-if you fix the error,
-but encounter a new one,
-you can tell that the error changed.
-Additionally,
-sometimes knowing <em>where</em> the error occurred is enough to fix it,
-even if you don't entirely understand the message.</p>
-<p>If you do encounter an error you don't recognize,
-try looking at the
-<a href="http://docs.python.org/3/library/exceptions.html">official documentation on errors</a>.
-However,
-note that you may not always be able to find the error there,
-as it is possible to create custom errors.
-In that case,
-hopefully the custom error message is informative enough to help you figure out what went wrong.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Syntax-Errors">Syntax Errors<a class="anchor-link" href="#Syntax-Errors">¶</a></h3><p>When you forget a colon at the end of a line,
-accidentally add one space too many when indenting under an <code>if</code> statement, or forget a parenthesis,
-you will encounter a syntax error.
-This means that Python couldn't figure out how to read your program.
-This is similar to forgetting punctuation in English:
-for example,
-this text is difficult to read there is no punctuation there is also no capitalization
-why is this hard because you have to figure out where each sentence ends
-you also have to figure out where each sentence begins
-to some extent it might be ambiguous if there should be a sentence break or not</p>
-<p>People can typically figure out what is meant by text with no punctuation,
-but people are much smarter than computers.
-If Python doesn't know how to read the program,
-it will give up and inform you with an error.
-For example:</p>
-<pre><code>def some_function()
-    msg = 'hello, world!'
-    print(msg)
-     return msg
-</code></pre>
-<pre><code>  File "&lt;ipython-input-3-6bb841ea1423&gt;", line 1
-    def some_function()
-                       ^
-SyntaxError: invalid syntax
-</code></pre>
-<p>Here, Python tells us that there is a <code>SyntaxError</code> on line 1,
-and even puts a little arrow in the place where there is an issue.
-In this case the problem is that the function definition is missing a colon at the end.</p>
-<p>Actually, the function above has <em>two</em> issues with syntax.
-If we fix the problem with the colon,
-we see that there is <em>also</em> an <code>IndentationError</code>,
-which means that the lines in the function definition do not all have the same indentation:</p>
-<pre><code>def some_function():
-    msg = 'hello, world!'
-    print(msg)
-     return msg
-</code></pre>
-<pre><code>  File "&lt;ipython-input-4-ae290e7659cb&gt;", line 4
-    return msg
-    ^
-IndentationError: unexpected indent
-</code></pre>
-<p>Both <code>SyntaxError</code> and <code>IndentationError</code> indicate a problem with the syntax of your program,
-but an <code>IndentationError</code> is more specific:
-it <em>always</em> means that there is a problem with how your code is indented.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Tabs-and-Spaces">Tabs and Spaces<a class="anchor-link" href="#Tabs-and-Spaces">¶</a></h4><p>Some indentation errors are harder to spot than others.
-In particular, mixing spaces and tabs can be difficult to spot
-because they are both whitespace.
-In the example below, the first two lines in the body of the function
-<code>some_function</code> are indented with tabs, while the third line — with spaces.</p>
-<pre><code>def some_function():
-    msg = 'hello, world!'
-    print(msg)
-    return msg
-</code></pre>
-<p>Visually it is impossible to spot the error.
-Fortunately, Python does not allow you to mix tabs and spaces.</p>
-<pre><code>  File "&lt;ipython-input-5-653b36fbcd41&gt;", line 4
-    return msg
-              ^
-TabError: inconsistent use of tabs and spaces in indentation
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Variable-Name-Errors">Variable Name Errors<a class="anchor-link" href="#Variable-Name-Errors">¶</a></h3><p>Another very common type of error is called a <code>NameError</code>,
-and occurs when you try to use a variable that does not exist.
-For example:</p>
-<pre><code>print(a)
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-7-9d7b17ad5387&gt; in &lt;module&gt;()
-----&gt; 1 print(a)
-
-NameError: name 'a' is not defined
-</code></pre>
-<p>Variable name errors come with some of the most informative error messages,
-which are usually of the form "name 'the_variable_name' is not defined".</p>
-<p>Why does this error message occur?
-That's a harder question to answer,
-because it depends on what your code is supposed to do.
-However,
-there are a few very common reasons why you might have an undefined variable.
-The first is that you meant to use a string, but forgot to put quotes around it:</p>
-<pre><code>print(hello)
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-8-9553ee03b645&gt; in &lt;module&gt;()
-----&gt; 1 print(hello)
-
-NameError: name 'hello' is not defined
-</code></pre>
-<p>The second reason is that you might be trying to use a variable that does not yet exist.
-In the following example,
-<code>count</code> should have been defined (e.g., with <code>count = 0</code>) before the <code>for</code> loop:</p>
-<pre><code>for number in range(10):
-    count = count + number
-print('The count is:', count)
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-9-dd6a12d7ca5c&gt; in &lt;module&gt;()
-      1 for number in range(10):
-----&gt; 2     count = count + number
-      3 print('The count is:', count)
-
-NameError: name 'count' is not defined
-</code></pre>
-<p>Finally, the third possibility is that you made a typo when you were writing your code.
-Let's say we fixed the error above by adding the line <code>Count = 0</code> before the for loop.
-Frustratingly, this actually does not fix the error.
-Remember that variable names are case-sensitive,
-so the variable named <code>count</code> is different from <code>Count</code>. We still get the same error,
-because we still have not defined <code>count</code>:</p>
-<pre><code>Count = 0
-for number in range(10):
-    count = count + number
-print('The count is:', count)
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-NameError                                 Traceback (most recent call last)
-&lt;ipython-input-10-d77d40059aea&gt; in &lt;module&gt;()
-      1 Count = 0
-      2 for number in range(10):
-----&gt; 3     count = count + number
-      4 print('The count is:', count)
-
-NameError: name 'count' is not defined
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Index-Errors">Index Errors<a class="anchor-link" href="#Index-Errors">¶</a></h3><p>Next up are errors having to do with containers (like lists and strings) and the items within them.
-If you try to access an item in a list or a string that does not exist,
-then you will get an error.
-This makes sense:
-if you asked someone what day they would like to get coffee,
-and they answered "caturday",
-you might be a bit annoyed.
-Python gets similarly annoyed if you try to ask it for an item that doesn't exist:</p>
-<pre><code>letters = ['a', 'b', 'c']
-print('Letter #1 is', letters[0])
-print('Letter #2 is', letters[1])
-print('Letter #3 is', letters[2])
-print('Letter #4 is', letters[3])
-</code></pre>
-<pre><code>Letter #1 is a
-Letter #2 is b
-Letter #3 is c
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-IndexError                                Traceback (most recent call last)
-&lt;ipython-input-11-d817f55b7d6c&gt; in &lt;module&gt;()
-      3 print('Letter #2 is', letters[1])
-      4 print('Letter #3 is', letters[2])
-----&gt; 5 print('Letter #4 is', letters[3])
-
-IndexError: list index out of range
-</code></pre>
-<p>Here,
-Python is telling us that there is an <code>IndexError</code> in our code,
-meaning we tried to access a list index that did not exist.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="File-Errors">File Errors<a class="anchor-link" href="#File-Errors">¶</a></h3><p>The last type of error we'll cover today
-are those associated with reading and writing files: <code>FileNotFoundError</code>.
-If you try to read a file that does not exist,
-you will receive a <code>FileNotFoundError</code> telling you so.
-If you attempt to write to a file that was opened read-only, Python 3
-returns an <code>UnsupportedOperationError</code>.
-More generally, problems with input and output manifest as
-<code>IOError</code>s or <code>OSError</code>s, depending on the version of Python you use.</p>
-<pre><code>file_handle = open('myfile.txt', 'r')
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-FileNotFoundError                         Traceback (most recent call last)
-&lt;ipython-input-14-f6e1ac4aee96&gt; in &lt;module&gt;()
-----&gt; 1 file_handle = open('myfile.txt', 'r')
-
-FileNotFoundError: [Errno 2] No such file or directory: 'myfile.txt'
-</code></pre>
-<p>One reason for receiving this error is that you specified an incorrect path to the file.
-For example,
-if I am currently in a folder called <code>myproject</code>,
-and I have a file in <code>myproject/writing/myfile.txt</code>,
-but I try to open <code>myfile.txt</code>,
-this will fail.
-The correct path would be <code>writing/myfile.txt</code>.
-It is also possible that the file name or its path contains a typo.</p>
-<p>A related issue can occur if you use the "read" flag instead of the "write" flag.
-Python will not give you an error if you try to open a file for writing
-when the file does not exist.
-However,
-if you meant to open a file for reading,
-but accidentally opened it for writing,
-and then try to read from it,
-you will get an <code>UnsupportedOperation</code> error
-telling you that the file was not opened for reading:</p>
-<pre><code>file_handle = open('myfile.txt', 'w')
-file_handle.read()
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-UnsupportedOperation                      Traceback (most recent call last)
-&lt;ipython-input-15-b846479bc61f&gt; in &lt;module&gt;()
-      1 file_handle = open('myfile.txt', 'w')
-----&gt; 2 file_handle.read()
-
-UnsupportedOperation: not readable
-</code></pre>
-<p>These are the most common errors with files,
-though many others exist.
-If you get an error that you've never seen before,
-searching the Internet for that error type
-often reveals common reasons why you might get that error.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Reading-Error-Messages">Reading Error Messages<a class="anchor-link" href="#Reading-Error-Messages">¶</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Read the Python code and the resulting traceback below, and answer the following questions:</p>
-<ol>
-<li>How many levels does the traceback have?</li>
-<li>What is the function name where the error occurred?</li>
-<li>On which line number in this function did the error occur?</li>
-<li>What is the type of error?</li>
-<li>What is the error message?</li>
-</ol>
-<pre><code># This code has an intentional error. Do not type it directly;
-# use it for reference to understand the error message below.
-def print_message(day):
-    messages = {
-        'monday': 'Hello, world!',
-        'tuesday': 'Today is Tuesday!',
-        'wednesday': 'It is the middle of the week.',
-        'thursday': 'Today is Donnerstag in German!',
-        'friday': 'Last day of the week!',
-        'saturday': 'Hooray for the weekend!',
-        'sunday': 'Aw, the weekend is almost over.'
-    }
-    print(messages[day])
-
-def print_friday_message():
-    print_message('Friday')
-
-print_friday_message()
-</code></pre>
-<pre><code>---------------------------------------------------------------------------
-KeyError                                  Traceback (most recent call last)
-&lt;ipython-input-1-4be1945adbe2&gt; in &lt;module&gt;()
-     14     print_message('Friday')
-     15
----&gt; 16 print_friday_message()
-
-&lt;ipython-input-1-4be1945adbe2&gt; in print_friday_message()
-     12
-     13 def print_friday_message():
----&gt; 14     print_message('Friday')
-     15
-     16 print_friday_message()
-
-&lt;ipython-input-1-4be1945adbe2&gt; in print_message(day)
-      9         'sunday': 'Aw, the weekend is almost over.'
-     10     }
----&gt; 11     print(messages[day])
-     12
-     13 def print_friday_message():
-
-KeyError: 'Friday'
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><ol>
-<li>3 levels</li>
-<li><code>print_message</code></li>
-<li>11</li>
-<li><code>KeyError</code></li>
-<li>There isn't really a message; you're supposed to infer that <code>Friday</code> is not a key in <code>messages</code>.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Identifying-Syntax-Errors">Identifying Syntax Errors<a class="anchor-link" href="#Identifying-Syntax-Errors">¶</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Read the code below, and (without running it) try to identify what the errors are.</li>
-<li>Run the code, and read the error message. Is it a <code>SyntaxError</code> or an <code>IndentationError</code>?</li>
-<li>Fix the error.</li>
-<li>Repeat steps 2 and 3, until you have fixed all the errors.</li>
-</ol>
-<pre><code>def another_function
-  print('Syntax errors are annoying.')
-   print('But at least Python tells us about them!')
-  print('So they are usually not too hard to fix.')
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p><code>SyntaxError</code> for missing <code>():</code> at end of first line,
-<code>IndentationError</code> for mismatch between second and third lines.</p>
-<p>A fixed version is:</p>
-<pre><code>def another_function():
-    print('Syntax errors are annoying.')
-    print('But at least Python tells us about them!')
-    print('So they are usually not too hard to fix.')
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Identifying-Variable-Name-Errors">Identifying Variable Name Errors<a class="anchor-link" href="#Identifying-Variable-Name-Errors">¶</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Read the code below, and (without running it) try to identify what the errors are.</li>
-<li>Run the code, and read the error message.
-What type of <code>NameError</code> do you think this is?
-In other words, is it a string with no quotes,
-a misspelled variable,
-or a variable that should have been defined but was not?</li>
-<li>Fix the error.</li>
-<li>Repeat steps 2 and 3, until you have fixed all the errors.</li>
-</ol>
-<pre><code>for number in range(10):
-    # use a if the number is a multiple of 3, otherwise use b
-    if (Number % 3) == 0:
-        message = message + a
-    else:
-        message = message + 'b'
-print(message)
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p>3 <code>NameError</code>s for <code>number</code> being misspelled, for <code>message</code> not defined,
-and for <code>a</code> not being in quotes.</p>
-<p>Fixed version:</p>
-<pre><code>message = ''
-for number in range(10):
-    # use a if the number is a multiple of 3, otherwise use b
-    if (number % 3) == 0:
-        message = message + 'a'
-    else:
-        message = message + 'b'
-print(message)
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h4 id="Identifying-Index-Errors">Identifying Index Errors<a class="anchor-link" href="#Identifying-Index-Errors">¶</a></h4>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Read the code below, and (without running it) try to identify what the errors are.</li>
-<li>Run the code, and read the error message. What type of error is it?</li>
-<li>Fix the error.</li>
-</ol>
-<pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
-print('My favorite season is ', seasons[4])
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h5 id="Solution">Solution<a class="anchor-link" href="#Solution">¶</a></h5><p><code>IndexError</code>; the last entry is <code>seasons[3]</code>, so <code>seasons[4]</code> doesn't make sense.
-A fixed version is:</p>
-<pre><code>seasons = ['Spring', 'Summer', 'Fall', 'Winter']
-print('My favorite season is ', seasons[-1])
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exceptions">Exceptions<a class="anchor-link" href="#Exceptions">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>When a Python program has an error, something called an exception is raised. If nothing special is done to handle the exception, the program stops running and an error message describing the exception is displayed, like this:</p>
-<pre><code>&gt;&gt;&gt; int('x')
-Traceback (most recent call last):
-  File "&lt;pyshell#0&gt;", line 1, in &lt;module&gt;
-    int('x')
-ValueError: invalid literal for int() with base 10: 'x'
-</code></pre>
-<p>With Python's exception handling facilities, you can:</p>
-<ul>
-<li>handle exceptions before they stop your program</li>
-<li>raise your own exceptions</li>
-<li>structure your error handling code in a simpler, more natural way</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Exception-Handling">Exception Handling<a class="anchor-link" href="#Exception-Handling">¶</a></h3><p>Here's how to handle (or catch) an exception in Python:</p>
-<pre><code>try:
-    &lt;block of code&gt;
-except:
-    &lt;exception handler block of code&gt;
-</code></pre>
-<p>How do we delineate the scope of the <code>try</code> and <code>except</code> blocks?  As usual, by indentation.
-Python tries to run the <code>try</code> block.
-If that causes an exception, then it runs the <code>except</code> block.
-if no exception is generated by the <code>try</code> block, the <code>except</code> block is skipped.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Exception-Handling-Example">Exception Handling Example<a class="anchor-link" href="#Exception-Handling-Example">¶</a></h3><p>Here's an example exception handler:</p>
-<pre><code>resp = input('enter an integer: ')
-try:
-    num = int(resp)
-except:
-    print('problem converting', resp, 'to int')
-</code></pre>
-<p>This code handles every possible exception type.
-You can specify a specific exception type you want to handle by including it after the except keyword, like this:</p>
-<pre><code>except ValueError: # handle ValueError exceptions only
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Common-Exception-Types">Common Exception Types<a class="anchor-link" href="#Common-Exception-Types">¶</a></h3><table>
-<thead>
-<tr>
-<th>Exception Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-<p>Exception|base type of all exceptions
-IOError|I/O operation failed
-IndexError|invalid index applied to a sequence
-KeyError|invalid key applied to a dictionary
-NameError|invalid or unknown variable or function name
-SyntaxError|invalid Python language syntax encountered
-TypeError|operator or function applied to inappropriate type
-ValueError|operator or function applied to invalid value
-ZeroDivisionError|division or modulus by zero</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Handling-Multiple-Exceptions">Handling Multiple Exceptions<a class="anchor-link" href="#Handling-Multiple-Exceptions">¶</a></h3><p>You can handle multiple exception types with one except clause by specifying a comma separated list of exception types in parentheses (aka, brackets), like this:</p>
-<pre><code>except (TypeError, ValueError):
-</code></pre>
-<p>You can also use multiple except clauses in a single statement, like this:</p>
-<pre><code>def convert(param):
-    try:
-        value = int(param)        
-        return value
-    except TypeError:
-        print('can\'t convert', type(param), 'to int')
-    except ValueError:
-        print('can\'t convert', param, 'to int')
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Getting-Exception-Arguments">Getting Exception Arguments<a class="anchor-link" href="#Getting-Exception-Arguments">¶</a></h3><p>Exceptions often come with data passed as an exception argument, which can be obtained like this:</p>
-<pre><code>except ValueError as msg:
-    print(msg)
-</code></pre>
-<p>For example, this code:</p>
-<pre><code>try:
-    int('x')
-except ValueError as msg:
-    print(msg)
-</code></pre>
-<p>displays this message:</p>
-<pre><code>invalid literal for int() with base 10: 'x'
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Exceptions-Can-Have-Else-Clauses">Exceptions Can Have Else Clauses<a class="anchor-link" href="#Exceptions-Can-Have-Else-Clauses">¶</a></h3><p>An optional else clause, if included, is executed if no exception occurs, for example:</p>
-<pre><code>try:
-    int(resp)
-except ValueError as msg:
-    print(msg)
-else:
-    print('conversion succeeded')
-</code></pre>
-<p>This statement is certain to display one (and only one!) of the two prints statements above.
-What it won't do, is terminate your program due to a conversion error.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="How-to-Raise-an-Exception">How to Raise an Exception<a class="anchor-link" href="#How-to-Raise-an-Exception">¶</a></h3><p>You can raise your own exceptions, anywhere in a Python program, using the <code>raise</code> statement, like this:</p>
-<pre><code>raise &lt;exception type&gt;
-</code></pre>
-<p>or like this, to pass an argument along with the exception:</p>
-<pre><code>raise &lt;exception type&gt;(&lt;argument&gt;)
-</code></pre>
-<p>this causes an exception to be raised.
-Control resumes at the first enclosing code (in inner-to-outer order) that handles the raised exception type.
-If no enclosing code handles the exception, Python terminates the program and displays information about the exception.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Structuring-Code-Around-Exceptions">Structuring Code Around Exceptions<a class="anchor-link" href="#Structuring-Code-Around-Exceptions">¶</a></h3><p>What happens if we pass an empty list to this function:</p>
-<pre><code>def avg(numbers):
-    sum = 0    
-    cnt = 0
-    for i in numbers:
-        sum += i
-        cnt += 1
-    return sum // cnt
-</code></pre>
-<p>We can use exceptions to catch errors like this:</p>
-<pre><code>try:    
-    result = avg([])
-except:    
-    print('something went wrong')
-</code></pre>
-<p>Instead of writing code like this:</p>
-<pre><code>if choice == "a":
-    word = input('word to add: ')
-    err = add_word(word)
-    if (err):
-        print(err)
-    else:
-        print(word, 'successfully added')
-elif choice == "d":
-    word = input('word to delete: ')    
-    err = del_word(word)
-    if (err):
-        print(err)
-    else:
-        print(word, 'successfully deleted')
-</code></pre>
-<p>We can write code like this (one exception handler vs. multiple ifs):</p>
-<pre><code>try:
-    if choice == 'a':
-        word = input('word to add: ')
-        add_word(word)
-        print(word, 'successfully added')
-    elif choice == 'd':
-        word = input('word to delete: ')
-        del_word(word)
-        print(word, 'successfully deleted')
-except Exception as msg:
-    print('ERROR:', msg)
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Error-Handling-Styles">Error Handling Styles<a class="anchor-link" href="#Error-Handling-Styles">¶</a></h3><p>Style 1 (nested):</p>
-<pre><code>def add_friend(user, friend):
-    if user in users:
-        if friend in users:
-            if friend not in users[user]:
-                users[user].append(friend)
-            else:
-                raise Err('friend already on list')
-        else:
-            raise Err('unregistered friend name')
-    else:
-        raise Err('unregistered user name')
-</code></pre>
-<p>Style 2 (linear):</p>
-<pre><code>def add_friend(user, friend):
-    if user not in users:
-        raise Err('unregistered user name')
-    elif friend not in users
-        raise Err('unregistered friend name')
-    elif friend in users[user]
-        raise Err('friend already on list')
-    users[user].append(friend)
-    return None
-</code></pre>
-<p>I like this style because I find it more readable.
-Why is readability so important?
-Readable code is maintainable code.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Defining-and-Using-Our-Own-Exceptions">Defining and Using Our Own Exceptions<a class="anchor-link" href="#Defining-and-Using-Our-Own-Exceptions">¶</a></h3><p>We can limit the scope of our exception handler to our own exceptions, like this:</p>
-<pre><code># define a new type of exception called avgError
-class avgError(Exception):    
-    pass
-
-def avg(numbers):
-    if len(numbers) &lt;= 0:
-        raise avgError('empty sequence not supported')    
-    for i in numbers:        
-        sum += i
-        cnt += 1
-    return sum // cnt
-</code></pre>
-<p>In calling code:</p>
-<pre><code>try:    
-    result = avg([])
-except avgError as msg:    
-    print('ERROR:', msg)
-</code></pre>
-<p>This is just like our previous version except that we're handling an application specific exception.
-Other exceptions will not be caught, which is good (why?).</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Homework">Homework<a class="anchor-link" href="#Homework">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-1">Question 1<a class="anchor-link" href="#Question-1">¶</a></h3><p>Write a function called <code>write_file()</code> that takes two arguments: a filename and a list of strings, opens the named file for write access and uses a <code>for</code> loop to write the list contents into the file, one string per line.</p>
-<p>For example:</p>
-<pre><code>li = ['test', 'another test', 'last test']
-write_file('output.txt', li)
-</code></pre>
-<p><strong>Make sure to include a newline character at the end of each item written.</strong></p>
-<p>Using your systems file explorer or command line, verify the file was created and has the expected contents.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">write_file</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">li</span><span class="p">):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">li</span><span class="p">:</span>
-            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
-
-<span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'test'</span><span class="p">,</span> <span class="s1">'another test'</span><span class="p">,</span> <span class="s1">'last test'</span><span class="p">]</span>
-<span class="n">write_file</span><span class="p">(</span><span class="s2">"output.txt"</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">¶</a></h3><p>Write a companion function, called <code>read_file()</code>, which reads the contents of a file, one line at a time using a <code>for</code> loop, and prints each line it encouters.</p>
-<p><strong>Use print(..., end="") to avoid printing two newline characters after each item.</strong></p>
-<p>Use <code>read_file()</code> to verify the results of your work on question 1.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#@title Double click here to reveal solution</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">read_file</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-
-<span class="n">read_file</span><span class="p">(</span><span class="s2">"output.txt"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://pylearn.io/lessons/7-Iterables/">Previous Lesson</a>
-          
-<a href="https://pylearn.io/lessons/9-Sample/">Next Lesson</a></p>
+<p><a href="https://pylearn.io/lessons/8-Files/">Previous Lesson</a></p>
 </div>
 </div>
 </div>

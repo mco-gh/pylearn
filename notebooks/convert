@@ -1,6 +1,6 @@
 DIR=../content/en/lessons
 
-for i in *.ipynb
+for i in [!X]*.ipynb
 do
     lesson="${i%.*}"
     weight=`echo $lesson| cut -d'_' -f1`
