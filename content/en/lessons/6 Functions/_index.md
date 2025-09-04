@@ -7533,13 +7533,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Notebook-6---Functions,-Namespaces,-and-Modules">Notebook 6 - Functions, Namespaces, and Modules<a class="anchor-link" href="#Notebook-6---Functions,-Namespaces,-and-Modules">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
+<h1 id="Notebook-6---Functions-and-Modules">Notebook 6 - Functions and Modules<a class="anchor-link" href="#Notebook-6---Functions-and-Modules">¶</a></h1><p><strong>You can make a copy of this notebook by selecting File-&gt;Save a copy in Drive from the menu bar above.</strong></p>
 <p>Things you'll learn in this lesson:</p>
 <ul>
 <li>what functions are and why they useful</li>
 <li>how to define and use functions</li>
-<li>the global and local namespaces</li>
-<li>what modules are and how to use them</li>
 <li>Integrated Developer Environments (IDEs) for Python</li>
 </ul>
 </div>
@@ -8146,141 +8144,6 @@ print(f'quotient={q}, remainder={r}')
 <span class="nb">len</span><span class="p">(</span><span class="s1">'test'</span><span class="p">)</span>
 <span class="c1"># returns a sequence of values?</span>
 <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Namespaces">Namespaces<a class="anchor-link" href="#Namespaces">¶</a></h2>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li>A <code>namespace</code> is an abstract collection of variables that exist in a particular context.<ul>
-<li>Kind of like a company's ID numbers.</li>
-<li>My id is only valid within the scope of my company.</li>
-</ul>
-</li>
-<li>We've seen an example of a namespace in this code...</li>
-</ul>
-<pre><code>import random
-x = random.randrange(10)
-</code></pre>
-<ul>
-<li>In this case, the random module has it's own namespace, which is completely separate from the rest of your program and is accessed via "dot" notation.</li>
-<li>If you neglect the "random." prefix, you're referring to a different namespace:  your program's global namespace.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Global-Namespace">Global Namespace<a class="anchor-link" href="#Global-Namespace">¶</a></h3><ul>
-<li>Every Python source file has its own global name space.</li>
-<li>The global namespace includes all names (variables and functions) defined outside of any functions, in the Python source file.</li>
-<li>In the following code, <code>count</code>, <code>mystr</code> and <code>req</code> are all global variables, i.e. they all reside in the global namespace.</li>
-</ul>
-<pre><code>count = 0
-while True:
-    mystr = input('? ')
-    if (mystr == '1'):
-        req = 'add'
-    else:
-        break
-    count += 1
-</code></pre>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Local-Namespace">Local Namespace<a class="anchor-link" href="#Local-Namespace">¶</a></h3><ul>
-<li>When you define a function, Python creates a local namespace for that function, encompassing all parameters and variables created inside the function body.</li>
-<li>Variables in a local namespace are separate from, and independent of, variables in the global name space.</li>
-<li>Inside a function, local variables supersede global variables with the same name.</li>
-<li>Local variables are transient - they exist only during the lifetime of function execution.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Example-illustrating-local-variable-superseding-a-global-variable">Example illustrating local variable superseding a global variable<a class="anchor-link" href="#Example-illustrating-local-variable-superseding-a-global-variable">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">var</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">myfunc</span><span class="p">():</span>
-    <span class="n">var</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
-<span class="n">myfunc</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'global var:'</span><span class="p">,</span> <span class="n">var</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Example-illustrating-the-transient-nature-of-the-local-namespace">Example illustrating the transient nature of the local namespace<a class="anchor-link" href="#Example-illustrating-the-transient-nature-of-the-local-namespace">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func</span><span class="p">():</span>
-    <span class="n">var2</span> <span class="o">=</span> <span class="mi">2</span>  <span class="c1"># local scope</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'local var:'</span><span class="p">,</span> <span class="n">var2</span><span class="p">)</span>
-<span class="n">func</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'global var:'</span><span class="p">,</span> <span class="n">var2</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
