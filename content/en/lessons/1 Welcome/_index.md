@@ -7664,19 +7664,19 @@ a.anchor-link {
 </tr>
 <tr>
 <td>Notebook 5</td>
-<td>More Strings and Loops</td>
+<td>Loops</td>
 </tr>
 <tr>
 <td>Notebook 6</td>
-<td>Functions, Namespaces, and Modules</td>
+<td>Functions and Modules</td>
 </tr>
 <tr>
 <td>Notebook 7</td>
-<td>Tuples, Lists, and Dictionaries</td>
+<td>Lists and Tuples</td>
 </tr>
 <tr>
 <td>Notebook 8</td>
-<td>Sample Project</td>
+<td>Sample Program</td>
 </tr>
 </tbody>
 </table>
