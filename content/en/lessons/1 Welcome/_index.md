@@ -7799,7 +7799,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-March-of-Progress">The March of Progress<a class="anchor-link" href="#The-March-of-Progress">¶</a></h3><p>The cell phone in your pocket has more computing power than all of NASA back in 1969. They used it to put two astronauts on the moon. We use it to play Candy Crush. :)</p>
+<h3 id="The-March-of-Progress">The March of Progress<a class="anchor-link" href="#The-March-of-Progress">¶</a></h3><p>The cell phone in your pocket has more computing power than the Lunar module back in 1969. They used it to put astronauts on the moon. We use it to play Candy Crush. :)</p>
 <p>Learning to program gives you the power to build amazing things with your computer.</p>
 </div>
 </div>
@@ -7889,9 +7889,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Compiled-vs.-interpreted-languages">Compiled vs. interpreted languages<a class="anchor-link" href="#Compiled-vs.-interpreted-languages">¶</a></h3><img alt="No description has been provided for this image" height="300" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*3Iy-ohRRXj3lChmEbQTxIQ.png"/>  
-[Source](https://medium.com/from-the-scratch/stop-it-there-are-no-compiled-and-interpreted-languages-512f84756664)
-
+<h3 id="Compiled-vs.-interpreted-languages">Compiled vs. interpreted languages<a class="anchor-link" href="#Compiled-vs.-interpreted-languages">¶</a></h3><img alt="No description has been provided for this image" height="300" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*3Iy-ohRRXj3lChmEbQTxIQ.png"/>
+<p><a href="https://medium.com/from-the-scratch/stop-it-there-are-no-compiled-and-interpreted-languages-512f84756664">Source</a></p>
 <ul>
 <li>A compiler converts one language to another (usually a high level language to low level code that can be run directly by the hardware).</li>
 <li>An interpreter executes the source program one statement at a time.</li>
@@ -8106,12 +8105,11 @@ a.anchor-link {
   <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
     <span class="k">break</span>
   <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-  <span class="k">if</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'kind'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'movie'</span><span class="p">:</span>
-    <span class="n">movie</span> <span class="o">=</span> <span class="n">imdb</span><span class="o">.</span><span class="n">get_movie</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">movieID</span><span class="p">)</span>
-    <span class="n">imdb</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">movie</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="p">[</span><span class="s1">'vote details'</span><span class="p">])</span>
-    <span class="k">if</span> <span class="s1">'rating'</span> <span class="ow">in</span> <span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
-      <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'cover url'</span><span class="p">]))</span>
-      <span class="nb">print</span><span class="p">(</span><span class="n">movie</span><span class="p">,</span> <span class="n">movie</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'rating'</span><span class="p">])</span>
+  <span class="k">if</span> <span class="s1">'kind'</span> <span class="ow">in</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span> <span class="ow">and</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'kind'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'movie'</span><span class="p">:</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'title'</span><span class="p">]</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">i</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s1">'cover url'</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8448,7 +8446,7 @@ We do this by writing the function name followed by parentheses (aka brackets).
 We may optionally include some values inside the brackets. We call those values function arguments, or just arguments.
 We'll often refer to this process as "passing arguments" to a function.
 I like to think of the function as a work request and the arguments as the job specification.
-For example, you can pass arguments to the print function to produce just about any desired output.</p>
+For example, you can pass arguments to the <code>print</code> function to produce just about any desired output.</p>
 </div>
 </div>
 </div>
